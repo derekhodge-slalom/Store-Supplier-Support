@@ -31,30 +31,30 @@
         <size_compressed>738</size_compressed>
         <state/>
         <sys_created_by>derek.hodge@slalom.com</sys_created_by>
-        <sys_created_on>2026-08-05 19:39:26</sys_created_on>
-        <sys_id>0f14a859872a47d02cc4a9373cbb3535</sys_id>
+        <sys_created_on>2026-08-05 21:21:48</sys_created_on>
+        <sys_id>1a8bf099872e47d02cc4a9373cbb3592</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>derek.hodge@slalom.com</sys_updated_by>
-        <sys_updated_on>2026-08-05 19:39:26</sys_updated_on>
+        <sys_updated_on>2026-08-05 21:21:48</sys_updated_on>
         <table_name>ZZ_YYsys_ux_theme_asset</table_name>
         <table_sys_id>b6d1e06c5a1b4a8c91a9e7f0f01ee504</table_sys_id>
     </sys_attachment>
     <sys_attachment_doc action="INSERT_OR_UPDATE">
-        <data>H4sIAOiQc2oAAw==</data>
+        <data>H4sIAOaoc2oAAw==</data>
         <length>16</length>
         <position>0</position>
-        <sys_attachment display_value="logo" sys_id="0f14a859872a47d02cc4a9373cbb3535">0f14a859872a47d02cc4a9373cbb3535</sys_attachment>
+        <sys_attachment display_value="logo" sys_id="1a8bf099872e47d02cc4a9373cbb3592">1a8bf099872e47d02cc4a9373cbb3592</sys_attachment>
         <sys_created_by>derek.hodge@slalom.com</sys_created_by>
-        <sys_created_on>2026-08-05 19:39:26</sys_created_on>
-        <sys_id>4f14a859872a47d02cc4a9373cbb353b</sys_id>
+        <sys_created_on>2026-08-05 21:21:48</sys_created_on>
+        <sys_id>ee8bf099872e47d02cc4a9373cbb3594</sys_id>
     </sys_attachment_doc>
     <sys_attachment_doc action="INSERT_OR_UPDATE">
         <data>vVVNT9tAEL3zKyz3urveD68/qhikRqo4lBNS7sGYxJJJUJI6lF/f98ahqRC0N5Biz87OvHn7ZtbMrp4fh2Tsdvt+u2lSZ2yadJt2e99vVk368/Cgq/Tq8mK2H1d/R7k0Qd5m36Trw+Hpa5Ydj0dzDGa7W2XeWpshPk3Gvjt+2z43qU1s4l2RxIKZu+3QNWn/iIjlrl/qYXnXDUN3f/erSffDctg+6kN/GLr08iJJZmIm/f3bvVtZzTJZSuQqeeiHoUm/fJc/SYf7aXlYJ0i/CbXxKlpTtlZ5kytnapWb8PpbFyYs7DWjFox6SbO3CJWk1aZutTeFDsbrwuQ64uecqWi02lngWo0wpypTT4a3ptpXqE+DEJOrRYayCiUB6NUryGiN+5CkW7hoimtyWZDLS3JTgo3KC+Nb8PEsboGYA0wMMmqtRshE7uwEGspzDfBiMrgxB3qlcmeiKitTCrb6U+UdZWpQ+r+2jPpIW+fZHpebCAk90qz2Di9KKIZIWE8Cnh2wco0YunJN19yhQqF8IA05AkHVGR+CTYuTYpNeEXrFyaAC+9NK1Dq5aOE0wKJB160L8QR0KvCBPrgUQoenY4aUDJAJLSLRArMgM5WjNaUJ6CN3+GpJDAkVB4dUHKU25Qh/sRackSz+oXxACQxAxFYALuWqJtlaDAkmoESPA2aBb9QZXcmET8ODcvUcHwi2tMSjxlOadpbtPU09q7hBBh0tb3EhCxokph2EjNgIkByjxAbBiwhox3dsA++pkEST5faRYOt5Jzj9AuYQHpk+8EIF6R6WJdtAD/pRoV0IbnUNA93QDhcGD5kJThhR8J0AOjoo95+Hx14xyKADNkpRikVOlJPSllOuF8IOjlqL4hhabpADZp6H5RZAf1gVwQtwEXFSw+EgOF8JT2wRx3r8DCEcjAQFx5kHaRm/B4F3KyBkkvck/Cxb4d8Av+uXF78Bls+1mjUGAAA=</data>
         <length>972</length>
         <position>1</position>
-        <sys_attachment display_value="logo" sys_id="0f14a859872a47d02cc4a9373cbb3535">0f14a859872a47d02cc4a9373cbb3535</sys_attachment>
+        <sys_attachment display_value="logo" sys_id="1a8bf099872e47d02cc4a9373cbb3592">1a8bf099872e47d02cc4a9373cbb3592</sys_attachment>
         <sys_created_by>derek.hodge@slalom.com</sys_created_by>
-        <sys_created_on>2026-08-05 19:39:26</sys_created_on>
-        <sys_id>0f14a859872a47d02cc4a9373cbb353c</sys_id>
+        <sys_created_on>2026-08-05 21:21:48</sys_created_on>
+        <sys_id>aa8bf099872e47d02cc4a9373cbb3595</sys_id>
     </sys_attachment_doc>
 </record_update>

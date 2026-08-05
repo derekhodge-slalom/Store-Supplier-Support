@@ -8,11 +8,24 @@
 ]]></client_script>
         <controller_as>c</controller_as>
         <css>.sss-navbar {
-  background: #000a25;
+  background: $brand-primary;
   border-bottom: 4px solid $brand-warning;
   color: $btn-primary-color;
-  min-height: 72px;
+  min-height: 76px;
 }
+
+.sss-skip-link {
+  background: $brand-warning;
+  color: #000000;
+  font-weight: 700;
+  left: 12px;
+  padding: 10px 16px;
+  position: absolute;
+  top: -100px;
+  z-index: 10000;
+}
+
+.sss-skip-link:focus { top: 10px; }
 
 .sss-navbar__inner,
 .sss-navbar__brand {
@@ -22,7 +35,7 @@
 
 .sss-navbar__inner {
   justify-content: space-between;
-  min-height: 72px;
+  min-height: 76px;
 }
 
 .sss-navbar__brand,
@@ -44,20 +57,52 @@
 }
 
 .sss-navbar__divider {
-  background: $brand-warning;
-  height: 30px;
-  margin: 0 16px;
-  width: 3px;
+  background: $btn-primary-color;
+  height: 42px;
+  margin: 0 18px;
+  opacity: .8;
+  width: 2px;
 }
 
-.sss-navbar__product,
-.sss-navbar__audience {
+.sss-navbar__product {
+  font-size: 17px;
+  font-weight: 400;
+  letter-spacing: -.01em;
+}
+
+.sss-navbar__links {
+  align-items: center;
+  display: flex;
+  gap: 8px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.sss-navbar__links a {
+  border-radius: 999px;
+  color: $btn-primary-color;
+  display: block;
   font-weight: 700;
+  padding: 10px 14px;
+}
+
+.sss-navbar__links a:hover {
+  background: #002faf;
+  color: $btn-primary-color;
+  text-decoration: none;
+}
+
+.sss-navbar__links a:focus {
+  outline: 3px solid $brand-warning;
+  outline-offset: 2px;
 }
 
 @media (max-width: 767px) {
-  .sss-navbar__audience { display: none; }
+  .sss-navbar__links { display: none; }
   .sss-navbar__product { font-size: 13px; }
+  .sss-navbar__divider { height: 32px; margin: 0 10px; }
+  .sss-navbar__logo { height: 28px; width: 108px; }
 }
 </css>
         <data_table>sp_instance</data_table>
@@ -92,14 +137,19 @@
         <sys_update_name>sp_header_footer_e689b789c26b45398c49b51836bb0093</sys_update_name>
         <sys_updated_by>derek.hodge@slalom.com</sys_updated_by>
         <sys_updated_on>2026-08-05 18:14:27</sys_updated_on>
-        <template><![CDATA[<nav class="sss-navbar" aria-label="Store Supplier Support">
+        <template><![CDATA[<a class="sss-skip-link" href="#sss-main">Skip to main content</a>
+<nav class="sss-navbar" aria-label="Store supplier support">
   <div class="container sss-navbar__inner">
-    <a class="sss-navbar__brand" href="?id=store-supply-supplier" aria-label="Slalom Store Supplier Support home">
-      <img class="sss-navbar__logo" src="https://s7d9.scene7.com/is/content/slalom/slalom-logo-white-RGB" alt="Slalom" width="139" height="36" />
+    <a class="sss-navbar__brand" href="?id=store-supply-supplier" aria-label="Slalom Store supplier support home">
+      <img class="sss-navbar__logo" ng-src="{{::portal.logo}}" alt="Slalom" width="139" height="36" />
       <span class="sss-navbar__divider" aria-hidden="true"></span>
-      <span class="sss-navbar__product">Store Supplier Support</span>
+      <span class="sss-navbar__product">Store supplier support</span>
     </a>
-    <span class="sss-navbar__audience">Supplier portal</span>
+    <ul class="sss-navbar__links" aria-label="Supplier portal navigation">
+      <li><a href="?id=store-supply-supplier">Home</a></li>
+      <li><a href="?id=store-supply-supplier#sss-active-cases">Cases</a></li>
+      <li><a href="?id=store-supply-supplier#sss-knowledge">Knowledge</a></li>
+    </ul>
   </div>
 </nav>
 ]]></template>

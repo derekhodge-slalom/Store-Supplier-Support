@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_theme">
+    <sp_theme action="INSERT_OR_UPDATE">
+        <css_variables>// Slalom brand guide, February 2025.
+// Primary: Slalom Blue and Slalom Dark Blue. Chartreuse is the single
+// secondary accent. Text combinations maintain WCAG 2.1 AA contrast.
+$brand-primary: #0c62fb !default;
+$brand-primary-darkest: #002faf !default;
+$brand-primary-darker: #002faf !default;
+$brand-primary-lighter: #89b7fd !default;
+$brand-primary-lightest: #e6eeff !default;
+$brand-primary-opacity: #e6eeff !default;
+
+$background-primary: #ffffff !default;
+$background-secondary: #f7f7f7 !default;
+$background-tertiary: #e6e6e6 !default;
+$text-primary: #000000 !default;
+$text-secondary: #292929 !default;
+$text-tertiary: #666666 !default;
+$text-white: #ffffff !default;
+$border-primary: #666666 !default;
+$border-secondary: #a3a3a3 !default;
+$border-tertiary: #d6d6d6 !default;
+$hr-border: #d6d6d6 !default;
+
+$select-primary: #002faf !default;
+$select-primary-lighter: #e6eeff !default;
+$select-primary-darker: #00206f !default;
+$sp-navbar-divider-color: #0c62fb !default;
+$navbar-inverse-bg: #002faf !default;
+$navbar-inverse-border: #deff4d !default;
+$navbar-inverse-link-color: #ffffff !default;
+$navbar-inverse-link-hover-color: #ffffff !default;
+$navbar-inverse-brand-color: #ffffff !default;
+$link-color: #002faf !default;
+$link-hover-color: #00206f !default;
+$input-border-focus: #0c62fb !default;
+$component-active-bg: #002faf !default;
+$component-active-color: #ffffff !default;
+$body-bg: #f7f7f7 !default;
+$sp-body-bg: #f7f7f7 !default;
+$text-color: #000000 !default;
+$text-muted: #666666 !default;
+$font-family-sans-serif: "Slalom Sans", "Helvetica Neue", Arial, sans-serif !default;
+$headings-font-family: "Slalom Sans", "Helvetica Neue", Arial, sans-serif !default;
+$headings-font-weight: 700 !default;
+$btn-primary-color: #ffffff !default;
+$btn-primary-bg: #0c62fb !default;
+$btn-primary-border: #0c62fb !default;
+$btn-default-color: #002faf !default;
+$btn-default-bg: #ffffff !default;
+$btn-default-border: #002faf !default;
+$border-radius-base: 6px !default;
+$border-radius-large: 10px !default;
+
+body {
+  background: $body-bg;
+  color: $text-color;
+  font-family: $font-family-sans-serif;
+}
+
+#ec-header-container {
+  border-bottom: 4px solid #deff4d;
+}
+
+#ec-header-container .navbar-header,
+#ec-header-container .sub-navbar {
+  background: #0c62fb;
+}
+
+#ec-header-container .navbar-brand-logo img {
+  max-height: 36px;
+  min-height: 18px;
+  width: auto;
+}
+
+#ec-header-container a,
+#ec-header-container button,
+#ec-header-container .header-item {
+  color: #ffffff;
+}
+
+#ec-header-container a:focus,
+#ec-header-container button:focus,
+.scrub-footer a:focus,
+.btn:focus,
+a:focus {
+  outline: 3px solid #deff4d;
+  outline-offset: 3px;
+  box-shadow: none;
+}
+
+.btn-primary {
+  border-radius: 999px;
+  font-weight: 700;
+}
+
+.scrub-footer .sf-main,
+.scrub-footer .sf-bottom {
+  background: #002faf;
+  color: #ffffff;
+}
+
+.scrub-footer .sf-main {
+  border-top: 4px solid #deff4d;
+}
+
+.scrub-footer a,
+.scrub-footer .sf-group-title {
+  color: #ffffff;
+}
+</css_variables>
+        <footer display_value="Employee Center Footer">ce046d5773603010c94f54eb7df6a7ec</footer>
+        <footer_fixed>false</footer_fixed>
+        <header display_value="Employee Center Header">d0009941eb103010ed7966d6475228c1</header>
+        <icon/>
+        <logo>735979eea37830b28573ef08758ebe03</logo>
+        <logo_alt_text>Slalom</logo_alt_text>
+        <matching_now_experience_theme display_value="Slalom Store Supplier Support">b6d1e06c5a1b4a8c91a9e7f0f01ee501</matching_now_experience_theme>
+        <name>Slalom Employee Center</name>
+        <navbar_fixed>true</navbar_fixed>
+        <sys_class_name>sp_theme</sys_class_name>
+        <sys_created_by>derek.hodge@slalom.com</sys_created_by>
+        <sys_created_on>2026-08-05 21:20:02</sys_created_on>
+        <sys_id>e1c0a4c2d6b6494f9a887a8f171bc3d2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Slalom Employee Center</sys_name>
+        <sys_package display_value="Store Supplier Support" source="x_sln_store_suppli">ee4e977887264b907c2dfdd5dabb354b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Store Supplier Support">ee4e977887264b907c2dfdd5dabb354b</sys_scope>
+        <sys_update_name>sp_theme_e1c0a4c2d6b6494f9a887a8f171bc3d2</sys_update_name>
+        <sys_updated_by>derek.hodge@slalom.com</sys_updated_by>
+        <sys_updated_on>2026-08-05 21:20:02</sys_updated_on>
+        <turn_off_scss_compilation>false</turn_off_scss_compilation>
+    </sp_theme>
+</record_update>

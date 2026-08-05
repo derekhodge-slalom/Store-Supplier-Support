@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_rectangle_menu_item">
+    <sp_rectangle_menu_item action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <color/>
+        <condition>gs.hasRole('x_sln_store_suppli.store_associate') || gs.hasRole('x_sln_store_suppli.district_manager') || gs.hasRole('x_sln_store_suppli.support_agent') || gs.hasRole('x_sln_store_suppli.support_manager') || gs.hasRole('x_sln_store_suppli.admin')</condition>
+        <display_1/>
+        <display_2/>
+        <display_date/>
+        <filter/>
+        <glyph>shopping-cart</glyph>
+        <hint/>
+        <kb_article/>
+        <kb_category/>
+        <kb_topic/>
+        <label>Store supplier support</label>
+        <order>250</order>
+        <record_script/>
+        <sc_cat_item/>
+        <sc_category/>
+        <short_description>Request store supplies, report issues, and follow case updates.</short_description>
+        <sp_page display_value="store-supply-internal">1e1cff63c5e44c998829544255a7413f</sp_page>
+        <sp_rectangle_menu display_value="Employee Center Menu">493d01365368301056c1ddeeff7b1207</sp_rectangle_menu>
+        <sp_rectangle_menu_item/>
+        <sys_class_name>sp_rectangle_menu_item</sys_class_name>
+        <sys_created_by>derek.hodge@slalom.com</sys_created_by>
+        <sys_created_on>2026-08-05 21:20:02</sys_created_on>
+        <sys_id>b6d1e06c5a1b4a8c91a9e7f0f01ee50a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Store supplier support</sys_name>
+        <sys_package display_value="Store Supplier Support" source="x_sln_store_suppli">ee4e977887264b907c2dfdd5dabb354b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Store Supplier Support">ee4e977887264b907c2dfdd5dabb354b</sys_scope>
+        <sys_update_name>sp_rectangle_menu_item_b6d1e06c5a1b4a8c91a9e7f0f01ee50a</sys_update_name>
+        <sys_updated_by>derek.hodge@slalom.com</sys_updated_by>
+        <sys_updated_on>2026-08-05 21:20:02</sys_updated_on>
+        <table/>
+        <type>page</type>
+        <url/>
+        <url_target/>
+    </sp_rectangle_menu_item>
+    <sys_translated_text action="delete_multiple" query="documentkey=b6d1e06c5a1b4a8c91a9e7f0f01ee50a"/>
+</record_update>

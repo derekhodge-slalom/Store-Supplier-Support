@@ -4,7 +4,7 @@
         <client_script><![CDATA[api.controller = function () {
     var c = this;
     c.caseUrl = function (record) {
-        return '?id=form&table=x_sln_store_suppli_supply_case&sys_id=' + record.sys_id;
+        return '?id=form&table=' + (record.table || 'x_sln_store_suppli_supply_case') + '&sys_id=' + record.sys_id;
     };
     c.taskUrl = function (record) {
         return '?id=form&table=x_sln_store_suppli_supplier_task&sys_id=' + record.sys_id;
@@ -16,20 +16,33 @@
 ]]></client_script>
         <controller_as>c</controller_as>
         <css>.sss-shell { color: $text-color; padding: 24px 0 48px; }
-.sss-hero { background: linear-gradient(125deg, $brand-primary 0%, #002faf 100%); color: $btn-primary-color; border-radius: $border-radius-large; padding: 32px; box-shadow: 0 8px 24px rgba(0,10,37,.2); }
-.sss-brand { color: $brand-warning; font-weight: 800; letter-spacing: .02em; font-size: 16px; text-transform: uppercase; }
-.sss-eyebrow { margin: 10px 0 0; font-weight: 700; }
-.sss-hero h1 { color: $btn-primary-color; margin: 8px 0; font-size: 32px; }
+.sss-shell:focus { outline: none; }
+.sss-breadcrumb { align-items: center; display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 16px; }
+.sss-breadcrumb a { color: $link-color; text-decoration: underline; }
+.sss-hero { background: linear-gradient(125deg, $brand-primary 0%, #002faf 100%); border-radius: 0 $border-radius-large 0 0; box-shadow: 0 8px 24px rgba(0,47,175,.18); color: $btn-primary-color; overflow: hidden; padding: 36px; position: relative; }
+.sss-hero:after { background: $brand-warning; bottom: 0; content: ""; height: 8px; left: 0; position: absolute; width: 88px; }
+.sss-eyebrow { font-size: 14px; font-weight: 700; letter-spacing: .08em; margin: 0; text-transform: uppercase; }
+.sss-hero h1 { color: $btn-primary-color; font-size: 36px; line-height: 1.08; margin: 10px 0 12px; max-width: 720px; }
+.sss-welcome { font-size: 18px; line-height: 1.5; margin: 0; max-width: 760px; }
 .sss-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 24px; }
-.sss-primary, .sss-primary:hover, .sss-primary:focus { background: $btn-primary-color; color: $brand-primary; border: 2px solid $btn-primary-color; font-weight: 700; }
+.sss-actions .btn { border-radius: 999px; padding: 10px 18px; }
+.sss-primary, .sss-primary:hover, .sss-primary:focus { background: $btn-primary-color; color: #002faf; border: 2px solid $btn-primary-color; font-weight: 700; }
 .sss-secondary, .sss-secondary:hover, .sss-secondary:focus { background: transparent; color: $btn-primary-color; border: 2px solid $btn-primary-color; font-weight: 700; }
-.sss-panel { background: $panel-bg; border: 1px solid $gray-lighter; border-top: 5px solid $brand-primary; border-radius: $border-radius-large; padding: 24px; margin-top: 24px; }
-.sss-panel h2 { color: $brand-primary; margin-top: 0; }
+.sss-summary { display: grid; gap: 16px; grid-template-columns: repeat(3, minmax(0, 1fr)); margin-top: 24px; }
+.sss-summary__item { background: $panel-bg; border: 1px solid $gray-lighter; border-left: 6px solid $brand-primary; display: flex; flex-direction: column; min-height: 108px; padding: 20px; }
+.sss-summary__item strong { color: #002faf; font-size: 30px; line-height: 1; }
+.sss-summary__item span { color: $text-color; margin-top: 10px; }
+.sss-panel { background: $panel-bg; border: 1px solid $gray-lighter; border-radius: 0 $border-radius-large 0 0; padding: 24px; margin-top: 24px; }
+.sss-panel h2 { color: #002faf; margin-top: 0; }
+.sss-panel h2:after { background: $brand-warning; content: ""; display: block; height: 5px; margin-top: 10px; width: 48px; }
+.sss-panel .table &gt; thead &gt; tr &gt; th { border-bottom: 2px solid #002faf; color: #000000; }
+.sss-panel .table &gt; tbody &gt; tr:nth-child(even) { background: #f7f7f7; }
 .sss-list { list-style: none; margin: 0; padding: 0; }
 .sss-list li { display: flex; justify-content: space-between; gap: 16px; padding: 12px 0; border-bottom: 1px solid $gray-lighter; }
 .sss-list a, .sss-panel a { color: $link-color; text-decoration: underline; }
 .sss-list a:focus, .sss-panel a:focus, .sss-actions a:focus { outline: 3px solid $brand-warning; outline-offset: 3px; }
-@media (max-width: 767px) { .sss-hero { padding: 24px; } .sss-list li { display: block; } }
+.sss-status { background: #e6eeff; border: 1px solid #89b7fd; border-radius: 999px; color: #00206f; display: inline-block; font-size: 13px; font-weight: 700; padding: 3px 9px; white-space: nowrap; }
+@media (max-width: 767px) { .sss-hero { padding: 26px 22px; } .sss-hero h1 { font-size: 30px; } .sss-welcome { font-size: 16px; } .sss-summary { grid-template-columns: 1fr; } .sss-list li { display: block; } .sss-list .sss-status { margin-top: 8px; } }
 </css>
         <data_table>sp_instance</data_table>
         <demo_data/>
@@ -73,6 +86,7 @@
         if (!cases.canRead()) continue;
         data.cases.push({
             sys_id: cases.getUniqueValue(),
+            table: cases.getValue('sys_class_name'),
             number: cases.getDisplayValue('number'),
             short_description: cases.getDisplayValue('short_description'),
             store: cases.getDisplayValue('store'),
@@ -126,24 +140,33 @@
         <sys_update_name>sp_widget_3489f5632ce048cd9336a322f7227425</sys_update_name>
         <sys_updated_by>derek.hodge@slalom.com</sys_updated_by>
         <sys_updated_on>2026-08-05 01:28:34</sys_updated_on>
-        <template><![CDATA[<div class="sss-shell">
+        <template><![CDATA[<div class="sss-shell" id="sss-main" tabindex="-1">
+  <nav class="sss-breadcrumb" ng-if="data.audience === 'internal'" aria-label="Breadcrumb">
+    <a href="/esc">Employee Center home</a><span aria-hidden="true">/</span><span aria-current="page">Store supplier support</span>
+  </nav>
+
   <header class="sss-hero" aria-labelledby="sss-title">
-    <div class="sss-brand">Fiercely human support</div>
-    <p class="sss-eyebrow">Store Supplier Support</p>
-    <h1 id="sss-title">Welcome, {{data.userName}}</h1>
-    <p>Request supplies, report an issue, and follow every permitted update in one place.</p>
+    <p class="sss-eyebrow">{{data.audience === 'internal' ? 'Employee Center' : 'Supplier portal'}}</p>
+    <h1 id="sss-title">{{data.audience === 'internal' ? 'Store supplies, all in one place' : 'Supplier support, made simple'}}</h1>
+    <p class="sss-welcome">Welcome, {{data.userName}}. Request supplies, report an issue, and follow every permitted update from one clear view.</p>
     <div class="sss-actions" aria-label="Create a case">
-      <a class="btn sss-primary" ng-if="data.requestProducer" ng-href="{{c.producerUrl(data.requestProducer)}}">Submit Store Supply Request</a>
-      <a class="btn sss-secondary" ng-if="data.issueProducer" ng-href="{{c.producerUrl(data.issueProducer)}}">Report Store Supply Issue</a>
+      <a class="btn sss-primary" ng-if="data.requestProducer" ng-href="{{c.producerUrl(data.requestProducer)}}">Submit store supply request</a>
+      <a class="btn sss-secondary" ng-if="data.issueProducer" ng-href="{{c.producerUrl(data.issueProducer)}}">Report store supply issue</a>
     </div>
   </header>
 
-  <section class="sss-panel" aria-labelledby="active-cases-title">
+  <section class="sss-summary" aria-label="Your support summary">
+    <div class="sss-summary__item"><strong>{{data.cases.length}}</strong><span>Active cases</span></div>
+    <div class="sss-summary__item" ng-if="data.audience === 'supplier'"><strong>{{data.tasks.length}}</strong><span>Supplier tasks</span></div>
+    <div class="sss-summary__item"><strong>{{data.knowledge.length}}</strong><span>Suggested articles</span></div>
+  </section>
+
+  <section class="sss-panel" id="sss-active-cases" aria-labelledby="active-cases-title">
     <h2 id="active-cases-title">Active cases</h2>
     <p class="text-muted" ng-if="!data.cases.length">You have no active cases.</p>
     <div class="table-responsive" ng-if="data.cases.length">
-      <table class="table"><thead><tr><th>Case</th><th>Store</th><th>Summary</th><th>State</th><th>Priority</th><th>Updated</th></tr></thead>
-        <tbody><tr ng-repeat="record in data.cases"><td><a ng-href="{{c.caseUrl(record)}}">{{record.number}}</a></td><td>{{record.store}}</td><td>{{record.short_description}}</td><td>{{record.state}}</td><td>{{record.priority}}</td><td>{{record.updated}}</td></tr></tbody>
+      <table class="table"><caption class="sr-only">Your active store supply cases</caption><thead><tr><th scope="col">Case</th><th scope="col">Store</th><th scope="col">Summary</th><th scope="col">State</th><th scope="col">Priority</th><th scope="col">Updated</th></tr></thead>
+        <tbody><tr ng-repeat="record in data.cases"><td><a ng-href="{{c.caseUrl(record)}}">{{record.number}}</a></td><td>{{record.store}}</td><td>{{record.short_description}}</td><td><span class="sss-status">{{record.state}}</span></td><td>{{record.priority}}</td><td>{{record.updated}}</td></tr></tbody>
       </table>
     </div>
   </section>
@@ -151,10 +174,10 @@
   <section class="sss-panel" ng-if="data.audience === 'supplier'" aria-labelledby="supplier-tasks-title">
     <h2 id="supplier-tasks-title">Your released supplier tasks</h2>
     <p class="text-muted" ng-if="!data.tasks.length">No supplier tasks require action.</p>
-    <ul class="sss-list"><li ng-repeat="task in data.tasks"><a ng-href="{{c.taskUrl(task)}}">{{task.number}} — {{task.short_description}}</a><span>{{task.state}}</span></li></ul>
+    <ul class="sss-list"><li ng-repeat="task in data.tasks"><a ng-href="{{c.taskUrl(task)}}">{{task.number}} — {{task.short_description}}</a><span class="sss-status">{{task.state}}</span></li></ul>
   </section>
 
-  <section class="sss-panel" aria-labelledby="knowledge-title">
+  <section class="sss-panel" id="sss-knowledge" aria-labelledby="knowledge-title">
     <h2 id="knowledge-title">Suggested knowledge</h2>
     <p class="text-muted" ng-if="!data.knowledge.length">Knowledge suggestions will appear as relevant articles are published.</p>
     <ul class="sss-list"><li ng-repeat="article in data.knowledge"><a ng-href="?id=kb_article&sys_id={{article.sys_id}}">{{article.number}} — {{article.title}}</a></li></ul>

@@ -17,8 +17,8 @@
         <kb_knowledge_base/>
         <kb_knowledge_page/>
         <login_page/>
-        <logo/>
-        <logo_alt_text/>
+        <logo>e2382cf93475abbb72f80f18614f5bd4</logo>
+        <logo_alt_text>Slalom</logo_alt_text>
         <notfound_page/>
         <quick_start_config/>
         <rtl_enabled>false</rtl_enabled>
@@ -42,9 +42,48 @@
         <sys_updated_by>derek.hodge@slalom.com</sys_updated_by>
         <sys_updated_on>2026-08-05 01:28:34</sys_updated_on>
         <theme display_value="Slalom Store Supplier Support">61cd3467f8d54502b6e5e0eda88be0f8</theme>
-        <title>slalom | Store Supplier Support</title>
+        <title>Store supplier support | Slalom</title>
         <ts_index_group/>
         <url_suffix>store_suppliers</url_suffix>
     </sp_portal>
     <sys_translated_text action="delete_multiple" query="documentkey=9b24c0ef16af4a86bcfa468f532f00d1"/>
+    <sys_attachment action="INSERT_OR_UPDATE">
+        <average_image_color/>
+        <chunk_size_bytes>933336</chunk_size_bytes>
+        <compressed>true</compressed>
+        <content_type>image/svg+xml</content_type>
+        <file_name>logo</file_name>
+        <hash>ef0a4f058f2fa6035c8dd1b76aa6b426923359bd4abf3b68c0e91241145caa10</hash>
+        <image_height/>
+        <image_width/>
+        <size_bytes>1589</size_bytes>
+        <size_compressed>738</size_compressed>
+        <state/>
+        <sys_created_by>derek.hodge@slalom.com</sys_created_by>
+        <sys_created_on>2026-08-05 21:20:23</sys_created_on>
+        <sys_id>e2382cf93475abbb72f80f18614f5bd4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>derek.hodge@slalom.com</sys_updated_by>
+        <sys_updated_on>2026-08-05 21:20:23</sys_updated_on>
+        <table_name>ZZ_YYsp_portal</table_name>
+        <table_sys_id>9b24c0ef16af4a86bcfa468f532f00d1</table_sys_id>
+    </sys_attachment>
+    <sys_attachment_doc action="INSERT_OR_UPDATE">
+        <data>H4sIAOaoc2oAAw==</data>
+        <length>16</length>
+        <position>0</position>
+        <sys_attachment display_value="logo" sys_id="e2382cf93475abbb72f80f18614f5bd4">e2382cf93475abbb72f80f18614f5bd4</sys_attachment>
+        <sys_created_by>derek.hodge@slalom.com</sys_created_by>
+        <sys_created_on>2026-08-05 21:20:23</sys_created_on>
+        <sys_id>f0fe56562445cecaa021cbf9897a9405</sys_id>
+    </sys_attachment_doc>
+    <sys_attachment_doc action="INSERT_OR_UPDATE">
+        <data>vVVNT9tAEL3zKyz3urveD68/qhikRqo4lBNS7sGYxJJJUJI6lF/f98ahqRC0N5Biz87OvHn7ZtbMrp4fh2Tsdvt+u2lSZ2yadJt2e99vVk368/Cgq/Tq8mK2H1d/R7k0Qd5m36Trw+Hpa5Ydj0dzDGa7W2XeWpshPk3Gvjt+2z43qU1s4l2RxIKZu+3QNWn/iIjlrl/qYXnXDUN3f/erSffDctg+6kN/GLr08iJJZmIm/f3bvVtZzTJZSuQqeeiHoUm/fJc/SYf7aXlYJ0i/CbXxKlpTtlZ5kytnapWb8PpbFyYs7DWjFox6SbO3CJWk1aZutTeFDsbrwuQ64uecqWi02lngWo0wpypTT4a3ptpXqE+DEJOrRYayCiUB6NUryGiN+5CkW7hoimtyWZDLS3JTgo3KC+Nb8PEsboGYA0wMMmqtRshE7uwEGspzDfBiMrgxB3qlcmeiKitTCrb6U+UdZWpQ+r+2jPpIW+fZHpebCAk90qz2Di9KKIZIWE8Cnh2wco0YunJN19yhQqF8IA05AkHVGR+CTYuTYpNeEXrFyaAC+9NK1Dq5aOE0wKJB160L8QR0KvCBPrgUQoenY4aUDJAJLSLRArMgM5WjNaUJ6CN3+GpJDAkVB4dUHKU25Qh/sRackSz+oXxACQxAxFYALuWqJtlaDAkmoESPA2aBb9QZXcmET8ODcvUcHwi2tMSjxlOadpbtPU09q7hBBh0tb3EhCxokph2EjNgIkByjxAbBiwhox3dsA++pkEST5faRYOt5Jzj9AuYQHpk+8EIF6R6WJdtAD/pRoV0IbnUNA93QDhcGD5kJThhR8J0AOjoo95+Hx14xyKADNkpRikVOlJPSllOuF8IOjlqL4hhabpADZp6H5RZAf1gVwQtwEXFSw+EgOF8JT2wRx3r8DCEcjAQFx5kHaRm/B4F3KyBkkvck/Cxb4d8Av+uXF78Bls+1mjUGAAA=</data>
+        <length>972</length>
+        <position>1</position>
+        <sys_attachment display_value="logo" sys_id="e2382cf93475abbb72f80f18614f5bd4">e2382cf93475abbb72f80f18614f5bd4</sys_attachment>
+        <sys_created_by>derek.hodge@slalom.com</sys_created_by>
+        <sys_created_on>2026-08-05 21:20:23</sys_created_on>
+        <sys_id>1f108ef43be91c2d61f0d0a19e702d92</sys_id>
+    </sys_attachment_doc>
 </record_update>
