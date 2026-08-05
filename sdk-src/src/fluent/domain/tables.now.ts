@@ -444,6 +444,7 @@ export const x_sln_store_suppli_case_escalation = Table({
         triggered_by: ReferenceColumn({ label: 'Triggered By', referenceTable: 'sys_user', cascadeRule: 'clear' }),
         notification_sent: BooleanColumn({ label: 'Notification Sent', default: false }),
         details: MultiLineTextColumn({ label: 'Details', maxLength: 4000 }),
+        demo_data: BooleanColumn({ label: 'Demo Data', default: false }),
     },
     index: [{ name: 'case_escalation_dedupe', unique: true, element: ['parent_case', 'reason'] }],
 })

@@ -1,0 +1,23 @@
+$brand-primary: #092b41 !default;
+$brand-success: #2f6f55 !default;
+$brand-info: #176c91 !default;
+$brand-warning: #f4be2f !default;
+$brand-danger: #b42318 !default;
+$text-color: #15232d !default;
+$body-bg: #f5f7f8 !default;
+$link-color: #005a8b !default;
+$link-hover-color: #003d60 !default;
+$btn-primary-color: #ffffff !default;
+$btn-primary-bg: $brand-primary !default;
+$btn-primary-border: $brand-primary !default;
+$border-radius-base: 8px !default;
+$border-radius-large: 12px !default;
+
+$navbar-inverse-bg: $brand-primary !default;
+$navbar-inverse-border: darken($brand-primary, 6.5%) !default;
+$navbar-inverse-link-color: $btn-primary-color !default;
+$navbar-inverse-link-hover-color: $btn-primary-color !default;
+$navbar-inverse-link-active-color: $btn-primary-color !default;
+$navbar-inverse-brand-color: $btn-primary-color !default;
+$navbar-inverse-toggle-icon-bar-bg: $btn-primary-color !default;
+$navbar-inverse-toggle-border-color: darken($brand-primary, 10%) !default;

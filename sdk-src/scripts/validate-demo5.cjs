@@ -76,9 +76,20 @@ async function main() {
     await check('Application properties', 'sys_properties', 'nameSTARTSWITHx_sln_store_suppli.', 6)
     await check('Business schedule spans', 'cmn_schedule_span', 'schedule=a1000000000000000000000000000002', 5)
     await check('CSM Case Types capability table', 'sys_db_object', 'name=sn_case_type', 1)
-    await check('Supplier Service Portal', 'sp_portal', 'url_suffix=store_suppliers', 1)
+    await check('Supplier Service Portal', 'sp_portal', 'url_suffix=store_suppliers^theme.name=Slalom Store Supplier Support', 1)
     await check('Internal and supplier portal pages', 'sp_page', 'idINstore-supply-internal,store-supply-supplier', 2)
-    await check('Configurable Workspace', 'sys_ux_page_registry', 'title=Store Supplier Support', 1)
+    await check('Slalom portal header and footer', 'sp_header_footer', 'nameINSlalom Store Supplier Support Header,Slalom Store Supplier Support Footer', 2)
+    await check('Configurable Workspace', 'sys_ux_page_registry', 'sys_id=f1cb3bb464254d179a0c2c3060ace9df^path=store-supplier-support^titleLIKEslalom', 1)
+    await check('Scoped Slalom Workspace theme', 'sys_ux_app', 'sys_id=b6d1e06c5a1b4a8c91a9e7f0f01ee502^theme=b6d1e06c5a1b4a8c91a9e7f0f01ee501', 1)
+    await check('Workspace Request and Issue forms', 'sys_ui_form', 'nameINx_sln_store_suppli_supply_request,x_sln_store_suppli_supply_issue^view=99b090d987620f907c2dfdd5dabb358a', 2)
+    await check('Store Supplier Support application menu', 'sys_app_application', 'title=Store Supplier Support^active=true', 1)
+    const launcherRecords = await check('Workspace and portal launchers in application menu', 'sys_app_module', 'application=9adffcf938f44e9ea20887a6ff1a08c4^link_type=DIRECT^orderIN20,30,40', 3, 'sys_id,query')
+    results.push({
+        label: 'Workspace and portal launcher targets',
+        ok: launcherRecords.length === 3 && launcherRecords.every((record) => Boolean(record.query)),
+        actual: launcherRecords.filter((record) => Boolean(record.query)).length,
+        expected: 3,
+    })
     await check('Automated Test Framework tests', 'sys_atf_test', 'nameSTARTSWITHSSS -', 6)
     await check('Automated Test Framework regression suite', 'sys_atf_test_suite', 'name=SSS - Full Regression Suite^active=true', 1)
     await check('Workspace dashboard', 'par_dashboard', 'name=Store Supplier Support Operations', 1)
@@ -103,6 +114,11 @@ async function main() {
     await check('Filtered Store Supply application modules', 'sys_app_module', 'titleINStore Supply Models,Store Supply Model Categories,Store Supply Inventory^nameINx_sln_store_suppli_store_supply_model,cmdb_model_category,alm_consumable', 3)
     await check('Demo store-supplier relationships', 'x_sln_store_suppli_store_supplier', 'demo_data=true', 24)
     await check('Demo supply-supplier mappings', 'x_sln_store_suppli_supply_supplier', 'demo_data=true^active=true', 24)
+    await check('Demo Store Supply Requests', 'x_sln_store_suppli_supply_request', 'demo_data=true', 6)
+    await check('Demo Store Supply Issues', 'x_sln_store_suppli_supply_issue', 'demo_data=true', 6)
+    await check('Demo case supply lines', 'x_sln_store_suppli_supply_line', 'demo_data=true^parent_case.demo_data=true', 12)
+    await check('Demo case escalations', 'x_sln_store_suppli_case_escalation', 'demo_data=true', 4)
+    await check('All demo escalation reasons', 'x_sln_store_suppli_case_escalation', 'demo_data=true^reasonINmanual,stale_update,resolution_sla,unresolved_five_days', 4)
 
     await check('Old Incident business rule deleted', 'sys_script', 'sys_id=cf361fda6b5c4524864125f1b534b589', 0)
     await check('Old Incident client script deleted', 'sys_script_client', 'sys_id=29c6decf27be437f8c3656f235ac84e9', 0)

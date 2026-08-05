@@ -5,33 +5,91 @@ import { internalNavigationRoles } from './security.now'
 Form({
     table: 'x_sln_store_suppli_supply_request', view: default_view, roles: internalNavigationRoles,
     sections: [
-        { caption: 'Request', content: [{
+        { caption: 'Request Intake', content: [{
             layout: 'two-column',
-            leftElements: [{ type: 'table_field', field: 'number' }, { type: 'table_field', field: 'store' }, { type: 'table_field', field: 'requested_by' }, { type: 'table_field', field: 'short_description' }, { type: 'table_field', field: 'category' }, { type: 'table_field', field: 'subtype' }, { type: 'table_field', field: 'needed_by' }],
-            rightElements: [{ type: 'table_field', field: 'supply_state' }, { type: 'table_field', field: 'hold_reason' }, { type: 'table_field', field: 'approval_status' }, { type: 'table_field', field: 'priority' }, { type: 'table_field', field: 'assignment_group' }, { type: 'table_field', field: 'assigned_to' }, { type: 'table_field', field: 'originating_supplier' }],
-        }, { layout: 'one-column', elements: [{ type: 'table_field', field: 'description' }, { type: 'table_field', field: 'business_justification' }, { type: 'formatter', formatterRef: 'Activities_Filtered' }] }] },
-        { caption: 'Resolution and Escalation', content: [{
+            leftElements: [{ type: 'table_field', field: 'number' }, { type: 'table_field', field: 'short_description' }, { type: 'table_field', field: 'store' }, { type: 'table_field', field: 'requested_by' }, { type: 'table_field', field: 'originating_supplier' }],
+            rightElements: [{ type: 'table_field', field: 'intake_channel' }, { type: 'table_field', field: 'category' }, { type: 'table_field', field: 'subtype' }, { type: 'table_field', field: 'needed_by' }, { type: 'table_field', field: 'priority' }],
+        }, { layout: 'one-column', elements: [{ type: 'table_field', field: 'description' }, { type: 'table_field', field: 'business_justification' }] }] },
+        { caption: 'Assignment and Progress', content: [{
+            layout: 'two-column',
+            leftElements: [{ type: 'table_field', field: 'supply_state' }, { type: 'table_field', field: 'hold_reason' }, { type: 'table_field', field: 'approval_status' }, { type: 'table_field', field: 'prior_active_state' }],
+            rightElements: [{ type: 'table_field', field: 'assignment_group' }, { type: 'table_field', field: 'assigned_to' }, { type: 'table_field', field: 'first_response_at' }, { type: 'table_field', field: 'last_customer_update' }],
+        }] },
+        { caption: 'Activity', content: [{ layout: 'one-column', elements: [{ type: 'formatter', formatterRef: 'Activities_Filtered' }] }] },
+        { caption: 'Resolution, Escalation, and Feedback', content: [{
             layout: 'two-column',
             leftElements: [{ type: 'table_field', field: 'resolution_code' }, { type: 'table_field', field: 'resolution_notes' }, { type: 'table_field', field: 'knowledge_recommended' }, { type: 'table_field', field: 'service_rating' }, { type: 'table_field', field: 'service_feedback' }],
-            rightElements: [{ type: 'table_field', field: 'escalated' }, { type: 'table_field', field: 'escalation_reasons' }, { type: 'table_field', field: 'first_response_at' }, { type: 'table_field', field: 'last_customer_update' }, { type: 'table_field', field: 'reopen_count' }],
+            rightElements: [{ type: 'table_field', field: 'escalated' }, { type: 'table_field', field: 'escalation_reasons' }, { type: 'table_field', field: 'reopen_count' }, { type: 'table_field', field: 'reopened_at' }],
         }] },
     ],
 })
+
+Form({
+    table: 'x_sln_store_suppli_supply_request', view: 'workspace-3f8cebee4f134dc0951c77b67b418e63', roles: internalNavigationRoles,
+    sections: [
+        { caption: 'Request Intake', content: [{
+            layout: 'two-column',
+            leftElements: [{ type: 'table_field', field: 'number' }, { type: 'table_field', field: 'short_description' }, { type: 'table_field', field: 'store' }, { type: 'table_field', field: 'requested_by' }, { type: 'table_field', field: 'originating_supplier' }],
+            rightElements: [{ type: 'table_field', field: 'intake_channel' }, { type: 'table_field', field: 'category' }, { type: 'table_field', field: 'subtype' }, { type: 'table_field', field: 'needed_by' }, { type: 'table_field', field: 'priority' }],
+        }, { layout: 'one-column', elements: [{ type: 'table_field', field: 'description' }, { type: 'table_field', field: 'business_justification' }] }] },
+        { caption: 'Assignment and Progress', content: [{
+            layout: 'two-column',
+            leftElements: [{ type: 'table_field', field: 'supply_state' }, { type: 'table_field', field: 'hold_reason' }, { type: 'table_field', field: 'approval_status' }, { type: 'table_field', field: 'prior_active_state' }],
+            rightElements: [{ type: 'table_field', field: 'assignment_group' }, { type: 'table_field', field: 'assigned_to' }, { type: 'table_field', field: 'first_response_at' }, { type: 'table_field', field: 'last_customer_update' }],
+        }] },
+        { caption: 'Activity', content: [{ layout: 'one-column', elements: [{ type: 'formatter', formatterRef: 'Activities_Filtered' }] }] },
+        { caption: 'Resolution, Escalation, and Feedback', content: [{
+            layout: 'two-column',
+            leftElements: [{ type: 'table_field', field: 'resolution_code' }, { type: 'table_field', field: 'resolution_notes' }, { type: 'table_field', field: 'knowledge_recommended' }, { type: 'table_field', field: 'service_rating' }, { type: 'table_field', field: 'service_feedback' }],
+            rightElements: [{ type: 'table_field', field: 'escalated' }, { type: 'table_field', field: 'escalation_reasons' }, { type: 'table_field', field: 'reopen_count' }, { type: 'table_field', field: 'reopened_at' }],
+        }] },
+    ],
+})
+
 Form({
     table: 'x_sln_store_suppli_supply_issue', view: default_view, roles: internalNavigationRoles,
     sections: [
-        { caption: 'Issue', content: [{
+        { caption: 'Issue Intake', content: [{
             layout: 'two-column',
-            leftElements: [{ type: 'table_field', field: 'number' }, { type: 'table_field', field: 'store' }, { type: 'table_field', field: 'requested_by' }, { type: 'table_field', field: 'short_description' }, { type: 'table_field', field: 'category' }, { type: 'table_field', field: 'subtype' }, { type: 'table_field', field: 'detected_at' }],
-            rightElements: [{ type: 'table_field', field: 'supply_state' }, { type: 'table_field', field: 'hold_reason' }, { type: 'table_field', field: 'priority' }, { type: 'table_field', field: 'assignment_group' }, { type: 'table_field', field: 'assigned_to' }, { type: 'table_field', field: 'originating_supplier' }, { type: 'table_field', field: 'escalated' }],
-        }, { layout: 'one-column', elements: [{ type: 'table_field', field: 'description' }, { type: 'table_field', field: 'business_impact' }, { type: 'formatter', formatterRef: 'Activities_Filtered' }] }] },
-        { caption: 'Resolution', content: [{
+            leftElements: [{ type: 'table_field', field: 'number' }, { type: 'table_field', field: 'short_description' }, { type: 'table_field', field: 'store' }, { type: 'table_field', field: 'requested_by' }, { type: 'table_field', field: 'originating_supplier' }],
+            rightElements: [{ type: 'table_field', field: 'intake_channel' }, { type: 'table_field', field: 'category' }, { type: 'table_field', field: 'subtype' }, { type: 'table_field', field: 'detected_at' }, { type: 'table_field', field: 'priority' }],
+        }, { layout: 'one-column', elements: [{ type: 'table_field', field: 'description' }, { type: 'table_field', field: 'business_impact' }] }] },
+        { caption: 'Assignment and Progress', content: [{
+            layout: 'two-column',
+            leftElements: [{ type: 'table_field', field: 'supply_state' }, { type: 'table_field', field: 'hold_reason' }, { type: 'table_field', field: 'approval_status' }, { type: 'table_field', field: 'prior_active_state' }],
+            rightElements: [{ type: 'table_field', field: 'assignment_group' }, { type: 'table_field', field: 'assigned_to' }, { type: 'table_field', field: 'first_response_at' }, { type: 'table_field', field: 'last_customer_update' }],
+        }] },
+        { caption: 'Activity', content: [{ layout: 'one-column', elements: [{ type: 'formatter', formatterRef: 'Activities_Filtered' }] }] },
+        { caption: 'Resolution, Escalation, and Feedback', content: [{
             layout: 'two-column',
             leftElements: [{ type: 'table_field', field: 'resolution_code' }, { type: 'table_field', field: 'resolution_notes' }, { type: 'table_field', field: 'knowledge_recommended' }, { type: 'table_field', field: 'service_rating' }, { type: 'table_field', field: 'service_feedback' }],
-            rightElements: [{ type: 'table_field', field: 'escalation_reasons' }, { type: 'table_field', field: 'first_response_at' }, { type: 'table_field', field: 'last_customer_update' }, { type: 'table_field', field: 'reopen_count' }],
+            rightElements: [{ type: 'table_field', field: 'escalated' }, { type: 'table_field', field: 'escalation_reasons' }, { type: 'table_field', field: 'reopen_count' }, { type: 'table_field', field: 'reopened_at' }],
         }] },
     ],
 })
+
+Form({
+    table: 'x_sln_store_suppli_supply_issue', view: 'workspace-3f8cebee4f134dc0951c77b67b418e63', roles: internalNavigationRoles,
+    sections: [
+        { caption: 'Issue Intake', content: [{
+            layout: 'two-column',
+            leftElements: [{ type: 'table_field', field: 'number' }, { type: 'table_field', field: 'short_description' }, { type: 'table_field', field: 'store' }, { type: 'table_field', field: 'requested_by' }, { type: 'table_field', field: 'originating_supplier' }],
+            rightElements: [{ type: 'table_field', field: 'intake_channel' }, { type: 'table_field', field: 'category' }, { type: 'table_field', field: 'subtype' }, { type: 'table_field', field: 'detected_at' }, { type: 'table_field', field: 'priority' }],
+        }, { layout: 'one-column', elements: [{ type: 'table_field', field: 'description' }, { type: 'table_field', field: 'business_impact' }] }] },
+        { caption: 'Assignment and Progress', content: [{
+            layout: 'two-column',
+            leftElements: [{ type: 'table_field', field: 'supply_state' }, { type: 'table_field', field: 'hold_reason' }, { type: 'table_field', field: 'approval_status' }, { type: 'table_field', field: 'prior_active_state' }],
+            rightElements: [{ type: 'table_field', field: 'assignment_group' }, { type: 'table_field', field: 'assigned_to' }, { type: 'table_field', field: 'first_response_at' }, { type: 'table_field', field: 'last_customer_update' }],
+        }] },
+        { caption: 'Activity', content: [{ layout: 'one-column', elements: [{ type: 'formatter', formatterRef: 'Activities_Filtered' }] }] },
+        { caption: 'Resolution, Escalation, and Feedback', content: [{
+            layout: 'two-column',
+            leftElements: [{ type: 'table_field', field: 'resolution_code' }, { type: 'table_field', field: 'resolution_notes' }, { type: 'table_field', field: 'knowledge_recommended' }, { type: 'table_field', field: 'service_rating' }, { type: 'table_field', field: 'service_feedback' }],
+            rightElements: [{ type: 'table_field', field: 'escalated' }, { type: 'table_field', field: 'escalation_reasons' }, { type: 'table_field', field: 'reopen_count' }, { type: 'table_field', field: 'reopened_at' }],
+        }] },
+    ],
+})
+
 Form({
     table: 'x_sln_store_suppli_store', view: default_view, roles: internalNavigationRoles,
     sections: [{ caption: 'Store', content: [{
@@ -70,6 +128,23 @@ Form({
         layout: 'two-column',
         leftElements: [{ type: 'table_field', field: 'supply_line' }, { type: 'table_field', field: 'parent_case' }, { type: 'table_field', field: 'store' }, { type: 'table_field', field: 'stockroom' }],
         rightElements: [{ type: 'table_field', field: 'supply_model' }, { type: 'table_field', field: 'quantity' }, { type: 'table_field', field: 'received_by' }, { type: 'table_field', field: 'received_on' }, { type: 'table_field', field: 'inventory_applied' }],
+    }] }],
+})
+
+Form({
+    table: 'x_sln_store_suppli_case_escalation', view: default_view, roles: internalNavigationRoles,
+    sections: [{ caption: 'Escalation', content: [{
+        layout: 'two-column',
+        leftElements: [{ type: 'table_field', field: 'parent_case' }, { type: 'table_field', field: 'reason' }, { type: 'table_field', field: 'details' }],
+        rightElements: [{ type: 'table_field', field: 'triggered_on' }, { type: 'table_field', field: 'triggered_by' }, { type: 'table_field', field: 'notification_sent' }],
+    }] }],
+})
+Form({
+    table: 'x_sln_store_suppli_case_escalation', view: 'workspace-3f8cebee4f134dc0951c77b67b418e63', roles: internalNavigationRoles,
+    sections: [{ caption: 'Escalation', content: [{
+        layout: 'two-column',
+        leftElements: [{ type: 'table_field', field: 'parent_case' }, { type: 'table_field', field: 'reason' }, { type: 'table_field', field: 'details' }],
+        rightElements: [{ type: 'table_field', field: 'triggered_on' }, { type: 'table_field', field: 'triggered_by' }, { type: 'table_field', field: 'notification_sent' }],
     }] }],
 })
 

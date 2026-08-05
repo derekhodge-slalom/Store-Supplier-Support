@@ -89,8 +89,21 @@ export const storeSupplyWorkspaceListConfig = UxListMenuConfig({
 })
 
 export const storeSupplyWorkspace = Workspace({
-    $id: Now.ID['store_supply_workspace'], title: 'Store Supplier Support', path: 'store-supplier-support', landingPath: 'home',
+    $id: Now.ID['store_supply_workspace'], title: 'slalom | Store Supplier Support', path: 'store-supplier-support', landingPath: 'home',
     active: true, order: 100, listConfig: storeSupplyWorkspaceListConfig,
+    defaultRecordOverrides: {
+        sys_ux_page_registry_f1cb3bb464254d179a0c2c3060ace9df: {
+            admin_panel: '3f8cebee4f134dc0951c77b67b418e63',
+            admin_panel_table: 'sys_ux_app_config',
+            root_macroponent: 'c276387cc331101080d6d3658940ddd2',
+            parent_app: 'b6d1e06c5a1b4a8c91a9e7f0f01ee502',
+            title: 'slalom | Store Supplier Support',
+            path: 'store-supplier-support',
+            active: true,
+            page: '',
+            auth_routes: '',
+        },
+    },
     tables: [
         'x_sln_store_suppli_supply_case', 'x_sln_store_suppli_supply_request', 'x_sln_store_suppli_supply_issue',
         'x_sln_store_suppli_supplier_task', 'x_sln_store_suppli_supply_line', 'x_sln_store_suppli_supply_receipt',

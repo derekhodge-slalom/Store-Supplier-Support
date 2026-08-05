@@ -1,0 +1,53 @@
+.sss-navbar {
+  background: $brand-primary;
+  border-bottom: 4px solid $brand-warning;
+  color: $btn-primary-color;
+  min-height: 72px;
+}
+
+.sss-navbar__inner,
+.sss-navbar__brand {
+  align-items: center;
+  display: flex;
+}
+
+.sss-navbar__inner {
+  justify-content: space-between;
+  min-height: 72px;
+}
+
+.sss-navbar__brand,
+.sss-navbar__brand:hover,
+.sss-navbar__brand:focus {
+  color: $btn-primary-color;
+  text-decoration: none;
+}
+
+.sss-navbar__brand:focus {
+  outline: 3px solid $brand-warning;
+  outline-offset: 4px;
+}
+
+.sss-navbar__wordmark {
+  font-size: 26px;
+  font-weight: 800;
+  letter-spacing: -.04em;
+  line-height: 1;
+}
+
+.sss-navbar__divider {
+  background: $brand-warning;
+  height: 30px;
+  margin: 0 16px;
+  width: 3px;
+}
+
+.sss-navbar__product,
+.sss-navbar__audience {
+  font-weight: 700;
+}
+
+@media (max-width: 767px) {
+  .sss-navbar__audience { display: none; }
+  .sss-navbar__product { font-size: 13px; }
+}

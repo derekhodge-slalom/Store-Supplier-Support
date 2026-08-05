@@ -123,6 +123,18 @@ declare global {
                         table: 'sys_atf_test_suite_test'
                         id: '72fbf1e09c7b4893abaf9644c7667ab7'
                     }
+                    b6d1e06c5a1b4a8c91a9e7f0f01ee501: {
+                        table: 'sys_ux_theme'
+                        id: 'b6d1e06c5a1b4a8c91a9e7f0f01ee501'
+                    }
+                    b6d1e06c5a1b4a8c91a9e7f0f01ee502: {
+                        table: 'sys_ux_app'
+                        id: 'b6d1e06c5a1b4a8c91a9e7f0f01ee502'
+                    }
+                    b6d1e06c5a1b4a8c91a9e7f0f01ee503: {
+                        table: 'sys_ux_app_property'
+                        id: 'b6d1e06c5a1b4a8c91a9e7f0f01ee503'
+                    }
                     bom_json: {
                         table: 'sys_module'
                         id: '56d0c2384d184db889427bf1b7206ddb'
@@ -343,6 +355,22 @@ declare global {
                     demo_dm_member_625: {
                         table: 'x_sln_store_suppli_store_member'
                         id: 'e293489829cd40438680691b2b4e1c07'
+                    }
+                    demo_escalation_five_days: {
+                        table: 'x_sln_store_suppli_case_escalation'
+                        id: 'b91adb8d66784fb38aceb832db412d8e'
+                    }
+                    demo_escalation_manual: {
+                        table: 'x_sln_store_suppli_case_escalation'
+                        id: 'f76046a593a8421f884ce6f3b843d77a'
+                    }
+                    demo_escalation_resolution_sla: {
+                        table: 'x_sln_store_suppli_case_escalation'
+                        id: 'eb91c8d50a9248f6b88637b3cf440518'
+                    }
+                    demo_escalation_stale_update: {
+                        table: 'x_sln_store_suppli_case_escalation'
+                        id: '3a01a39d79c1464480bb722a097bb725'
                     }
                     demo_espresso_model: {
                         table: 'x_sln_store_suppli_store_supply_model'
@@ -589,9 +617,81 @@ declare global {
                         table: 'alm_consumable'
                         id: 'fdd55f726e984d5e92b45135267ccfb0'
                     }
+                    demo_issue_damaged_sanitizer: {
+                        table: 'x_sln_store_suppli_supply_issue'
+                        id: '0d7fabc264c6443b8c0c0c436fd1e480'
+                    }
+                    demo_issue_late_hot_cups: {
+                        table: 'x_sln_store_suppli_supply_issue'
+                        id: 'fd06f72cf3f44c56b10004fc273254ac'
+                    }
+                    demo_issue_oat_outage: {
+                        table: 'x_sln_store_suppli_supply_issue'
+                        id: '40d285fdef284f89991d766be3e29775'
+                    }
+                    demo_issue_partial_labels: {
+                        table: 'x_sln_store_suppli_supply_issue'
+                        id: '1c8dc7b57cb74c26b8aa2aaacbc9db48'
+                    }
+                    demo_issue_sleeves_closed: {
+                        table: 'x_sln_store_suppli_supply_issue'
+                        id: 'a614eb5993a04c338cd50e88f73c4c34'
+                    }
+                    demo_issue_wrong_decaf_closed: {
+                        table: 'x_sln_store_suppli_supply_issue'
+                        id: 'b56b3db596534ee1bf3d4ab83da197d5'
+                    }
                     demo_label_model: {
                         table: 'x_sln_store_suppli_store_supply_model'
                         id: '5b7d9c032c524312aa20fe0e6fb1f7de'
+                    }
+                    demo_line_issue_damaged_sanitizer: {
+                        table: 'x_sln_store_suppli_supply_line'
+                        id: '81fe5786c4884ea180b615115d621b72'
+                    }
+                    demo_line_issue_late_hot_cups: {
+                        table: 'x_sln_store_suppli_supply_line'
+                        id: '75f7e17d5edc4111b40d10340fbb1777'
+                    }
+                    demo_line_issue_oat_outage: {
+                        table: 'x_sln_store_suppli_supply_line'
+                        id: '343ba9c60f3a479185b90c9eb4f2a626'
+                    }
+                    demo_line_issue_partial_labels: {
+                        table: 'x_sln_store_suppli_supply_line'
+                        id: '1982f51f87b141b48623ce19e778433e'
+                    }
+                    demo_line_issue_sleeves_closed: {
+                        table: 'x_sln_store_suppli_supply_line'
+                        id: 'fedff2be000d4790b2e515fb1552157a'
+                    }
+                    demo_line_issue_wrong_decaf_closed: {
+                        table: 'x_sln_store_suppli_supply_line'
+                        id: 'a315b87f4ab84fc1a5d80f93d3e901cb'
+                    }
+                    demo_line_request_carrier_cancelled: {
+                        table: 'x_sln_store_suppli_supply_line'
+                        id: '59ffb72fa867455f94391f69becf72d4'
+                    }
+                    demo_line_request_labels: {
+                        table: 'x_sln_store_suppli_supply_line'
+                        id: '8af92a13175e47dda73f1067e31e2504'
+                    }
+                    demo_line_request_promotion_cups: {
+                        table: 'x_sln_store_suppli_supply_line'
+                        id: '2dd15ff6e84f46328ff4a9dbdb25ac68'
+                    }
+                    demo_line_request_receipt_paper_closed: {
+                        table: 'x_sln_store_suppli_supply_line'
+                        id: '7b2c8422186a4aea99425dedbecc8518'
+                    }
+                    demo_line_request_reserve_espresso: {
+                        table: 'x_sln_store_suppli_supply_line'
+                        id: 'b10b2c930bdf4f69afc3de6f5b696453'
+                    }
+                    demo_line_request_urgent_cups: {
+                        table: 'x_sln_store_suppli_supply_line'
+                        id: '24973cc242d14327acf67018d081a020'
                     }
                     demo_napkin_model: {
                         table: 'x_sln_store_suppli_store_supply_model'
@@ -613,6 +713,30 @@ declare global {
                         table: 'cmdb_consumable_product_model'
                         id: '824953bc0dd347cd97fb24655814c003'
                         deleted: true
+                    }
+                    demo_request_carrier_cancelled: {
+                        table: 'x_sln_store_suppli_supply_request'
+                        id: '48a5c08ab2774d69b6b72f2ef6ab5e76'
+                    }
+                    demo_request_labels: {
+                        table: 'x_sln_store_suppli_supply_request'
+                        id: '756697a6d04f428e931075c43b89c467'
+                    }
+                    demo_request_promotion_cups: {
+                        table: 'x_sln_store_suppli_supply_request'
+                        id: 'c8bdd0da65b143418ddc5717d884aa5e'
+                    }
+                    demo_request_receipt_paper_closed: {
+                        table: 'x_sln_store_suppli_supply_request'
+                        id: 'ae20de7cf8774dac9936ad776eedf723'
+                    }
+                    demo_request_reserve_espresso: {
+                        table: 'x_sln_store_suppli_supply_request'
+                        id: 'a594f363db374eb78c6aabeb1a31bec4'
+                    }
+                    demo_request_urgent_cups: {
+                        table: 'x_sln_store_suppli_supply_request'
+                        id: '221ae4e35762431c88d61bb2312816b0'
                     }
                     demo_role_associate: {
                         table: 'sys_user_has_role'
@@ -1062,6 +1186,10 @@ declare global {
                         table: 'sys_security_acl'
                         id: '30888dd43ac94366be9166a3f0bd83c8'
                     }
+                    f1cb3bb464254d179a0c2c3060ace9df: {
+                        table: 'sys_ux_page_registry'
+                        id: 'f1cb3bb464254d179a0c2c3060ace9df'
+                    }
                     friday_schedule_span: {
                         table: 'cmn_schedule_span'
                         id: 'f79f7b6b5c624462b45c8ee63c9c7c35'
@@ -1081,6 +1209,14 @@ declare global {
                     module_escalated_cases: {
                         table: 'sys_app_module'
                         id: 'b1a685111fa0498dbdaa1a80ed678212'
+                    }
+                    module_experiences_separator: {
+                        table: 'sys_app_module'
+                        id: '021e91eac7f34d25a11588c19ca6852b'
+                    }
+                    module_internal_portal: {
+                        table: 'sys_app_module'
+                        id: 'abd4a61ec39544fd843564ac6d44c015'
                     }
                     module_issues: {
                         table: 'sys_app_module'
@@ -1110,6 +1246,10 @@ declare global {
                         table: 'sys_app_module'
                         id: '4086a98a007f476f94796f7a60cbb05c'
                     }
+                    module_supplier_portal: {
+                        table: 'sys_app_module'
+                        id: 'd7f58d7656ae46759ffa6d1b6244d2d9'
+                    }
                     module_supplier_tasks: {
                         table: 'sys_app_module'
                         id: 'e23920c0efb349a89555e8950311cb56'
@@ -1121,6 +1261,10 @@ declare global {
                     module_survey_ledger: {
                         table: 'sys_app_module'
                         id: '91b01fa9ae114c9c9086840b32b74408'
+                    }
+                    module_workspace: {
+                        table: 'sys_app_module'
+                        id: 'cc92356d666d4b67ae5fbc5325845ea8'
                     }
                     monday_schedule_span: {
                         table: 'cmn_schedule_span'
@@ -1193,6 +1337,18 @@ declare global {
                     sla_schedule_property: {
                         table: 'sys_properties'
                         id: '801e1716117545adb4917ae0bcd5f06b'
+                    }
+                    slalom_store_supply_portal_footer: {
+                        table: 'sp_header_footer'
+                        id: '4cceec31e9444ee4b26320dd0e8abf58'
+                    }
+                    slalom_store_supply_portal_header: {
+                        table: 'sp_header_footer'
+                        id: 'e689b789c26b45398c49b51836bb0093'
+                    }
+                    slalom_store_supply_portal_theme: {
+                        table: 'sp_theme'
+                        id: '61cd3467f8d54502b6e5e0eda88be0f8'
                     }
                     'src_server_portal_store-supply-dashboard_client_js': {
                         table: 'sys_module'
@@ -1691,6 +1847,61 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_element'
+                        id: '014682538c7343769cbcaa0bb5ceb566'
+                        key: {
+                            sys_ui_section: {
+                                id: 'a4c694f594214687bedad3f55cdd6659'
+                                key: {
+                                    name: 'x_sln_store_suppli_supply_request'
+                                    caption: 'Assignment and Progress'
+                                    view: {
+                                        id: 'bf6d088908fc4b2ba4d19d6c5cca9ef7'
+                                        key: {
+                                            name: 'workspace-3f8cebee4f134dc0951c77b67b418e63'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: '.split'
+                            position: '5'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_form_section'
+                        id: '016bebc05d7647349b05eda71c6af334'
+                        key: {
+                            sys_ui_form: {
+                                id: '9cff54fe00c544df8b5c7a77dffe29f6'
+                                key: {
+                                    name: 'x_sln_store_suppli_supply_request'
+                                    view: {
+                                        id: 'Default view'
+                                        key: {
+                                            name: 'NULL'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            sys_ui_section: {
+                                id: '767ea69208df4b83ae56e5eb633793d9'
+                                key: {
+                                    name: 'x_sln_store_suppli_supply_request'
+                                    caption: 'Activity'
+                                    view: {
+                                        id: 'Default view'
+                                        key: {
+                                            name: 'NULL'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                        }
+                    },
+                    {
                         table: 'sys_ui_action_role'
                         id: '018f6606d8f54b24a4ca2ec575b723df'
                         key: {
@@ -1717,6 +1928,28 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_element'
+                        id: '01cdfb775d404d88b856bb49a92ccc84'
+                        key: {
+                            sys_ui_section: {
+                                id: 'b99a7887c6764f31b11a5343386c58ff'
+                                key: {
+                                    name: 'x_sln_store_suppli_supply_request'
+                                    caption: 'Request Intake'
+                                    view: {
+                                        id: 'bf6d088908fc4b2ba4d19d6c5cca9ef7'
+                                        key: {
+                                            name: 'workspace-3f8cebee4f134dc0951c77b67b418e63'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'priority'
+                            position: '11'
+                        }
+                    },
+                    {
                         table: 'sys_choice'
                         id: '023e384c7d2843c5ba93048f58be5684'
                         key: {
@@ -1725,6 +1958,28 @@ declare global {
                             value: 'safety'
                             language: 'en'
                             dependent_value: 'NULL'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '023ff7db252c4a2fa57d531cbb5d5348'
+                        key: {
+                            sys_ui_section: {
+                                id: '7ff72be1a7924aa58fed0f5444391806'
+                                key: {
+                                    name: 'x_sln_store_suppli_supply_request'
+                                    caption: 'Resolution, Escalation, and Feedback'
+                                    view: {
+                                        id: 'bf6d088908fc4b2ba4d19d6c5cca9ef7'
+                                        key: {
+                                            name: 'workspace-3f8cebee4f134dc0951c77b67b418e63'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: '.end_split'
+                            position: '11'
                         }
                     },
                     {
@@ -1743,6 +1998,7 @@ declare global {
                     {
                         table: 'sys_ui_element'
                         id: '02883e23ca1c4599853f13402cac8fc4'
+                        deleted: true
                         key: {
                             sys_ui_section: {
                                 id: 'cb86c4808f8041db952d108fa142a28f'
@@ -1826,6 +2082,28 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_element'
+                        id: '04076c3e2c2348f2ab0f8ce6e38b0d8b'
+                        key: {
+                            sys_ui_section: {
+                                id: '7389b22973ac4946aa720a313f82cf77'
+                                key: {
+                                    name: 'x_sln_store_suppli_supply_request'
+                                    caption: 'Request Intake'
+                                    view: {
+                                        id: 'Default view'
+                                        key: {
+                                            name: 'NULL'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'business_justification'
+                            position: '14'
+                        }
+                    },
+                    {
                         table: 'question_choice'
                         id: '041ff990d96346baac6d74f4307fed3d'
                         key: {
@@ -1842,7 +2120,30 @@ declare global {
                     },
                     {
                         table: 'sys_ui_element'
+                        id: '0448517c363742b59ab816128c40d2af'
+                        key: {
+                            sys_ui_section: {
+                                id: 'cc807804258343239207cec2c2d168ea'
+                                key: {
+                                    name: 'x_sln_store_suppli_supply_issue'
+                                    caption: 'Issue Intake'
+                                    view: {
+                                        id: 'f20f7103a309482ebed5af4c5df2a672'
+                                        key: {
+                                            name: 'workspace-3f8cebee4f134dc0951c77b67b418e63'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'priority'
+                            position: '11'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
                         id: '04698b001e2d4bd8b0a906151fea4c07'
+                        deleted: true
                         key: {
                             sys_ui_section: {
                                 id: '63d323d9af864dbea77c6e720760c49e'
@@ -1887,6 +2188,7 @@ declare global {
                     {
                         table: 'sys_ui_element'
                         id: '0538f202b6d3473eb2dda32f47b409f2'
+                        deleted: true
                         key: {
                             sys_ui_section: {
                                 id: 'cb86c4808f8041db952d108fa142a28f'
@@ -1974,6 +2276,50 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_element'
+                        id: '061328ce7acb40bb89c62d9b635378a5'
+                        key: {
+                            sys_ui_section: {
+                                id: '22baa2c99d7444b69ba365a958f2bacb'
+                                key: {
+                                    name: 'x_sln_store_suppli_supply_request'
+                                    caption: 'Assignment and Progress'
+                                    view: {
+                                        id: 'Default view'
+                                        key: {
+                                            name: 'NULL'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'prior_active_state'
+                            position: '4'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '0674f76072534b7cbe404e87115d5edd'
+                        key: {
+                            sys_ui_section: {
+                                id: '837563ab1dc04b1ab4aee6ba712f5821'
+                                key: {
+                                    name: 'x_sln_store_suppli_supply_issue'
+                                    caption: 'Resolution, Escalation, and Feedback'
+                                    view: {
+                                        id: 'f20f7103a309482ebed5af4c5df2a672'
+                                        key: {
+                                            name: 'workspace-3f8cebee4f134dc0951c77b67b418e63'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'resolution_code'
+                            position: '1'
+                        }
+                    },
+                    {
                         table: 'item_option_new'
                         id: '0694d1151ef94ebd9c32433013b9e2cf'
                         key: {
@@ -2031,6 +2377,7 @@ declare global {
                     {
                         table: 'sys_ui_element'
                         id: '075a4dd9883f4a3898d982bca571afb4'
+                        deleted: true
                         key: {
                             sys_ui_section: {
                                 id: 'e2f39fc3bdde41c2a6ef73c494a369b7'
@@ -2067,6 +2414,7 @@ declare global {
                     {
                         table: 'sys_ui_element'
                         id: '07a2091718774def950da0b642255ce4'
+                        deleted: true
                         key: {
                             sys_ui_section: {
                                 id: '63d323d9af864dbea77c6e720760c49e'
@@ -2117,6 +2465,28 @@ declare global {
                                     name: 'x_sln_store_suppli.supplier_agent'
                                 }
                             }
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '08cde5f417404e02bc9ac2807e60e4f1'
+                        key: {
+                            sys_ui_section: {
+                                id: '61481f8bc2cf4959bcb847235fe1b17e'
+                                key: {
+                                    name: 'x_sln_store_suppli_supply_issue'
+                                    caption: 'Assignment and Progress'
+                                    view: {
+                                        id: 'f20f7103a309482ebed5af4c5df2a672'
+                                        key: {
+                                            name: 'workspace-3f8cebee4f134dc0951c77b67b418e63'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'prior_active_state'
+                            position: '4'
                         }
                     },
                     {
@@ -2218,6 +2588,7 @@ declare global {
                     {
                         table: 'sys_ui_element'
                         id: '0aa1198741f2493382edc61bc66e7474'
+                        deleted: true
                         key: {
                             sys_ui_section: {
                                 id: 'cb86c4808f8041db952d108fa142a28f'
@@ -2250,6 +2621,28 @@ declare global {
                                 }
                             }
                             value: 'seasonal'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '0ab4146af9824b3aa888cd8399e5d8e4'
+                        key: {
+                            sys_ui_section: {
+                                id: 'f17410a8eacf41a89674d527f165a6a9'
+                                key: {
+                                    name: 'x_sln_store_suppli_supply_issue'
+                                    caption: 'Resolution, Escalation, and Feedback'
+                                    view: {
+                                        id: 'Default view'
+                                        key: {
+                                            name: 'NULL'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'service_feedback'
+                            position: '5'
                         }
                     },
                     {
@@ -2339,6 +2732,28 @@ declare global {
                                 }
                             }
                             value: 'quality'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '0be339f9e6734aca8e07de448d2b6c77'
+                        key: {
+                            sys_ui_section: {
+                                id: '61481f8bc2cf4959bcb847235fe1b17e'
+                                key: {
+                                    name: 'x_sln_store_suppli_supply_issue'
+                                    caption: 'Assignment and Progress'
+                                    view: {
+                                        id: 'f20f7103a309482ebed5af4c5df2a672'
+                                        key: {
+                                            name: 'workspace-3f8cebee4f134dc0951c77b67b418e63'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'assigned_to'
+                            position: '7'
                         }
                     },
                     {
@@ -2479,12 +2894,104 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_section'
+                        id: '0f068c26941d4307b3c34ea775ab7177'
+                        key: {
+                            name: 'x_sln_store_suppli_case_escalation'
+                            caption: 'Escalation'
+                            view: {
+                                id: '1e4899deab9041d5b86791304d2da433'
+                                key: {
+                                    name: 'workspace-3f8cebee4f134dc0951c77b67b418e63'
+                                }
+                            }
+                            sys_domain: 'global'
+                        }
+                    },
+                    {
                         table: 'sys_documentation'
                         id: '0f4a6d0bea9f4a4db981cc840f21f966'
                         key: {
                             name: 'x_sln_store_suppli_supply_case'
                             element: 'escalation_reasons'
                             language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '0fa88375b9f44b86a59854d3394039ea'
+                        key: {
+                            sys_ui_section: {
+                                id: 'f17410a8eacf41a89674d527f165a6a9'
+                                key: {
+                                    name: 'x_sln_store_suppli_supply_issue'
+                                    caption: 'Resolution, Escalation, and Feedback'
+                                    view: {
+                                        id: 'Default view'
+                                        key: {
+                                            name: 'NULL'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'reopened_at'
+                            position: '10'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '0fb5881c83e245f7b738f7c6b3f8c09d'
+                        key: {
+                            sys_ui_section: {
+                                id: 'b99a7887c6764f31b11a5343386c58ff'
+                                key: {
+                                    name: 'x_sln_store_suppli_supply_request'
+                                    caption: 'Request Intake'
+                                    view: {
+                                        id: 'bf6d088908fc4b2ba4d19d6c5cca9ef7'
+                                        key: {
+                                            name: 'workspace-3f8cebee4f134dc0951c77b67b418e63'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'subtype'
+                            position: '9'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_form_section'
+                        id: '1036f5b5c3f544aab61f7fa380e545bb'
+                        key: {
+                            sys_ui_form: {
+                                id: '9cff54fe00c544df8b5c7a77dffe29f6'
+                                key: {
+                                    name: 'x_sln_store_suppli_supply_request'
+                                    view: {
+                                        id: 'Default view'
+                                        key: {
+                                            name: 'NULL'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            sys_ui_section: {
+                                id: '22baa2c99d7444b69ba365a958f2bacb'
+                                key: {
+                                    name: 'x_sln_store_suppli_supply_request'
+                                    caption: 'Assignment and Progress'
+                                    view: {
+                                        id: 'Default view'
+                                        key: {
+                                            name: 'NULL'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
                         }
                     },
                     {
@@ -2614,6 +3121,28 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_element'
+                        id: '11b794d1dc6f4b7dbe3701f15bdefc60'
+                        key: {
+                            sys_ui_section: {
+                                id: '0f068c26941d4307b3c34ea775ab7177'
+                                key: {
+                                    name: 'x_sln_store_suppli_case_escalation'
+                                    caption: 'Escalation'
+                                    view: {
+                                        id: '1e4899deab9041d5b86791304d2da433'
+                                        key: {
+                                            name: 'workspace-3f8cebee4f134dc0951c77b67b418e63'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'details'
+                            position: '3'
+                        }
+                    },
+                    {
                         table: 'sys_security_acl_role'
                         id: '11d2831f34c74972bd6bb378d71db3e8'
                         key: {
@@ -2632,6 +3161,28 @@ declare global {
                         key: {
                             name: 'x_sln_store_suppli_supply_case'
                             element: 'reopened_at'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '12320b12270b48d7a96d06f602898bec'
+                        key: {
+                            sys_ui_section: {
+                                id: 'cc807804258343239207cec2c2d168ea'
+                                key: {
+                                    name: 'x_sln_store_suppli_supply_issue'
+                                    caption: 'Issue Intake'
+                                    view: {
+                                        id: 'f20f7103a309482ebed5af4c5df2a672'
+                                        key: {
+                                            name: 'workspace-3f8cebee4f134dc0951c77b67b418e63'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'category'
+                            position: '8'
                         }
                     },
                     {
@@ -2776,6 +3327,28 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_element'
+                        id: '147cf3b4462c42858dbd3f34335db391'
+                        key: {
+                            sys_ui_section: {
+                                id: '22baa2c99d7444b69ba365a958f2bacb'
+                                key: {
+                                    name: 'x_sln_store_suppli_supply_request'
+                                    caption: 'Assignment and Progress'
+                                    view: {
+                                        id: 'Default view'
+                                        key: {
+                                            name: 'NULL'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: '.end_split'
+                            position: '10'
+                        }
+                    },
+                    {
                         table: 'question_choice'
                         id: '148be3e2283f487ba218a4b0f4e96ec0'
                         key: {
@@ -2840,6 +3413,50 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_element'
+                        id: '1570122670784240843ac0e1f08bd08e'
+                        key: {
+                            sys_ui_section: {
+                                id: 'd3e097c5e3634647b498e8b4dfc0df24'
+                                key: {
+                                    name: 'x_sln_store_suppli_supply_issue'
+                                    caption: 'Issue Intake'
+                                    view: {
+                                        id: 'Default view'
+                                        key: {
+                                            name: 'NULL'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: '.split'
+                            position: '6'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '15ab0795e7ba446081aaeac86b014c1f'
+                        key: {
+                            sys_ui_section: {
+                                id: 'cc807804258343239207cec2c2d168ea'
+                                key: {
+                                    name: 'x_sln_store_suppli_supply_issue'
+                                    caption: 'Issue Intake'
+                                    view: {
+                                        id: 'f20f7103a309482ebed5af4c5df2a672'
+                                        key: {
+                                            name: 'workspace-3f8cebee4f134dc0951c77b67b418e63'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'subtype'
+                            position: '9'
+                        }
+                    },
+                    {
                         table: 'sys_choice'
                         id: '164bd6dfb24f4a36aa0bc52d6e05c501'
                         key: {
@@ -2862,6 +3479,7 @@ declare global {
                     {
                         table: 'sys_ui_element'
                         id: '168829ddd932485b9bf4476a9d741031'
+                        deleted: true
                         key: {
                             sys_ui_section: {
                                 id: '38a2834cbe744e2988fedff5e57fbad3'
@@ -2906,6 +3524,28 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_element'
+                        id: '181ce44f2aee4e838be69c29d26026ba'
+                        key: {
+                            sys_ui_section: {
+                                id: '837563ab1dc04b1ab4aee6ba712f5821'
+                                key: {
+                                    name: 'x_sln_store_suppli_supply_issue'
+                                    caption: 'Resolution, Escalation, and Feedback'
+                                    view: {
+                                        id: 'f20f7103a309482ebed5af4c5df2a672'
+                                        key: {
+                                            name: 'workspace-3f8cebee4f134dc0951c77b67b418e63'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: '.split'
+                            position: '6'
+                        }
+                    },
+                    {
                         table: 'm2m_sp_portal_catalog'
                         id: '1868c53448424abeb7eeb7364954b238'
                         key: {
@@ -2947,6 +3587,42 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_form'
+                        id: '190b7f858173470fa4144248260d160b'
+                        key: {
+                            name: 'x_sln_store_suppli_case_escalation'
+                            view: {
+                                id: 'Default view'
+                                key: {
+                                    name: 'NULL'
+                                }
+                            }
+                            sys_domain: 'global'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '19704a3d37564264b197d1b05a90bb93'
+                        key: {
+                            sys_ui_section: {
+                                id: 'f2e160a8d2424d349553af47f4b25956'
+                                key: {
+                                    name: 'x_sln_store_suppli_supply_request'
+                                    caption: 'Resolution, Escalation, and Feedback'
+                                    view: {
+                                        id: 'Default view'
+                                        key: {
+                                            name: 'NULL'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'reopen_count'
+                            position: '9'
+                        }
+                    },
+                    {
                         table: 'sys_documentation'
                         id: '19b6329dcecb47d49c2a3d5a0e0018dc'
                         key: {
@@ -2974,6 +3650,7 @@ declare global {
                     {
                         table: 'sys_ui_element'
                         id: '1a5fe1778b314e91a0e2f3239b50a20f'
+                        deleted: true
                         key: {
                             sys_ui_section: {
                                 id: 'cb86c4808f8041db952d108fa142a28f'
@@ -3000,6 +3677,28 @@ declare global {
                             name: 'x_sln_store_suppli_supply_supplier'
                             element: 'supplier_account'
                             language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '1a9fc34e676f4cf1afcc1eb4b46c4946'
+                        key: {
+                            sys_ui_section: {
+                                id: '7389b22973ac4946aa720a313f82cf77'
+                                key: {
+                                    name: 'x_sln_store_suppli_supply_request'
+                                    caption: 'Request Intake'
+                                    view: {
+                                        id: 'Default view'
+                                        key: {
+                                            name: 'NULL'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'subtype'
+                            position: '9'
                         }
                     },
                     {
@@ -3072,6 +3771,7 @@ declare global {
                     {
                         table: 'sys_ui_element'
                         id: '1acf2d2c10064c03b1c7cf55f4850070'
+                        deleted: true
                         key: {
                             sys_ui_section: {
                                 id: 'cb86c4808f8041db952d108fa142a28f'
@@ -3129,12 +3829,67 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_form_section'
+                        id: '1bfa7be7b3844a81855072797e08a141'
+                        key: {
+                            sys_ui_form: {
+                                id: '9cff54fe00c544df8b5c7a77dffe29f6'
+                                key: {
+                                    name: 'x_sln_store_suppli_supply_request'
+                                    view: {
+                                        id: 'Default view'
+                                        key: {
+                                            name: 'NULL'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            sys_ui_section: {
+                                id: 'f2e160a8d2424d349553af47f4b25956'
+                                key: {
+                                    name: 'x_sln_store_suppli_supply_request'
+                                    caption: 'Resolution, Escalation, and Feedback'
+                                    view: {
+                                        id: 'Default view'
+                                        key: {
+                                            name: 'NULL'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                        }
+                    },
+                    {
                         table: 'sys_documentation'
                         id: '1c8a51686e6248889972bc407c7d2bc6'
                         key: {
                             name: 'x_sln_store_suppli_store_supply_model'
                             element: 'active_for_ordering'
                             language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '1d06f2c892af4f87ac2cadf48513c950'
+                        key: {
+                            sys_ui_section: {
+                                id: 'b99a7887c6764f31b11a5343386c58ff'
+                                key: {
+                                    name: 'x_sln_store_suppli_supply_request'
+                                    caption: 'Request Intake'
+                                    view: {
+                                        id: 'bf6d088908fc4b2ba4d19d6c5cca9ef7'
+                                        key: {
+                                            name: 'workspace-3f8cebee4f134dc0951c77b67b418e63'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'needed_by'
+                            position: '10'
                         }
                     },
                     {
@@ -3234,6 +3989,7 @@ declare global {
                     {
                         table: 'sys_ui_element'
                         id: '1ecb1f130cb645fc890ac0dbd2f2eeb0'
+                        deleted: true
                         key: {
                             sys_ui_section: {
                                 id: '38a2834cbe744e2988fedff5e57fbad3'
@@ -3254,11 +4010,55 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_element'
+                        id: '1f05cb6d6b9b4cadb566337daec9cdc7'
+                        key: {
+                            sys_ui_section: {
+                                id: '0f068c26941d4307b3c34ea775ab7177'
+                                key: {
+                                    name: 'x_sln_store_suppli_case_escalation'
+                                    caption: 'Escalation'
+                                    view: {
+                                        id: '1e4899deab9041d5b86791304d2da433'
+                                        key: {
+                                            name: 'workspace-3f8cebee4f134dc0951c77b67b418e63'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'parent_case'
+                            position: '1'
+                        }
+                    },
+                    {
                         table: 'sys_dictionary'
                         id: '1f4d79439ebd48fea940f1564aa279d7'
                         key: {
                             name: 'x_sln_store_suppli_supply_receipt'
                             element: 'received_by'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '1fe92066362b46b48952d3e17e2085f0'
+                        key: {
+                            sys_ui_section: {
+                                id: '9b62817fe4ae4921a13e1a4542bb7fcb'
+                                key: {
+                                    name: 'x_sln_store_suppli_supply_issue'
+                                    caption: 'Assignment and Progress'
+                                    view: {
+                                        id: 'Default view'
+                                        key: {
+                                            name: 'NULL'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'last_customer_update'
+                            position: '9'
                         }
                     },
                     {
@@ -3270,6 +4070,28 @@ declare global {
                             value: 'other'
                             language: 'en'
                             dependent_value: 'NULL'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '201b32d8a7dc4c59ae1ad9c07a67e968'
+                        key: {
+                            sys_ui_section: {
+                                id: '7389b22973ac4946aa720a313f82cf77'
+                                key: {
+                                    name: 'x_sln_store_suppli_supply_request'
+                                    caption: 'Request Intake'
+                                    view: {
+                                        id: 'Default view'
+                                        key: {
+                                            name: 'NULL'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'number'
+                            position: '1'
                         }
                     },
                     {
@@ -3289,6 +4111,28 @@ declare global {
                         key: {
                             name: 'x_sln_store_suppli_supply_case'
                             element: 'supply_state'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '20bcd13c98e746f99f9e0cbfa6e7eeb5'
+                        key: {
+                            sys_ui_section: {
+                                id: 'f2e160a8d2424d349553af47f4b25956'
+                                key: {
+                                    name: 'x_sln_store_suppli_supply_request'
+                                    caption: 'Resolution, Escalation, and Feedback'
+                                    view: {
+                                        id: 'Default view'
+                                        key: {
+                                            name: 'NULL'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'escalation_reasons'
+                            position: '8'
                         }
                     },
                     {
@@ -3385,6 +4229,50 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_element'
+                        id: '2259d65e810443468b841aba047cc203'
+                        key: {
+                            sys_ui_section: {
+                                id: 'a4c694f594214687bedad3f55cdd6659'
+                                key: {
+                                    name: 'x_sln_store_suppli_supply_request'
+                                    caption: 'Assignment and Progress'
+                                    view: {
+                                        id: 'bf6d088908fc4b2ba4d19d6c5cca9ef7'
+                                        key: {
+                                            name: 'workspace-3f8cebee4f134dc0951c77b67b418e63'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: '.begin_split'
+                            position: '0'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '225e935c54d844d2aee5dbc0f1be5731'
+                        key: {
+                            sys_ui_section: {
+                                id: '22baa2c99d7444b69ba365a958f2bacb'
+                                key: {
+                                    name: 'x_sln_store_suppli_supply_request'
+                                    caption: 'Assignment and Progress'
+                                    view: {
+                                        id: 'Default view'
+                                        key: {
+                                            name: 'NULL'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'assignment_group'
+                            position: '6'
+                        }
+                    },
+                    {
                         table: 'sys_security_acl_role'
                         id: '226244a03dd6489db14ac946aec48fef'
                         key: {
@@ -3404,6 +4292,21 @@ declare global {
                             name: 'x_sln_store_suppli_supply_supplier'
                             element: 'preferred'
                             language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_section'
+                        id: '22baa2c99d7444b69ba365a958f2bacb'
+                        key: {
+                            name: 'x_sln_store_suppli_supply_request'
+                            caption: 'Assignment and Progress'
+                            view: {
+                                id: 'Default view'
+                                key: {
+                                    name: 'NULL'
+                                }
+                            }
+                            sys_domain: 'global'
                         }
                     },
                     {
@@ -3471,6 +4374,113 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_dictionary'
+                        id: '2461e0efdd0243d88fab6d608bf0f2e2'
+                        key: {
+                            name: 'x_sln_store_suppli_case_escalation'
+                            element: 'demo_data'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_form_section'
+                        id: '247cdbca3bd24fb5836d5df34dbf7233'
+                        key: {
+                            sys_ui_form: {
+                                id: '4d65ce9b1685430bae5de88a2b098f3f'
+                                key: {
+                                    name: 'x_sln_store_suppli_supply_request'
+                                    view: {
+                                        id: 'bf6d088908fc4b2ba4d19d6c5cca9ef7'
+                                        key: {
+                                            name: 'workspace-3f8cebee4f134dc0951c77b67b418e63'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            sys_ui_section: {
+                                id: 'a4c694f594214687bedad3f55cdd6659'
+                                key: {
+                                    name: 'x_sln_store_suppli_supply_request'
+                                    caption: 'Assignment and Progress'
+                                    view: {
+                                        id: 'bf6d088908fc4b2ba4d19d6c5cca9ef7'
+                                        key: {
+                                            name: 'workspace-3f8cebee4f134dc0951c77b67b418e63'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '24b94d7fa1e045a1afba8e4b7f89d81d'
+                        key: {
+                            sys_ui_section: {
+                                id: '7389b22973ac4946aa720a313f82cf77'
+                                key: {
+                                    name: 'x_sln_store_suppli_supply_request'
+                                    caption: 'Request Intake'
+                                    view: {
+                                        id: 'Default view'
+                                        key: {
+                                            name: 'NULL'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'originating_supplier'
+                            position: '5'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '24c83a76c47b401d9ea786d98ba348c4'
+                        key: {
+                            sys_ui_section: {
+                                id: '837563ab1dc04b1ab4aee6ba712f5821'
+                                key: {
+                                    name: 'x_sln_store_suppli_supply_issue'
+                                    caption: 'Resolution, Escalation, and Feedback'
+                                    view: {
+                                        id: 'f20f7103a309482ebed5af4c5df2a672'
+                                        key: {
+                                            name: 'workspace-3f8cebee4f134dc0951c77b67b418e63'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'service_feedback'
+                            position: '5'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '24d3edff87504fc3b09b26bd79db5526'
+                        key: {
+                            sys_ui_section: {
+                                id: '22baa2c99d7444b69ba365a958f2bacb'
+                                key: {
+                                    name: 'x_sln_store_suppli_supply_request'
+                                    caption: 'Assignment and Progress'
+                                    view: {
+                                        id: 'Default view'
+                                        key: {
+                                            name: 'NULL'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'last_customer_update'
+                            position: '9'
+                        }
+                    },
+                    {
                         table: 'sys_documentation'
                         id: '252135fbae7b407392cbcc8f32abe078'
                         key: {
@@ -3491,6 +4501,7 @@ declare global {
                     {
                         table: 'sys_ui_element'
                         id: '25686442678346c5a29fda7330aa8b7b'
+                        deleted: true
                         key: {
                             sys_ui_section: {
                                 id: '38a2834cbe744e2988fedff5e57fbad3'
@@ -3544,6 +4555,28 @@ declare global {
                                 }
                             }
                             sys_domain: 'global'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '261fc38214504bebb6daf7168be2429e'
+                        key: {
+                            sys_ui_section: {
+                                id: 'b99a7887c6764f31b11a5343386c58ff'
+                                key: {
+                                    name: 'x_sln_store_suppli_supply_request'
+                                    caption: 'Request Intake'
+                                    view: {
+                                        id: 'bf6d088908fc4b2ba4d19d6c5cca9ef7'
+                                        key: {
+                                            name: 'workspace-3f8cebee4f134dc0951c77b67b418e63'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'number'
+                            position: '1'
                         }
                     },
                     {
@@ -3633,6 +4666,7 @@ declare global {
                     {
                         table: 'sys_ui_element'
                         id: '2898696d99fe4d3eb3b46a2f641ee718'
+                        deleted: true
                         key: {
                             sys_ui_section: {
                                 id: '63d323d9af864dbea77c6e720760c49e'
@@ -3663,6 +4697,28 @@ declare global {
                     },
                     {
                         table: 'sys_ui_element'
+                        id: '2911ad5598dc4be5b61513d7cc911d8a'
+                        key: {
+                            sys_ui_section: {
+                                id: 'ab5bc466949248689e1fd3489f41754d'
+                                key: {
+                                    name: 'x_sln_store_suppli_case_escalation'
+                                    caption: 'Escalation'
+                                    view: {
+                                        id: 'Default view'
+                                        key: {
+                                            name: 'NULL'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'details'
+                            position: '3'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
                         id: '293517cce8534162b605ed5cfe464766'
                         key: {
                             sys_ui_section: {
@@ -3685,7 +4741,30 @@ declare global {
                     },
                     {
                         table: 'sys_ui_element'
+                        id: '293a49697fcf4b759521dd12e9f5654a'
+                        key: {
+                            sys_ui_section: {
+                                id: '9b62817fe4ae4921a13e1a4542bb7fcb'
+                                key: {
+                                    name: 'x_sln_store_suppli_supply_issue'
+                                    caption: 'Assignment and Progress'
+                                    view: {
+                                        id: 'Default view'
+                                        key: {
+                                            name: 'NULL'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: '.split'
+                            position: '5'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
                         id: '2984469af8d4415d85417c100add24a8'
+                        deleted: true
                         key: {
                             sys_ui_section: {
                                 id: 'cb86c4808f8041db952d108fa142a28f'
@@ -3715,6 +4794,28 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_element'
+                        id: '29b2323d30c34fb4837d991c3dbf87c7'
+                        key: {
+                            sys_ui_section: {
+                                id: '7389b22973ac4946aa720a313f82cf77'
+                                key: {
+                                    name: 'x_sln_store_suppli_supply_request'
+                                    caption: 'Request Intake'
+                                    view: {
+                                        id: 'Default view'
+                                        key: {
+                                            name: 'NULL'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'store'
+                            position: '3'
+                        }
+                    },
+                    {
                         table: 'sys_user_role'
                         id: '2a78462bb07243f9ab230def5dc5a52d'
                         key: {
@@ -3727,6 +4828,50 @@ declare global {
                         key: {
                             name: 'x_sln_store_suppli_store_supplier'
                             element: 'store'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '2b5939e435654cf4b0961352329154da'
+                        key: {
+                            sys_ui_section: {
+                                id: 'cc807804258343239207cec2c2d168ea'
+                                key: {
+                                    name: 'x_sln_store_suppli_supply_issue'
+                                    caption: 'Issue Intake'
+                                    view: {
+                                        id: 'f20f7103a309482ebed5af4c5df2a672'
+                                        key: {
+                                            name: 'workspace-3f8cebee4f134dc0951c77b67b418e63'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'number'
+                            position: '1'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '2b5c618061184558b4c4ed2296a5fbfb'
+                        key: {
+                            sys_ui_section: {
+                                id: '61481f8bc2cf4959bcb847235fe1b17e'
+                                key: {
+                                    name: 'x_sln_store_suppli_supply_issue'
+                                    caption: 'Assignment and Progress'
+                                    view: {
+                                        id: 'f20f7103a309482ebed5af4c5df2a672'
+                                        key: {
+                                            name: 'workspace-3f8cebee4f134dc0951c77b67b418e63'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'supply_state'
+                            position: '1'
                         }
                     },
                     {
@@ -3743,6 +4888,28 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_element'
+                        id: '2c451ef99c8b45709fa59cf0d7170596'
+                        key: {
+                            sys_ui_section: {
+                                id: '61481f8bc2cf4959bcb847235fe1b17e'
+                                key: {
+                                    name: 'x_sln_store_suppli_supply_issue'
+                                    caption: 'Assignment and Progress'
+                                    view: {
+                                        id: 'f20f7103a309482ebed5af4c5df2a672'
+                                        key: {
+                                            name: 'workspace-3f8cebee4f134dc0951c77b67b418e63'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'first_response_at'
+                            position: '8'
+                        }
+                    },
+                    {
                         table: 'sys_dictionary'
                         id: '2c9508de629c481695c57dc709ed7e9f'
                         key: {
@@ -3756,6 +4923,28 @@ declare global {
                         key: {
                             sc_cat_item: 'f7a5ffe7fd564a9e897dc65ee96deab7'
                             sc_category: '832e4e5a4ea1441795e6581cdfda3781'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '2d66afde0e4b4865a81b5f298689df23'
+                        key: {
+                            sys_ui_section: {
+                                id: 'd3e097c5e3634647b498e8b4dfc0df24'
+                                key: {
+                                    name: 'x_sln_store_suppli_supply_issue'
+                                    caption: 'Issue Intake'
+                                    view: {
+                                        id: 'Default view'
+                                        key: {
+                                            name: 'NULL'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'business_impact'
+                            position: '14'
                         }
                     },
                     {
@@ -3785,6 +4974,105 @@ declare global {
                             }
                             element: 'active'
                             position: '13'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '2e2cccf4235d47588a5147185860ef34'
+                        key: {
+                            sys_ui_section: {
+                                id: '61481f8bc2cf4959bcb847235fe1b17e'
+                                key: {
+                                    name: 'x_sln_store_suppli_supply_issue'
+                                    caption: 'Assignment and Progress'
+                                    view: {
+                                        id: 'f20f7103a309482ebed5af4c5df2a672'
+                                        key: {
+                                            name: 'workspace-3f8cebee4f134dc0951c77b67b418e63'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: '.begin_split'
+                            position: '0'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '2e370b63f46d4510af90f780cd7499b4'
+                        key: {
+                            sys_ui_section: {
+                                id: 'f17410a8eacf41a89674d527f165a6a9'
+                                key: {
+                                    name: 'x_sln_store_suppli_supply_issue'
+                                    caption: 'Resolution, Escalation, and Feedback'
+                                    view: {
+                                        id: 'Default view'
+                                        key: {
+                                            name: 'NULL'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: '.split'
+                            position: '6'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '2e4a21e51e664eacad644449c3299d23'
+                        key: {
+                            sys_ui_section: {
+                                id: 'd3e097c5e3634647b498e8b4dfc0df24'
+                                key: {
+                                    name: 'x_sln_store_suppli_supply_issue'
+                                    caption: 'Issue Intake'
+                                    view: {
+                                        id: 'Default view'
+                                        key: {
+                                            name: 'NULL'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'number'
+                            position: '1'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_form_section'
+                        id: '2e52d68abfe94b808b4ea370f39b497d'
+                        key: {
+                            sys_ui_form: {
+                                id: '190b7f858173470fa4144248260d160b'
+                                key: {
+                                    name: 'x_sln_store_suppli_case_escalation'
+                                    view: {
+                                        id: 'Default view'
+                                        key: {
+                                            name: 'NULL'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            sys_ui_section: {
+                                id: 'ab5bc466949248689e1fd3489f41754d'
+                                key: {
+                                    name: 'x_sln_store_suppli_case_escalation'
+                                    caption: 'Escalation'
+                                    view: {
+                                        id: 'Default view'
+                                        key: {
+                                            name: 'NULL'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
                         }
                     },
                     {
@@ -3893,6 +5181,28 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_element'
+                        id: '2f8a4b2fad644474b82bfd626043422b'
+                        key: {
+                            sys_ui_section: {
+                                id: '837563ab1dc04b1ab4aee6ba712f5821'
+                                key: {
+                                    name: 'x_sln_store_suppli_supply_issue'
+                                    caption: 'Resolution, Escalation, and Feedback'
+                                    view: {
+                                        id: 'f20f7103a309482ebed5af4c5df2a672'
+                                        key: {
+                                            name: 'workspace-3f8cebee4f134dc0951c77b67b418e63'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'reopen_count'
+                            position: '9'
+                        }
+                    },
+                    {
                         table: 'sys_db_object'
                         id: '303c72c4c9874afb994bde444fa57a67'
                         key: {
@@ -3967,6 +5277,7 @@ declare global {
                     {
                         table: 'sys_ui_element'
                         id: '31b3ead780c348039de7293476c2b477'
+                        deleted: true
                         key: {
                             sys_ui_section: {
                                 id: 'e2f39fc3bdde41c2a6ef73c494a369b7'
@@ -4009,6 +5320,28 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_element'
+                        id: '3228b605696344aa9a4b465dbb7189ae'
+                        key: {
+                            sys_ui_section: {
+                                id: '7389b22973ac4946aa720a313f82cf77'
+                                key: {
+                                    name: 'x_sln_store_suppli_supply_request'
+                                    caption: 'Request Intake'
+                                    view: {
+                                        id: 'Default view'
+                                        key: {
+                                            name: 'NULL'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'intake_channel'
+                            position: '7'
+                        }
+                    },
+                    {
                         table: 'sys_user_role_contains'
                         id: '325dc4f3049a41e2bd12004001c7963f'
                         key: {
@@ -4027,6 +5360,28 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_element'
+                        id: '327a2ce3a6c7457a8976c3cfeb56dfae'
+                        key: {
+                            sys_ui_section: {
+                                id: 'ab5bc466949248689e1fd3489f41754d'
+                                key: {
+                                    name: 'x_sln_store_suppli_case_escalation'
+                                    caption: 'Escalation'
+                                    view: {
+                                        id: 'Default view'
+                                        key: {
+                                            name: 'NULL'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'notification_sent'
+                            position: '7'
+                        }
+                    },
+                    {
                         table: 'sys_security_acl_role'
                         id: '32cb98cb8be5436583bd9b1bab353b1f'
                         key: {
@@ -4035,6 +5390,39 @@ declare global {
                                 id: '214122d7b9e9496aa0acae2f4b2e8251'
                                 key: {
                                     name: 'x_sln_store_suppli.support_agent'
+                                }
+                            }
+                        }
+                    },
+                    {
+                        table: 'sys_ui_form_section'
+                        id: '32f498eb67df43988f4d440ce3cc5619'
+                        key: {
+                            sys_ui_form: {
+                                id: '823ebfb647104d61ae174e8fede88775'
+                                key: {
+                                    name: 'x_sln_store_suppli_supply_issue'
+                                    view: {
+                                        id: 'f20f7103a309482ebed5af4c5df2a672'
+                                        key: {
+                                            name: 'workspace-3f8cebee4f134dc0951c77b67b418e63'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            sys_ui_section: {
+                                id: '61481f8bc2cf4959bcb847235fe1b17e'
+                                key: {
+                                    name: 'x_sln_store_suppli_supply_issue'
+                                    caption: 'Assignment and Progress'
+                                    view: {
+                                        id: 'f20f7103a309482ebed5af4c5df2a672'
+                                        key: {
+                                            name: 'workspace-3f8cebee4f134dc0951c77b67b418e63'
+                                        }
+                                    }
+                                    sys_domain: 'global'
                                 }
                             }
                         }
@@ -4198,6 +5586,28 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_element'
+                        id: '34d451a3cd744e93ab191f7d0369be72'
+                        key: {
+                            sys_ui_section: {
+                                id: '837563ab1dc04b1ab4aee6ba712f5821'
+                                key: {
+                                    name: 'x_sln_store_suppli_supply_issue'
+                                    caption: 'Resolution, Escalation, and Feedback'
+                                    view: {
+                                        id: 'f20f7103a309482ebed5af4c5df2a672'
+                                        key: {
+                                            name: 'workspace-3f8cebee4f134dc0951c77b67b418e63'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'service_rating'
+                            position: '4'
+                        }
+                    },
+                    {
                         table: 'sys_ui_action_role'
                         id: '34fcfb43c05d452d9dfda9514db31bd1'
                         key: {
@@ -4263,6 +5673,28 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_element'
+                        id: '36124e038e2d44c5ac388e076e0d3458'
+                        key: {
+                            sys_ui_section: {
+                                id: '7389b22973ac4946aa720a313f82cf77'
+                                key: {
+                                    name: 'x_sln_store_suppli_supply_request'
+                                    caption: 'Request Intake'
+                                    view: {
+                                        id: 'Default view'
+                                        key: {
+                                            name: 'NULL'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: '.begin_split'
+                            position: '0'
+                        }
+                    },
+                    {
                         table: 'sys_choice'
                         id: '36494d020ab94c15a0cfdc444b2e1321'
                         key: {
@@ -4322,6 +5754,28 @@ declare global {
                             name: 'x_sln_store_suppli_store'
                             element: 'active'
                             language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '37faf4564f874f04bd5f728d4a3b084d'
+                        key: {
+                            sys_ui_section: {
+                                id: 'd3e097c5e3634647b498e8b4dfc0df24'
+                                key: {
+                                    name: 'x_sln_store_suppli_supply_issue'
+                                    caption: 'Issue Intake'
+                                    view: {
+                                        id: 'Default view'
+                                        key: {
+                                            name: 'NULL'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: '.end_split'
+                            position: '12'
                         }
                     },
                     {
@@ -4388,6 +5842,7 @@ declare global {
                     {
                         table: 'sys_ui_section'
                         id: '38a2834cbe744e2988fedff5e57fbad3'
+                        deleted: true
                         key: {
                             name: 'x_sln_store_suppli_supply_issue'
                             caption: 'Resolution'
@@ -4422,6 +5877,28 @@ declare global {
                         key: {
                             name: 'x_sln_store_suppli_supply_receipt'
                             element: 'quantity'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '393c484f9cf14491b9a34db4698b5464'
+                        key: {
+                            sys_ui_section: {
+                                id: '9b62817fe4ae4921a13e1a4542bb7fcb'
+                                key: {
+                                    name: 'x_sln_store_suppli_supply_issue'
+                                    caption: 'Assignment and Progress'
+                                    view: {
+                                        id: 'Default view'
+                                        key: {
+                                            name: 'NULL'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'approval_status'
+                            position: '3'
                         }
                     },
                     {
@@ -4551,6 +6028,28 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_element'
+                        id: '3b3647aa4f6f4fea9fb0b806449eca7e'
+                        key: {
+                            sys_ui_section: {
+                                id: 'cc807804258343239207cec2c2d168ea'
+                                key: {
+                                    name: 'x_sln_store_suppli_supply_issue'
+                                    caption: 'Issue Intake'
+                                    view: {
+                                        id: 'f20f7103a309482ebed5af4c5df2a672'
+                                        key: {
+                                            name: 'workspace-3f8cebee4f134dc0951c77b67b418e63'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: '.split'
+                            position: '6'
+                        }
+                    },
+                    {
                         table: 'question_choice'
                         id: '3b702a40c7f74917a14d094e25e403ec'
                         key: {
@@ -4608,6 +6107,50 @@ declare global {
                             value: 'late'
                             language: 'en'
                             dependent_value: 'NULL'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '3c9972b3f20f4673971c1a55e00947bf'
+                        key: {
+                            sys_ui_section: {
+                                id: 'b99a7887c6764f31b11a5343386c58ff'
+                                key: {
+                                    name: 'x_sln_store_suppli_supply_request'
+                                    caption: 'Request Intake'
+                                    view: {
+                                        id: 'bf6d088908fc4b2ba4d19d6c5cca9ef7'
+                                        key: {
+                                            name: 'workspace-3f8cebee4f134dc0951c77b67b418e63'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'originating_supplier'
+                            position: '5'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '3c9dd5d2fe1e444996057074b3244c97'
+                        key: {
+                            sys_ui_section: {
+                                id: '837563ab1dc04b1ab4aee6ba712f5821'
+                                key: {
+                                    name: 'x_sln_store_suppli_supply_issue'
+                                    caption: 'Resolution, Escalation, and Feedback'
+                                    view: {
+                                        id: 'f20f7103a309482ebed5af4c5df2a672'
+                                        key: {
+                                            name: 'workspace-3f8cebee4f134dc0951c77b67b418e63'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'reopened_at'
+                            position: '10'
                         }
                     },
                     {
@@ -4684,6 +6227,72 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_element'
+                        id: '3e8df7201c8a405c93aba3c197a4cff5'
+                        key: {
+                            sys_ui_section: {
+                                id: '7389b22973ac4946aa720a313f82cf77'
+                                key: {
+                                    name: 'x_sln_store_suppli_supply_request'
+                                    caption: 'Request Intake'
+                                    view: {
+                                        id: 'Default view'
+                                        key: {
+                                            name: 'NULL'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: '.end_split'
+                            position: '12'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '3ea50907fc39481ca60f3f4059bc324b'
+                        key: {
+                            sys_ui_section: {
+                                id: 'cc807804258343239207cec2c2d168ea'
+                                key: {
+                                    name: 'x_sln_store_suppli_supply_issue'
+                                    caption: 'Issue Intake'
+                                    view: {
+                                        id: 'f20f7103a309482ebed5af4c5df2a672'
+                                        key: {
+                                            name: 'workspace-3f8cebee4f134dc0951c77b67b418e63'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'intake_channel'
+                            position: '7'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '3efcd4997c4143b9a2469ccd8bd6a9b4'
+                        key: {
+                            sys_ui_section: {
+                                id: '9b62817fe4ae4921a13e1a4542bb7fcb'
+                                key: {
+                                    name: 'x_sln_store_suppli_supply_issue'
+                                    caption: 'Assignment and Progress'
+                                    view: {
+                                        id: 'Default view'
+                                        key: {
+                                            name: 'NULL'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'hold_reason'
+                            position: '2'
+                        }
+                    },
+                    {
                         table: 'question_choice'
                         id: '3f1f2b18e62143bca65cef20b6d6db2c'
                         key: {
@@ -4701,6 +6310,7 @@ declare global {
                     {
                         table: 'sys_ui_element'
                         id: '3f5c21f6113943dc9ab60b74f583ba25'
+                        deleted: true
                         key: {
                             sys_ui_section: {
                                 id: 'e2f39fc3bdde41c2a6ef73c494a369b7'
@@ -4816,6 +6426,50 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_element'
+                        id: '40f2062d4ea743bc82f7c96c14886db1'
+                        key: {
+                            sys_ui_section: {
+                                id: '61481f8bc2cf4959bcb847235fe1b17e'
+                                key: {
+                                    name: 'x_sln_store_suppli_supply_issue'
+                                    caption: 'Assignment and Progress'
+                                    view: {
+                                        id: 'f20f7103a309482ebed5af4c5df2a672'
+                                        key: {
+                                            name: 'workspace-3f8cebee4f134dc0951c77b67b418e63'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'hold_reason'
+                            position: '2'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '40faabb1d117438ab421c21b978e2888'
+                        key: {
+                            sys_ui_section: {
+                                id: 'a4c694f594214687bedad3f55cdd6659'
+                                key: {
+                                    name: 'x_sln_store_suppli_supply_request'
+                                    caption: 'Assignment and Progress'
+                                    view: {
+                                        id: 'bf6d088908fc4b2ba4d19d6c5cca9ef7'
+                                        key: {
+                                            name: 'workspace-3f8cebee4f134dc0951c77b67b418e63'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: '.end_split'
+                            position: '10'
+                        }
+                    },
+                    {
                         table: 'sys_documentation'
                         id: '412547ee2c414312a312a810c454c4e3'
                         key: {
@@ -4886,6 +6540,28 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_element'
+                        id: '4244fe88f91141489a5ee93f8908ee64'
+                        key: {
+                            sys_ui_section: {
+                                id: '7ff72be1a7924aa58fed0f5444391806'
+                                key: {
+                                    name: 'x_sln_store_suppli_supply_request'
+                                    caption: 'Resolution, Escalation, and Feedback'
+                                    view: {
+                                        id: 'bf6d088908fc4b2ba4d19d6c5cca9ef7'
+                                        key: {
+                                            name: 'workspace-3f8cebee4f134dc0951c77b67b418e63'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: '.split'
+                            position: '6'
+                        }
+                    },
+                    {
                         table: 'sys_choice'
                         id: '42479dc62c38482c88090ec2cd4c066f'
                         key: {
@@ -4925,6 +6601,39 @@ declare global {
                             }
                             element: '.split'
                             position: '7'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_form_section'
+                        id: '426455eb180341b7900a0be24d1f9ae4'
+                        key: {
+                            sys_ui_form: {
+                                id: '45aee82a489d419b98010530945220c2'
+                                key: {
+                                    name: 'x_sln_store_suppli_supply_issue'
+                                    view: {
+                                        id: 'Default view'
+                                        key: {
+                                            name: 'NULL'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            sys_ui_section: {
+                                id: 'd3e097c5e3634647b498e8b4dfc0df24'
+                                key: {
+                                    name: 'x_sln_store_suppli_supply_issue'
+                                    caption: 'Issue Intake'
+                                    view: {
+                                        id: 'Default view'
+                                        key: {
+                                            name: 'NULL'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
                         }
                     },
                     {
@@ -4968,6 +6677,28 @@ declare global {
                                 }
                             }
                             element: 'inventory_applied'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '42f13b1b0b5e463db722d851fe10aedf'
+                        key: {
+                            sys_ui_section: {
+                                id: 'd3e097c5e3634647b498e8b4dfc0df24'
+                                key: {
+                                    name: 'x_sln_store_suppli_supply_issue'
+                                    caption: 'Issue Intake'
+                                    view: {
+                                        id: 'Default view'
+                                        key: {
+                                            name: 'NULL'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'description'
+                            position: '13'
                         }
                     },
                     {
@@ -5122,6 +6853,43 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_section'
+                        id: '484dba6dfed84d72bca930f7af3da519'
+                        key: {
+                            name: 'x_sln_store_suppli_supply_request'
+                            caption: 'Activity'
+                            view: {
+                                id: 'bf6d088908fc4b2ba4d19d6c5cca9ef7'
+                                key: {
+                                    name: 'workspace-3f8cebee4f134dc0951c77b67b418e63'
+                                }
+                            }
+                            sys_domain: 'global'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '488476a787214901aceecffff30d42e4'
+                        key: {
+                            sys_ui_section: {
+                                id: 'f17410a8eacf41a89674d527f165a6a9'
+                                key: {
+                                    name: 'x_sln_store_suppli_supply_issue'
+                                    caption: 'Resolution, Escalation, and Feedback'
+                                    view: {
+                                        id: 'Default view'
+                                        key: {
+                                            name: 'NULL'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'escalated'
+                            position: '7'
+                        }
+                    },
+                    {
                         table: 'sys_documentation'
                         id: '488ceeae68724beba224e63167d8a10c'
                         key: {
@@ -5139,12 +6907,56 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_element'
+                        id: '496f9701efc14a9a871a2c40f934d144'
+                        key: {
+                            sys_ui_section: {
+                                id: '7ff72be1a7924aa58fed0f5444391806'
+                                key: {
+                                    name: 'x_sln_store_suppli_supply_request'
+                                    caption: 'Resolution, Escalation, and Feedback'
+                                    view: {
+                                        id: 'bf6d088908fc4b2ba4d19d6c5cca9ef7'
+                                        key: {
+                                            name: 'workspace-3f8cebee4f134dc0951c77b67b418e63'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'service_rating'
+                            position: '4'
+                        }
+                    },
+                    {
                         table: 'sys_documentation'
                         id: '4980dec472f74a829b9a258a1e8f2ed9'
                         key: {
                             name: 'x_sln_store_suppli_survey_ledger'
                             element: 'recipient'
                             language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '49ad853d3964444cae48278db22198c8'
+                        key: {
+                            sys_ui_section: {
+                                id: 'b99a7887c6764f31b11a5343386c58ff'
+                                key: {
+                                    name: 'x_sln_store_suppli_supply_request'
+                                    caption: 'Request Intake'
+                                    view: {
+                                        id: 'bf6d088908fc4b2ba4d19d6c5cca9ef7'
+                                        key: {
+                                            name: 'workspace-3f8cebee4f134dc0951c77b67b418e63'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'requested_by'
+                            position: '4'
                         }
                     },
                     {
@@ -5310,6 +7122,28 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_element'
+                        id: '4b3a8095df514bacb7ec83e5ad3fe27d'
+                        key: {
+                            sys_ui_section: {
+                                id: 'a4c694f594214687bedad3f55cdd6659'
+                                key: {
+                                    name: 'x_sln_store_suppli_supply_request'
+                                    caption: 'Assignment and Progress'
+                                    view: {
+                                        id: 'bf6d088908fc4b2ba4d19d6c5cca9ef7'
+                                        key: {
+                                            name: 'workspace-3f8cebee4f134dc0951c77b67b418e63'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'assigned_to'
+                            position: '7'
+                        }
+                    },
+                    {
                         table: 'sys_security_acl_role'
                         id: '4b6a312c595545e79b2def20ce946db0'
                         key: {
@@ -5336,6 +7170,7 @@ declare global {
                     {
                         table: 'sys_ui_element'
                         id: '4bfafc41b4c34d938125fb1f86004f1f'
+                        deleted: true
                         key: {
                             sys_ui_section: {
                                 id: '38a2834cbe744e2988fedff5e57fbad3'
@@ -5387,6 +7222,28 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_element'
+                        id: '4c4f7fa16b7e4aafa140bf78c36af009'
+                        key: {
+                            sys_ui_section: {
+                                id: 'a4c694f594214687bedad3f55cdd6659'
+                                key: {
+                                    name: 'x_sln_store_suppli_supply_request'
+                                    caption: 'Assignment and Progress'
+                                    view: {
+                                        id: 'bf6d088908fc4b2ba4d19d6c5cca9ef7'
+                                        key: {
+                                            name: 'workspace-3f8cebee4f134dc0951c77b67b418e63'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'first_response_at'
+                            position: '8'
+                        }
+                    },
+                    {
                         table: 'sys_ui_list_element'
                         id: '4c9556a77c3d4a04909fc9045f8b63fa'
                         key: {
@@ -5425,6 +7282,53 @@ declare global {
                                     name: 'x_sln_store_suppli.store_associate'
                                 }
                             }
+                        }
+                    },
+                    {
+                        table: 'sys_ui_form_section'
+                        id: '4d604ed430404f92ac527dca1c05b827'
+                        key: {
+                            sys_ui_form: {
+                                id: '823ebfb647104d61ae174e8fede88775'
+                                key: {
+                                    name: 'x_sln_store_suppli_supply_issue'
+                                    view: {
+                                        id: 'f20f7103a309482ebed5af4c5df2a672'
+                                        key: {
+                                            name: 'workspace-3f8cebee4f134dc0951c77b67b418e63'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            sys_ui_section: {
+                                id: '837563ab1dc04b1ab4aee6ba712f5821'
+                                key: {
+                                    name: 'x_sln_store_suppli_supply_issue'
+                                    caption: 'Resolution, Escalation, and Feedback'
+                                    view: {
+                                        id: 'f20f7103a309482ebed5af4c5df2a672'
+                                        key: {
+                                            name: 'workspace-3f8cebee4f134dc0951c77b67b418e63'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                        }
+                    },
+                    {
+                        table: 'sys_ui_form'
+                        id: '4d65ce9b1685430bae5de88a2b098f3f'
+                        key: {
+                            name: 'x_sln_store_suppli_supply_request'
+                            view: {
+                                id: 'bf6d088908fc4b2ba4d19d6c5cca9ef7'
+                                key: {
+                                    name: 'workspace-3f8cebee4f134dc0951c77b67b418e63'
+                                }
+                            }
+                            sys_domain: 'global'
                         }
                     },
                     {
@@ -5537,6 +7441,28 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_element'
+                        id: '4f0607fa661340299fd1c37d278c2594'
+                        key: {
+                            sys_ui_section: {
+                                id: '9b62817fe4ae4921a13e1a4542bb7fcb'
+                                key: {
+                                    name: 'x_sln_store_suppli_supply_issue'
+                                    caption: 'Assignment and Progress'
+                                    view: {
+                                        id: 'Default view'
+                                        key: {
+                                            name: 'NULL'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: '.begin_split'
+                            position: '0'
+                        }
+                    },
+                    {
                         table: 'sys_index'
                         id: '4f8af73841e943be99f388d288b56dad'
                         key: {
@@ -5582,6 +7508,7 @@ declare global {
                     {
                         table: 'sys_ui_element'
                         id: '50f8e9bf84934f79a9173fc4374af5e5'
+                        deleted: true
                         key: {
                             sys_ui_section: {
                                 id: '38a2834cbe744e2988fedff5e57fbad3'
@@ -5622,6 +7549,28 @@ declare global {
                             }
                             element: 'reopen_count'
                             position: '9'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '51b736068cff4a299a8b4499ded43dc6'
+                        key: {
+                            sys_ui_section: {
+                                id: 'f17410a8eacf41a89674d527f165a6a9'
+                                key: {
+                                    name: 'x_sln_store_suppli_supply_issue'
+                                    caption: 'Resolution, Escalation, and Feedback'
+                                    view: {
+                                        id: 'Default view'
+                                        key: {
+                                            name: 'NULL'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'escalation_reasons'
+                            position: '8'
                         }
                     },
                     {
@@ -5686,6 +7635,28 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_element'
+                        id: '5246f583e67f41cda16349f0fa730ffd'
+                        key: {
+                            sys_ui_section: {
+                                id: 'b99a7887c6764f31b11a5343386c58ff'
+                                key: {
+                                    name: 'x_sln_store_suppli_supply_request'
+                                    caption: 'Request Intake'
+                                    view: {
+                                        id: 'bf6d088908fc4b2ba4d19d6c5cca9ef7'
+                                        key: {
+                                            name: 'workspace-3f8cebee4f134dc0951c77b67b418e63'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'intake_channel'
+                            position: '7'
+                        }
+                    },
+                    {
                         table: 'sys_index'
                         id: '5248bb74d6ff4e6a891c196b1458b182'
                         key: {
@@ -5716,6 +7687,28 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_element'
+                        id: '52b127d5a25e40c4980806553d9756a8'
+                        key: {
+                            sys_ui_section: {
+                                id: 'ab5bc466949248689e1fd3489f41754d'
+                                key: {
+                                    name: 'x_sln_store_suppli_case_escalation'
+                                    caption: 'Escalation'
+                                    view: {
+                                        id: 'Default view'
+                                        key: {
+                                            name: 'NULL'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: '.begin_split'
+                            position: '0'
+                        }
+                    },
+                    {
                         table: 'sys_ui_action_role'
                         id: '53108e10cb644ce3bf20d7e02deb60ab'
                         key: {
@@ -5731,6 +7724,7 @@ declare global {
                     {
                         table: 'sys_ui_element'
                         id: '53292fc2cb6544dc8ec0a6dcfee13de8'
+                        deleted: true
                         key: {
                             sys_ui_section: {
                                 id: 'e2f39fc3bdde41c2a6ef73c494a369b7'
@@ -5805,6 +7799,61 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_element'
+                        id: '54275a88ee424d6babccd3a42612d14d'
+                        key: {
+                            sys_ui_section: {
+                                id: 'f2e160a8d2424d349553af47f4b25956'
+                                key: {
+                                    name: 'x_sln_store_suppli_supply_request'
+                                    caption: 'Resolution, Escalation, and Feedback'
+                                    view: {
+                                        id: 'Default view'
+                                        key: {
+                                            name: 'NULL'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: '.end_split'
+                            position: '11'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_form_section'
+                        id: '54500aa56bb149a1b3c31ac11ef0d4ed'
+                        key: {
+                            sys_ui_form: {
+                                id: '4d65ce9b1685430bae5de88a2b098f3f'
+                                key: {
+                                    name: 'x_sln_store_suppli_supply_request'
+                                    view: {
+                                        id: 'bf6d088908fc4b2ba4d19d6c5cca9ef7'
+                                        key: {
+                                            name: 'workspace-3f8cebee4f134dc0951c77b67b418e63'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            sys_ui_section: {
+                                id: '484dba6dfed84d72bca930f7af3da519'
+                                key: {
+                                    name: 'x_sln_store_suppli_supply_request'
+                                    caption: 'Activity'
+                                    view: {
+                                        id: 'bf6d088908fc4b2ba4d19d6c5cca9ef7'
+                                        key: {
+                                            name: 'workspace-3f8cebee4f134dc0951c77b67b418e63'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                        }
+                    },
+                    {
                         table: 'sys_choice'
                         id: '546dd0e11e264ee5bec650d19fc82e2f'
                         key: {
@@ -5845,6 +7894,15 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_documentation'
+                        id: '54e46c86a6b34988854892a14f8706a6'
+                        key: {
+                            name: 'x_sln_store_suppli_case_escalation'
+                            element: 'demo_data'
+                            language: 'en'
+                        }
+                    },
+                    {
                         table: 'sys_security_acl_role'
                         id: '54fa82553c884bf799ef9e1140a60901'
                         key: {
@@ -5867,7 +7925,30 @@ declare global {
                     },
                     {
                         table: 'sys_ui_element'
+                        id: '55979191477d4685a6a28de83bb06571'
+                        key: {
+                            sys_ui_section: {
+                                id: '22baa2c99d7444b69ba365a958f2bacb'
+                                key: {
+                                    name: 'x_sln_store_suppli_supply_request'
+                                    caption: 'Assignment and Progress'
+                                    view: {
+                                        id: 'Default view'
+                                        key: {
+                                            name: 'NULL'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'first_response_at'
+                            position: '8'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
                         id: '55bde4f7285a433689cf25fe3541e530'
+                        deleted: true
                         key: {
                             sys_ui_section: {
                                 id: '63d323d9af864dbea77c6e720760c49e'
@@ -5965,6 +8046,28 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_element'
+                        id: '5758564aa1424f798ffe30ccf3ed7a35'
+                        key: {
+                            sys_ui_section: {
+                                id: 'b99a7887c6764f31b11a5343386c58ff'
+                                key: {
+                                    name: 'x_sln_store_suppli_supply_request'
+                                    caption: 'Request Intake'
+                                    view: {
+                                        id: 'bf6d088908fc4b2ba4d19d6c5cca9ef7'
+                                        key: {
+                                            name: 'workspace-3f8cebee4f134dc0951c77b67b418e63'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: '.end_split'
+                            position: '12'
+                        }
+                    },
+                    {
                         table: 'sys_documentation'
                         id: '577dc47e40d8418db9684a96f2913caa'
                         key: {
@@ -5993,6 +8096,7 @@ declare global {
                     {
                         table: 'sys_ui_element'
                         id: '57d722de7e284074bfc6400e8363b5f6'
+                        deleted: true
                         key: {
                             sys_ui_section: {
                                 id: '63d323d9af864dbea77c6e720760c49e'
@@ -6026,6 +8130,28 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_element'
+                        id: '57e1b1aa6e584481b3d4437ed31b10f2'
+                        key: {
+                            sys_ui_section: {
+                                id: '837563ab1dc04b1ab4aee6ba712f5821'
+                                key: {
+                                    name: 'x_sln_store_suppli_supply_issue'
+                                    caption: 'Resolution, Escalation, and Feedback'
+                                    view: {
+                                        id: 'f20f7103a309482ebed5af4c5df2a672'
+                                        key: {
+                                            name: 'workspace-3f8cebee4f134dc0951c77b67b418e63'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'resolution_notes'
+                            position: '2'
+                        }
+                    },
+                    {
                         table: 'item_option_new'
                         id: '57e94d656a504a16a77937abdec3438e'
                         key: {
@@ -6054,6 +8180,50 @@ declare global {
                             }
                             element: 'store_format'
                             position: '3'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '58b6df85dbeb4d098ffca070b75294bd'
+                        key: {
+                            sys_ui_section: {
+                                id: 'd3e097c5e3634647b498e8b4dfc0df24'
+                                key: {
+                                    name: 'x_sln_store_suppli_supply_issue'
+                                    caption: 'Issue Intake'
+                                    view: {
+                                        id: 'Default view'
+                                        key: {
+                                            name: 'NULL'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'originating_supplier'
+                            position: '5'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '58e0fd94b5e6441db72b475398cdfa9a'
+                        key: {
+                            sys_ui_section: {
+                                id: 'b99a7887c6764f31b11a5343386c58ff'
+                                key: {
+                                    name: 'x_sln_store_suppli_supply_request'
+                                    caption: 'Request Intake'
+                                    view: {
+                                        id: 'bf6d088908fc4b2ba4d19d6c5cca9ef7'
+                                        key: {
+                                            name: 'workspace-3f8cebee4f134dc0951c77b67b418e63'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'category'
+                            position: '8'
                         }
                     },
                     {
@@ -6100,6 +8270,28 @@ declare global {
                         id: '5a9036da4b7f4aef91ffeed5221eb12c'
                         key: {
                             name: 'x_sln_store_suppli_store_supplier'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '5a9b57893c3f423f815a7b60de68387e'
+                        key: {
+                            sys_ui_section: {
+                                id: '7ff72be1a7924aa58fed0f5444391806'
+                                key: {
+                                    name: 'x_sln_store_suppli_supply_request'
+                                    caption: 'Resolution, Escalation, and Feedback'
+                                    view: {
+                                        id: 'bf6d088908fc4b2ba4d19d6c5cca9ef7'
+                                        key: {
+                                            name: 'workspace-3f8cebee4f134dc0951c77b67b418e63'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'reopened_at'
+                            position: '10'
                         }
                     },
                     {
@@ -6229,6 +8421,7 @@ declare global {
                     {
                         table: 'sys_ui_element'
                         id: '5dc2f7eadcea48e498aafe7fda92d3b3'
+                        deleted: true
                         key: {
                             sys_ui_section: {
                                 id: '63d323d9af864dbea77c6e720760c49e'
@@ -6269,6 +8462,28 @@ declare global {
                                 }
                             }
                             element: 'supply_state'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '5ddf03b549794566a29d0fc2b1976fa5'
+                        key: {
+                            sys_ui_section: {
+                                id: '7389b22973ac4946aa720a313f82cf77'
+                                key: {
+                                    name: 'x_sln_store_suppli_supply_request'
+                                    caption: 'Request Intake'
+                                    view: {
+                                        id: 'Default view'
+                                        key: {
+                                            name: 'NULL'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'category'
+                            position: '8'
                         }
                     },
                     {
@@ -6356,6 +8571,50 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_element'
+                        id: '601b78295f3d4b72a64bc03a5da08a18'
+                        key: {
+                            sys_ui_section: {
+                                id: 'a4c694f594214687bedad3f55cdd6659'
+                                key: {
+                                    name: 'x_sln_store_suppli_supply_request'
+                                    caption: 'Assignment and Progress'
+                                    view: {
+                                        id: 'bf6d088908fc4b2ba4d19d6c5cca9ef7'
+                                        key: {
+                                            name: 'workspace-3f8cebee4f134dc0951c77b67b418e63'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'hold_reason'
+                            position: '2'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '60291464e5db4f15a97dfe2bd8c8354c'
+                        key: {
+                            sys_ui_section: {
+                                id: 'f2e160a8d2424d349553af47f4b25956'
+                                key: {
+                                    name: 'x_sln_store_suppli_supply_request'
+                                    caption: 'Resolution, Escalation, and Feedback'
+                                    view: {
+                                        id: 'Default view'
+                                        key: {
+                                            name: 'NULL'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'resolution_code'
+                            position: '1'
+                        }
+                    },
+                    {
                         table: 'sys_security_acl_role'
                         id: '6071777535854f5b9d8ed2dcc5891e92'
                         key: {
@@ -6396,6 +8655,21 @@ declare global {
                             name: 'x_sln_store_suppli_supplier_task'
                             element: 'completed_on'
                             language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_section'
+                        id: '61481f8bc2cf4959bcb847235fe1b17e'
+                        key: {
+                            name: 'x_sln_store_suppli_supply_issue'
+                            caption: 'Assignment and Progress'
+                            view: {
+                                id: 'f20f7103a309482ebed5af4c5df2a672'
+                                key: {
+                                    name: 'workspace-3f8cebee4f134dc0951c77b67b418e63'
+                                }
+                            }
+                            sys_domain: 'global'
                         }
                     },
                     {
@@ -6473,7 +8747,52 @@ declare global {
                     },
                     {
                         table: 'sys_ui_element'
+                        id: '6334feca3ed44191870e130071305d33'
+                        key: {
+                            sys_ui_section: {
+                                id: 'a4c694f594214687bedad3f55cdd6659'
+                                key: {
+                                    name: 'x_sln_store_suppli_supply_request'
+                                    caption: 'Assignment and Progress'
+                                    view: {
+                                        id: 'bf6d088908fc4b2ba4d19d6c5cca9ef7'
+                                        key: {
+                                            name: 'workspace-3f8cebee4f134dc0951c77b67b418e63'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'prior_active_state'
+                            position: '4'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '637de1a57bcb4d119dc7b7a1a40b5717'
+                        key: {
+                            sys_ui_section: {
+                                id: 'ab5bc466949248689e1fd3489f41754d'
+                                key: {
+                                    name: 'x_sln_store_suppli_case_escalation'
+                                    caption: 'Escalation'
+                                    view: {
+                                        id: 'Default view'
+                                        key: {
+                                            name: 'NULL'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'parent_case'
+                            position: '1'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
                         id: '63b89cebb89948c994d00e217064e889'
+                        deleted: true
                         key: {
                             sys_ui_section: {
                                 id: 'cb86c4808f8041db952d108fa142a28f'
@@ -6509,6 +8828,7 @@ declare global {
                     {
                         table: 'sys_ui_section'
                         id: '63d323d9af864dbea77c6e720760c49e'
+                        deleted: true
                         key: {
                             name: 'x_sln_store_suppli_supply_issue'
                             caption: 'Issue'
@@ -6752,6 +9072,28 @@ declare global {
                                     name: 'x_sln_store_suppli.admin'
                                 }
                             }
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '69b4dd51cb1340a5b88948e12225ec50'
+                        key: {
+                            sys_ui_section: {
+                                id: 'b99a7887c6764f31b11a5343386c58ff'
+                                key: {
+                                    name: 'x_sln_store_suppli_supply_request'
+                                    caption: 'Request Intake'
+                                    view: {
+                                        id: 'bf6d088908fc4b2ba4d19d6c5cca9ef7'
+                                        key: {
+                                            name: 'workspace-3f8cebee4f134dc0951c77b67b418e63'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: '.begin_split'
+                            position: '0'
                         }
                     },
                     {
@@ -7003,6 +9345,65 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_element'
+                        id: '6e0dd0318cb34b1fa7cf64547620f9d9'
+                        key: {
+                            sys_ui_section: {
+                                id: '22baa2c99d7444b69ba365a958f2bacb'
+                                key: {
+                                    name: 'x_sln_store_suppli_supply_request'
+                                    caption: 'Assignment and Progress'
+                                    view: {
+                                        id: 'Default view'
+                                        key: {
+                                            name: 'NULL'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'supply_state'
+                            position: '1'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_section'
+                        id: '6e2f5367700b4ed48e4700f71e2f0d30'
+                        key: {
+                            name: 'x_sln_store_suppli_supply_issue'
+                            caption: 'Activity'
+                            view: {
+                                id: 'Default view'
+                                key: {
+                                    name: 'NULL'
+                                }
+                            }
+                            sys_domain: 'global'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '6eb08fab1f8846fa8c45fda87bbac065'
+                        key: {
+                            sys_ui_section: {
+                                id: '0f068c26941d4307b3c34ea775ab7177'
+                                key: {
+                                    name: 'x_sln_store_suppli_case_escalation'
+                                    caption: 'Escalation'
+                                    view: {
+                                        id: '1e4899deab9041d5b86791304d2da433'
+                                        key: {
+                                            name: 'workspace-3f8cebee4f134dc0951c77b67b418e63'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'reason'
+                            position: '2'
+                        }
+                    },
+                    {
                         table: 'sys_ui_action_role'
                         id: '6ed90fe11d9646289a4eb1852ff41559'
                         key: {
@@ -7013,6 +9414,28 @@ declare global {
                                     name: 'x_sln_store_suppli.admin'
                                 }
                             }
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '6ee93a22fb4f457b84f2e46cf442aba7'
+                        key: {
+                            sys_ui_section: {
+                                id: '22baa2c99d7444b69ba365a958f2bacb'
+                                key: {
+                                    name: 'x_sln_store_suppli_supply_request'
+                                    caption: 'Assignment and Progress'
+                                    view: {
+                                        id: 'Default view'
+                                        key: {
+                                            name: 'NULL'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'hold_reason'
+                            position: '2'
                         }
                     },
                     {
@@ -7136,6 +9559,7 @@ declare global {
                     {
                         table: 'sys_ui_form_section'
                         id: '71612a5fc1a649fc930c40ffff8a6739'
+                        deleted: true
                         key: {
                             sys_ui_form: {
                                 id: '9cff54fe00c544df8b5c7a77dffe29f6'
@@ -7259,6 +9683,28 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_element'
+                        id: '72a9b2048fa24b3fafd811315dd48ef9'
+                        key: {
+                            sys_ui_section: {
+                                id: '7389b22973ac4946aa720a313f82cf77'
+                                key: {
+                                    name: 'x_sln_store_suppli_supply_request'
+                                    caption: 'Request Intake'
+                                    view: {
+                                        id: 'Default view'
+                                        key: {
+                                            name: 'NULL'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'needed_by'
+                            position: '10'
+                        }
+                    },
+                    {
                         table: 'sys_security_acl_role'
                         id: '72e6ab3d7cef454d9411d6733a5f8425'
                         key: {
@@ -7269,6 +9715,28 @@ declare global {
                                     name: 'x_sln_store_suppli.support_agent'
                                 }
                             }
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '73065099aeeb4130abfa82c9e930b757'
+                        key: {
+                            sys_ui_section: {
+                                id: '484dba6dfed84d72bca930f7af3da519'
+                                key: {
+                                    name: 'x_sln_store_suppli_supply_request'
+                                    caption: 'Activity'
+                                    view: {
+                                        id: 'bf6d088908fc4b2ba4d19d6c5cca9ef7'
+                                        key: {
+                                            name: 'workspace-3f8cebee4f134dc0951c77b67b418e63'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'activity.xml'
+                            position: '0'
                         }
                     },
                     {
@@ -7304,6 +9772,21 @@ declare global {
                                     name: 'x_sln_store_suppli.support_manager'
                                 }
                             }
+                        }
+                    },
+                    {
+                        table: 'sys_ui_section'
+                        id: '7389b22973ac4946aa720a313f82cf77'
+                        key: {
+                            name: 'x_sln_store_suppli_supply_request'
+                            caption: 'Request Intake'
+                            view: {
+                                id: 'Default view'
+                                key: {
+                                    name: 'NULL'
+                                }
+                            }
+                            sys_domain: 'global'
                         }
                     },
                     {
@@ -7345,10 +9828,54 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_element'
+                        id: '740057c6d7a74efa8d539644d5192edb'
+                        key: {
+                            sys_ui_section: {
+                                id: 'cc807804258343239207cec2c2d168ea'
+                                key: {
+                                    name: 'x_sln_store_suppli_supply_issue'
+                                    caption: 'Issue Intake'
+                                    view: {
+                                        id: 'f20f7103a309482ebed5af4c5df2a672'
+                                        key: {
+                                            name: 'workspace-3f8cebee4f134dc0951c77b67b418e63'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'description'
+                            position: '13'
+                        }
+                    },
+                    {
                         table: 'sys_db_object'
                         id: '740d46f7373a4701930331a0f48c19cd'
                         key: {
                             name: 'x_sln_store_suppli_store_supplier'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '74799955b76a44c6ac8d86679daecb1d'
+                        key: {
+                            sys_ui_section: {
+                                id: 'a4c694f594214687bedad3f55cdd6659'
+                                key: {
+                                    name: 'x_sln_store_suppli_supply_request'
+                                    caption: 'Assignment and Progress'
+                                    view: {
+                                        id: 'bf6d088908fc4b2ba4d19d6c5cca9ef7'
+                                        key: {
+                                            name: 'workspace-3f8cebee4f134dc0951c77b67b418e63'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'last_customer_update'
+                            position: '9'
                         }
                     },
                     {
@@ -7464,6 +9991,39 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_form_section'
+                        id: '756365eb47524ca7b73e11e65243b4d4'
+                        key: {
+                            sys_ui_form: {
+                                id: 'd15135b377fc4f20b6f89296e65776c7'
+                                key: {
+                                    name: 'x_sln_store_suppli_case_escalation'
+                                    view: {
+                                        id: '1e4899deab9041d5b86791304d2da433'
+                                        key: {
+                                            name: 'workspace-3f8cebee4f134dc0951c77b67b418e63'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            sys_ui_section: {
+                                id: '0f068c26941d4307b3c34ea775ab7177'
+                                key: {
+                                    name: 'x_sln_store_suppli_case_escalation'
+                                    caption: 'Escalation'
+                                    view: {
+                                        id: '1e4899deab9041d5b86791304d2da433'
+                                        key: {
+                                            name: 'workspace-3f8cebee4f134dc0951c77b67b418e63'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                        }
+                    },
+                    {
                         table: 'sys_security_acl_role'
                         id: '7577cdee11b74145b52231791c4f3450'
                         key: {
@@ -7517,6 +10077,28 @@ declare global {
                     },
                     {
                         table: 'sys_ui_element'
+                        id: '760eae54b312462b8c32657cc8e0cf85'
+                        key: {
+                            sys_ui_section: {
+                                id: 'ab5bc466949248689e1fd3489f41754d'
+                                key: {
+                                    name: 'x_sln_store_suppli_case_escalation'
+                                    caption: 'Escalation'
+                                    view: {
+                                        id: 'Default view'
+                                        key: {
+                                            name: 'NULL'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'reason'
+                            position: '2'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
                         id: '7667c5f377f14a9bbe9ad03378948cf9'
                         key: {
                             sys_ui_section: {
@@ -7535,6 +10117,43 @@ declare global {
                             }
                             element: 'market'
                             position: '4'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '766d89b0b2464685a7abd2f1804f1509'
+                        key: {
+                            sys_ui_section: {
+                                id: 'f2e160a8d2424d349553af47f4b25956'
+                                key: {
+                                    name: 'x_sln_store_suppli_supply_request'
+                                    caption: 'Resolution, Escalation, and Feedback'
+                                    view: {
+                                        id: 'Default view'
+                                        key: {
+                                            name: 'NULL'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'knowledge_recommended'
+                            position: '3'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_section'
+                        id: '767ea69208df4b83ae56e5eb633793d9'
+                        key: {
+                            name: 'x_sln_store_suppli_supply_request'
+                            caption: 'Activity'
+                            view: {
+                                id: 'Default view'
+                                key: {
+                                    name: 'NULL'
+                                }
+                            }
+                            sys_domain: 'global'
                         }
                     },
                     {
@@ -7667,6 +10286,28 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_element'
+                        id: '79410f04a5634e428d401ee54fb94c1c'
+                        key: {
+                            sys_ui_section: {
+                                id: 'a4c694f594214687bedad3f55cdd6659'
+                                key: {
+                                    name: 'x_sln_store_suppli_supply_request'
+                                    caption: 'Assignment and Progress'
+                                    view: {
+                                        id: 'bf6d088908fc4b2ba4d19d6c5cca9ef7'
+                                        key: {
+                                            name: 'workspace-3f8cebee4f134dc0951c77b67b418e63'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'approval_status'
+                            position: '3'
+                        }
+                    },
+                    {
                         table: 'question_choice'
                         id: '7952dba28c6b46c28233d792820bdd6a'
                         key: {
@@ -7732,6 +10373,7 @@ declare global {
                     {
                         table: 'sys_ui_element'
                         id: '7aa8a1cd82c045f3888e2f60dc3d566d'
+                        deleted: true
                         key: {
                             sys_ui_section: {
                                 id: 'cb86c4808f8041db952d108fa142a28f'
@@ -7787,6 +10429,7 @@ declare global {
                     {
                         table: 'sys_ui_element'
                         id: '7c012ae60c8b419d9c751f01ce55e28d'
+                        deleted: true
                         key: {
                             sys_ui_section: {
                                 id: 'e2f39fc3bdde41c2a6ef73c494a369b7'
@@ -7820,6 +10463,7 @@ declare global {
                     {
                         table: 'sys_ui_element'
                         id: '7ccaa38a57e44bafaa471884a16105d4'
+                        deleted: true
                         key: {
                             sys_ui_section: {
                                 id: 'cb86c4808f8041db952d108fa142a28f'
@@ -7922,6 +10566,7 @@ declare global {
                     {
                         table: 'sys_ui_element'
                         id: '7e8e51532f4a4323a3982f3e6a488b95'
+                        deleted: true
                         key: {
                             sys_ui_section: {
                                 id: 'e2f39fc3bdde41c2a6ef73c494a369b7'
@@ -7952,6 +10597,7 @@ declare global {
                     {
                         table: 'sys_ui_element'
                         id: '7eb81c59bd4144a49e80c0ef7839fa63'
+                        deleted: true
                         key: {
                             sys_ui_section: {
                                 id: '63d323d9af864dbea77c6e720760c49e'
@@ -7994,6 +10640,28 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_element'
+                        id: '7f98257fc95d4ddeb5380f125034f832'
+                        key: {
+                            sys_ui_section: {
+                                id: 'ab5bc466949248689e1fd3489f41754d'
+                                key: {
+                                    name: 'x_sln_store_suppli_case_escalation'
+                                    caption: 'Escalation'
+                                    view: {
+                                        id: 'Default view'
+                                        key: {
+                                            name: 'NULL'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: '.split'
+                            position: '4'
+                        }
+                    },
+                    {
                         table: 'sys_security_acl_role'
                         id: '7fa0d50dbf164d55838355b672113875'
                         key: {
@@ -8013,6 +10681,21 @@ declare global {
                             cat_item: 'f7a5ffe7fd564a9e897dc65ee96deab7'
                             variable_set: 'NULL'
                             name: 'businessImpact'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_section'
+                        id: '7ff72be1a7924aa58fed0f5444391806'
+                        key: {
+                            name: 'x_sln_store_suppli_supply_request'
+                            caption: 'Resolution, Escalation, and Feedback'
+                            view: {
+                                id: 'bf6d088908fc4b2ba4d19d6c5cca9ef7'
+                                key: {
+                                    name: 'workspace-3f8cebee4f134dc0951c77b67b418e63'
+                                }
+                            }
+                            sys_domain: 'global'
                         }
                     },
                     {
@@ -8083,6 +10766,28 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_element'
+                        id: '81389ec5d8e64b2cb172d93b6d156e14'
+                        key: {
+                            sys_ui_section: {
+                                id: 'cc807804258343239207cec2c2d168ea'
+                                key: {
+                                    name: 'x_sln_store_suppli_supply_issue'
+                                    caption: 'Issue Intake'
+                                    view: {
+                                        id: 'f20f7103a309482ebed5af4c5df2a672'
+                                        key: {
+                                            name: 'workspace-3f8cebee4f134dc0951c77b67b418e63'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'requested_by'
+                            position: '4'
+                        }
+                    },
+                    {
                         table: 'sys_dictionary'
                         id: '81422d523eef4ddaa4e968997fd8557c'
                         key: {
@@ -8115,6 +10820,7 @@ declare global {
                     {
                         table: 'sys_ui_element'
                         id: '81b78ccd38c64f62b3069b854a593fcb'
+                        deleted: true
                         key: {
                             sys_ui_section: {
                                 id: 'e2f39fc3bdde41c2a6ef73c494a369b7'
@@ -8132,6 +10838,28 @@ declare global {
                             }
                             element: 'service_feedback'
                             position: '5'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '81cdf11009aa48b29a9d891184eb708e'
+                        key: {
+                            sys_ui_section: {
+                                id: 'f17410a8eacf41a89674d527f165a6a9'
+                                key: {
+                                    name: 'x_sln_store_suppli_supply_issue'
+                                    caption: 'Resolution, Escalation, and Feedback'
+                                    view: {
+                                        id: 'Default view'
+                                        key: {
+                                            name: 'NULL'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: '.end_split'
+                            position: '11'
                         }
                     },
                     {
@@ -8172,6 +10900,20 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_form'
+                        id: '823ebfb647104d61ae174e8fede88775'
+                        key: {
+                            name: 'x_sln_store_suppli_supply_issue'
+                            view: {
+                                id: 'f20f7103a309482ebed5af4c5df2a672'
+                                key: {
+                                    name: 'workspace-3f8cebee4f134dc0951c77b67b418e63'
+                                }
+                            }
+                            sys_domain: 'global'
+                        }
+                    },
+                    {
                         table: 'sys_choice'
                         id: '82b2d33e697d487ebaffcb2fa9c6ca8c'
                         key: {
@@ -8180,6 +10922,28 @@ declare global {
                             value: 'new_item'
                             language: 'en'
                             dependent_value: 'NULL'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '82bdee18c29e495094250acc0a8b9784'
+                        key: {
+                            sys_ui_section: {
+                                id: '9b62817fe4ae4921a13e1a4542bb7fcb'
+                                key: {
+                                    name: 'x_sln_store_suppli_supply_issue'
+                                    caption: 'Assignment and Progress'
+                                    view: {
+                                        id: 'Default view'
+                                        key: {
+                                            name: 'NULL'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'assignment_group'
+                            position: '6'
                         }
                     },
                     {
@@ -8216,6 +10980,28 @@ declare global {
                     },
                     {
                         table: 'sys_ui_element'
+                        id: '8341a0f3d51e4ac98b66ff5c8ffa4d21'
+                        key: {
+                            sys_ui_section: {
+                                id: '22baa2c99d7444b69ba365a958f2bacb'
+                                key: {
+                                    name: 'x_sln_store_suppli_supply_request'
+                                    caption: 'Assignment and Progress'
+                                    view: {
+                                        id: 'Default view'
+                                        key: {
+                                            name: 'NULL'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: '.begin_split'
+                            position: '0'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
                         id: '8345b7e1f3cc411ca15e5f62b87715ed'
                         deleted: true
                         key: {
@@ -8238,6 +11024,43 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_element'
+                        id: '837045d2abf04cf89a3202d92e0077cc'
+                        key: {
+                            sys_ui_section: {
+                                id: 'd3e097c5e3634647b498e8b4dfc0df24'
+                                key: {
+                                    name: 'x_sln_store_suppli_supply_issue'
+                                    caption: 'Issue Intake'
+                                    view: {
+                                        id: 'Default view'
+                                        key: {
+                                            name: 'NULL'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: '.begin_split'
+                            position: '0'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_section'
+                        id: '837563ab1dc04b1ab4aee6ba712f5821'
+                        key: {
+                            name: 'x_sln_store_suppli_supply_issue'
+                            caption: 'Resolution, Escalation, and Feedback'
+                            view: {
+                                id: 'f20f7103a309482ebed5af4c5df2a672'
+                                key: {
+                                    name: 'workspace-3f8cebee4f134dc0951c77b67b418e63'
+                                }
+                            }
+                            sys_domain: 'global'
+                        }
+                    },
+                    {
                         table: 'sys_choice'
                         id: '83e01a7a9eda4d378966817d6efbb4a4'
                         key: {
@@ -8251,6 +11074,7 @@ declare global {
                     {
                         table: 'sys_ui_element'
                         id: '83f6a7c9b4bc46ab942098d2e4ffa942'
+                        deleted: true
                         key: {
                             sys_ui_section: {
                                 id: '38a2834cbe744e2988fedff5e57fbad3'
@@ -8280,6 +11104,28 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_element'
+                        id: '842a0c5955584741a85bce9fc3499ec8'
+                        key: {
+                            sys_ui_section: {
+                                id: 'b99a7887c6764f31b11a5343386c58ff'
+                                key: {
+                                    name: 'x_sln_store_suppli_supply_request'
+                                    caption: 'Request Intake'
+                                    view: {
+                                        id: 'bf6d088908fc4b2ba4d19d6c5cca9ef7'
+                                        key: {
+                                            name: 'workspace-3f8cebee4f134dc0951c77b67b418e63'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'store'
+                            position: '3'
+                        }
+                    },
+                    {
                         table: 'sys_choice'
                         id: '8432a321fa454cbea62f18bafde1d11b'
                         key: {
@@ -8304,11 +11150,55 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_element'
+                        id: '847057c1a3294e4f868fb66a83b2af84'
+                        key: {
+                            sys_ui_section: {
+                                id: '7ff72be1a7924aa58fed0f5444391806'
+                                key: {
+                                    name: 'x_sln_store_suppli_supply_request'
+                                    caption: 'Resolution, Escalation, and Feedback'
+                                    view: {
+                                        id: 'bf6d088908fc4b2ba4d19d6c5cca9ef7'
+                                        key: {
+                                            name: 'workspace-3f8cebee4f134dc0951c77b67b418e63'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'knowledge_recommended'
+                            position: '3'
+                        }
+                    },
+                    {
                         table: 'sys_dictionary'
                         id: '84a1dec5bf0941339c0fa2bb86e450c3'
                         key: {
                             name: 'x_sln_store_suppli_supply_receipt'
                             element: 'NULL'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '84c6be9467d3417cbb9f34ccbf0f7782'
+                        key: {
+                            sys_ui_section: {
+                                id: '22baa2c99d7444b69ba365a958f2bacb'
+                                key: {
+                                    name: 'x_sln_store_suppli_supply_request'
+                                    caption: 'Assignment and Progress'
+                                    view: {
+                                        id: 'Default view'
+                                        key: {
+                                            name: 'NULL'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: '.split'
+                            position: '5'
                         }
                     },
                     {
@@ -8366,8 +11256,42 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_form_section'
+                        id: '86ad8e0e52104f94a2d8272135abc315'
+                        key: {
+                            sys_ui_form: {
+                                id: '45aee82a489d419b98010530945220c2'
+                                key: {
+                                    name: 'x_sln_store_suppli_supply_issue'
+                                    view: {
+                                        id: 'Default view'
+                                        key: {
+                                            name: 'NULL'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            sys_ui_section: {
+                                id: '6e2f5367700b4ed48e4700f71e2f0d30'
+                                key: {
+                                    name: 'x_sln_store_suppli_supply_issue'
+                                    caption: 'Activity'
+                                    view: {
+                                        id: 'Default view'
+                                        key: {
+                                            name: 'NULL'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                        }
+                    },
+                    {
                         table: 'sys_ui_element'
                         id: '86c7302bd49b455bb8bf54af9ee44696'
+                        deleted: true
                         key: {
                             sys_ui_section: {
                                 id: 'e2f39fc3bdde41c2a6ef73c494a369b7'
@@ -8503,6 +11427,7 @@ declare global {
                     {
                         table: 'sys_ui_element'
                         id: '889b0f2f927d42a9a1cddc4a3eef09ab'
+                        deleted: true
                         key: {
                             sys_ui_section: {
                                 id: '63d323d9af864dbea77c6e720760c49e'
@@ -8667,6 +11592,28 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_element'
+                        id: '8bc90212e9c44543ae54b6bda9b9b74d'
+                        key: {
+                            sys_ui_section: {
+                                id: 'cc807804258343239207cec2c2d168ea'
+                                key: {
+                                    name: 'x_sln_store_suppli_supply_issue'
+                                    caption: 'Issue Intake'
+                                    view: {
+                                        id: 'f20f7103a309482ebed5af4c5df2a672'
+                                        key: {
+                                            name: 'workspace-3f8cebee4f134dc0951c77b67b418e63'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'originating_supplier'
+                            position: '5'
+                        }
+                    },
+                    {
                         table: 'sys_documentation'
                         id: '8cbc8145a87049e6820d6e87036c2029'
                         key: {
@@ -8693,6 +11640,28 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_element'
+                        id: '8d2ec2ef46614eb89dd21df193e3cdfa'
+                        key: {
+                            sys_ui_section: {
+                                id: 'b0db1184f88c4b9db06a0629e7b0ceef'
+                                key: {
+                                    name: 'x_sln_store_suppli_supply_issue'
+                                    caption: 'Activity'
+                                    view: {
+                                        id: 'f20f7103a309482ebed5af4c5df2a672'
+                                        key: {
+                                            name: 'workspace-3f8cebee4f134dc0951c77b67b418e63'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'activity.xml'
+                            position: '0'
+                        }
+                    },
+                    {
                         table: 'sys_documentation'
                         id: '8d5e7ba98a4c4453b7a8891d92cdae34'
                         key: {
@@ -8704,6 +11673,7 @@ declare global {
                     {
                         table: 'sys_ui_element'
                         id: '8d674478c71a48acb1a080e77259fe38'
+                        deleted: true
                         key: {
                             sys_ui_section: {
                                 id: 'cb86c4808f8041db952d108fa142a28f'
@@ -8818,6 +11788,7 @@ declare global {
                     {
                         table: 'sys_ui_element'
                         id: '8e1a7f965c3e49e0a71bc9e7452d2a1b'
+                        deleted: true
                         key: {
                             sys_ui_section: {
                                 id: 'cb86c4808f8041db952d108fa142a28f'
@@ -8840,6 +11811,7 @@ declare global {
                     {
                         table: 'sys_ui_element'
                         id: '8e2737d4d6d049c4b5e74175e4f4bc71'
+                        deleted: true
                         key: {
                             sys_ui_section: {
                                 id: '38a2834cbe744e2988fedff5e57fbad3'
@@ -9059,6 +12031,28 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_element'
+                        id: '924599e1d4644ce68e6e5309c54fee74'
+                        key: {
+                            sys_ui_section: {
+                                id: '9b62817fe4ae4921a13e1a4542bb7fcb'
+                                key: {
+                                    name: 'x_sln_store_suppli_supply_issue'
+                                    caption: 'Assignment and Progress'
+                                    view: {
+                                        id: 'Default view'
+                                        key: {
+                                            name: 'NULL'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'prior_active_state'
+                            position: '4'
+                        }
+                    },
+                    {
                         table: 'sys_ui_list_element'
                         id: '9298489d181d4016a4730fc0ced137f9'
                         key: {
@@ -9135,7 +12129,30 @@ declare global {
                     },
                     {
                         table: 'sys_ui_element'
+                        id: '931fc246b38a495e9d73818d2493022d'
+                        key: {
+                            sys_ui_section: {
+                                id: 'd3e097c5e3634647b498e8b4dfc0df24'
+                                key: {
+                                    name: 'x_sln_store_suppli_supply_issue'
+                                    caption: 'Issue Intake'
+                                    view: {
+                                        id: 'Default view'
+                                        key: {
+                                            name: 'NULL'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'subtype'
+                            position: '9'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
                         id: '9389a7dcf5f8453886bc56a9de486c61'
+                        deleted: true
                         key: {
                             sys_ui_section: {
                                 id: '63d323d9af864dbea77c6e720760c49e'
@@ -9235,6 +12252,28 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_element'
+                        id: '94a2b33ed8ea447a9733fe6ece2f69a3'
+                        key: {
+                            sys_ui_section: {
+                                id: 'cc807804258343239207cec2c2d168ea'
+                                key: {
+                                    name: 'x_sln_store_suppli_supply_issue'
+                                    caption: 'Issue Intake'
+                                    view: {
+                                        id: 'f20f7103a309482ebed5af4c5df2a672'
+                                        key: {
+                                            name: 'workspace-3f8cebee4f134dc0951c77b67b418e63'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: '.end_split'
+                            position: '12'
+                        }
+                    },
+                    {
                         table: 'question_choice'
                         id: '94b98cbab35a4cf6ad37bc121a150a5c'
                         key: {
@@ -9286,6 +12325,7 @@ declare global {
                     {
                         table: 'sys_ui_element'
                         id: '95b73a0c78e04e6fbb03166f6eb25166'
+                        deleted: true
                         key: {
                             sys_ui_section: {
                                 id: '38a2834cbe744e2988fedff5e57fbad3'
@@ -9303,6 +12343,28 @@ declare global {
                             }
                             element: 'reopen_count'
                             position: '10'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '95ebc3c4a16842529c1760b90ff16ad3'
+                        key: {
+                            sys_ui_section: {
+                                id: '7ff72be1a7924aa58fed0f5444391806'
+                                key: {
+                                    name: 'x_sln_store_suppli_supply_request'
+                                    caption: 'Resolution, Escalation, and Feedback'
+                                    view: {
+                                        id: 'bf6d088908fc4b2ba4d19d6c5cca9ef7'
+                                        key: {
+                                            name: 'workspace-3f8cebee4f134dc0951c77b67b418e63'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'service_feedback'
+                            position: '5'
                         }
                     },
                     {
@@ -9327,6 +12389,28 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_element'
+                        id: '962ac6feebf142b498676d3c5eb7533b'
+                        key: {
+                            sys_ui_section: {
+                                id: 'd3e097c5e3634647b498e8b4dfc0df24'
+                                key: {
+                                    name: 'x_sln_store_suppli_supply_issue'
+                                    caption: 'Issue Intake'
+                                    view: {
+                                        id: 'Default view'
+                                        key: {
+                                            name: 'NULL'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'intake_channel'
+                            position: '7'
+                        }
+                    },
+                    {
                         table: 'sys_documentation'
                         id: '968c53ff4ef240bf8b5ab2f43b1081bc'
                         key: {
@@ -9336,12 +12420,56 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_element'
+                        id: '9698e38d47324fa0b69d7f37b5d6883d'
+                        key: {
+                            sys_ui_section: {
+                                id: 'cc807804258343239207cec2c2d168ea'
+                                key: {
+                                    name: 'x_sln_store_suppli_supply_issue'
+                                    caption: 'Issue Intake'
+                                    view: {
+                                        id: 'f20f7103a309482ebed5af4c5df2a672'
+                                        key: {
+                                            name: 'workspace-3f8cebee4f134dc0951c77b67b418e63'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'detected_at'
+                            position: '10'
+                        }
+                    },
+                    {
                         table: 'sys_documentation'
                         id: '969dc93dceeb4cb8ab25c27addd9ac31'
                         key: {
                             name: 'x_sln_store_suppli_supplier_task'
                             element: 'demo_data'
                             language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '96a70574331c4d43b18d6e899db7ebd8'
+                        key: {
+                            sys_ui_section: {
+                                id: '7ff72be1a7924aa58fed0f5444391806'
+                                key: {
+                                    name: 'x_sln_store_suppli_supply_request'
+                                    caption: 'Resolution, Escalation, and Feedback'
+                                    view: {
+                                        id: 'bf6d088908fc4b2ba4d19d6c5cca9ef7'
+                                        key: {
+                                            name: 'workspace-3f8cebee4f134dc0951c77b67b418e63'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: '.begin_split'
+                            position: '0'
                         }
                     },
                     {
@@ -9397,6 +12525,50 @@ declare global {
                             }
                             element: 'manufacturer'
                             position: '3'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '97bebf7afe43436bbce50c421d76fb4c'
+                        key: {
+                            sys_ui_section: {
+                                id: '7ff72be1a7924aa58fed0f5444391806'
+                                key: {
+                                    name: 'x_sln_store_suppli_supply_request'
+                                    caption: 'Resolution, Escalation, and Feedback'
+                                    view: {
+                                        id: 'bf6d088908fc4b2ba4d19d6c5cca9ef7'
+                                        key: {
+                                            name: 'workspace-3f8cebee4f134dc0951c77b67b418e63'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'escalation_reasons'
+                            position: '8'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '97cabab857a44288a9ad52981ebf86b5'
+                        key: {
+                            sys_ui_section: {
+                                id: '0f068c26941d4307b3c34ea775ab7177'
+                                key: {
+                                    name: 'x_sln_store_suppli_case_escalation'
+                                    caption: 'Escalation'
+                                    view: {
+                                        id: '1e4899deab9041d5b86791304d2da433'
+                                        key: {
+                                            name: 'workspace-3f8cebee4f134dc0951c77b67b418e63'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'notification_sent'
+                            position: '7'
                         }
                     },
                     {
@@ -9474,6 +12646,39 @@ declare global {
                                 }
                             }
                             element: 'released_on'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_form_section'
+                        id: '99579e36d4574c309e6247329af0bee8'
+                        key: {
+                            sys_ui_form: {
+                                id: '45aee82a489d419b98010530945220c2'
+                                key: {
+                                    name: 'x_sln_store_suppli_supply_issue'
+                                    view: {
+                                        id: 'Default view'
+                                        key: {
+                                            name: 'NULL'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            sys_ui_section: {
+                                id: '9b62817fe4ae4921a13e1a4542bb7fcb'
+                                key: {
+                                    name: 'x_sln_store_suppli_supply_issue'
+                                    caption: 'Assignment and Progress'
+                                    view: {
+                                        id: 'Default view'
+                                        key: {
+                                            name: 'NULL'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
                         }
                     },
                     {
@@ -9568,6 +12773,21 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_section'
+                        id: '9b62817fe4ae4921a13e1a4542bb7fcb'
+                        key: {
+                            name: 'x_sln_store_suppli_supply_issue'
+                            caption: 'Assignment and Progress'
+                            view: {
+                                id: 'Default view'
+                                key: {
+                                    name: 'NULL'
+                                }
+                            }
+                            sys_domain: 'global'
+                        }
+                    },
+                    {
                         table: 'sys_ui_action_role'
                         id: '9b772adc1ccc46609f9a5aa3d1de435b'
                         key: {
@@ -9657,6 +12877,7 @@ declare global {
                     {
                         table: 'sys_ui_element'
                         id: '9d04c3438dd8417097529f861fadae9d'
+                        deleted: true
                         key: {
                             sys_ui_section: {
                                 id: 'cb86c4808f8041db952d108fa142a28f'
@@ -9741,6 +12962,28 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_element'
+                        id: '9e269bcb5709406aa377f0d6e5d02925'
+                        key: {
+                            sys_ui_section: {
+                                id: '7389b22973ac4946aa720a313f82cf77'
+                                key: {
+                                    name: 'x_sln_store_suppli_supply_request'
+                                    caption: 'Request Intake'
+                                    view: {
+                                        id: 'Default view'
+                                        key: {
+                                            name: 'NULL'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'description'
+                            position: '13'
+                        }
+                    },
+                    {
                         table: 'sys_security_acl_role'
                         id: '9e548a4674154ec795d5cd386cb314db'
                         key: {
@@ -9762,6 +13005,83 @@ declare global {
                             value: 'cafe'
                             language: 'en'
                             dependent_value: 'NULL'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '9e746aeb9bb44214b0e026f92681f666'
+                        key: {
+                            sys_ui_section: {
+                                id: '61481f8bc2cf4959bcb847235fe1b17e'
+                                key: {
+                                    name: 'x_sln_store_suppli_supply_issue'
+                                    caption: 'Assignment and Progress'
+                                    view: {
+                                        id: 'f20f7103a309482ebed5af4c5df2a672'
+                                        key: {
+                                            name: 'workspace-3f8cebee4f134dc0951c77b67b418e63'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'approval_status'
+                            position: '3'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '9e884a2269734bb4b41e88f3c4dbde3c'
+                        key: {
+                            sys_ui_section: {
+                                id: 'f17410a8eacf41a89674d527f165a6a9'
+                                key: {
+                                    name: 'x_sln_store_suppli_supply_issue'
+                                    caption: 'Resolution, Escalation, and Feedback'
+                                    view: {
+                                        id: 'Default view'
+                                        key: {
+                                            name: 'NULL'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: '.begin_split'
+                            position: '0'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_form_section'
+                        id: '9eadcf7cbaf8499f9eba453c3d6a2c46'
+                        key: {
+                            sys_ui_form: {
+                                id: '823ebfb647104d61ae174e8fede88775'
+                                key: {
+                                    name: 'x_sln_store_suppli_supply_issue'
+                                    view: {
+                                        id: 'f20f7103a309482ebed5af4c5df2a672'
+                                        key: {
+                                            name: 'workspace-3f8cebee4f134dc0951c77b67b418e63'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            sys_ui_section: {
+                                id: 'cc807804258343239207cec2c2d168ea'
+                                key: {
+                                    name: 'x_sln_store_suppli_supply_issue'
+                                    caption: 'Issue Intake'
+                                    view: {
+                                        id: 'f20f7103a309482ebed5af4c5df2a672'
+                                        key: {
+                                            name: 'workspace-3f8cebee4f134dc0951c77b67b418e63'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
                         }
                     },
                     {
@@ -9803,6 +13123,7 @@ declare global {
                     {
                         table: 'sys_ui_element'
                         id: 'a0a1effb987240f6ae3ed78aba11ab94'
+                        deleted: true
                         key: {
                             sys_ui_section: {
                                 id: 'e2f39fc3bdde41c2a6ef73c494a369b7'
@@ -9857,6 +13178,7 @@ declare global {
                     {
                         table: 'sys_ui_element'
                         id: 'a1005bbea0f84f9897e455a27564d9dc'
+                        deleted: true
                         key: {
                             sys_ui_section: {
                                 id: 'cb86c4808f8041db952d108fa142a28f'
@@ -9879,6 +13201,7 @@ declare global {
                     {
                         table: 'sys_ui_element'
                         id: 'a102a4423d46489ca6ef82b5487bd45f'
+                        deleted: true
                         key: {
                             sys_ui_section: {
                                 id: 'e2f39fc3bdde41c2a6ef73c494a369b7'
@@ -9896,6 +13219,28 @@ declare global {
                             }
                             element: 'service_rating'
                             position: '4'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: 'a1a3b2efa0814458ab42eeab5ae371c6'
+                        key: {
+                            sys_ui_section: {
+                                id: 'f17410a8eacf41a89674d527f165a6a9'
+                                key: {
+                                    name: 'x_sln_store_suppli_supply_issue'
+                                    caption: 'Resolution, Escalation, and Feedback'
+                                    view: {
+                                        id: 'Default view'
+                                        key: {
+                                            name: 'NULL'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'resolution_notes'
+                            position: '2'
                         }
                     },
                     {
@@ -9925,6 +13270,50 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_element'
+                        id: 'a21dc7b44b9e4b6f868d0e193ea47d9f'
+                        key: {
+                            sys_ui_section: {
+                                id: 'f2e160a8d2424d349553af47f4b25956'
+                                key: {
+                                    name: 'x_sln_store_suppli_supply_request'
+                                    caption: 'Resolution, Escalation, and Feedback'
+                                    view: {
+                                        id: 'Default view'
+                                        key: {
+                                            name: 'NULL'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'service_feedback'
+                            position: '5'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: 'a220b05b16fc4e968759a5fa6200ea7d'
+                        key: {
+                            sys_ui_section: {
+                                id: 'b99a7887c6764f31b11a5343386c58ff'
+                                key: {
+                                    name: 'x_sln_store_suppli_supply_request'
+                                    caption: 'Request Intake'
+                                    view: {
+                                        id: 'bf6d088908fc4b2ba4d19d6c5cca9ef7'
+                                        key: {
+                                            name: 'workspace-3f8cebee4f134dc0951c77b67b418e63'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'short_description'
+                            position: '2'
+                        }
+                    },
+                    {
                         table: 'sys_choice'
                         id: 'a256f9a912ce4be0ac30348878c1057f'
                         key: {
@@ -9933,6 +13322,28 @@ declare global {
                             value: '1'
                             language: 'en'
                             dependent_value: 'NULL'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: 'a257aa9a57ba42538312877052f25097'
+                        key: {
+                            sys_ui_section: {
+                                id: '7389b22973ac4946aa720a313f82cf77'
+                                key: {
+                                    name: 'x_sln_store_suppli_supply_request'
+                                    caption: 'Request Intake'
+                                    view: {
+                                        id: 'Default view'
+                                        key: {
+                                            name: 'NULL'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: '.split'
+                            position: '6'
                         }
                     },
                     {
@@ -9959,6 +13370,7 @@ declare global {
                     {
                         table: 'sys_ui_element'
                         id: 'a2c8fa65a25b40faa2c40c04c9e478fe'
+                        deleted: true
                         key: {
                             sys_ui_section: {
                                 id: '38a2834cbe744e2988fedff5e57fbad3'
@@ -9980,7 +13392,30 @@ declare global {
                     },
                     {
                         table: 'sys_ui_element'
+                        id: 'a2e63cafbf124a0d888812e3b581429f'
+                        key: {
+                            sys_ui_section: {
+                                id: 'ab5bc466949248689e1fd3489f41754d'
+                                key: {
+                                    name: 'x_sln_store_suppli_case_escalation'
+                                    caption: 'Escalation'
+                                    view: {
+                                        id: 'Default view'
+                                        key: {
+                                            name: 'NULL'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'triggered_by'
+                            position: '6'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
                         id: 'a31b237816e744abaef025ee5d7109a6'
+                        deleted: true
                         key: {
                             sys_ui_section: {
                                 id: 'cb86c4808f8041db952d108fa142a28f'
@@ -10006,6 +13441,28 @@ declare global {
                         key: {
                             document_key: '49b73264d0344e57864412eccdb68188'
                             variable: '989d9e235324220002c6435723dc3484'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: 'a3b8d86c0cb84c7aa9cb43b8377c4c52'
+                        key: {
+                            sys_ui_section: {
+                                id: '767ea69208df4b83ae56e5eb633793d9'
+                                key: {
+                                    name: 'x_sln_store_suppli_supply_request'
+                                    caption: 'Activity'
+                                    view: {
+                                        id: 'Default view'
+                                        key: {
+                                            name: 'NULL'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'activity.xml'
+                            position: '0'
                         }
                     },
                     {
@@ -10049,6 +13506,7 @@ declare global {
                     {
                         table: 'sys_ui_element'
                         id: 'a492f65d50c94f6c9041e5d1b328291b'
+                        deleted: true
                         key: {
                             sys_ui_section: {
                                 id: '38a2834cbe744e2988fedff5e57fbad3'
@@ -10066,6 +13524,21 @@ declare global {
                             }
                             element: 'resolution_notes'
                             position: '2'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_section'
+                        id: 'a4c694f594214687bedad3f55cdd6659'
+                        key: {
+                            name: 'x_sln_store_suppli_supply_request'
+                            caption: 'Assignment and Progress'
+                            view: {
+                                id: 'bf6d088908fc4b2ba4d19d6c5cca9ef7'
+                                key: {
+                                    name: 'workspace-3f8cebee4f134dc0951c77b67b418e63'
+                                }
+                            }
+                            sys_domain: 'global'
                         }
                     },
                     {
@@ -10127,6 +13600,7 @@ declare global {
                     {
                         table: 'sys_ui_element'
                         id: 'a50c7ee9da2940acb25fe201135c1521'
+                        deleted: true
                         key: {
                             sys_ui_section: {
                                 id: 'cb86c4808f8041db952d108fa142a28f'
@@ -10169,8 +13643,31 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_element'
+                        id: 'a55c6236c3cf4088a4580fb79afe1f8f'
+                        key: {
+                            sys_ui_section: {
+                                id: '0f068c26941d4307b3c34ea775ab7177'
+                                key: {
+                                    name: 'x_sln_store_suppli_case_escalation'
+                                    caption: 'Escalation'
+                                    view: {
+                                        id: '1e4899deab9041d5b86791304d2da433'
+                                        key: {
+                                            name: 'workspace-3f8cebee4f134dc0951c77b67b418e63'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: '.split'
+                            position: '4'
+                        }
+                    },
+                    {
                         table: 'sys_ui_form_section'
                         id: 'a5666bdf20b24d79b86c03e15156acda'
+                        deleted: true
                         key: {
                             sys_ui_form: {
                                 id: '45aee82a489d419b98010530945220c2'
@@ -10202,6 +13699,50 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_element'
+                        id: 'a5f32bdcaac042b391a49399511dc47f'
+                        key: {
+                            sys_ui_section: {
+                                id: '6e2f5367700b4ed48e4700f71e2f0d30'
+                                key: {
+                                    name: 'x_sln_store_suppli_supply_issue'
+                                    caption: 'Activity'
+                                    view: {
+                                        id: 'Default view'
+                                        key: {
+                                            name: 'NULL'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'activity.xml'
+                            position: '0'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: 'a66d5756676c40708ddddd307e3b573f'
+                        key: {
+                            sys_ui_section: {
+                                id: '61481f8bc2cf4959bcb847235fe1b17e'
+                                key: {
+                                    name: 'x_sln_store_suppli_supply_issue'
+                                    caption: 'Assignment and Progress'
+                                    view: {
+                                        id: 'f20f7103a309482ebed5af4c5df2a672'
+                                        key: {
+                                            name: 'workspace-3f8cebee4f134dc0951c77b67b418e63'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: '.end_split'
+                            position: '10'
+                        }
+                    },
+                    {
                         table: 'sys_documentation'
                         id: 'a6e867ed709f421c9ce52c2057291852'
                         key: {
@@ -10221,6 +13762,28 @@ declare global {
                                     name: 'x_sln_store_suppli.support_manager'
                                 }
                             }
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: 'a712a1795b594ef8af0318bf686d4c91'
+                        key: {
+                            sys_ui_section: {
+                                id: '7ff72be1a7924aa58fed0f5444391806'
+                                key: {
+                                    name: 'x_sln_store_suppli_supply_request'
+                                    caption: 'Resolution, Escalation, and Feedback'
+                                    view: {
+                                        id: 'bf6d088908fc4b2ba4d19d6c5cca9ef7'
+                                        key: {
+                                            name: 'workspace-3f8cebee4f134dc0951c77b67b418e63'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'escalated'
+                            position: '7'
                         }
                     },
                     {
@@ -10244,6 +13807,28 @@ declare global {
                         key: {
                             name: 'x_sln_store_suppli_task_line'
                             element: 'NULL'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: 'a800ef8a7737483ea6830b00a1552b2e'
+                        key: {
+                            sys_ui_section: {
+                                id: 'd3e097c5e3634647b498e8b4dfc0df24'
+                                key: {
+                                    name: 'x_sln_store_suppli_supply_issue'
+                                    caption: 'Issue Intake'
+                                    view: {
+                                        id: 'Default view'
+                                        key: {
+                                            name: 'NULL'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'category'
+                            position: '8'
                         }
                     },
                     {
@@ -10380,6 +13965,28 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_element'
+                        id: 'aae166a2daad48c8b8eecf5925c0152b'
+                        key: {
+                            sys_ui_section: {
+                                id: 'cc807804258343239207cec2c2d168ea'
+                                key: {
+                                    name: 'x_sln_store_suppli_supply_issue'
+                                    caption: 'Issue Intake'
+                                    view: {
+                                        id: 'f20f7103a309482ebed5af4c5df2a672'
+                                        key: {
+                                            name: 'workspace-3f8cebee4f134dc0951c77b67b418e63'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'short_description'
+                            position: '2'
+                        }
+                    },
+                    {
                         table: 'sys_ui_list_element'
                         id: 'ab23f8f0ff8645a7823c0ccb0324d131'
                         key: {
@@ -10416,6 +14023,65 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_section'
+                        id: 'ab5bc466949248689e1fd3489f41754d'
+                        key: {
+                            name: 'x_sln_store_suppli_case_escalation'
+                            caption: 'Escalation'
+                            view: {
+                                id: 'Default view'
+                                key: {
+                                    name: 'NULL'
+                                }
+                            }
+                            sys_domain: 'global'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: 'ab9744b3516e44ffa09b35279af5203f'
+                        key: {
+                            sys_ui_section: {
+                                id: 'f17410a8eacf41a89674d527f165a6a9'
+                                key: {
+                                    name: 'x_sln_store_suppli_supply_issue'
+                                    caption: 'Resolution, Escalation, and Feedback'
+                                    view: {
+                                        id: 'Default view'
+                                        key: {
+                                            name: 'NULL'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'service_rating'
+                            position: '4'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: 'ab98e6c6401f4e5e804e1f321d63e5ae'
+                        key: {
+                            sys_ui_section: {
+                                id: '837563ab1dc04b1ab4aee6ba712f5821'
+                                key: {
+                                    name: 'x_sln_store_suppli_supply_issue'
+                                    caption: 'Resolution, Escalation, and Feedback'
+                                    view: {
+                                        id: 'f20f7103a309482ebed5af4c5df2a672'
+                                        key: {
+                                            name: 'workspace-3f8cebee4f134dc0951c77b67b418e63'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'knowledge_recommended'
+                            position: '3'
+                        }
+                    },
+                    {
                         table: 'sys_documentation'
                         id: 'abb333da3773404ebfc0db8422809fdd'
                         key: {
@@ -10427,6 +14093,7 @@ declare global {
                     {
                         table: 'sys_ui_form_section'
                         id: 'abdb8f26ba40490ca56c28c2f70bd720'
+                        deleted: true
                         key: {
                             sys_ui_form: {
                                 id: '45aee82a489d419b98010530945220c2'
@@ -10471,6 +14138,7 @@ declare global {
                     {
                         table: 'sys_ui_element'
                         id: 'ac54b70c12e6458dbd40452a8f18159d'
+                        deleted: true
                         key: {
                             sys_ui_section: {
                                 id: 'e2f39fc3bdde41c2a6ef73c494a369b7'
@@ -10535,6 +14203,7 @@ declare global {
                     {
                         table: 'sys_ui_element'
                         id: 'ad8477e114d54566bd10142838b97ad7'
+                        deleted: true
                         key: {
                             sys_ui_section: {
                                 id: '63d323d9af864dbea77c6e720760c49e'
@@ -10638,6 +14307,7 @@ declare global {
                     {
                         table: 'sys_ui_element'
                         id: 'aea2cf231a084917b0a68fe5e6ae1b12'
+                        deleted: true
                         key: {
                             sys_ui_section: {
                                 id: '63d323d9af864dbea77c6e720760c49e'
@@ -10740,6 +14410,7 @@ declare global {
                     {
                         table: 'sys_ui_element'
                         id: 'afff9ca680d94e1a814062d2d2e7fef1'
+                        deleted: true
                         key: {
                             sys_ui_section: {
                                 id: '63d323d9af864dbea77c6e720760c49e'
@@ -10757,6 +14428,28 @@ declare global {
                             }
                             element: 'escalated'
                             position: '15'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: 'b01afcb8c7104967aebfaf1f505ede4d'
+                        key: {
+                            sys_ui_section: {
+                                id: '7ff72be1a7924aa58fed0f5444391806'
+                                key: {
+                                    name: 'x_sln_store_suppli_supply_request'
+                                    caption: 'Resolution, Escalation, and Feedback'
+                                    view: {
+                                        id: 'bf6d088908fc4b2ba4d19d6c5cca9ef7'
+                                        key: {
+                                            name: 'workspace-3f8cebee4f134dc0951c77b67b418e63'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'reopen_count'
+                            position: '9'
                         }
                     },
                     {
@@ -10795,6 +14488,21 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_section'
+                        id: 'b0db1184f88c4b9db06a0629e7b0ceef'
+                        key: {
+                            name: 'x_sln_store_suppli_supply_issue'
+                            caption: 'Activity'
+                            view: {
+                                id: 'f20f7103a309482ebed5af4c5df2a672'
+                                key: {
+                                    name: 'workspace-3f8cebee4f134dc0951c77b67b418e63'
+                                }
+                            }
+                            sys_domain: 'global'
+                        }
+                    },
+                    {
                         table: 'sys_dictionary'
                         id: 'b0e6e9ceb990430aaac725e556a03cd9'
                         key: {
@@ -10813,6 +14521,28 @@ declare global {
                                     name: 'x_sln_store_suppli.support_manager'
                                 }
                             }
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: 'b159adc69ebe4c5ab71cd18330c8f5d4'
+                        key: {
+                            sys_ui_section: {
+                                id: '9b62817fe4ae4921a13e1a4542bb7fcb'
+                                key: {
+                                    name: 'x_sln_store_suppli_supply_issue'
+                                    caption: 'Assignment and Progress'
+                                    view: {
+                                        id: 'Default view'
+                                        key: {
+                                            name: 'NULL'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'supply_state'
+                            position: '1'
                         }
                     },
                     {
@@ -10931,6 +14661,7 @@ declare global {
                     {
                         table: 'sys_ui_element'
                         id: 'b409879ed04c4eac8241bc22c71a697d'
+                        deleted: true
                         key: {
                             sys_ui_section: {
                                 id: 'cb86c4808f8041db952d108fa142a28f'
@@ -10974,6 +14705,7 @@ declare global {
                     {
                         table: 'sys_ui_element'
                         id: 'b613e92d84634affad5858905c5c0c7d'
+                        deleted: true
                         key: {
                             sys_ui_section: {
                                 id: '63d323d9af864dbea77c6e720760c49e'
@@ -10996,6 +14728,7 @@ declare global {
                     {
                         table: 'sys_ui_element'
                         id: 'b6302a1e5ebb4487b327a4541d872828'
+                        deleted: true
                         key: {
                             sys_ui_section: {
                                 id: '63d323d9af864dbea77c6e720760c49e'
@@ -11017,7 +14750,30 @@ declare global {
                     },
                     {
                         table: 'sys_ui_element'
+                        id: 'b6829c74096e4f419bf9461d6b92c67f'
+                        key: {
+                            sys_ui_section: {
+                                id: 'f17410a8eacf41a89674d527f165a6a9'
+                                key: {
+                                    name: 'x_sln_store_suppli_supply_issue'
+                                    caption: 'Resolution, Escalation, and Feedback'
+                                    view: {
+                                        id: 'Default view'
+                                        key: {
+                                            name: 'NULL'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'reopen_count'
+                            position: '9'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
                         id: 'b6acacc2b6724fbab0712dfe5775ba8c'
+                        deleted: true
                         key: {
                             sys_ui_section: {
                                 id: 'cb86c4808f8041db952d108fa142a28f'
@@ -11072,6 +14828,28 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_element'
+                        id: 'b727321e4ec94fdd9d040277a9c288f9'
+                        key: {
+                            sys_ui_section: {
+                                id: 'f2e160a8d2424d349553af47f4b25956'
+                                key: {
+                                    name: 'x_sln_store_suppli_supply_request'
+                                    caption: 'Resolution, Escalation, and Feedback'
+                                    view: {
+                                        id: 'Default view'
+                                        key: {
+                                            name: 'NULL'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: '.split'
+                            position: '6'
+                        }
+                    },
+                    {
                         table: 'sys_dictionary'
                         id: 'b72a4ae083c94932ab054d517b29052b'
                         key: {
@@ -11082,6 +14860,7 @@ declare global {
                     {
                         table: 'sys_ui_element'
                         id: 'b7c70716da82421da38d8ff9d4594b72'
+                        deleted: true
                         key: {
                             sys_ui_section: {
                                 id: '38a2834cbe744e2988fedff5e57fbad3'
@@ -11099,6 +14878,39 @@ declare global {
                             }
                             element: 'service_feedback'
                             position: '5'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_form_section'
+                        id: 'b7dca9a304f649f2be630379f4c3cb47'
+                        key: {
+                            sys_ui_form: {
+                                id: '4d65ce9b1685430bae5de88a2b098f3f'
+                                key: {
+                                    name: 'x_sln_store_suppli_supply_request'
+                                    view: {
+                                        id: 'bf6d088908fc4b2ba4d19d6c5cca9ef7'
+                                        key: {
+                                            name: 'workspace-3f8cebee4f134dc0951c77b67b418e63'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            sys_ui_section: {
+                                id: '7ff72be1a7924aa58fed0f5444391806'
+                                key: {
+                                    name: 'x_sln_store_suppli_supply_request'
+                                    caption: 'Resolution, Escalation, and Feedback'
+                                    view: {
+                                        id: 'bf6d088908fc4b2ba4d19d6c5cca9ef7'
+                                        key: {
+                                            name: 'workspace-3f8cebee4f134dc0951c77b67b418e63'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
                         }
                     },
                     {
@@ -11135,6 +14947,7 @@ declare global {
                     {
                         table: 'sys_ui_element'
                         id: 'b8c2bc27dc9e4de4828614920da7b063'
+                        deleted: true
                         key: {
                             sys_ui_section: {
                                 id: 'cb86c4808f8041db952d108fa142a28f'
@@ -11152,6 +14965,28 @@ declare global {
                             }
                             element: 'activity.xml'
                             position: '19'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: 'b8ed141370c84ef38e8f4f6f671cfaea'
+                        key: {
+                            sys_ui_section: {
+                                id: '22baa2c99d7444b69ba365a958f2bacb'
+                                key: {
+                                    name: 'x_sln_store_suppli_supply_request'
+                                    caption: 'Assignment and Progress'
+                                    view: {
+                                        id: 'Default view'
+                                        key: {
+                                            name: 'NULL'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'approval_status'
+                            position: '3'
                         }
                     },
                     {
@@ -11184,6 +15019,7 @@ declare global {
                     {
                         table: 'sys_ui_element'
                         id: 'b9218e549a5d4833a453ceffb1339037'
+                        deleted: true
                         key: {
                             sys_ui_section: {
                                 id: 'e2f39fc3bdde41c2a6ef73c494a369b7'
@@ -11221,6 +15057,21 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_section'
+                        id: 'b99a7887c6764f31b11a5343386c58ff'
+                        key: {
+                            name: 'x_sln_store_suppli_supply_request'
+                            caption: 'Request Intake'
+                            view: {
+                                id: 'bf6d088908fc4b2ba4d19d6c5cca9ef7'
+                                key: {
+                                    name: 'workspace-3f8cebee4f134dc0951c77b67b418e63'
+                                }
+                            }
+                            sys_domain: 'global'
+                        }
+                    },
+                    {
                         table: 'sys_ui_element'
                         id: 'b9c32b022c45462bab071f7bb97a9650'
                         key: {
@@ -11240,6 +15091,50 @@ declare global {
                             }
                             element: 'parent_case'
                             position: '2'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: 'b9d221a51bc644a2ba5bb59ba5eb9a20'
+                        key: {
+                            sys_ui_section: {
+                                id: 'ab5bc466949248689e1fd3489f41754d'
+                                key: {
+                                    name: 'x_sln_store_suppli_case_escalation'
+                                    caption: 'Escalation'
+                                    view: {
+                                        id: 'Default view'
+                                        key: {
+                                            name: 'NULL'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'triggered_on'
+                            position: '5'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: 'ba28b6ed68c542a3ab653250d50e4e69'
+                        key: {
+                            sys_ui_section: {
+                                id: 'f2e160a8d2424d349553af47f4b25956'
+                                key: {
+                                    name: 'x_sln_store_suppli_supply_request'
+                                    caption: 'Resolution, Escalation, and Feedback'
+                                    view: {
+                                        id: 'Default view'
+                                        key: {
+                                            name: 'NULL'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: '.begin_split'
+                            position: '0'
                         }
                     },
                     {
@@ -11372,6 +15267,28 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_element'
+                        id: 'bcd8755ce3eb4a8eaefd8f5924bfe308'
+                        key: {
+                            sys_ui_section: {
+                                id: '9b62817fe4ae4921a13e1a4542bb7fcb'
+                                key: {
+                                    name: 'x_sln_store_suppli_supply_issue'
+                                    caption: 'Assignment and Progress'
+                                    view: {
+                                        id: 'Default view'
+                                        key: {
+                                            name: 'NULL'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: '.end_split'
+                            position: '10'
+                        }
+                    },
+                    {
                         table: 'ua_table_licensing_config'
                         id: 'bd0d7d38de4a4e369ca9c0a80edbac93'
                         key: {
@@ -11457,6 +15374,50 @@ declare global {
                     },
                     {
                         table: 'sys_ui_element'
+                        id: 'be230bf384e54608afff830af3559ce1'
+                        key: {
+                            sys_ui_section: {
+                                id: '7389b22973ac4946aa720a313f82cf77'
+                                key: {
+                                    name: 'x_sln_store_suppli_supply_request'
+                                    caption: 'Request Intake'
+                                    view: {
+                                        id: 'Default view'
+                                        key: {
+                                            name: 'NULL'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'priority'
+                            position: '11'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: 'be4be4e1916e4b719a60764327191560'
+                        key: {
+                            sys_ui_section: {
+                                id: 'd3e097c5e3634647b498e8b4dfc0df24'
+                                key: {
+                                    name: 'x_sln_store_suppli_supply_issue'
+                                    caption: 'Issue Intake'
+                                    view: {
+                                        id: 'Default view'
+                                        key: {
+                                            name: 'NULL'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'detected_at'
+                            position: '10'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
                         id: 'be787eb0a3fb4d96bffb8f418aff80fb'
                         key: {
                             sys_ui_section: {
@@ -11520,7 +15481,30 @@ declare global {
                     },
                     {
                         table: 'sys_ui_element'
+                        id: 'bf73b849372f4405ac35005446e1d085'
+                        key: {
+                            sys_ui_section: {
+                                id: '0f068c26941d4307b3c34ea775ab7177'
+                                key: {
+                                    name: 'x_sln_store_suppli_case_escalation'
+                                    caption: 'Escalation'
+                                    view: {
+                                        id: '1e4899deab9041d5b86791304d2da433'
+                                        key: {
+                                            name: 'workspace-3f8cebee4f134dc0951c77b67b418e63'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'triggered_on'
+                            position: '5'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
                         id: 'bf9bf2227b1841c0af5b967844479135'
+                        deleted: true
                         key: {
                             sys_ui_section: {
                                 id: '63d323d9af864dbea77c6e720760c49e'
@@ -11552,12 +15536,56 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_element'
+                        id: 'bfefbb2c4c1a4a15be2cec5464753c08'
+                        key: {
+                            sys_ui_section: {
+                                id: '22baa2c99d7444b69ba365a958f2bacb'
+                                key: {
+                                    name: 'x_sln_store_suppli_supply_request'
+                                    caption: 'Assignment and Progress'
+                                    view: {
+                                        id: 'Default view'
+                                        key: {
+                                            name: 'NULL'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'assigned_to'
+                            position: '7'
+                        }
+                    },
+                    {
                         table: 'sys_documentation'
                         id: 'c019400162a749b793e7ab1710b81cdb'
                         key: {
                             name: 'x_sln_store_suppli_task_line'
                             element: 'supply_line'
                             language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: 'c01948c41beb44db96e007c9f010cba8'
+                        key: {
+                            sys_ui_section: {
+                                id: '7389b22973ac4946aa720a313f82cf77'
+                                key: {
+                                    name: 'x_sln_store_suppli_supply_request'
+                                    caption: 'Request Intake'
+                                    view: {
+                                        id: 'Default view'
+                                        key: {
+                                            name: 'NULL'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'short_description'
+                            position: '2'
                         }
                     },
                     {
@@ -11869,6 +15897,7 @@ declare global {
                     {
                         table: 'sys_ui_element'
                         id: 'c60ea9ea90554e1e89a8a7511453b9e4'
+                        deleted: true
                         key: {
                             sys_ui_section: {
                                 id: '63d323d9af864dbea77c6e720760c49e'
@@ -11897,11 +15926,55 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_element'
+                        id: 'c63425106de24d92bc6200e74b3ae607'
+                        key: {
+                            sys_ui_section: {
+                                id: '7389b22973ac4946aa720a313f82cf77'
+                                key: {
+                                    name: 'x_sln_store_suppli_supply_request'
+                                    caption: 'Request Intake'
+                                    view: {
+                                        id: 'Default view'
+                                        key: {
+                                            name: 'NULL'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'requested_by'
+                            position: '4'
+                        }
+                    },
+                    {
                         table: 'sys_choice_set'
                         id: 'c69ad0675dde49baa79b0cdb1f5bddb2'
                         key: {
                             name: 'x_sln_store_suppli_supplier_task'
                             element: 'task_state'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: 'c6c6e8af37db4f1f9f375c71268979a8'
+                        key: {
+                            sys_ui_section: {
+                                id: '7ff72be1a7924aa58fed0f5444391806'
+                                key: {
+                                    name: 'x_sln_store_suppli_supply_request'
+                                    caption: 'Resolution, Escalation, and Feedback'
+                                    view: {
+                                        id: 'bf6d088908fc4b2ba4d19d6c5cca9ef7'
+                                        key: {
+                                            name: 'workspace-3f8cebee4f134dc0951c77b67b418e63'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'resolution_code'
+                            position: '1'
                         }
                     },
                     {
@@ -12109,6 +16182,7 @@ declare global {
                     {
                         table: 'sys_ui_section'
                         id: 'cb86c4808f8041db952d108fa142a28f'
+                        deleted: true
                         key: {
                             name: 'x_sln_store_suppli_supply_request'
                             caption: 'Request'
@@ -12127,6 +16201,28 @@ declare global {
                         key: {
                             document_key: '035670b9aa9344abbfae29e6d136e6dd'
                             variable: '42f2564b73031300440211d8faf6a777'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: 'cbccff28c1a544e7a898b33b422414b4'
+                        key: {
+                            sys_ui_section: {
+                                id: '61481f8bc2cf4959bcb847235fe1b17e'
+                                key: {
+                                    name: 'x_sln_store_suppli_supply_issue'
+                                    caption: 'Assignment and Progress'
+                                    view: {
+                                        id: 'f20f7103a309482ebed5af4c5df2a672'
+                                        key: {
+                                            name: 'workspace-3f8cebee4f134dc0951c77b67b418e63'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'last_customer_update'
+                            position: '9'
                         }
                     },
                     {
@@ -12172,6 +16268,21 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_section'
+                        id: 'cc807804258343239207cec2c2d168ea'
+                        key: {
+                            name: 'x_sln_store_suppli_supply_issue'
+                            caption: 'Issue Intake'
+                            view: {
+                                id: 'f20f7103a309482ebed5af4c5df2a672'
+                                key: {
+                                    name: 'workspace-3f8cebee4f134dc0951c77b67b418e63'
+                                }
+                            }
+                            sys_domain: 'global'
+                        }
+                    },
+                    {
                         table: 'sys_choice'
                         id: 'cd5d059b18e34869bf0b8e7e1f124cbc'
                         key: {
@@ -12194,6 +16305,28 @@ declare global {
                                 }
                             }
                             sys_domain: 'global'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: 'cdb28de1984c496eb26f24b2177c06f7'
+                        key: {
+                            sys_ui_section: {
+                                id: 'd3e097c5e3634647b498e8b4dfc0df24'
+                                key: {
+                                    name: 'x_sln_store_suppli_supply_issue'
+                                    caption: 'Issue Intake'
+                                    view: {
+                                        id: 'Default view'
+                                        key: {
+                                            name: 'NULL'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'store'
+                            position: '3'
                         }
                     },
                     {
@@ -12292,6 +16425,39 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_form_section'
+                        id: 'cf5cd6536b564bf6ad2f7aa8ad2fd27f'
+                        key: {
+                            sys_ui_form: {
+                                id: '45aee82a489d419b98010530945220c2'
+                                key: {
+                                    name: 'x_sln_store_suppli_supply_issue'
+                                    view: {
+                                        id: 'Default view'
+                                        key: {
+                                            name: 'NULL'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            sys_ui_section: {
+                                id: 'f17410a8eacf41a89674d527f165a6a9'
+                                key: {
+                                    name: 'x_sln_store_suppli_supply_issue'
+                                    caption: 'Resolution, Escalation, and Feedback'
+                                    view: {
+                                        id: 'Default view'
+                                        key: {
+                                            name: 'NULL'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                        }
+                    },
+                    {
                         table: 'sys_security_acl_role'
                         id: 'cf92956a3e6b4cdb8b6f6f8f96895cf5'
                         key: {
@@ -12370,12 +16536,70 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_element'
+                        id: 'd0d56595ecd141fcacbf27c0d06d21a0'
+                        key: {
+                            sys_ui_section: {
+                                id: '61481f8bc2cf4959bcb847235fe1b17e'
+                                key: {
+                                    name: 'x_sln_store_suppli_supply_issue'
+                                    caption: 'Assignment and Progress'
+                                    view: {
+                                        id: 'f20f7103a309482ebed5af4c5df2a672'
+                                        key: {
+                                            name: 'workspace-3f8cebee4f134dc0951c77b67b418e63'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: '.split'
+                            position: '5'
+                        }
+                    },
+                    {
                         table: 'sys_documentation'
                         id: 'd10bbdeb6afd46a4820a7f6742a9b4f4'
                         key: {
                             name: 'x_sln_store_suppli_supply_line'
                             element: 'NULL'
                             language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_form'
+                        id: 'd15135b377fc4f20b6f89296e65776c7'
+                        key: {
+                            name: 'x_sln_store_suppli_case_escalation'
+                            view: {
+                                id: '1e4899deab9041d5b86791304d2da433'
+                                key: {
+                                    name: 'workspace-3f8cebee4f134dc0951c77b67b418e63'
+                                }
+                            }
+                            sys_domain: 'global'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: 'd15a8232ea804619a3040ab56582679a'
+                        key: {
+                            sys_ui_section: {
+                                id: '0f068c26941d4307b3c34ea775ab7177'
+                                key: {
+                                    name: 'x_sln_store_suppli_case_escalation'
+                                    caption: 'Escalation'
+                                    view: {
+                                        id: '1e4899deab9041d5b86791304d2da433'
+                                        key: {
+                                            name: 'workspace-3f8cebee4f134dc0951c77b67b418e63'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: '.begin_split'
+                            position: '0'
                         }
                     },
                     {
@@ -12397,6 +16621,28 @@ declare global {
                                     name: 'x_sln_store_suppli.supplier_agent'
                                 }
                             }
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: 'd1ff57d9674c449593574c554424ad23'
+                        key: {
+                            sys_ui_section: {
+                                id: '837563ab1dc04b1ab4aee6ba712f5821'
+                                key: {
+                                    name: 'x_sln_store_suppli_supply_issue'
+                                    caption: 'Resolution, Escalation, and Feedback'
+                                    view: {
+                                        id: 'f20f7103a309482ebed5af4c5df2a672'
+                                        key: {
+                                            name: 'workspace-3f8cebee4f134dc0951c77b67b418e63'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: '.begin_split'
+                            position: '0'
                         }
                     },
                     {
@@ -12465,6 +16711,7 @@ declare global {
                     {
                         table: 'sys_ui_element'
                         id: 'd2fdeda884e14e20bb1794a54eaa419b'
+                        deleted: true
                         key: {
                             sys_ui_section: {
                                 id: '63d323d9af864dbea77c6e720760c49e'
@@ -12513,6 +16760,21 @@ declare global {
                                     name: 'sn_customerservice_agent'
                                 }
                             }
+                        }
+                    },
+                    {
+                        table: 'sys_ui_section'
+                        id: 'd3e097c5e3634647b498e8b4dfc0df24'
+                        key: {
+                            name: 'x_sln_store_suppli_supply_issue'
+                            caption: 'Issue Intake'
+                            view: {
+                                id: 'Default view'
+                                key: {
+                                    name: 'NULL'
+                                }
+                            }
+                            sys_domain: 'global'
                         }
                     },
                     {
@@ -12665,6 +16927,7 @@ declare global {
                     {
                         table: 'sys_ui_element'
                         id: 'd6d87b1829dd412dbf523c65f8ff9851'
+                        deleted: true
                         key: {
                             sys_ui_section: {
                                 id: '38a2834cbe744e2988fedff5e57fbad3'
@@ -12687,6 +16950,7 @@ declare global {
                     {
                         table: 'sys_ui_element'
                         id: 'd7b96f01195048dd82f05d44e8fdb9f8'
+                        deleted: true
                         key: {
                             sys_ui_section: {
                                 id: '63d323d9af864dbea77c6e720760c49e'
@@ -12779,6 +17043,50 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_element'
+                        id: 'd99c679b18f84a728ebf4e93ab8e69c6'
+                        key: {
+                            sys_ui_section: {
+                                id: 'd3e097c5e3634647b498e8b4dfc0df24'
+                                key: {
+                                    name: 'x_sln_store_suppli_supply_issue'
+                                    caption: 'Issue Intake'
+                                    view: {
+                                        id: 'Default view'
+                                        key: {
+                                            name: 'NULL'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'priority'
+                            position: '11'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: 'da0fc60e68594a31b6df9943629fd5e0'
+                        key: {
+                            sys_ui_section: {
+                                id: 'cc807804258343239207cec2c2d168ea'
+                                key: {
+                                    name: 'x_sln_store_suppli_supply_issue'
+                                    caption: 'Issue Intake'
+                                    view: {
+                                        id: 'f20f7103a309482ebed5af4c5df2a672'
+                                        key: {
+                                            name: 'workspace-3f8cebee4f134dc0951c77b67b418e63'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: '.begin_split'
+                            position: '0'
+                        }
+                    },
+                    {
                         table: 'sys_dictionary'
                         id: 'da1a5df479694e5bab793ff3bc754045'
                         key: {
@@ -12793,6 +17101,28 @@ declare global {
                             cat_item: 'c9a7076278194d71a494e4325fbec4bf'
                             variable_set: 'NULL'
                             name: 'supplyModel'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: 'da7d3ac1c18c40c7b1ae5587917775c3'
+                        key: {
+                            sys_ui_section: {
+                                id: '837563ab1dc04b1ab4aee6ba712f5821'
+                                key: {
+                                    name: 'x_sln_store_suppli_supply_issue'
+                                    caption: 'Resolution, Escalation, and Feedback'
+                                    view: {
+                                        id: 'f20f7103a309482ebed5af4c5df2a672'
+                                        key: {
+                                            name: 'workspace-3f8cebee4f134dc0951c77b67b418e63'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'escalation_reasons'
+                            position: '8'
                         }
                     },
                     {
@@ -12852,6 +17182,7 @@ declare global {
                     {
                         table: 'sys_ui_form_section'
                         id: 'dba547ebb01d4f468249be8a04767e6d'
+                        deleted: true
                         key: {
                             sys_ui_form: {
                                 id: '9cff54fe00c544df8b5c7a77dffe29f6'
@@ -12896,6 +17227,50 @@ declare global {
                         key: {
                             name: 'x_sln_store_suppli_survey_ledger'
                             element: 'assessment_instance'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: 'dc3370e6a972457d80c9df55fe240926'
+                        key: {
+                            sys_ui_section: {
+                                id: 'b99a7887c6764f31b11a5343386c58ff'
+                                key: {
+                                    name: 'x_sln_store_suppli_supply_request'
+                                    caption: 'Request Intake'
+                                    view: {
+                                        id: 'bf6d088908fc4b2ba4d19d6c5cca9ef7'
+                                        key: {
+                                            name: 'workspace-3f8cebee4f134dc0951c77b67b418e63'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'business_justification'
+                            position: '14'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: 'dc696adceead4826ad156a0dc11a31cc'
+                        key: {
+                            sys_ui_section: {
+                                id: 'a4c694f594214687bedad3f55cdd6659'
+                                key: {
+                                    name: 'x_sln_store_suppli_supply_request'
+                                    caption: 'Assignment and Progress'
+                                    view: {
+                                        id: 'bf6d088908fc4b2ba4d19d6c5cca9ef7'
+                                        key: {
+                                            name: 'workspace-3f8cebee4f134dc0951c77b67b418e63'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'assignment_group'
+                            position: '6'
                         }
                     },
                     {
@@ -13071,6 +17446,50 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_element'
+                        id: 'df152620547342beb55af1b85c43f6b5'
+                        key: {
+                            sys_ui_section: {
+                                id: 'f17410a8eacf41a89674d527f165a6a9'
+                                key: {
+                                    name: 'x_sln_store_suppli_supply_issue'
+                                    caption: 'Resolution, Escalation, and Feedback'
+                                    view: {
+                                        id: 'Default view'
+                                        key: {
+                                            name: 'NULL'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'knowledge_recommended'
+                            position: '3'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: 'df34ae32fa8549bc805d0d7737bb5658'
+                        key: {
+                            sys_ui_section: {
+                                id: 'cc807804258343239207cec2c2d168ea'
+                                key: {
+                                    name: 'x_sln_store_suppli_supply_issue'
+                                    caption: 'Issue Intake'
+                                    view: {
+                                        id: 'f20f7103a309482ebed5af4c5df2a672'
+                                        key: {
+                                            name: 'workspace-3f8cebee4f134dc0951c77b67b418e63'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'business_impact'
+                            position: '14'
+                        }
+                    },
+                    {
                         table: 'sys_ui_list_element'
                         id: 'dfef185afb6e495b9c5571a50b1fe675'
                         key: {
@@ -13134,7 +17553,30 @@ declare global {
                     },
                     {
                         table: 'sys_ui_element'
+                        id: 'e08748b2022d4e34bdad5508d38daebf'
+                        key: {
+                            sys_ui_section: {
+                                id: 'f2e160a8d2424d349553af47f4b25956'
+                                key: {
+                                    name: 'x_sln_store_suppli_supply_request'
+                                    caption: 'Resolution, Escalation, and Feedback'
+                                    view: {
+                                        id: 'Default view'
+                                        key: {
+                                            name: 'NULL'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'escalated'
+                            position: '7'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
                         id: 'e0dba0ffe5a041af99f5722874e104e7'
+                        deleted: true
                         key: {
                             sys_ui_section: {
                                 id: 'cb86c4808f8041db952d108fa142a28f'
@@ -13160,6 +17602,28 @@ declare global {
                         key: {
                             name: 'x_sln_store_suppli_supply_case'
                             element: 'service_rating'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: 'e103208b0d004deb94fe38b0ccbc6453'
+                        key: {
+                            sys_ui_section: {
+                                id: '0f068c26941d4307b3c34ea775ab7177'
+                                key: {
+                                    name: 'x_sln_store_suppli_case_escalation'
+                                    caption: 'Escalation'
+                                    view: {
+                                        id: '1e4899deab9041d5b86791304d2da433'
+                                        key: {
+                                            name: 'workspace-3f8cebee4f134dc0951c77b67b418e63'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'triggered_by'
+                            position: '6'
                         }
                     },
                     {
@@ -13208,6 +17672,39 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_form_section'
+                        id: 'e24fad51e4f24222be3cf02920e19ad5'
+                        key: {
+                            sys_ui_form: {
+                                id: '4d65ce9b1685430bae5de88a2b098f3f'
+                                key: {
+                                    name: 'x_sln_store_suppli_supply_request'
+                                    view: {
+                                        id: 'bf6d088908fc4b2ba4d19d6c5cca9ef7'
+                                        key: {
+                                            name: 'workspace-3f8cebee4f134dc0951c77b67b418e63'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            sys_ui_section: {
+                                id: 'b99a7887c6764f31b11a5343386c58ff'
+                                key: {
+                                    name: 'x_sln_store_suppli_supply_request'
+                                    caption: 'Request Intake'
+                                    view: {
+                                        id: 'bf6d088908fc4b2ba4d19d6c5cca9ef7'
+                                        key: {
+                                            name: 'workspace-3f8cebee4f134dc0951c77b67b418e63'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                        }
+                    },
+                    {
                         table: 'sys_ui_list_element'
                         id: 'e26785f0cfea4bbbacad32f1db2cf645'
                         key: {
@@ -13231,8 +17728,31 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_element'
+                        id: 'e2ecac2ea83d4db99a52db22471d918c'
+                        key: {
+                            sys_ui_section: {
+                                id: 'f2e160a8d2424d349553af47f4b25956'
+                                key: {
+                                    name: 'x_sln_store_suppli_supply_request'
+                                    caption: 'Resolution, Escalation, and Feedback'
+                                    view: {
+                                        id: 'Default view'
+                                        key: {
+                                            name: 'NULL'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'resolution_notes'
+                            position: '2'
+                        }
+                    },
+                    {
                         table: 'sys_ui_section'
                         id: 'e2f39fc3bdde41c2a6ef73c494a369b7'
+                        deleted: true
                         key: {
                             name: 'x_sln_store_suppli_supply_request'
                             caption: 'Resolution and Escalation'
@@ -13376,6 +17896,28 @@ declare global {
                     },
                     {
                         table: 'sys_ui_element'
+                        id: 'e4c71480d0c549e2a5d8b58b0c00fee9'
+                        key: {
+                            sys_ui_section: {
+                                id: '837563ab1dc04b1ab4aee6ba712f5821'
+                                key: {
+                                    name: 'x_sln_store_suppli_supply_issue'
+                                    caption: 'Resolution, Escalation, and Feedback'
+                                    view: {
+                                        id: 'f20f7103a309482ebed5af4c5df2a672'
+                                        key: {
+                                            name: 'workspace-3f8cebee4f134dc0951c77b67b418e63'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'escalated'
+                            position: '7'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
                         id: 'e4df177a93514d29b36a9223eb240b5f'
                         key: {
                             sys_ui_section: {
@@ -13394,6 +17936,28 @@ declare global {
                             }
                             element: 'supplier_account'
                             position: '3'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: 'e5333e9347fe43459f19f1cc902dd118'
+                        key: {
+                            sys_ui_section: {
+                                id: '9b62817fe4ae4921a13e1a4542bb7fcb'
+                                key: {
+                                    name: 'x_sln_store_suppli_supply_issue'
+                                    caption: 'Assignment and Progress'
+                                    view: {
+                                        id: 'Default view'
+                                        key: {
+                                            name: 'NULL'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'first_response_at'
+                            position: '8'
                         }
                     },
                     {
@@ -13467,6 +18031,28 @@ declare global {
                                 }
                             }
                             value: 'one_time'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: 'e6470d98251b478884a4861ac65d0a0f'
+                        key: {
+                            sys_ui_section: {
+                                id: 'f2e160a8d2424d349553af47f4b25956'
+                                key: {
+                                    name: 'x_sln_store_suppli_supply_request'
+                                    caption: 'Resolution, Escalation, and Feedback'
+                                    view: {
+                                        id: 'Default view'
+                                        key: {
+                                            name: 'NULL'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'service_rating'
+                            position: '4'
                         }
                     },
                     {
@@ -13577,6 +18163,28 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_element'
+                        id: 'e7a5dd2379ec44d585546a24949744f6'
+                        key: {
+                            sys_ui_section: {
+                                id: '7ff72be1a7924aa58fed0f5444391806'
+                                key: {
+                                    name: 'x_sln_store_suppli_supply_request'
+                                    caption: 'Resolution, Escalation, and Feedback'
+                                    view: {
+                                        id: 'bf6d088908fc4b2ba4d19d6c5cca9ef7'
+                                        key: {
+                                            name: 'workspace-3f8cebee4f134dc0951c77b67b418e63'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'resolution_notes'
+                            position: '2'
+                        }
+                    },
+                    {
                         table: 'sys_choice'
                         id: 'e7bf95865e8b4f889f8eaafb01e7f678'
                         key: {
@@ -13603,6 +18211,39 @@ declare global {
                             name: 'x_sln_store_suppli_case_escalation'
                             element: 'NULL'
                             language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_form_section'
+                        id: 'e84488f0ac1e43d7b9def70bbdf986ce'
+                        key: {
+                            sys_ui_form: {
+                                id: '823ebfb647104d61ae174e8fede88775'
+                                key: {
+                                    name: 'x_sln_store_suppli_supply_issue'
+                                    view: {
+                                        id: 'f20f7103a309482ebed5af4c5df2a672'
+                                        key: {
+                                            name: 'workspace-3f8cebee4f134dc0951c77b67b418e63'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            sys_ui_section: {
+                                id: 'b0db1184f88c4b9db06a0629e7b0ceef'
+                                key: {
+                                    name: 'x_sln_store_suppli_supply_issue'
+                                    caption: 'Activity'
+                                    view: {
+                                        id: 'f20f7103a309482ebed5af4c5df2a672'
+                                        key: {
+                                            name: 'workspace-3f8cebee4f134dc0951c77b67b418e63'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
                         }
                     },
                     {
@@ -13668,6 +18309,72 @@ declare global {
                                     name: 'x_sln_store_suppli.support_manager'
                                 }
                             }
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: 'e93c1959bf544e10a1167f0236430dd3'
+                        key: {
+                            sys_ui_section: {
+                                id: '9b62817fe4ae4921a13e1a4542bb7fcb'
+                                key: {
+                                    name: 'x_sln_store_suppli_supply_issue'
+                                    caption: 'Assignment and Progress'
+                                    view: {
+                                        id: 'Default view'
+                                        key: {
+                                            name: 'NULL'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'assigned_to'
+                            position: '7'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: 'e98ab05d0aa94f85b029f52b5b9acd99'
+                        key: {
+                            sys_ui_section: {
+                                id: 'f2e160a8d2424d349553af47f4b25956'
+                                key: {
+                                    name: 'x_sln_store_suppli_supply_request'
+                                    caption: 'Resolution, Escalation, and Feedback'
+                                    view: {
+                                        id: 'Default view'
+                                        key: {
+                                            name: 'NULL'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'reopened_at'
+                            position: '10'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: 'e99053af9850446e872fcab820ccacfe'
+                        key: {
+                            sys_ui_section: {
+                                id: 'd3e097c5e3634647b498e8b4dfc0df24'
+                                key: {
+                                    name: 'x_sln_store_suppli_supply_issue'
+                                    caption: 'Issue Intake'
+                                    view: {
+                                        id: 'Default view'
+                                        key: {
+                                            name: 'NULL'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'short_description'
+                            position: '2'
                         }
                     },
                     {
@@ -13765,6 +18472,50 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_element'
+                        id: 'eb9543e0c5a24e1e8bc809caabbce64d'
+                        key: {
+                            sys_ui_section: {
+                                id: 'd3e097c5e3634647b498e8b4dfc0df24'
+                                key: {
+                                    name: 'x_sln_store_suppli_supply_issue'
+                                    caption: 'Issue Intake'
+                                    view: {
+                                        id: 'Default view'
+                                        key: {
+                                            name: 'NULL'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'requested_by'
+                            position: '4'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: 'ec1e47e9f4ad45cc81e9618c7441d9dd'
+                        key: {
+                            sys_ui_section: {
+                                id: 'f17410a8eacf41a89674d527f165a6a9'
+                                key: {
+                                    name: 'x_sln_store_suppli_supply_issue'
+                                    caption: 'Resolution, Escalation, and Feedback'
+                                    view: {
+                                        id: 'Default view'
+                                        key: {
+                                            name: 'NULL'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'resolution_code'
+                            position: '1'
+                        }
+                    },
+                    {
                         table: 'question_choice'
                         id: 'ec2f4660e7814d22b6f79f46f3a28f51'
                         key: {
@@ -13777,6 +18528,50 @@ declare global {
                                 }
                             }
                             value: 'promotion_event'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: 'ec3ccd69cd144715829283fb3f93899c'
+                        key: {
+                            sys_ui_section: {
+                                id: 'cc807804258343239207cec2c2d168ea'
+                                key: {
+                                    name: 'x_sln_store_suppli_supply_issue'
+                                    caption: 'Issue Intake'
+                                    view: {
+                                        id: 'f20f7103a309482ebed5af4c5df2a672'
+                                        key: {
+                                            name: 'workspace-3f8cebee4f134dc0951c77b67b418e63'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'store'
+                            position: '3'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: 'ecee312bd9f24fdab6d2660c5a921bbe'
+                        key: {
+                            sys_ui_section: {
+                                id: '61481f8bc2cf4959bcb847235fe1b17e'
+                                key: {
+                                    name: 'x_sln_store_suppli_supply_issue'
+                                    caption: 'Assignment and Progress'
+                                    view: {
+                                        id: 'f20f7103a309482ebed5af4c5df2a672'
+                                        key: {
+                                            name: 'workspace-3f8cebee4f134dc0951c77b67b418e63'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'assignment_group'
+                            position: '6'
                         }
                     },
                     {
@@ -13875,6 +18670,28 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_element'
+                        id: 'f02b2b82aed14b719bf9eb861c55fa5f'
+                        key: {
+                            sys_ui_section: {
+                                id: 'ab5bc466949248689e1fd3489f41754d'
+                                key: {
+                                    name: 'x_sln_store_suppli_case_escalation'
+                                    caption: 'Escalation'
+                                    view: {
+                                        id: 'Default view'
+                                        key: {
+                                            name: 'NULL'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: '.end_split'
+                            position: '8'
+                        }
+                    },
+                    {
                         table: 'sys_ui_list_element'
                         id: 'f0460d491538481e85af028e2b1655c5'
                         key: {
@@ -13908,6 +18725,7 @@ declare global {
                     {
                         table: 'sys_ui_element'
                         id: 'f083a4d42a3f47498cddd62191527ee9'
+                        deleted: true
                         key: {
                             sys_ui_section: {
                                 id: 'e2f39fc3bdde41c2a6ef73c494a369b7'
@@ -13951,12 +18769,104 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_section'
+                        id: 'f17410a8eacf41a89674d527f165a6a9'
+                        key: {
+                            name: 'x_sln_store_suppli_supply_issue'
+                            caption: 'Resolution, Escalation, and Feedback'
+                            view: {
+                                id: 'Default view'
+                                key: {
+                                    name: 'NULL'
+                                }
+                            }
+                            sys_domain: 'global'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: 'f1a746259ad74d6d878dd3ffa35d6711'
+                        key: {
+                            sys_ui_section: {
+                                id: '0f068c26941d4307b3c34ea775ab7177'
+                                key: {
+                                    name: 'x_sln_store_suppli_case_escalation'
+                                    caption: 'Escalation'
+                                    view: {
+                                        id: '1e4899deab9041d5b86791304d2da433'
+                                        key: {
+                                            name: 'workspace-3f8cebee4f134dc0951c77b67b418e63'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: '.end_split'
+                            position: '8'
+                        }
+                    },
+                    {
                         table: 'sys_documentation'
                         id: 'f1f27e35fbf94f8b9504db5a3859c72c'
                         key: {
                             name: 'x_sln_store_suppli_supply_case'
                             element: 'supply_state'
                             language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: 'f23184785f9041bd9a8eb3943220bfd9'
+                        key: {
+                            sys_ui_section: {
+                                id: 'b99a7887c6764f31b11a5343386c58ff'
+                                key: {
+                                    name: 'x_sln_store_suppli_supply_request'
+                                    caption: 'Request Intake'
+                                    view: {
+                                        id: 'bf6d088908fc4b2ba4d19d6c5cca9ef7'
+                                        key: {
+                                            name: 'workspace-3f8cebee4f134dc0951c77b67b418e63'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: '.split'
+                            position: '6'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_form_section'
+                        id: 'f262b16d95eb4934be1e604cab2f7d73'
+                        key: {
+                            sys_ui_form: {
+                                id: '9cff54fe00c544df8b5c7a77dffe29f6'
+                                key: {
+                                    name: 'x_sln_store_suppli_supply_request'
+                                    view: {
+                                        id: 'Default view'
+                                        key: {
+                                            name: 'NULL'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            sys_ui_section: {
+                                id: '7389b22973ac4946aa720a313f82cf77'
+                                key: {
+                                    name: 'x_sln_store_suppli_supply_request'
+                                    caption: 'Request Intake'
+                                    view: {
+                                        id: 'Default view'
+                                        key: {
+                                            name: 'NULL'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
                         }
                     },
                     {
@@ -13988,6 +18898,21 @@ declare global {
                             }
                             element: 'region'
                             position: '9'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_section'
+                        id: 'f2e160a8d2424d349553af47f4b25956'
+                        key: {
+                            name: 'x_sln_store_suppli_supply_request'
+                            caption: 'Resolution, Escalation, and Feedback'
+                            view: {
+                                id: 'Default view'
+                                key: {
+                                    name: 'NULL'
+                                }
+                            }
+                            sys_domain: 'global'
                         }
                     },
                     {
@@ -14185,6 +19110,7 @@ declare global {
                     {
                         table: 'sys_ui_element'
                         id: 'f6ee229c3a2e457da1e66b5afdfceacb'
+                        deleted: true
                         key: {
                             sys_ui_section: {
                                 id: '63d323d9af864dbea77c6e720760c49e'
@@ -14205,6 +19131,28 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_element'
+                        id: 'f7b7bbefd9b640138a906ebafec0fd20'
+                        key: {
+                            sys_ui_section: {
+                                id: 'a4c694f594214687bedad3f55cdd6659'
+                                key: {
+                                    name: 'x_sln_store_suppli_supply_request'
+                                    caption: 'Assignment and Progress'
+                                    view: {
+                                        id: 'bf6d088908fc4b2ba4d19d6c5cca9ef7'
+                                        key: {
+                                            name: 'workspace-3f8cebee4f134dc0951c77b67b418e63'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'supply_state'
+                            position: '1'
+                        }
+                    },
+                    {
                         table: 'sys_ui_action_role'
                         id: 'f7fc11c7d8c247a2b1c0790344f764e7'
                         key: {
@@ -14220,6 +19168,7 @@ declare global {
                     {
                         table: 'sys_ui_element'
                         id: 'f8736e787df444a1b81107820011ffca'
+                        deleted: true
                         key: {
                             sys_ui_section: {
                                 id: 'cb86c4808f8041db952d108fa142a28f'
@@ -14294,6 +19243,7 @@ declare global {
                     {
                         table: 'sys_ui_element'
                         id: 'f9dbdedd950442aa835dc963bbca0925'
+                        deleted: true
                         key: {
                             sys_ui_section: {
                                 id: '63d323d9af864dbea77c6e720760c49e'
@@ -14403,6 +19353,28 @@ declare global {
                             value: 'rejected'
                             language: 'en'
                             dependent_value: 'NULL'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: 'fb7f10c96cbb41e1af4ab630fbf4b15b'
+                        key: {
+                            sys_ui_section: {
+                                id: '837563ab1dc04b1ab4aee6ba712f5821'
+                                key: {
+                                    name: 'x_sln_store_suppli_supply_issue'
+                                    caption: 'Resolution, Escalation, and Feedback'
+                                    view: {
+                                        id: 'f20f7103a309482ebed5af4c5df2a672'
+                                        key: {
+                                            name: 'workspace-3f8cebee4f134dc0951c77b67b418e63'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: '.end_split'
+                            position: '11'
                         }
                     },
                     {
@@ -14533,6 +19505,28 @@ declare global {
                                     name: 'x_sln_store_suppli.support_agent'
                                 }
                             }
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: 'fded628a7ace43369e199df009256e27'
+                        key: {
+                            sys_ui_section: {
+                                id: 'b99a7887c6764f31b11a5343386c58ff'
+                                key: {
+                                    name: 'x_sln_store_suppli_supply_request'
+                                    caption: 'Request Intake'
+                                    view: {
+                                        id: 'bf6d088908fc4b2ba4d19d6c5cca9ef7'
+                                        key: {
+                                            name: 'workspace-3f8cebee4f134dc0951c77b67b418e63'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'description'
+                            position: '13'
                         }
                     },
                     {

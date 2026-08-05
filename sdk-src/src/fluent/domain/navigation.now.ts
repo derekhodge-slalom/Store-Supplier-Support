@@ -1,14 +1,30 @@
 import '@servicenow/sdk/global'
 import { ApplicationMenu, Record } from '@servicenow/sdk/core'
-import { internalNavigationRoles } from './security.now'
+import {
+    applicationAdminRole,
+    allApplicationRoles,
+    districtManagerRole,
+    internalNavigationRoles,
+    storeAssociateRole,
+    supplierAgentRole,
+    supportAgentRole,
+    supportManagerRole,
+} from './security.now'
+
+const internalPortalRoles = [storeAssociateRole, districtManagerRole, supportAgentRole, supportManagerRole, applicationAdminRole]
+const supplierPortalRoles = [supplierAgentRole, supportAgentRole, supportManagerRole, applicationAdminRole]
 
 export const storeSupplierSupportMenu = ApplicationMenu({
     $id: Now.ID['store_supplier_support_menu'], title: 'Store Supplier Support',
     hint: 'Manage store supply cases, suppliers, inventory receipts, and service performance.',
     description: 'Customer Service Management for store supply requests and issues.',
-    roles: internalNavigationRoles, active: true, order: 100,
+    roles: allApplicationRoles, active: true, order: 100,
 })
 
+Record({ $id: Now.ID['module_experiences_separator'], table: 'sys_app_module', data: { title: 'Experiences', application: storeSupplierSupportMenu, link_type: 'SEPARATOR', roles: allApplicationRoles, active: true, order: 10 } })
+Record({ $id: Now.ID['module_workspace'], table: 'sys_app_module', data: { title: 'Store Supplier Support Workspace', application: storeSupplierSupportMenu, link_type: 'DIRECT', query: '/now/store-supplier-support/home', roles: internalNavigationRoles, active: true, order: 20 } })
+Record({ $id: Now.ID['module_internal_portal'], table: 'sys_app_module', data: { title: 'Store Team Portal', application: storeSupplierSupportMenu, link_type: 'DIRECT', query: '/esc?id=store-supply-internal', roles: internalPortalRoles, active: true, order: 30 } })
+Record({ $id: Now.ID['module_supplier_portal'], table: 'sys_app_module', data: { title: 'Supplier Portal', application: storeSupplierSupportMenu, link_type: 'DIRECT', query: '/store_suppliers', roles: supplierPortalRoles, active: true, order: 40 } })
 Record({ $id: Now.ID['module_requests'], table: 'sys_app_module', data: { title: 'Store Supply Requests', application: storeSupplierSupportMenu, link_type: 'LIST', name: 'x_sln_store_suppli_supply_request', query: '', roles: internalNavigationRoles, active: true, order: 100 } })
 Record({ $id: Now.ID['module_issues'], table: 'sys_app_module', data: { title: 'Store Supply Issues', application: storeSupplierSupportMenu, link_type: 'LIST', name: 'x_sln_store_suppli_supply_issue', query: '', roles: internalNavigationRoles, active: true, order: 110 } })
 Record({ $id: Now.ID['module_active_cases'], table: 'sys_app_module', data: { title: 'Active Cases', application: storeSupplierSupportMenu, link_type: 'LIST', name: 'x_sln_store_suppli_supply_case', query: 'supply_stateNOT INclosed,cancelled', roles: internalNavigationRoles, active: true, order: 120 } })

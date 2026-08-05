@@ -1,0 +1,26 @@
+.sss-footer {
+  background: $brand-primary;
+  color: $btn-primary-color;
+  margin-top: 40px;
+  padding: 24px 0;
+}
+
+.sss-footer__inner {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.sss-footer__wordmark {
+  color: $brand-warning;
+  font-size: 20px;
+  font-weight: 800;
+  letter-spacing: -.04em;
+}
+
+.sss-footer__tagline { margin-left: auto; }
+
+@media (max-width: 767px) {
+  .sss-footer__tagline { margin-left: 0; width: 100%; }
+}

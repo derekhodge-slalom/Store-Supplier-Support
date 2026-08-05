@@ -1,9 +1,32 @@
 import '@servicenow/sdk/global'
-import { ServicePortal, SPPage, SPWidget } from '@servicenow/sdk/core'
+import { ServicePortal, SPHeaderFooter, SPPage, SPTheme, SPWidget } from '@servicenow/sdk/core'
+import { slalomWorkspaceTheme } from '../domain/brand.now'
 import { storeSupplyCatalog } from '../domain/catalog.now'
 import { districtManagerRole, storeAssociateRole, supplierAgentRole } from '../domain/security.now'
 
 const internalRoles = [storeAssociateRole, districtManagerRole]
+
+export const slalomPortalHeader = SPHeaderFooter({
+    $id: Now.ID['slalom_store_supply_portal_header'], name: 'Slalom Store Supplier Support Header',
+    id: 'slalom-store-supplier-support-header', static: true, hasPreview: true,
+    htmlTemplate: Now.include('../../server/portal/slalom-header.html'),
+    customCss: Now.include('../../server/portal/slalom-header.scss'),
+})
+
+export const slalomPortalFooter = SPHeaderFooter({
+    $id: Now.ID['slalom_store_supply_portal_footer'], name: 'Slalom Store Supplier Support Footer',
+    id: 'slalom-store-supplier-support-footer', static: true, hasPreview: true,
+    htmlTemplate: Now.include('../../server/portal/slalom-footer.html'),
+    customCss: Now.include('../../server/portal/slalom-footer.scss'),
+})
+
+export const slalomStoreSupplyPortalTheme = SPTheme({
+    $id: Now.ID['slalom_store_supply_portal_theme'], name: 'Slalom Store Supplier Support',
+    customCss: Now.include('../../server/portal/slalom-theme.scss'),
+    header: slalomPortalHeader, footer: slalomPortalFooter,
+    fixedHeader: false, fixedFooter: false,
+    matchingNextExperienceTheme: slalomWorkspaceTheme,
+})
 
 export const storeSupplyDashboardWidget = SPWidget({
     $id: Now.ID['store_supply_dashboard_widget'], name: 'Store Supplier Support Dashboard', id: 'store-supplier-support-dashboard',
@@ -51,8 +74,9 @@ export const supplierStoreSupplyPage = SPPage({
 })
 
 export const supplierSupportPortal = ServicePortal({
-    $id: Now.ID['supplier_support_portal'], title: 'Store Supplier Support', urlSuffix: 'store_suppliers',
+    $id: Now.ID['supplier_support_portal'], title: 'slalom | Store Supplier Support', urlSuffix: 'store_suppliers',
     homePage: supplierStoreSupplyPage,
     catalogs: [{ catalog: storeSupplyCatalog, order: 100, active: true }],
-    enableFavorites: true, hidePortalName: false,
+    theme: slalomStoreSupplyPortalTheme,
+    enableFavorites: true, hidePortalName: true,
 })
