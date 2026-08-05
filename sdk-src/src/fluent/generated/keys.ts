@@ -152,8 +152,22 @@ declare global {
                         id: 'b6d1e06c5a1b4a8c91a9e7f0f01ee507'
                     }
                     b6d1e06c5a1b4a8c91a9e7f0f01ee508: {
-                        table: 'sys_attachment_doc'
+                        table: 'sp_theme'
                         id: 'b6d1e06c5a1b4a8c91a9e7f0f01ee508'
+                        deleted: true
+                    }
+                    b6d1e06c5a1b4a8c91a9e7f0f01ee509: {
+                        table: 'sys_script_fix'
+                        id: 'b6d1e06c5a1b4a8c91a9e7f0f01ee509'
+                        deleted: true
+                    }
+                    b6d1e06c5a1b4a8c91a9e7f0f01ee50a: {
+                        table: 'sp_rectangle_menu_item'
+                        id: 'b6d1e06c5a1b4a8c91a9e7f0f01ee50a'
+                    }
+                    b6d1e06c5a1b4a8c91a9e7f0f01ee50b: {
+                        table: 'sys_scope_privilege'
+                        id: 'b6d1e06c5a1b4a8c91a9e7f0f01ee50b'
                         deleted: true
                     }
                     bom_json: {
@@ -1231,6 +1245,10 @@ declare global {
                         table: 'x_sln_store_suppli_store_supply_model'
                         id: '573aa41722db4fe19434dd456800d814'
                     }
+                    e1c0a4c2d6b6494f9a887a8f171bc3d2: {
+                        table: 'sp_theme'
+                        id: 'e1c0a4c2d6b6494f9a887a8f171bc3d2'
+                    }
                     employee_center_store_supply_column: {
                         table: 'sp_column'
                         id: '130dca487aba499b802d2fb24ea4ddc7'
@@ -1422,6 +1440,11 @@ declare global {
                     'src_server_branding_apply-slalom-workspace-logo_js': {
                         table: 'sys_module'
                         id: 'afd275c89674444b8df9a78816423c10'
+                    }
+                    'src_server_portal_apply-slalom-employee-center-brand_js': {
+                        table: 'sys_module'
+                        id: '40b9438341d14c79aa2455936b244dbf'
+                        deleted: true
                     }
                     'src_server_portal_store-supply-dashboard_client_js': {
                         table: 'sys_module'

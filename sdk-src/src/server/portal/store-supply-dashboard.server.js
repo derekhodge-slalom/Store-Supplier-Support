@@ -26,6 +26,7 @@
         if (!cases.canRead()) continue;
         data.cases.push({
             sys_id: cases.getUniqueValue(),
+            table: cases.getValue('sys_class_name'),
             number: cases.getDisplayValue('number'),
             short_description: cases.getDisplayValue('short_description'),
             store: cases.getDisplayValue('store'),

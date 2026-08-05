@@ -1,21 +1,30 @@
-<div class="sss-shell">
+<div class="sss-shell" id="sss-main" tabindex="-1">
+  <nav class="sss-breadcrumb" ng-if="data.audience === 'internal'" aria-label="Breadcrumb">
+    <a href="/esc">Employee Center home</a><span aria-hidden="true">/</span><span aria-current="page">Store supplier support</span>
+  </nav>
+
   <header class="sss-hero" aria-labelledby="sss-title">
-    <div class="sss-brand">Fiercely human support</div>
-    <p class="sss-eyebrow">Store Supplier Support</p>
-    <h1 id="sss-title">Welcome, {{data.userName}}</h1>
-    <p>Request supplies, report an issue, and follow every permitted update in one place.</p>
+    <p class="sss-eyebrow">{{data.audience === 'internal' ? 'Employee Center' : 'Supplier portal'}}</p>
+    <h1 id="sss-title">{{data.audience === 'internal' ? 'Store supplies, all in one place' : 'Supplier support, made simple'}}</h1>
+    <p class="sss-welcome">Welcome, {{data.userName}}. Request supplies, report an issue, and follow every permitted update from one clear view.</p>
     <div class="sss-actions" aria-label="Create a case">
-      <a class="btn sss-primary" ng-if="data.requestProducer" ng-href="{{c.producerUrl(data.requestProducer)}}">Submit Store Supply Request</a>
-      <a class="btn sss-secondary" ng-if="data.issueProducer" ng-href="{{c.producerUrl(data.issueProducer)}}">Report Store Supply Issue</a>
+      <a class="btn sss-primary" ng-if="data.requestProducer" ng-href="{{c.producerUrl(data.requestProducer)}}">Submit store supply request</a>
+      <a class="btn sss-secondary" ng-if="data.issueProducer" ng-href="{{c.producerUrl(data.issueProducer)}}">Report store supply issue</a>
     </div>
   </header>
 
-  <section class="sss-panel" aria-labelledby="active-cases-title">
+  <section class="sss-summary" aria-label="Your support summary">
+    <div class="sss-summary__item"><strong>{{data.cases.length}}</strong><span>Active cases</span></div>
+    <div class="sss-summary__item" ng-if="data.audience === 'supplier'"><strong>{{data.tasks.length}}</strong><span>Supplier tasks</span></div>
+    <div class="sss-summary__item"><strong>{{data.knowledge.length}}</strong><span>Suggested articles</span></div>
+  </section>
+
+  <section class="sss-panel" id="sss-active-cases" aria-labelledby="active-cases-title">
     <h2 id="active-cases-title">Active cases</h2>
     <p class="text-muted" ng-if="!data.cases.length">You have no active cases.</p>
     <div class="table-responsive" ng-if="data.cases.length">
-      <table class="table"><thead><tr><th>Case</th><th>Store</th><th>Summary</th><th>State</th><th>Priority</th><th>Updated</th></tr></thead>
-        <tbody><tr ng-repeat="record in data.cases"><td><a ng-href="{{c.caseUrl(record)}}">{{record.number}}</a></td><td>{{record.store}}</td><td>{{record.short_description}}</td><td>{{record.state}}</td><td>{{record.priority}}</td><td>{{record.updated}}</td></tr></tbody>
+      <table class="table"><caption class="sr-only">Your active store supply cases</caption><thead><tr><th scope="col">Case</th><th scope="col">Store</th><th scope="col">Summary</th><th scope="col">State</th><th scope="col">Priority</th><th scope="col">Updated</th></tr></thead>
+        <tbody><tr ng-repeat="record in data.cases"><td><a ng-href="{{c.caseUrl(record)}}">{{record.number}}</a></td><td>{{record.store}}</td><td>{{record.short_description}}</td><td><span class="sss-status">{{record.state}}</span></td><td>{{record.priority}}</td><td>{{record.updated}}</td></tr></tbody>
       </table>
     </div>
   </section>
@@ -23,10 +32,10 @@
   <section class="sss-panel" ng-if="data.audience === 'supplier'" aria-labelledby="supplier-tasks-title">
     <h2 id="supplier-tasks-title">Your released supplier tasks</h2>
     <p class="text-muted" ng-if="!data.tasks.length">No supplier tasks require action.</p>
-    <ul class="sss-list"><li ng-repeat="task in data.tasks"><a ng-href="{{c.taskUrl(task)}}">{{task.number}} — {{task.short_description}}</a><span>{{task.state}}</span></li></ul>
+    <ul class="sss-list"><li ng-repeat="task in data.tasks"><a ng-href="{{c.taskUrl(task)}}">{{task.number}} — {{task.short_description}}</a><span class="sss-status">{{task.state}}</span></li></ul>
   </section>
 
-  <section class="sss-panel" aria-labelledby="knowledge-title">
+  <section class="sss-panel" id="sss-knowledge" aria-labelledby="knowledge-title">
     <h2 id="knowledge-title">Suggested knowledge</h2>
     <p class="text-muted" ng-if="!data.knowledge.length">Knowledge suggestions will appear as relevant articles are published.</p>
     <ul class="sss-list"><li ng-repeat="article in data.knowledge"><a ng-href="?id=kb_article&sys_id={{article.sys_id}}">{{article.number}} — {{article.title}}</a></li></ul>

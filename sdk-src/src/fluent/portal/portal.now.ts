@@ -1,5 +1,5 @@
 import '@servicenow/sdk/global'
-import { ServicePortal, SPHeaderFooter, SPPage, SPTheme, SPWidget } from '@servicenow/sdk/core'
+import { Record, ServicePortal, SPHeaderFooter, SPPage, SPTheme, SPWidget } from '@servicenow/sdk/core'
 import { slalomWorkspaceTheme } from '../domain/brand.now'
 import { storeSupplyCatalog } from '../domain/catalog.now'
 import { districtManagerRole, storeAssociateRole, supplierAgentRole } from '../domain/security.now'
@@ -30,6 +30,21 @@ export const slalomStoreSupplyPortalTheme = SPTheme({
     matchingNextExperienceTheme: slalomWorkspaceTheme,
 })
 
+// Employee Center keeps its native header, search, notifications, navigation,
+// and footer behavior. This scoped theme changes only the visual system so the
+// existing portal and the embedded Store Supplier Support page feel like one
+// Slalom experience.
+export const slalomEmployeeCenterTheme = SPTheme({
+    $id: 'e1c0a4c2d6b6494f9a887a8f171bc3d2', name: 'Slalom Employee Center',
+    customCss: Now.include('../../server/portal/slalom-employee-center-theme.scss'),
+    header: 'd0009941eb103010ed7966d6475228c1',
+    footer: 'ce046d5773603010c94f54eb7df6a7ec',
+    logo: Now.attach('../../server/branding/slalom-logo-white.svg'),
+    logoAltText: 'Slalom',
+    fixedHeader: true, fixedFooter: false,
+    matchingNextExperienceTheme: slalomWorkspaceTheme,
+})
+
 export const storeSupplyDashboardWidget = SPWidget({
     $id: Now.ID['store_supply_dashboard_widget'], name: 'Store Supplier Support Dashboard', id: 'store-supplier-support-dashboard',
     category: 'custom', roles: [storeAssociateRole, districtManagerRole, supplierAgentRole], hasPreview: true,
@@ -57,6 +72,22 @@ export const employeeCenterStoreSupplyPage = SPPage({
     }],
 })
 
+Record({
+    $id: 'b6d1e06c5a1b4a8c91a9e7f0f01ee50a',
+    table: 'sp_rectangle_menu_item',
+    data: {
+        sp_rectangle_menu: '493d01365368301056c1ddeeff7b1207',
+        label: 'Store supplier support',
+        short_description: 'Request store supplies, report issues, and follow case updates.',
+        type: 'page',
+        sp_page: '1e1cff63c5e44c998829544255a7413f',
+        glyph: 'shopping-cart',
+        order: 250,
+        condition: "gs.hasRole('x_sln_store_suppli.store_associate') || gs.hasRole('x_sln_store_suppli.district_manager') || gs.hasRole('x_sln_store_suppli.support_agent') || gs.hasRole('x_sln_store_suppli.support_manager') || gs.hasRole('x_sln_store_suppli.admin')",
+        active: true,
+    },
+})
+
 export const supplierStoreSupplyPage = SPPage({
     title: 'Supplier Support', pageId: 'store-supply-supplier',
     shortDescription: 'Supplier-scoped intake and fulfillment collaboration.', roles: [supplierAgentRole],
@@ -76,9 +107,11 @@ export const supplierStoreSupplyPage = SPPage({
 })
 
 export const supplierSupportPortal = ServicePortal({
-    $id: Now.ID['supplier_support_portal'], title: 'slalom | Store Supplier Support', urlSuffix: 'store_suppliers',
+    $id: Now.ID['supplier_support_portal'], title: 'Store supplier support | Slalom', urlSuffix: 'store_suppliers',
     homePage: supplierStoreSupplyPage,
     catalogs: [{ catalog: storeSupplyCatalog, order: 100, active: true }],
     theme: slalomStoreSupplyPortalTheme,
+    logo: Now.attach('../../server/branding/slalom-logo-white.svg'),
+    logoAltText: 'Slalom',
     enableFavorites: true, hidePortalName: true,
 })

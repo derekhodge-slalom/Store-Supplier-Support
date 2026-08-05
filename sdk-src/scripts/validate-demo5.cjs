@@ -59,7 +59,7 @@ async function main() {
 
     await check('Application version 1.0.0', 'sys_app', 'sys_id=ee4e977887264b907c2dfdd5dabb354b^version=1.0.0', 1)
     await check('Customer Service plugin active', 'v_plugin', 'id=com.sn_customerservice^active=active', 1)
-    await check('Employee Center capability', 'sp_portal', 'url_suffix=esc', 1)
+    await check('Slalom-branded Employee Center', 'sp_portal', 'url_suffix=esc^theme=e1c0a4c2d6b6494f9a887a8f171bc3d2^logo_alt_text=Slalom', 1)
     await check('Email Interaction for CSM active', 'sys_store_app', 'scope=sn_eaai_csm^active=true', 1)
     await check('Fourteen application tables', 'sys_db_object', `nameIN${tableNames.join(',')}`, 14)
     await check('CSM can initialize Store Supply cases and tasks', 'sys_db_object', 'nameINx_sln_store_suppli_supply_case,x_sln_store_suppli_supply_request,x_sln_store_suppli_supply_issue,x_sln_store_suppli_supplier_task^access=public^read_access=true^create_access=true^update_access=true', 4)
@@ -77,6 +77,8 @@ async function main() {
     await check('Business schedule spans', 'cmn_schedule_span', 'schedule=a1000000000000000000000000000002', 5)
     await check('CSM Case Types capability table', 'sys_db_object', 'name=sn_case_type', 1)
     await check('Supplier Service Portal', 'sp_portal', 'url_suffix=store_suppliers^theme.name=Slalom Store Supplier Support', 1)
+    await check('Slalom Employee Center theme', 'sp_theme', 'sys_id=e1c0a4c2d6b6494f9a887a8f171bc3d2^name=Slalom Employee Center^header=d0009941eb103010ed7966d6475228c1^footer=ce046d5773603010c94f54eb7df6a7ec', 1)
+    await check('Store support integrated into Employee Center menu', 'sp_rectangle_menu_item', 'sys_id=b6d1e06c5a1b4a8c91a9e7f0f01ee50a^sp_rectangle_menu=493d01365368301056c1ddeeff7b1207^sp_page.id=store-supply-internal^active=true', 1)
     await check('Internal and supplier portal pages', 'sp_page', 'idINstore-supply-internal,store-supply-supplier', 2)
     await check('Slalom portal header and footer', 'sp_header_footer', 'nameINSlalom Store Supplier Support Header,Slalom Store Supplier Support Footer', 2)
     await check('Configurable Workspace route in Unified Navigation', 'sys_ux_page_registry', 'sys_id=f1cb3bb464254d179a0c2c3060ace9df^path=store-supplier-support^parent_app=c86a62e2c7022010099a308dc7c26022^titleLIKEslalom', 1)
