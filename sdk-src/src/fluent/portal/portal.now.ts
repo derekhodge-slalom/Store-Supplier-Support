@@ -77,13 +77,13 @@ Record({
     table: 'sp_rectangle_menu_item',
     data: {
         sp_rectangle_menu: '493d01365368301056c1ddeeff7b1207',
-        label: 'Store supplier support',
+        label: 'Store supplies',
         short_description: 'Request store supplies, report issues, and follow case updates.',
         type: 'page',
         sp_page: '1e1cff63c5e44c998829544255a7413f',
         glyph: 'shopping-cart',
         order: 250,
-        condition: "gs.hasRole('x_sln_store_suppli.store_associate') || gs.hasRole('x_sln_store_suppli.district_manager') || gs.hasRole('x_sln_store_suppli.support_agent') || gs.hasRole('x_sln_store_suppli.support_manager') || gs.hasRole('x_sln_store_suppli.admin')",
+        condition: "gs.hasRole('admin') || gs.hasRole('x_sln_store_suppli.store_associate') || gs.hasRole('x_sln_store_suppli.district_manager') || gs.hasRole('x_sln_store_suppli.admin')",
         active: true,
     },
 })
