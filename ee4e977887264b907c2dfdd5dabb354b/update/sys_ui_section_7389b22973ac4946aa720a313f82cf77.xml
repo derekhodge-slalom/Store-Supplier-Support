@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="Request Intake" section_id="7389b22973ac4946aa720a313f82cf77" sys_domain="global" table="x_sln_store_suppli_supply_request" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.begin_split</element>
+            <position>0</position>
+            <sys_created_by>derek.hodge@slalom.com</sys_created_by>
+            <sys_created_on>2026-08-05 18:21:54</sys_created_on>
+            <sys_id>36124e038e2d44c5ac388e076e0d3458</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Request Intake" display_value="Request Intake" name="x_sln_store_suppli_supply_request" sys_domain="global" view="Default view">7389b22973ac4946aa720a313f82cf77</sys_ui_section>
+            <sys_updated_by>derek.hodge@slalom.com</sys_updated_by>
+            <sys_updated_on>2026-08-05 18:21:54</sys_updated_on>
+            <sys_user/>
+            <type>.begin_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>number</element>
+            <position>1</position>
+            <sys_created_by>derek.hodge@slalom.com</sys_created_by>
+            <sys_created_on>2026-08-05 18:21:54</sys_created_on>
+            <sys_id>201b32d8a7dc4c59ae1ad9c07a67e968</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Request Intake" display_value="Request Intake" name="x_sln_store_suppli_supply_request" sys_domain="global" view="Default view">7389b22973ac4946aa720a313f82cf77</sys_ui_section>
+            <sys_updated_by>derek.hodge@slalom.com</sys_updated_by>
+            <sys_updated_on>2026-08-05 18:21:54</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>short_description</element>
+            <position>2</position>
+            <sys_created_by>derek.hodge@slalom.com</sys_created_by>
+            <sys_created_on>2026-08-05 18:21:54</sys_created_on>
+            <sys_id>c01948c41beb44db96e007c9f010cba8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Request Intake" display_value="Request Intake" name="x_sln_store_suppli_supply_request" sys_domain="global" view="Default view">7389b22973ac4946aa720a313f82cf77</sys_ui_section>
+            <sys_updated_by>derek.hodge@slalom.com</sys_updated_by>
+            <sys_updated_on>2026-08-05 18:21:54</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>store</element>
+            <position>3</position>
+            <sys_created_by>derek.hodge@slalom.com</sys_created_by>
+            <sys_created_on>2026-08-05 18:21:54</sys_created_on>
+            <sys_id>29b2323d30c34fb4837d991c3dbf87c7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Request Intake" display_value="Request Intake" name="x_sln_store_suppli_supply_request" sys_domain="global" view="Default view">7389b22973ac4946aa720a313f82cf77</sys_ui_section>
+            <sys_updated_by>derek.hodge@slalom.com</sys_updated_by>
+            <sys_updated_on>2026-08-05 18:21:54</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>requested_by</element>
+            <position>4</position>
+            <sys_created_by>derek.hodge@slalom.com</sys_created_by>
+            <sys_created_on>2026-08-05 18:21:54</sys_created_on>
+            <sys_id>c63425106de24d92bc6200e74b3ae607</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Request Intake" display_value="Request Intake" name="x_sln_store_suppli_supply_request" sys_domain="global" view="Default view">7389b22973ac4946aa720a313f82cf77</sys_ui_section>
+            <sys_updated_by>derek.hodge@slalom.com</sys_updated_by>
+            <sys_updated_on>2026-08-05 18:21:54</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>originating_supplier</element>
+            <position>5</position>
+            <sys_created_by>derek.hodge@slalom.com</sys_created_by>
+            <sys_created_on>2026-08-05 18:21:54</sys_created_on>
+            <sys_id>24b94d7fa1e045a1afba8e4b7f89d81d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Request Intake" display_value="Request Intake" name="x_sln_store_suppli_supply_request" sys_domain="global" view="Default view">7389b22973ac4946aa720a313f82cf77</sys_ui_section>
+            <sys_updated_by>derek.hodge@slalom.com</sys_updated_by>
+            <sys_updated_on>2026-08-05 18:21:54</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>6</position>
+            <sys_created_by>derek.hodge@slalom.com</sys_created_by>
+            <sys_created_on>2026-08-05 18:21:54</sys_created_on>
+            <sys_id>a257aa9a57ba42538312877052f25097</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Request Intake" display_value="Request Intake" name="x_sln_store_suppli_supply_request" sys_domain="global" view="Default view">7389b22973ac4946aa720a313f82cf77</sys_ui_section>
+            <sys_updated_by>derek.hodge@slalom.com</sys_updated_by>
+            <sys_updated_on>2026-08-05 18:21:54</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>intake_channel</element>
+            <position>7</position>
+            <sys_created_by>derek.hodge@slalom.com</sys_created_by>
+            <sys_created_on>2026-08-05 18:21:54</sys_created_on>
+            <sys_id>3228b605696344aa9a4b465dbb7189ae</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Request Intake" display_value="Request Intake" name="x_sln_store_suppli_supply_request" sys_domain="global" view="Default view">7389b22973ac4946aa720a313f82cf77</sys_ui_section>
+            <sys_updated_by>derek.hodge@slalom.com</sys_updated_by>
+            <sys_updated_on>2026-08-05 18:21:54</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>category</element>
+            <position>8</position>
+            <sys_created_by>derek.hodge@slalom.com</sys_created_by>
+            <sys_created_on>2026-08-05 18:21:54</sys_created_on>
+            <sys_id>5ddf03b549794566a29d0fc2b1976fa5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Request Intake" display_value="Request Intake" name="x_sln_store_suppli_supply_request" sys_domain="global" view="Default view">7389b22973ac4946aa720a313f82cf77</sys_ui_section>
+            <sys_updated_by>derek.hodge@slalom.com</sys_updated_by>
+            <sys_updated_on>2026-08-05 18:21:54</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>subtype</element>
+            <position>9</position>
+            <sys_created_by>derek.hodge@slalom.com</sys_created_by>
+            <sys_created_on>2026-08-05 18:21:54</sys_created_on>
+            <sys_id>1a9fc34e676f4cf1afcc1eb4b46c4946</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Request Intake" display_value="Request Intake" name="x_sln_store_suppli_supply_request" sys_domain="global" view="Default view">7389b22973ac4946aa720a313f82cf77</sys_ui_section>
+            <sys_updated_by>derek.hodge@slalom.com</sys_updated_by>
+            <sys_updated_on>2026-08-05 18:21:54</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>needed_by</element>
+            <position>10</position>
+            <sys_created_by>derek.hodge@slalom.com</sys_created_by>
+            <sys_created_on>2026-08-05 18:21:54</sys_created_on>
+            <sys_id>72a9b2048fa24b3fafd811315dd48ef9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Request Intake" display_value="Request Intake" name="x_sln_store_suppli_supply_request" sys_domain="global" view="Default view">7389b22973ac4946aa720a313f82cf77</sys_ui_section>
+            <sys_updated_by>derek.hodge@slalom.com</sys_updated_by>
+            <sys_updated_on>2026-08-05 18:21:54</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>priority</element>
+            <position>11</position>
+            <sys_created_by>derek.hodge@slalom.com</sys_created_by>
+            <sys_created_on>2026-08-05 18:21:54</sys_created_on>
+            <sys_id>be230bf384e54608afff830af3559ce1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Request Intake" display_value="Request Intake" name="x_sln_store_suppli_supply_request" sys_domain="global" view="Default view">7389b22973ac4946aa720a313f82cf77</sys_ui_section>
+            <sys_updated_by>derek.hodge@slalom.com</sys_updated_by>
+            <sys_updated_on>2026-08-05 18:21:54</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.end_split</element>
+            <position>12</position>
+            <sys_created_by>derek.hodge@slalom.com</sys_created_by>
+            <sys_created_on>2026-08-05 18:21:54</sys_created_on>
+            <sys_id>3e8df7201c8a405c93aba3c197a4cff5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Request Intake" display_value="Request Intake" name="x_sln_store_suppli_supply_request" sys_domain="global" view="Default view">7389b22973ac4946aa720a313f82cf77</sys_ui_section>
+            <sys_updated_by>derek.hodge@slalom.com</sys_updated_by>
+            <sys_updated_on>2026-08-05 18:21:54</sys_updated_on>
+            <sys_user/>
+            <type>.end_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>description</element>
+            <position>13</position>
+            <sys_created_by>derek.hodge@slalom.com</sys_created_by>
+            <sys_created_on>2026-08-05 18:21:54</sys_created_on>
+            <sys_id>9e269bcb5709406aa377f0d6e5d02925</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Request Intake" display_value="Request Intake" name="x_sln_store_suppli_supply_request" sys_domain="global" view="Default view">7389b22973ac4946aa720a313f82cf77</sys_ui_section>
+            <sys_updated_by>derek.hodge@slalom.com</sys_updated_by>
+            <sys_updated_on>2026-08-05 18:21:54</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>business_justification</element>
+            <position>14</position>
+            <sys_created_by>derek.hodge@slalom.com</sys_created_by>
+            <sys_created_on>2026-08-05 18:21:54</sys_created_on>
+            <sys_id>04076c3e2c2348f2ab0f8ce6e38b0d8b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Request Intake" display_value="Request Intake" name="x_sln_store_suppli_supply_request" sys_domain="global" view="Default view">7389b22973ac4946aa720a313f82cf77</sys_ui_section>
+            <sys_updated_by>derek.hodge@slalom.com</sys_updated_by>
+            <sys_updated_on>2026-08-05 18:21:54</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption>Request Intake</caption>
+            <header>false</header>
+            <name>x_sln_store_suppli_supply_request</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>derek.hodge@slalom.com</sys_created_by>
+            <sys_created_on>2026-08-05 18:14:45</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>7389b22973ac4946aa720a313f82cf77</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_sln_store_suppli_supply_request</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Store Supplier Support" source="x_sln_store_suppli">ee4e977887264b907c2dfdd5dabb354b</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Store Supplier Support">ee4e977887264b907c2dfdd5dabb354b</sys_scope>
+            <sys_update_name>sys_ui_section_7389b22973ac4946aa720a313f82cf77</sys_update_name>
+            <sys_updated_by>derek.hodge@slalom.com</sys_updated_by>
+            <sys_updated_on>2026-08-05 18:14:45</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

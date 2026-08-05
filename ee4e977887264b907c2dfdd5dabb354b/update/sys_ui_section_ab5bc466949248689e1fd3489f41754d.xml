@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="Escalation" section_id="ab5bc466949248689e1fd3489f41754d" sys_domain="global" table="x_sln_store_suppli_case_escalation" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.begin_split</element>
+            <position>0</position>
+            <sys_created_by>derek.hodge@slalom.com</sys_created_by>
+            <sys_created_on>2026-08-05 18:21:56</sys_created_on>
+            <sys_id>52b127d5a25e40c4980806553d9756a8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Escalation" display_value="Escalation" name="x_sln_store_suppli_case_escalation" sys_domain="global" view="Default view">ab5bc466949248689e1fd3489f41754d</sys_ui_section>
+            <sys_updated_by>derek.hodge@slalom.com</sys_updated_by>
+            <sys_updated_on>2026-08-05 18:21:56</sys_updated_on>
+            <sys_user/>
+            <type>.begin_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>parent_case</element>
+            <position>1</position>
+            <sys_created_by>derek.hodge@slalom.com</sys_created_by>
+            <sys_created_on>2026-08-05 18:21:56</sys_created_on>
+            <sys_id>637de1a57bcb4d119dc7b7a1a40b5717</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Escalation" display_value="Escalation" name="x_sln_store_suppli_case_escalation" sys_domain="global" view="Default view">ab5bc466949248689e1fd3489f41754d</sys_ui_section>
+            <sys_updated_by>derek.hodge@slalom.com</sys_updated_by>
+            <sys_updated_on>2026-08-05 18:21:56</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>reason</element>
+            <position>2</position>
+            <sys_created_by>derek.hodge@slalom.com</sys_created_by>
+            <sys_created_on>2026-08-05 18:21:56</sys_created_on>
+            <sys_id>760eae54b312462b8c32657cc8e0cf85</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Escalation" display_value="Escalation" name="x_sln_store_suppli_case_escalation" sys_domain="global" view="Default view">ab5bc466949248689e1fd3489f41754d</sys_ui_section>
+            <sys_updated_by>derek.hodge@slalom.com</sys_updated_by>
+            <sys_updated_on>2026-08-05 18:21:56</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>details</element>
+            <position>3</position>
+            <sys_created_by>derek.hodge@slalom.com</sys_created_by>
+            <sys_created_on>2026-08-05 18:21:56</sys_created_on>
+            <sys_id>2911ad5598dc4be5b61513d7cc911d8a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Escalation" display_value="Escalation" name="x_sln_store_suppli_case_escalation" sys_domain="global" view="Default view">ab5bc466949248689e1fd3489f41754d</sys_ui_section>
+            <sys_updated_by>derek.hodge@slalom.com</sys_updated_by>
+            <sys_updated_on>2026-08-05 18:21:56</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>4</position>
+            <sys_created_by>derek.hodge@slalom.com</sys_created_by>
+            <sys_created_on>2026-08-05 18:21:56</sys_created_on>
+            <sys_id>7f98257fc95d4ddeb5380f125034f832</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Escalation" display_value="Escalation" name="x_sln_store_suppli_case_escalation" sys_domain="global" view="Default view">ab5bc466949248689e1fd3489f41754d</sys_ui_section>
+            <sys_updated_by>derek.hodge@slalom.com</sys_updated_by>
+            <sys_updated_on>2026-08-05 18:21:56</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>triggered_on</element>
+            <position>5</position>
+            <sys_created_by>derek.hodge@slalom.com</sys_created_by>
+            <sys_created_on>2026-08-05 18:21:56</sys_created_on>
+            <sys_id>b9d221a51bc644a2ba5bb59ba5eb9a20</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Escalation" display_value="Escalation" name="x_sln_store_suppli_case_escalation" sys_domain="global" view="Default view">ab5bc466949248689e1fd3489f41754d</sys_ui_section>
+            <sys_updated_by>derek.hodge@slalom.com</sys_updated_by>
+            <sys_updated_on>2026-08-05 18:21:56</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>triggered_by</element>
+            <position>6</position>
+            <sys_created_by>derek.hodge@slalom.com</sys_created_by>
+            <sys_created_on>2026-08-05 18:21:56</sys_created_on>
+            <sys_id>a2e63cafbf124a0d888812e3b581429f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Escalation" display_value="Escalation" name="x_sln_store_suppli_case_escalation" sys_domain="global" view="Default view">ab5bc466949248689e1fd3489f41754d</sys_ui_section>
+            <sys_updated_by>derek.hodge@slalom.com</sys_updated_by>
+            <sys_updated_on>2026-08-05 18:21:56</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>notification_sent</element>
+            <position>7</position>
+            <sys_created_by>derek.hodge@slalom.com</sys_created_by>
+            <sys_created_on>2026-08-05 18:21:56</sys_created_on>
+            <sys_id>327a2ce3a6c7457a8976c3cfeb56dfae</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Escalation" display_value="Escalation" name="x_sln_store_suppli_case_escalation" sys_domain="global" view="Default view">ab5bc466949248689e1fd3489f41754d</sys_ui_section>
+            <sys_updated_by>derek.hodge@slalom.com</sys_updated_by>
+            <sys_updated_on>2026-08-05 18:21:56</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.end_split</element>
+            <position>8</position>
+            <sys_created_by>derek.hodge@slalom.com</sys_created_by>
+            <sys_created_on>2026-08-05 18:21:56</sys_created_on>
+            <sys_id>f02b2b82aed14b719bf9eb861c55fa5f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Escalation" display_value="Escalation" name="x_sln_store_suppli_case_escalation" sys_domain="global" view="Default view">ab5bc466949248689e1fd3489f41754d</sys_ui_section>
+            <sys_updated_by>derek.hodge@slalom.com</sys_updated_by>
+            <sys_updated_on>2026-08-05 18:21:56</sys_updated_on>
+            <sys_user/>
+            <type>.end_split</type>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption>Escalation</caption>
+            <header>false</header>
+            <name>x_sln_store_suppli_case_escalation</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>derek.hodge@slalom.com</sys_created_by>
+            <sys_created_on>2026-08-05 18:14:47</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>ab5bc466949248689e1fd3489f41754d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_sln_store_suppli_case_escalation</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Store Supplier Support" source="x_sln_store_suppli">ee4e977887264b907c2dfdd5dabb354b</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Store Supplier Support">ee4e977887264b907c2dfdd5dabb354b</sys_scope>
+            <sys_update_name>sys_ui_section_ab5bc466949248689e1fd3489f41754d</sys_update_name>
+            <sys_updated_by>derek.hodge@slalom.com</sys_updated_by>
+            <sys_updated_on>2026-08-05 18:14:47</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

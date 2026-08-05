@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="Resolution, Escalation, and Feedback" section_id="7ff72be1a7924aa58fed0f5444391806" sys_domain="global" table="x_sln_store_suppli_supply_request" version="3" view="workspace-3f8cebee4f134dc0951c77b67b418e63">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.begin_split</element>
+            <position>0</position>
+            <sys_created_by>derek.hodge@slalom.com</sys_created_by>
+            <sys_created_on>2026-08-05 18:21:55</sys_created_on>
+            <sys_id>96a70574331c4d43b18d6e899db7ebd8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Resolution, Escalation, and Feedback" display_value="Resolution, Escalation, and Feedback" name="x_sln_store_suppli_supply_request" sys_domain="global" view="99b090d987620f907c2dfdd5dabb358a">7ff72be1a7924aa58fed0f5444391806</sys_ui_section>
+            <sys_updated_by>derek.hodge@slalom.com</sys_updated_by>
+            <sys_updated_on>2026-08-05 18:21:55</sys_updated_on>
+            <sys_user/>
+            <type>.begin_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>resolution_code</element>
+            <position>1</position>
+            <sys_created_by>derek.hodge@slalom.com</sys_created_by>
+            <sys_created_on>2026-08-05 18:21:55</sys_created_on>
+            <sys_id>c6c6e8af37db4f1f9f375c71268979a8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Resolution, Escalation, and Feedback" display_value="Resolution, Escalation, and Feedback" name="x_sln_store_suppli_supply_request" sys_domain="global" view="99b090d987620f907c2dfdd5dabb358a">7ff72be1a7924aa58fed0f5444391806</sys_ui_section>
+            <sys_updated_by>derek.hodge@slalom.com</sys_updated_by>
+            <sys_updated_on>2026-08-05 18:21:55</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>resolution_notes</element>
+            <position>2</position>
+            <sys_created_by>derek.hodge@slalom.com</sys_created_by>
+            <sys_created_on>2026-08-05 18:21:55</sys_created_on>
+            <sys_id>e7a5dd2379ec44d585546a24949744f6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Resolution, Escalation, and Feedback" display_value="Resolution, Escalation, and Feedback" name="x_sln_store_suppli_supply_request" sys_domain="global" view="99b090d987620f907c2dfdd5dabb358a">7ff72be1a7924aa58fed0f5444391806</sys_ui_section>
+            <sys_updated_by>derek.hodge@slalom.com</sys_updated_by>
+            <sys_updated_on>2026-08-05 18:21:55</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>knowledge_recommended</element>
+            <position>3</position>
+            <sys_created_by>derek.hodge@slalom.com</sys_created_by>
+            <sys_created_on>2026-08-05 18:21:55</sys_created_on>
+            <sys_id>847057c1a3294e4f868fb66a83b2af84</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Resolution, Escalation, and Feedback" display_value="Resolution, Escalation, and Feedback" name="x_sln_store_suppli_supply_request" sys_domain="global" view="99b090d987620f907c2dfdd5dabb358a">7ff72be1a7924aa58fed0f5444391806</sys_ui_section>
+            <sys_updated_by>derek.hodge@slalom.com</sys_updated_by>
+            <sys_updated_on>2026-08-05 18:21:55</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>service_rating</element>
+            <position>4</position>
+            <sys_created_by>derek.hodge@slalom.com</sys_created_by>
+            <sys_created_on>2026-08-05 18:21:55</sys_created_on>
+            <sys_id>496f9701efc14a9a871a2c40f934d144</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Resolution, Escalation, and Feedback" display_value="Resolution, Escalation, and Feedback" name="x_sln_store_suppli_supply_request" sys_domain="global" view="99b090d987620f907c2dfdd5dabb358a">7ff72be1a7924aa58fed0f5444391806</sys_ui_section>
+            <sys_updated_by>derek.hodge@slalom.com</sys_updated_by>
+            <sys_updated_on>2026-08-05 18:21:55</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>service_feedback</element>
+            <position>5</position>
+            <sys_created_by>derek.hodge@slalom.com</sys_created_by>
+            <sys_created_on>2026-08-05 18:21:55</sys_created_on>
+            <sys_id>95ebc3c4a16842529c1760b90ff16ad3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Resolution, Escalation, and Feedback" display_value="Resolution, Escalation, and Feedback" name="x_sln_store_suppli_supply_request" sys_domain="global" view="99b090d987620f907c2dfdd5dabb358a">7ff72be1a7924aa58fed0f5444391806</sys_ui_section>
+            <sys_updated_by>derek.hodge@slalom.com</sys_updated_by>
+            <sys_updated_on>2026-08-05 18:21:55</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>6</position>
+            <sys_created_by>derek.hodge@slalom.com</sys_created_by>
+            <sys_created_on>2026-08-05 18:21:55</sys_created_on>
+            <sys_id>4244fe88f91141489a5ee93f8908ee64</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Resolution, Escalation, and Feedback" display_value="Resolution, Escalation, and Feedback" name="x_sln_store_suppli_supply_request" sys_domain="global" view="99b090d987620f907c2dfdd5dabb358a">7ff72be1a7924aa58fed0f5444391806</sys_ui_section>
+            <sys_updated_by>derek.hodge@slalom.com</sys_updated_by>
+            <sys_updated_on>2026-08-05 18:21:55</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>escalated</element>
+            <position>7</position>
+            <sys_created_by>derek.hodge@slalom.com</sys_created_by>
+            <sys_created_on>2026-08-05 18:21:55</sys_created_on>
+            <sys_id>a712a1795b594ef8af0318bf686d4c91</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Resolution, Escalation, and Feedback" display_value="Resolution, Escalation, and Feedback" name="x_sln_store_suppli_supply_request" sys_domain="global" view="99b090d987620f907c2dfdd5dabb358a">7ff72be1a7924aa58fed0f5444391806</sys_ui_section>
+            <sys_updated_by>derek.hodge@slalom.com</sys_updated_by>
+            <sys_updated_on>2026-08-05 18:21:55</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>escalation_reasons</element>
+            <position>8</position>
+            <sys_created_by>derek.hodge@slalom.com</sys_created_by>
+            <sys_created_on>2026-08-05 18:21:55</sys_created_on>
+            <sys_id>97bebf7afe43436bbce50c421d76fb4c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Resolution, Escalation, and Feedback" display_value="Resolution, Escalation, and Feedback" name="x_sln_store_suppli_supply_request" sys_domain="global" view="99b090d987620f907c2dfdd5dabb358a">7ff72be1a7924aa58fed0f5444391806</sys_ui_section>
+            <sys_updated_by>derek.hodge@slalom.com</sys_updated_by>
+            <sys_updated_on>2026-08-05 18:21:55</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>reopen_count</element>
+            <position>9</position>
+            <sys_created_by>derek.hodge@slalom.com</sys_created_by>
+            <sys_created_on>2026-08-05 18:21:55</sys_created_on>
+            <sys_id>b01afcb8c7104967aebfaf1f505ede4d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Resolution, Escalation, and Feedback" display_value="Resolution, Escalation, and Feedback" name="x_sln_store_suppli_supply_request" sys_domain="global" view="99b090d987620f907c2dfdd5dabb358a">7ff72be1a7924aa58fed0f5444391806</sys_ui_section>
+            <sys_updated_by>derek.hodge@slalom.com</sys_updated_by>
+            <sys_updated_on>2026-08-05 18:21:55</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>reopened_at</element>
+            <position>10</position>
+            <sys_created_by>derek.hodge@slalom.com</sys_created_by>
+            <sys_created_on>2026-08-05 18:21:55</sys_created_on>
+            <sys_id>5a9b57893c3f423f815a7b60de68387e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Resolution, Escalation, and Feedback" display_value="Resolution, Escalation, and Feedback" name="x_sln_store_suppli_supply_request" sys_domain="global" view="99b090d987620f907c2dfdd5dabb358a">7ff72be1a7924aa58fed0f5444391806</sys_ui_section>
+            <sys_updated_by>derek.hodge@slalom.com</sys_updated_by>
+            <sys_updated_on>2026-08-05 18:21:55</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.end_split</element>
+            <position>11</position>
+            <sys_created_by>derek.hodge@slalom.com</sys_created_by>
+            <sys_created_on>2026-08-05 18:21:55</sys_created_on>
+            <sys_id>023ff7db252c4a2fa57d531cbb5d5348</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Resolution, Escalation, and Feedback" display_value="Resolution, Escalation, and Feedback" name="x_sln_store_suppli_supply_request" sys_domain="global" view="99b090d987620f907c2dfdd5dabb358a">7ff72be1a7924aa58fed0f5444391806</sys_ui_section>
+            <sys_updated_by>derek.hodge@slalom.com</sys_updated_by>
+            <sys_updated_on>2026-08-05 18:21:55</sys_updated_on>
+            <sys_user/>
+            <type>.end_split</type>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption>Resolution, Escalation, and Feedback</caption>
+            <header>false</header>
+            <name>x_sln_store_suppli_supply_request</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>derek.hodge@slalom.com</sys_created_by>
+            <sys_created_on>2026-08-05 18:14:46</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>7ff72be1a7924aa58fed0f5444391806</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_sln_store_suppli_supply_request</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Store Supplier Support" source="x_sln_store_suppli">ee4e977887264b907c2dfdd5dabb354b</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Store Supplier Support">ee4e977887264b907c2dfdd5dabb354b</sys_scope>
+            <sys_update_name>sys_ui_section_7ff72be1a7924aa58fed0f5444391806</sys_update_name>
+            <sys_updated_by>derek.hodge@slalom.com</sys_updated_by>
+            <sys_updated_on>2026-08-05 18:14:46</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="workspace-3f8cebee4f134dc0951c77b67b418e63" name="workspace-3f8cebee4f134dc0951c77b67b418e63">99b090d987620f907c2dfdd5dabb358a</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

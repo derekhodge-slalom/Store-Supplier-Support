@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="par_dashboard_visibility">
     <par_dashboard_visibility action="INSERT_OR_UPDATE">
         <dashboard display_value="Store Supplier Support Operations">9386a211ada04081b700657f3b542909</dashboard>
-        <experience display_value="Store Supplier Support">f1cb3bb464254d179a0c2c3060ace9df</experience>
+        <experience display_value="slalom | Store Supplier Support">f1cb3bb464254d179a0c2c3060ace9df</experience>
         <sys_class_name>par_dashboard_visibility</sys_class_name>
         <sys_created_by>derek.hodge@slalom.com</sys_created_by>
         <sys_created_on>2026-08-05 01:28:28</sys_created_on>

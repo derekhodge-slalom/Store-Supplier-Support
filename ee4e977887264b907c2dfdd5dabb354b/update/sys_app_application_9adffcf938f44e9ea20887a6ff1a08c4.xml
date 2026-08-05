@@ -7,7 +7,7 @@
         <hint>Manage store supply cases, suppliers, inventory receipts, and service performance.</hint>
         <name/>
         <order>100</order>
-        <roles>x_sln_store_suppli.support_agent,x_sln_store_suppli.support_manager,x_sln_store_suppli.admin</roles>
+        <roles>x_sln_store_suppli.store_associate,x_sln_store_suppli.district_manager,x_sln_store_suppli.supplier_agent,x_sln_store_suppli.support_agent,x_sln_store_suppli.support_manager,x_sln_store_suppli.admin</roles>
         <sys_class_name>sys_app_application</sys_class_name>
         <sys_created_by>derek.hodge@slalom.com</sys_created_by>
         <sys_created_on>2026-08-05 01:28:34</sys_created_on>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_app_property">
+    <sys_ux_app_property action="INSERT_OR_UPDATE">
+        <name>globalNavigationConfig</name>
+        <parent_app display_value="Slalom Store Supplier Support App Shell">b6d1e06c5a1b4a8c91a9e7f0f01ee502</parent_app>
+        <sys_class_name>sys_ux_app_property</sys_class_name>
+        <sys_created_by>derek.hodge@slalom.com</sys_created_by>
+        <sys_created_on>2026-08-05 18:14:51</sys_created_on>
+        <sys_id>b6d1e06c5a1b4a8c91a9e7f0f01ee503</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>globalNavigationConfig</sys_name>
+        <sys_package display_value="Store Supplier Support" source="x_sln_store_suppli">ee4e977887264b907c2dfdd5dabb354b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Store Supplier Support">ee4e977887264b907c2dfdd5dabb354b</sys_scope>
+        <sys_update_name>sys_ux_app_property_b6d1e06c5a1b4a8c91a9e7f0f01ee503</sys_update_name>
+        <sys_updated_by>derek.hodge@slalom.com</sys_updated_by>
+        <sys_updated_on>2026-08-05 18:14:51</sys_updated_on>
+        <value>{"features":{"record":{"_default":{"experiencePriorityList":[]}},"list":{"_default":{"experiencePriorityList":[]}},"search":{"_default":{"experiencePriorityList":[]}},"inbox":{"_default":{"experiencePriorityList":[]}}}}</value>
+    </sys_ux_app_property>
+</record_update>

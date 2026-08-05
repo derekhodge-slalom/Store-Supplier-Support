@@ -3,7 +3,7 @@
         <choices/>
         <description/>
         <name>chrome_footer</name>
-        <page display_value="Store Supplier Support">f1cb3bb464254d179a0c2c3060ace9df</page>
+        <page display_value="slalom | Store Supplier Support">f1cb3bb464254d179a0c2c3060ace9df</page>
         <required_translations/>
         <route/>
         <suffix>chrome_footer</suffix>

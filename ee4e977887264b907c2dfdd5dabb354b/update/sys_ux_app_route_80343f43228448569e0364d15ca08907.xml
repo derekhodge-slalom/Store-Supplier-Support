@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_app_route">
     <sys_ux_app_route action="INSERT_OR_UPDATE">
-        <app_config display_value="Store Supplier Support">3f8cebee4f134dc0951c77b67b418e63</app_config>
+        <app_config display_value="slalom | Store Supplier Support">3f8cebee4f134dc0951c77b67b418e63</app_config>
         <description/>
         <extension_point/>
         <fields>table</fields>

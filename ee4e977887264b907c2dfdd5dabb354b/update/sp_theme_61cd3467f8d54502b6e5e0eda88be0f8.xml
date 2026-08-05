@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_theme">
+    <sp_theme action="INSERT_OR_UPDATE">
+        <css_variables>$brand-primary: #092b41 !default;
+$brand-success: #2f6f55 !default;
+$brand-info: #176c91 !default;
+$brand-warning: #f4be2f !default;
+$brand-danger: #b42318 !default;
+$text-color: #15232d !default;
+$body-bg: #f5f7f8 !default;
+$link-color: #005a8b !default;
+$link-hover-color: #003d60 !default;
+$btn-primary-color: #ffffff !default;
+$btn-primary-bg: $brand-primary !default;
+$btn-primary-border: $brand-primary !default;
+$border-radius-base: 8px !default;
+$border-radius-large: 12px !default;
+
+$navbar-inverse-bg: $brand-primary !default;
+$navbar-inverse-border: darken($brand-primary, 6.5%) !default;
+$navbar-inverse-link-color: $btn-primary-color !default;
+$navbar-inverse-link-hover-color: $btn-primary-color !default;
+$navbar-inverse-link-active-color: $btn-primary-color !default;
+$navbar-inverse-brand-color: $btn-primary-color !default;
+$navbar-inverse-toggle-icon-bar-bg: $btn-primary-color !default;
+$navbar-inverse-toggle-border-color: darken($brand-primary, 10%) !default;
+</css_variables>
+        <footer display_value="Slalom Store Supplier Support Footer">4cceec31e9444ee4b26320dd0e8abf58</footer>
+        <footer_fixed>false</footer_fixed>
+        <header display_value="Slalom Store Supplier Support Header">e689b789c26b45398c49b51836bb0093</header>
+        <icon/>
+        <logo/>
+        <logo_alt_text/>
+        <matching_now_experience_theme display_value="Slalom Store Supplier Support">b6d1e06c5a1b4a8c91a9e7f0f01ee501</matching_now_experience_theme>
+        <name>Slalom Store Supplier Support</name>
+        <navbar_fixed>false</navbar_fixed>
+        <sys_class_name>sp_theme</sys_class_name>
+        <sys_created_by>derek.hodge@slalom.com</sys_created_by>
+        <sys_created_on>2026-08-05 18:14:28</sys_created_on>
+        <sys_id>61cd3467f8d54502b6e5e0eda88be0f8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Slalom Store Supplier Support</sys_name>
+        <sys_package display_value="Store Supplier Support" source="x_sln_store_suppli">ee4e977887264b907c2dfdd5dabb354b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Store Supplier Support">ee4e977887264b907c2dfdd5dabb354b</sys_scope>
+        <sys_update_name>sp_theme_61cd3467f8d54502b6e5e0eda88be0f8</sys_update_name>
+        <sys_updated_by>derek.hodge@slalom.com</sys_updated_by>
+        <sys_updated_on>2026-08-05 18:14:28</sys_updated_on>
+        <turn_off_scss_compilation>false</turn_off_scss_compilation>
+    </sp_theme>
+</record_update>

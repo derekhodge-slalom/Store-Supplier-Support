@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_header_footer">
+    <sp_header_footer action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller = function () {
+    /* widget controller */
+    var c = this;
+};
+]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.sss-footer {
+  background: $brand-primary;
+  color: $btn-primary-color;
+  margin-top: 40px;
+  padding: 24px 0;
+}
+
+.sss-footer__inner {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.sss-footer__wordmark {
+  color: $brand-warning;
+  font-size: 20px;
+  font-weight: 800;
+  letter-spacing: -.04em;
+}
+
+.sss-footer__tagline { margin-left: auto; }
+
+@media (max-width: 767px) {
+  .sss-footer__tagline { margin-left: 0; width: 100%; }
+}
+</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>true</has_preview>
+        <id>slalom-store-supplier-support-footer</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {
+}]]></link>
+        <name>Slalom Store Supplier Support Footer</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function () {
+    /* populate the 'data' object */
+    /* e.g., data.table = $sp.getValue('table'); */
+})();]]></script>
+        <servicenow>false</servicenow>
+        <static>true</static>
+        <sys_class_name>sp_header_footer</sys_class_name>
+        <sys_created_by>derek.hodge@slalom.com</sys_created_by>
+        <sys_created_on>2026-08-05 18:14:27</sys_created_on>
+        <sys_id>4cceec31e9444ee4b26320dd0e8abf58</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Slalom Store Supplier Support Footer</sys_name>
+        <sys_package display_value="Store Supplier Support" source="x_sln_store_suppli">ee4e977887264b907c2dfdd5dabb354b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Store Supplier Support">ee4e977887264b907c2dfdd5dabb354b</sys_scope>
+        <sys_update_name>sp_header_footer_4cceec31e9444ee4b26320dd0e8abf58</sys_update_name>
+        <sys_updated_by>derek.hodge@slalom.com</sys_updated_by>
+        <sys_updated_on>2026-08-05 18:14:27</sys_updated_on>
+        <template><![CDATA[<footer class="sss-footer" aria-label="Store Supplier Support footer">
+  <div class="container sss-footer__inner">
+    <span class="sss-footer__wordmark">slalom</span>
+    <span>Store Supplier Support</span>
+    <span class="sss-footer__tagline">Fiercely human support.</span>
+  </div>
+</footer>
+]]></template>
+    </sp_header_footer>
+</record_update>

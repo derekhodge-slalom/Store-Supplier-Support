@@ -2,7 +2,7 @@
     <sys_ux_registry_m2m_category action="INSERT_OR_UPDATE">
         <experience_category display_value="Workspace">afb4e3e173322010f0ca1e666bf6a726</experience_category>
         <order>100</order>
-        <page_registry display_value="Store Supplier Support">f1cb3bb464254d179a0c2c3060ace9df</page_registry>
+        <page_registry display_value="slalom | Store Supplier Support">f1cb3bb464254d179a0c2c3060ace9df</page_registry>
         <sys_class_name>sys_ux_registry_m2m_category</sys_class_name>
         <sys_created_by>derek.hodge@slalom.com</sys_created_by>
         <sys_created_on>2026-08-05 01:29:01</sys_created_on>

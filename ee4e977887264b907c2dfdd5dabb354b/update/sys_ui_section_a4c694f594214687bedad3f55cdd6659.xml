@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="Assignment and Progress" section_id="a4c694f594214687bedad3f55cdd6659" sys_domain="global" table="x_sln_store_suppli_supply_request" version="3" view="workspace-3f8cebee4f134dc0951c77b67b418e63">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.begin_split</element>
+            <position>0</position>
+            <sys_created_by>derek.hodge@slalom.com</sys_created_by>
+            <sys_created_on>2026-08-05 18:21:56</sys_created_on>
+            <sys_id>2259d65e810443468b841aba047cc203</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Assignment and Progress" display_value="Assignment and Progress" name="x_sln_store_suppli_supply_request" sys_domain="global" view="99b090d987620f907c2dfdd5dabb358a">a4c694f594214687bedad3f55cdd6659</sys_ui_section>
+            <sys_updated_by>derek.hodge@slalom.com</sys_updated_by>
+            <sys_updated_on>2026-08-05 18:21:56</sys_updated_on>
+            <sys_user/>
+            <type>.begin_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>supply_state</element>
+            <position>1</position>
+            <sys_created_by>derek.hodge@slalom.com</sys_created_by>
+            <sys_created_on>2026-08-05 18:21:56</sys_created_on>
+            <sys_id>f7b7bbefd9b640138a906ebafec0fd20</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Assignment and Progress" display_value="Assignment and Progress" name="x_sln_store_suppli_supply_request" sys_domain="global" view="99b090d987620f907c2dfdd5dabb358a">a4c694f594214687bedad3f55cdd6659</sys_ui_section>
+            <sys_updated_by>derek.hodge@slalom.com</sys_updated_by>
+            <sys_updated_on>2026-08-05 18:21:56</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>hold_reason</element>
+            <position>2</position>
+            <sys_created_by>derek.hodge@slalom.com</sys_created_by>
+            <sys_created_on>2026-08-05 18:21:56</sys_created_on>
+            <sys_id>601b78295f3d4b72a64bc03a5da08a18</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Assignment and Progress" display_value="Assignment and Progress" name="x_sln_store_suppli_supply_request" sys_domain="global" view="99b090d987620f907c2dfdd5dabb358a">a4c694f594214687bedad3f55cdd6659</sys_ui_section>
+            <sys_updated_by>derek.hodge@slalom.com</sys_updated_by>
+            <sys_updated_on>2026-08-05 18:21:56</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>approval_status</element>
+            <position>3</position>
+            <sys_created_by>derek.hodge@slalom.com</sys_created_by>
+            <sys_created_on>2026-08-05 18:21:56</sys_created_on>
+            <sys_id>79410f04a5634e428d401ee54fb94c1c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Assignment and Progress" display_value="Assignment and Progress" name="x_sln_store_suppli_supply_request" sys_domain="global" view="99b090d987620f907c2dfdd5dabb358a">a4c694f594214687bedad3f55cdd6659</sys_ui_section>
+            <sys_updated_by>derek.hodge@slalom.com</sys_updated_by>
+            <sys_updated_on>2026-08-05 18:21:56</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>prior_active_state</element>
+            <position>4</position>
+            <sys_created_by>derek.hodge@slalom.com</sys_created_by>
+            <sys_created_on>2026-08-05 18:21:56</sys_created_on>
+            <sys_id>6334feca3ed44191870e130071305d33</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Assignment and Progress" display_value="Assignment and Progress" name="x_sln_store_suppli_supply_request" sys_domain="global" view="99b090d987620f907c2dfdd5dabb358a">a4c694f594214687bedad3f55cdd6659</sys_ui_section>
+            <sys_updated_by>derek.hodge@slalom.com</sys_updated_by>
+            <sys_updated_on>2026-08-05 18:21:56</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>5</position>
+            <sys_created_by>derek.hodge@slalom.com</sys_created_by>
+            <sys_created_on>2026-08-05 18:21:56</sys_created_on>
+            <sys_id>014682538c7343769cbcaa0bb5ceb566</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Assignment and Progress" display_value="Assignment and Progress" name="x_sln_store_suppli_supply_request" sys_domain="global" view="99b090d987620f907c2dfdd5dabb358a">a4c694f594214687bedad3f55cdd6659</sys_ui_section>
+            <sys_updated_by>derek.hodge@slalom.com</sys_updated_by>
+            <sys_updated_on>2026-08-05 18:21:56</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>assignment_group</element>
+            <position>6</position>
+            <sys_created_by>derek.hodge@slalom.com</sys_created_by>
+            <sys_created_on>2026-08-05 18:21:56</sys_created_on>
+            <sys_id>dc696adceead4826ad156a0dc11a31cc</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Assignment and Progress" display_value="Assignment and Progress" name="x_sln_store_suppli_supply_request" sys_domain="global" view="99b090d987620f907c2dfdd5dabb358a">a4c694f594214687bedad3f55cdd6659</sys_ui_section>
+            <sys_updated_by>derek.hodge@slalom.com</sys_updated_by>
+            <sys_updated_on>2026-08-05 18:21:56</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>assigned_to</element>
+            <position>7</position>
+            <sys_created_by>derek.hodge@slalom.com</sys_created_by>
+            <sys_created_on>2026-08-05 18:21:56</sys_created_on>
+            <sys_id>4b3a8095df514bacb7ec83e5ad3fe27d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Assignment and Progress" display_value="Assignment and Progress" name="x_sln_store_suppli_supply_request" sys_domain="global" view="99b090d987620f907c2dfdd5dabb358a">a4c694f594214687bedad3f55cdd6659</sys_ui_section>
+            <sys_updated_by>derek.hodge@slalom.com</sys_updated_by>
+            <sys_updated_on>2026-08-05 18:21:56</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>first_response_at</element>
+            <position>8</position>
+            <sys_created_by>derek.hodge@slalom.com</sys_created_by>
+            <sys_created_on>2026-08-05 18:21:56</sys_created_on>
+            <sys_id>4c4f7fa16b7e4aafa140bf78c36af009</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Assignment and Progress" display_value="Assignment and Progress" name="x_sln_store_suppli_supply_request" sys_domain="global" view="99b090d987620f907c2dfdd5dabb358a">a4c694f594214687bedad3f55cdd6659</sys_ui_section>
+            <sys_updated_by>derek.hodge@slalom.com</sys_updated_by>
+            <sys_updated_on>2026-08-05 18:21:56</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>last_customer_update</element>
+            <position>9</position>
+            <sys_created_by>derek.hodge@slalom.com</sys_created_by>
+            <sys_created_on>2026-08-05 18:21:56</sys_created_on>
+            <sys_id>74799955b76a44c6ac8d86679daecb1d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Assignment and Progress" display_value="Assignment and Progress" name="x_sln_store_suppli_supply_request" sys_domain="global" view="99b090d987620f907c2dfdd5dabb358a">a4c694f594214687bedad3f55cdd6659</sys_ui_section>
+            <sys_updated_by>derek.hodge@slalom.com</sys_updated_by>
+            <sys_updated_on>2026-08-05 18:21:56</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.end_split</element>
+            <position>10</position>
+            <sys_created_by>derek.hodge@slalom.com</sys_created_by>
+            <sys_created_on>2026-08-05 18:21:56</sys_created_on>
+            <sys_id>40faabb1d117438ab421c21b978e2888</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Assignment and Progress" display_value="Assignment and Progress" name="x_sln_store_suppli_supply_request" sys_domain="global" view="99b090d987620f907c2dfdd5dabb358a">a4c694f594214687bedad3f55cdd6659</sys_ui_section>
+            <sys_updated_by>derek.hodge@slalom.com</sys_updated_by>
+            <sys_updated_on>2026-08-05 18:21:56</sys_updated_on>
+            <sys_user/>
+            <type>.end_split</type>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption>Assignment and Progress</caption>
+            <header>false</header>
+            <name>x_sln_store_suppli_supply_request</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>derek.hodge@slalom.com</sys_created_by>
+            <sys_created_on>2026-08-05 18:14:47</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>a4c694f594214687bedad3f55cdd6659</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_sln_store_suppli_supply_request</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Store Supplier Support" source="x_sln_store_suppli">ee4e977887264b907c2dfdd5dabb354b</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Store Supplier Support">ee4e977887264b907c2dfdd5dabb354b</sys_scope>
+            <sys_update_name>sys_ui_section_a4c694f594214687bedad3f55cdd6659</sys_update_name>
+            <sys_updated_by>derek.hodge@slalom.com</sys_updated_by>
+            <sys_updated_on>2026-08-05 18:14:47</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="workspace-3f8cebee4f134dc0951c77b67b418e63" name="workspace-3f8cebee4f134dc0951c77b67b418e63">99b090d987620f907c2dfdd5dabb358a</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

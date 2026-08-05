@@ -5,7 +5,7 @@
         <admin_panel_table>sys_ux_app_config</admin_panel_table>
         <auth_routes/>
         <page/>
-        <parent_app display_value="Unified Navigation app shell">c86a62e2c7022010099a308dc7c26022</parent_app>
+        <parent_app display_value="Slalom Store Supplier Support App Shell">b6d1e06c5a1b4a8c91a9e7f0f01ee502</parent_app>
         <path>store-supplier-support</path>
         <root_macroponent display_value="Workspace App Shell">c276387cc331101080d6d3658940ddd2</root_macroponent>
         <sys_class_name>sys_ux_page_registry</sys_class_name>
@@ -20,6 +20,6 @@
         <sys_update_name>sys_ux_page_registry_f1cb3bb464254d179a0c2c3060ace9df</sys_update_name>
         <sys_updated_by>derek.hodge@slalom.com</sys_updated_by>
         <sys_updated_on>2026-08-05 01:29:01</sys_updated_on>
-        <title>Store Supplier Support</title>
+        <title>slalom | Store Supplier Support</title>
     </sys_ux_page_registry>
 </record_update>

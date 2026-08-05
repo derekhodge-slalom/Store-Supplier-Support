@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_form_sections form_id="d15135b377fc4f20b6f89296e65776c7" sys_domain="global" table="x_sln_store_suppli_case_escalation" version="3">
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>0</position>
+            <sys_created_by>derek.hodge@slalom.com</sys_created_by>
+            <sys_created_on>2026-08-05 18:21:49</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>756365eb47524ca7b73e11e65243b4d4</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_sln_store_suppli_case_escalation" name="x_sln_store_suppli_case_escalation" sys_domain="global" view="99b090d987620f907c2dfdd5dabb358a">d15135b377fc4f20b6f89296e65776c7</sys_ui_form>
+            <sys_ui_section caption="Escalation" display_value="Escalation" name="x_sln_store_suppli_case_escalation" sys_domain="global" view="99b090d987620f907c2dfdd5dabb358a">0f068c26941d4307b3c34ea775ab7177</sys_ui_section>
+            <sys_updated_by>derek.hodge@slalom.com</sys_updated_by>
+            <sys_updated_on>2026-08-05 18:21:49</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form action="INSERT_OR_UPDATE">
+            <name>x_sln_store_suppli_case_escalation</name>
+            <roles>x_sln_store_suppli.support_agent,x_sln_store_suppli.support_manager,x_sln_store_suppli.admin</roles>
+            <sys_class_name>sys_ui_form</sys_class_name>
+            <sys_created_by>derek.hodge@slalom.com</sys_created_by>
+            <sys_created_on>2026-08-05 18:14:40</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>d15135b377fc4f20b6f89296e65776c7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_sln_store_suppli_case_escalation</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Store Supplier Support" source="x_sln_store_suppli">ee4e977887264b907c2dfdd5dabb354b</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Store Supplier Support">ee4e977887264b907c2dfdd5dabb354b</sys_scope>
+            <sys_update_name>sys_ui_form_sections_d15135b377fc4f20b6f89296e65776c7</sys_update_name>
+            <sys_updated_by>derek.hodge@slalom.com</sys_updated_by>
+            <sys_updated_on>2026-08-05 18:14:40</sys_updated_on>
+            <sys_user/>
+            <view display_value="workspace-3f8cebee4f134dc0951c77b67b418e63" name="workspace-3f8cebee4f134dc0951c77b67b418e63">99b090d987620f907c2dfdd5dabb358a</view>
+            <view_name/>
+        </sys_ui_form>
+    </sys_ui_form_sections>
+</record_update>
