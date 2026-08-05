@@ -2,10 +2,10 @@
     <element audit="true" db_object_id="154aa08d876e4b907c2dfdd5dabb3549" label="Case Escalation" max_length="40" name="x_sln_store_suppli_case_escalation" type="collection">
         <element choice="3" label="Reason" mandatory="true" max_length="40" name="reason" type="choice">
             <choice>
-                <element inactive_on_update="false" label="Manual" sequence="10" value="manual"/>
                 <element inactive_on_update="false" label="Unresolved After Five Business Days" sequence="40" value="unresolved_five_days"/>
-                <element inactive_on_update="false" label="Resolution SLA Breach" sequence="30" value="resolution_sla"/>
                 <element inactive_on_update="false" label="No Customer-visible Update" sequence="20" value="stale_update"/>
+                <element inactive_on_update="false" label="Manual" sequence="10" value="manual"/>
+                <element inactive_on_update="false" label="Resolution SLA Breach" sequence="30" value="resolution_sla"/>
             </choice>
         </element>
         <element label="Triggered By" max_length="32" name="triggered_by" reference="sys_user" reference_cascade_rule="clear" type="reference"/>

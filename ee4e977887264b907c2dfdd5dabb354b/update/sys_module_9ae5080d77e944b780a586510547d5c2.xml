@@ -10,7 +10,11 @@
     "build:ci": "now-sdk build --frozenKeys",
     "deploy": "now-sdk install --auth demo5",
     "deploy:no-demo": "now-sdk install --auth demo5 --demoData=false",
-    "types": "now-sdk dependencies --auth demo5"
+    "types": "now-sdk dependencies --auth demo5",
+    "validate:demo5": "node scripts/validate-demo5.cjs",
+    "migrate:store-models:demo5": "node scripts/migrate-store-models-demo5.cjs",
+    "test:atf:demo5": "node scripts/run-atf-demo5.cjs",
+    "source:commit:demo5": "node scripts/commit-source-demo5.cjs"
   },
   "devDependencies": {
     "@servicenow/sdk": "4.9.2",

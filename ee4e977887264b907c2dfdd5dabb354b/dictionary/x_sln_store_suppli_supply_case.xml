@@ -3,10 +3,10 @@
         <element label="Prior Active State" max_length="40" name="prior_active_state" read_only="true" read_only_option="instance_configured" type="string"/>
         <element choice="3" default="new" label="State" mandatory="true" max_length="40" name="supply_state" type="choice">
             <choice>
-                <element inactive_on_update="false" label="Open" sequence="20" value="open"/>
-                <element inactive_on_update="false" label="New" sequence="10" value="new"/>
-                <element inactive_on_update="false" label="Closed" sequence="50" value="closed"/>
                 <element inactive_on_update="false" label="Hold" sequence="40" value="hold"/>
+                <element inactive_on_update="false" label="New" sequence="10" value="new"/>
+                <element inactive_on_update="false" label="Open" sequence="20" value="open"/>
+                <element inactive_on_update="false" label="Closed" sequence="50" value="closed"/>
                 <element inactive_on_update="false" label="Cancelled" sequence="60" value="cancelled"/>
                 <element inactive_on_update="false" label="Work in Progress" sequence="30" value="work_in_progress"/>
             </choice>
@@ -19,9 +19,9 @@
         <element choice="3" default="not_requested" label="DM Approval" max_length="40" name="approval_status" type="choice">
             <choice>
                 <element inactive_on_update="false" label="Approved" sequence="30" value="approved"/>
+                <element inactive_on_update="false" label="Not Requested" sequence="10" value="not_requested"/>
                 <element inactive_on_update="false" label="Requested" sequence="20" value="requested"/>
                 <element inactive_on_update="false" label="Rejected" sequence="40" value="rejected"/>
-                <element inactive_on_update="false" label="Not Requested" sequence="10" value="not_requested"/>
             </choice>
         </element>
         <element label="Originating Supplier" max_length="32" name="originating_supplier" reference="customer_account" reference_cascade_rule="clear" type="reference"/>
@@ -30,20 +30,20 @@
         <element label="Escalation Reasons" max_length="255" name="escalation_reasons" read_only="true" read_only_option="instance_configured" type="string"/>
         <element choice="3" default="portal" label="Intake Channel" mandatory="true" max_length="40" name="intake_channel" type="choice">
             <choice>
-                <element inactive_on_update="false" label="Email" sequence="20" value="email"/>
                 <element inactive_on_update="false" label="Agent" sequence="40" value="agent"/>
-                <element inactive_on_update="false" label="Portal" sequence="10" value="portal"/>
                 <element inactive_on_update="false" label="Phone" sequence="30" value="phone"/>
+                <element inactive_on_update="false" label="Portal" sequence="10" value="portal"/>
+                <element inactive_on_update="false" label="Email" sequence="20" value="email"/>
             </choice>
         </element>
         <element label="Requested By" max_length="32" name="requested_by" reference="sys_user" reference_cascade_rule="clear" type="reference"/>
         <element choice="1" label="Quality of Service" max_length="40" name="service_rating" type="choice">
             <choice>
+                <element inactive_on_update="false" label="4" sequence="40" value="4"/>
+                <element inactive_on_update="false" label="3" sequence="30" value="3"/>
+                <element inactive_on_update="false" label="1 - Poor" sequence="10" value="1"/>
                 <element inactive_on_update="false" label="2" sequence="20" value="2"/>
                 <element inactive_on_update="false" label="5 - Excellent" sequence="50" value="5"/>
-                <element inactive_on_update="false" label="4" sequence="40" value="4"/>
-                <element inactive_on_update="false" label="1 - Poor" sequence="10" value="1"/>
-                <element inactive_on_update="false" label="3" sequence="30" value="3"/>
             </choice>
         </element>
         <element label="Knowledge Recommended" max_length="40" name="knowledge_recommended" type="boolean"/>
@@ -51,11 +51,11 @@
         <element label="Escalated" max_length="40" name="escalated" type="boolean"/>
         <element choice="1" label="Hold Reason" max_length="40" name="hold_reason" type="choice">
             <choice>
+                <element inactive_on_update="false" label="Other" sequence="90" value="other"/>
+                <element inactive_on_update="false" label="Awaiting District Manager Approval" sequence="10" value="awaiting_dm_approval"/>
                 <element inactive_on_update="false" label="Awaiting Stock" sequence="40" value="awaiting_stock"/>
                 <element inactive_on_update="false" label="Awaiting Store Information" sequence="20" value="awaiting_store"/>
-                <element inactive_on_update="false" label="Other" sequence="90" value="other"/>
                 <element inactive_on_update="false" label="Awaiting Supplier" sequence="30" value="awaiting_supplier"/>
-                <element inactive_on_update="false" label="Awaiting District Manager Approval" sequence="10" value="awaiting_dm_approval"/>
             </choice>
         </element>
         <index name="index">

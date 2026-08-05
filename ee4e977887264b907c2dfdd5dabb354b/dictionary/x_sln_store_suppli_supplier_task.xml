@@ -8,12 +8,12 @@
         <element label="Supplier Notes" max_length="4000" name="supplier_notes" type="journal_input"/>
         <element choice="3" default="draft" label="Task State" max_length="40" name="task_state" type="choice">
             <choice>
-                <element inactive_on_update="false" label="Draft" sequence="10" value="draft"/>
-                <element inactive_on_update="false" label="Cancelled" sequence="60" value="cancelled"/>
-                <element inactive_on_update="false" label="Complete" sequence="50" value="complete"/>
-                <element inactive_on_update="false" label="Work in Progress" sequence="30" value="work_in_progress"/>
                 <element inactive_on_update="false" label="Hold" sequence="40" value="hold"/>
                 <element inactive_on_update="false" label="Open" sequence="20" value="open"/>
+                <element inactive_on_update="false" label="Cancelled" sequence="60" value="cancelled"/>
+                <element inactive_on_update="false" label="Draft" sequence="10" value="draft"/>
+                <element inactive_on_update="false" label="Work in Progress" sequence="30" value="work_in_progress"/>
+                <element inactive_on_update="false" label="Complete" sequence="50" value="complete"/>
             </choice>
         </element>
         <element label="Completed On" max_length="40" name="completed_on" read_only="true" read_only_option="instance_configured" type="glide_date_time"/>

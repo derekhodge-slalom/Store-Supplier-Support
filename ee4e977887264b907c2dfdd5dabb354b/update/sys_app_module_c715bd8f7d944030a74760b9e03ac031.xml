@@ -12,10 +12,10 @@
         <map_page/>
         <mobile_title/>
         <mobile_view_name/>
-        <name>alm_consumable</name>
-        <order>340</order>
+        <name>x_sln_store_suppli_store_supply_model</name>
+        <order>330</order>
         <override_menu_roles>false</override_menu_roles>
-        <query>model.sys_class_name=x_sln_store_suppli_store_supply_model</query>
+        <query>active_for_ordering=true</query>
         <report/>
         <require_confirmation>false</require_confirmation>
         <roles>[object Object]</roles>
@@ -23,21 +23,21 @@
         <screen/>
         <sys_class_name>sys_app_module</sys_class_name>
         <sys_created_by>derek.hodge@slalom.com</sys_created_by>
-        <sys_created_on>2026-08-05 01:28:35</sys_created_on>
+        <sys_created_on>2026-08-05 13:59:18</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>af675deee7844bc58a45e00e18e460de</sys_id>
+        <sys_id>c715bd8f7d944030a74760b9e03ac031</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>Consumable Inventory</sys_name>
+        <sys_name>Store Supply Models</sys_name>
         <sys_overrides/>
         <sys_package display_value="Store Supplier Support" source="x_sln_store_suppli">ee4e977887264b907c2dfdd5dabb354b</sys_package>
         <sys_policy/>
         <sys_scope display_value="Store Supplier Support">ee4e977887264b907c2dfdd5dabb354b</sys_scope>
-        <sys_update_name>sys_app_module_af675deee7844bc58a45e00e18e460de</sys_update_name>
+        <sys_update_name>sys_app_module_c715bd8f7d944030a74760b9e03ac031</sys_update_name>
         <sys_updated_by>derek.hodge@slalom.com</sys_updated_by>
-        <sys_updated_on>2026-08-05 01:28:35</sys_updated_on>
+        <sys_updated_on>2026-08-05 13:59:18</sys_updated_on>
         <timeline_page/>
-        <title>Store Supply Inventory</title>
+        <title>Store Supply Models</title>
         <uncancelable>false</uncancelable>
         <ux_list/>
         <view_name/>

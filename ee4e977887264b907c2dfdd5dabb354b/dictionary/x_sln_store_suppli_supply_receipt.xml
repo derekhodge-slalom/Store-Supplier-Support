@@ -10,7 +10,7 @@
         <element label="Idempotency Key" mandatory="true" max_length="80" name="source_key" read_only="true" read_only_option="instance_configured" type="string" unique="true"/>
         <element label="Supplier Task" max_length="32" name="supplier_task" reference="x_sln_store_suppli_supplier_task" reference_cascade_rule="clear" type="reference"/>
         <element label="Store" mandatory="true" max_length="32" name="store" reference="x_sln_store_suppli_store" reference_cascade_rule="restrict" type="reference"/>
-        <element label="Consumable Model" mandatory="true" max_length="32" name="supply_model" reference="cmdb_consumable_product_model" reference_cascade_rule="restrict" type="reference"/>
+        <element label="Store Supply" mandatory="true" max_length="32" name="supply_model" reference="x_sln_store_suppli_store_supply_model" reference_cascade_rule="restrict" type="reference"/>
         <element label="Inventory Applied" max_length="40" name="inventory_applied" read_only="true" read_only_option="instance_configured" type="boolean"/>
         <index name="index">
             <element name="parent_case"/>

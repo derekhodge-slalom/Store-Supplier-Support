@@ -5,8 +5,8 @@
         <element label="Store" mandatory="true" max_length="32" name="store" reference="x_sln_store_suppli_store" reference_cascade_rule="delete" type="reference"/>
         <element choice="3" default="associate" label="Member Type" mandatory="true" max_length="40" name="member_type" type="choice">
             <choice>
-                <element inactive_on_update="false" label="Store Associate" sequence="10" value="associate"/>
                 <element inactive_on_update="false" label="District Manager" sequence="20" value="district_manager"/>
+                <element inactive_on_update="false" label="Store Associate" sequence="10" value="associate"/>
             </choice>
         </element>
         <element label="Demo Data" max_length="40" name="demo_data" type="boolean"/>

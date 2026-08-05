@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element audit="true" db_object_id="784a608d876e4b907c2dfdd5dabb356c" label="Supply Line" max_length="40" name="x_sln_store_suppli_supply_line" type="collection">
         <element label="Needed By" max_length="40" name="needed_by" type="glide_date"/>
-        <element label="Consumable Model" mandatory="true" max_length="32" name="supply_model" reference="cmdb_consumable_product_model" reference_cascade_rule="restrict" type="reference"/>
+        <element label="Store Supply" mandatory="true" max_length="32" name="supply_model" reference="x_sln_store_suppli_store_supply_model" reference_cascade_rule="restrict" type="reference"/>
         <element label="Line Notes" max_length="4000" name="notes" type="multi_two_lines"/>
         <element default="1" label="Requested / Affected Quantity" mandatory="true" max_length="40" name="requested_quantity" type="integer"/>
         <element default="0" label="Received Quantity" max_length="40" name="received_quantity" read_only="true" read_only_option="instance_configured" type="integer"/>
@@ -10,12 +10,12 @@
         <element label="Store Supply Case" mandatory="true" max_length="32" name="parent_case" reference="x_sln_store_suppli_supply_case" reference_cascade_rule="delete" type="reference"/>
         <element choice="3" default="draft" label="Line State" max_length="40" name="line_state" type="choice">
             <choice>
-                <element inactive_on_update="false" label="Cancelled" sequence="60" value="cancelled"/>
-                <element inactive_on_update="false" label="Routed" sequence="20" value="routed"/>
-                <element inactive_on_update="false" label="Draft" sequence="10" value="draft"/>
-                <element inactive_on_update="false" label="Received" sequence="50" value="received"/>
                 <element inactive_on_update="false" label="Partially Received" sequence="40" value="partially_received"/>
+                <element inactive_on_update="false" label="Received" sequence="50" value="received"/>
                 <element inactive_on_update="false" label="Fulfilled" sequence="30" value="fulfilled"/>
+                <element inactive_on_update="false" label="Routed" sequence="20" value="routed"/>
+                <element inactive_on_update="false" label="Cancelled" sequence="60" value="cancelled"/>
+                <element inactive_on_update="false" label="Draft" sequence="10" value="draft"/>
             </choice>
         </element>
         <element label="Supplier" max_length="32" name="supplier_account" reference="customer_account" reference_cascade_rule="clear" type="reference"/>

@@ -60,9 +60,10 @@
         <rec_lookup_price/>
         <record/>
         <record_producer_table>[object Object]</record_producer_table>
-        <reference>cmdb_consumable_product_model</reference>
+        <reference>x_sln_store_suppli_store_supply_model</reference>
         <reference_qual/>
-        <reference_qual_condition/>
+        <reference_qual_condition table="x_sln_store_suppli_store_supply_model">active_for_ordering=true<item endquery="false" field="active_for_ordering" goto="false" newquery="false" operator="=" or="false" value="true"/>
+        </reference_qual_condition>
         <rich_text/>
         <roles_to_use_also_request_for/>
         <save_script/>

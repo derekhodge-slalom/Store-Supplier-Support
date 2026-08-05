@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" db_object_id="a316db4187e6cb907c2dfdd5dabb35c0" extends="cmdb_consumable_product_model" label="Store Supply Model" max_length="40" name="x_sln_store_suppli_store_supply_model" type="collection">
+        <element label="Demo Data" max_length="40" name="demo_data" type="boolean"/>
+        <element default="true" label="Active for Ordering" max_length="40" name="active_for_ordering" type="boolean"/>
+        <element default="each" label="Unit of Measure" max_length="40" name="unit_of_measure" type="string"/>
+        <element choice="3" default="operations" label="Store Supply Category" mandatory="true" max_length="40" name="store_category" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Safety" sequence="30" value="safety"/>
+                <element inactive_on_update="false" label="Store Operations" sequence="10" value="operations"/>
+                <element inactive_on_update="false" label="Other" sequence="90" value="other"/>
+                <element inactive_on_update="false" label="Fixtures" sequence="40" value="fixtures"/>
+                <element inactive_on_update="false" label="Packaging" sequence="20" value="packaging"/>
+            </choice>
+        </element>
+        <index name="index">
+            <element name="active_for_ordering"/>
+            <element name="store_category"/>
+        </index>
+    </element>
+</database>

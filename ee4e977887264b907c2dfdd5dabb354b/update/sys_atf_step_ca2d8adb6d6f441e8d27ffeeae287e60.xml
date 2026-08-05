@@ -34,17 +34,25 @@
         <order>200</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>derek.hodge@slalom.com</sys_created_by>
-        <sys_created_on>2026-08-05 03:49:16</sys_created_on>
+        <sys_created_on>2026-08-05 13:59:19</sys_created_on>
         <sys_id>0d4eeebbf3404941bce67dc9121fc1ab</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>derek.hodge@slalom.com</sys_updated_by>
-        <sys_updated_on>2026-08-05 03:49:16</sys_updated_on>
+        <sys_updated_on>2026-08-05 13:59:19</sys_updated_on>
         <value>
 describe('Store Supplier Support experience configuration', function () {
     it('has Request and Issue record producers', function () {
         ['Submit Store Supply Request','Report Store Supply Issue'].forEach(function (name) {
             var producer = new GlideRecord('sc_cat_item_producer'); producer.get('name', name); expect(producer.isValidRecord()).toBe(true);
         });
+    });
+    it('limits both producer supply pickers to Store Supply Models', function () {
+        var variables = new GlideRecord('item_option_new');
+        variables.addQuery('cat_item.name', 'IN', 'Submit Store Supply Request,Report Store Supply Issue');
+        variables.addQuery('name', 'supplyModel'); variables.query();
+        var count = 0;
+        while (variables.next()) { count++; expect(variables.getValue('reference')).toBe('x_sln_store_suppli_store_supply_model'); }
+        expect(count).toBe(2);
     });
     it('routes new emails to interactions and replies to cases', function () {
         var actions = new GlideRecord('sys_email_action'); actions.addEncodedQuery('nameSTARTSWITHCreate Store Supply^ORnameSTARTSWITHUpdate Store Supply'); actions.query();
@@ -63,11 +71,11 @@ describe('Store Supplier Support experience configuration', function () {
         <order>100</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>derek.hodge@slalom.com</sys_created_by>
-        <sys_created_on>2026-08-05 03:49:16</sys_created_on>
+        <sys_created_on>2026-08-05 13:59:19</sys_created_on>
         <sys_id>8cfc6a2ab1304e86b383135037a0ab81</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>derek.hodge@slalom.com</sys_updated_by>
-        <sys_updated_on>2026-08-05 03:49:16</sys_updated_on>
+        <sys_updated_on>2026-08-05 13:59:19</sys_updated_on>
         <value>3.1</value>
         <variable display_value="Jasmine version">42f2564b73031300440211d8faf6a777</variable>
     </sys_variable_value>

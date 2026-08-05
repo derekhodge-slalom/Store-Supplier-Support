@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
-    <sys_dictionary action="INSERT_OR_UPDATE" element="supply_model" table="x_sln_store_suppli_supply_receipt">
+    <sys_dictionary action="INSERT_OR_UPDATE" element="unit_of_measure" table="x_sln_store_suppli_store_supply_model">
         <active>true</active>
         <array>false</array>
         <attributes/>
@@ -8,10 +8,10 @@
         <choice/>
         <choice_field/>
         <choice_table/>
-        <column_label>Store Supply</column_label>
+        <column_label>Unit of Measure</column_label>
         <comments/>
         <create_roles/>
-        <default_value/>
+        <default_value>each</default_value>
         <defaultsort/>
         <delete_roles/>
         <dependent/>
@@ -21,23 +21,23 @@
         <dynamic_creation_script/>
         <dynamic_default_value/>
         <dynamic_ref_qual/>
-        <element>supply_model</element>
+        <element>unit_of_measure</element>
         <element_reference>false</element_reference>
         <foreign_database/>
         <formula/>
         <function_definition/>
         <function_field>false</function_field>
-        <internal_type display_value="Reference">reference</internal_type>
-        <mandatory>true</mandatory>
-        <max_length>32</max_length>
-        <name>x_sln_store_suppli_supply_receipt</name>
+        <internal_type display_value="String">string</internal_type>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <name>x_sln_store_suppli_store_supply_model</name>
         <next_element/>
         <primary>false</primary>
         <read_only>false</read_only>
         <read_only_option/>
         <read_roles/>
-        <reference display_value="" name="x_sln_store_suppli_store_supply_model">x_sln_store_suppli_store_supply_model</reference>
-        <reference_cascade_rule>restrict</reference_cascade_rule>
+        <reference/>
+        <reference_cascade_rule/>
         <reference_floats>false</reference_floats>
         <reference_key/>
         <reference_qual/>
@@ -47,14 +47,14 @@
         <staged>false</staged>
         <sys_class_name>sys_dictionary</sys_class_name>
         <sys_created_by>derek.hodge@slalom.com</sys_created_by>
-        <sys_created_on>2026-08-05 01:27:57</sys_created_on>
-        <sys_name>Store Supply</sys_name>
+        <sys_created_on>2026-08-05 13:58:41</sys_created_on>
+        <sys_name>Unit of Measure</sys_name>
         <sys_package display_value="Store Supplier Support" source="x_sln_store_suppli">ee4e977887264b907c2dfdd5dabb354b</sys_package>
         <sys_policy/>
         <sys_scope display_value="Store Supplier Support">ee4e977887264b907c2dfdd5dabb354b</sys_scope>
-        <sys_update_name>sys_dictionary_x_sln_store_suppli_supply_receipt_supply_model</sys_update_name>
+        <sys_update_name>sys_dictionary_x_sln_store_suppli_store_supply_model_unit_of_measure</sys_update_name>
         <sys_updated_by>derek.hodge@slalom.com</sys_updated_by>
-        <sys_updated_on>2026-08-05 01:27:57</sys_updated_on>
+        <sys_updated_on>2026-08-05 13:58:41</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
