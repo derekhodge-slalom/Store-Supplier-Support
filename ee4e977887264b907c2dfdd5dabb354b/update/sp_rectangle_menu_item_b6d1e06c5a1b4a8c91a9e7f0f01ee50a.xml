@@ -2,7 +2,7 @@
     <sp_rectangle_menu_item action="INSERT_OR_UPDATE">
         <active>true</active>
         <color/>
-        <condition>gs.hasRole('x_sln_store_suppli.store_associate') || gs.hasRole('x_sln_store_suppli.district_manager') || gs.hasRole('x_sln_store_suppli.support_agent') || gs.hasRole('x_sln_store_suppli.support_manager') || gs.hasRole('x_sln_store_suppli.admin')</condition>
+        <condition>gs.hasRole('admin') || gs.hasRole('x_sln_store_suppli.store_associate') || gs.hasRole('x_sln_store_suppli.district_manager') || gs.hasRole('x_sln_store_suppli.admin')</condition>
         <display_1/>
         <display_2/>
         <display_date/>
@@ -12,7 +12,7 @@
         <kb_article/>
         <kb_category/>
         <kb_topic/>
-        <label>Store supplier support</label>
+        <label>Store supplies</label>
         <order>250</order>
         <record_script/>
         <sc_cat_item/>
