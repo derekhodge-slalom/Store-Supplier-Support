@@ -152,6 +152,7 @@ export const x_sln_store_suppli_supply_case = Table({
     extends: 'sn_customerservice_case',
     extensible: true,
     audit: true, allowWebServiceAccess: false, accessibleFrom: 'public', callerAccess: 'tracking',
+    actions: ['read', 'create', 'update'],
     autoNumber: { prefix: 'SSC', number: 1000, numberOfDigits: 7 },
     schema: {
         store: ReferenceColumn({ label: 'Store', referenceTable: 'x_sln_store_suppli_store', mandatory: true, cascadeRule: 'restrict' }),
@@ -250,6 +251,7 @@ export const x_sln_store_suppli_supply_request = Table({
     label: 'Store Supply Request',
     extends: 'x_sln_store_suppli_supply_case',
     audit: true, allowWebServiceAccess: false, accessibleFrom: 'public', callerAccess: 'tracking',
+    actions: ['read', 'create', 'update'],
     autoNumber: { prefix: 'SSR', number: 1000, numberOfDigits: 7 },
     schema: {
         category: ChoiceColumn({
@@ -286,6 +288,7 @@ export const x_sln_store_suppli_supply_issue = Table({
     label: 'Store Supply Issue',
     extends: 'x_sln_store_suppli_supply_case',
     audit: true, allowWebServiceAccess: false, accessibleFrom: 'public', callerAccess: 'tracking',
+    actions: ['read', 'create', 'update'],
     autoNumber: { prefix: 'SSI', number: 1000, numberOfDigits: 7 },
     schema: {
         category: ChoiceColumn({
@@ -358,6 +361,7 @@ export const x_sln_store_suppli_supplier_task = Table({
     label: 'Supplier Fulfillment Task',
     extends: 'sn_customerservice_task',
     audit: true, allowWebServiceAccess: false, accessibleFrom: 'public', callerAccess: 'tracking',
+    actions: ['read', 'create', 'update'],
     autoNumber: { prefix: 'SST', number: 1000, numberOfDigits: 7 },
     schema: {
         parent_case: ReferenceColumn({ label: 'Store Supply Case', referenceTable: 'x_sln_store_suppli_supply_case', mandatory: true, cascadeRule: 'restrict' }),

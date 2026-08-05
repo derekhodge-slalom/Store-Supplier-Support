@@ -62,6 +62,7 @@ async function main() {
     await check('Employee Center capability', 'sp_portal', 'url_suffix=esc', 1)
     await check('Email Interaction for CSM active', 'sys_store_app', 'scope=sn_eaai_csm^active=true', 1)
     await check('Fourteen application tables', 'sys_db_object', `nameIN${tableNames.join(',')}`, 14)
+    await check('CSM can initialize Store Supply cases and tasks', 'sys_db_object', 'nameINx_sln_store_suppli_supply_case,x_sln_store_suppli_supply_request,x_sln_store_suppli_supply_issue,x_sln_store_suppli_supplier_task^access=public^read_access=true^create_access=true^update_access=true', 4)
     await check('Six application roles', 'sys_user_role', `nameIN${roleNames.join(',')}`, 6)
     await check('Application ACLs', 'sys_security_acl', 'nameSTARTSWITHx_sln_store_suppli_', { min: 29 })
     await check('Store Supply Model child table', 'sys_db_object', 'name=x_sln_store_suppli_store_supply_model^super_class.name=cmdb_consumable_product_model', 1)
