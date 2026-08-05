@@ -2,8 +2,8 @@
     <sys_ux_list action="INSERT_OR_UPDATE">
         <active>true</active>
         <category display_value="Stores and Suppliers">7faefac4ca4d44daacf75aa6c6010ae0</category>
-        <columns>display_name,model,model_category,stockroom,quantity,install_status,substatus</columns>
-        <condition table="alm_consumable">model.sys_class_name=x_sln_store_suppli_store_supply_model<item display_value="Store Supply Model" endquery="false" field="model.sys_class_name" goto="false" newquery="false" operator="=" or="false" value="x_sln_store_suppli_store_supply_model"/>
+        <columns>name,product_model_class,asset_class,allow_in_bundle</columns>
+        <condition table="cmdb_model_category">nameSTARTSWITHStore Supply - <item endquery="false" field="name" goto="false" newquery="false" operator="STARTSWITH" or="false" value="Store Supply -"/>
         </condition>
         <configuration display_value="Store Supplier Support Lists">ef453bff7ddf44988f3e7bd671b9aa61</configuration>
         <enable_column_calculations>false</enable_column_calculations>
@@ -57,27 +57,27 @@
         <list_attributes/>
         <live_updates>off</live_updates>
         <max_characters>4000</max_characters>
-        <order>330</order>
+        <order>325</order>
         <override_word_wrap_user_pref>false</override_word_wrap_user_pref>
         <roles/>
         <show_filter_overview>false</show_filter_overview>
         <sys_class_name>sys_ux_list</sys_class_name>
         <sys_created_by>derek.hodge@slalom.com</sys_created_by>
-        <sys_created_on>2026-08-05 13:59:37</sys_created_on>
+        <sys_created_on>2026-08-05 17:16:58</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>847c350436e743319ceab8dee7077461</sys_id>
+        <sys_id>9f62bc27951942cca6c9eb1d21d49585</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>Store Supply Inventory</sys_name>
+        <sys_name>Store Supply Model Categories</sys_name>
         <sys_overrides/>
         <sys_package display_value="Store Supplier Support" source="x_sln_store_suppli">ee4e977887264b907c2dfdd5dabb354b</sys_package>
         <sys_policy/>
         <sys_scope display_value="Store Supplier Support">ee4e977887264b907c2dfdd5dabb354b</sys_scope>
-        <sys_update_name>sys_ux_list_847c350436e743319ceab8dee7077461</sys_update_name>
+        <sys_update_name>sys_ux_list_9f62bc27951942cca6c9eb1d21d49585</sys_update_name>
         <sys_updated_by>derek.hodge@slalom.com</sys_updated_by>
-        <sys_updated_on>2026-08-05 13:59:37</sys_updated_on>
-        <table>alm_consumable</table>
-        <title>Store Supply Inventory</title>
+        <sys_updated_on>2026-08-05 17:16:58</sys_updated_on>
+        <table>cmdb_model_category</table>
+        <title>Store Supply Model Categories</title>
         <view/>
         <word_wrap>false</word_wrap>
     </sys_ux_list>
