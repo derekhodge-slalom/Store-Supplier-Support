@@ -6,7 +6,7 @@
         <caller_access>1</caller_access>
         <client_scripts_access>false</client_scripts_access>
         <configuration_access>false</configuration_access>
-        <create_access>false</create_access>
+        <create_access>true</create_access>
         <create_access_controls>false</create_access_controls>
         <delete_access>false</delete_access>
         <filter_extension/>
@@ -33,7 +33,7 @@
         <sys_update_name>sys_db_object_1a4a248d876e4b907c2dfdd5dabb3555</sys_update_name>
         <sys_updated_by>derek.hodge@slalom.com</sys_updated_by>
         <sys_updated_on>2026-08-05 01:27:56</sys_updated_on>
-        <update_access>false</update_access>
+        <update_access>true</update_access>
         <user_role/>
         <ws_access>false</ws_access>
     </sys_db_object>

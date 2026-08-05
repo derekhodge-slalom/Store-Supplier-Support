@@ -3,7 +3,7 @@
         <sys_ui_form_section action="INSERT_OR_UPDATE">
             <position>0</position>
             <sys_created_by>derek.hodge@slalom.com</sys_created_by>
-            <sys_created_on>2026-08-05 03:49:24</sys_created_on>
+            <sys_created_on>2026-08-05 17:35:34</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>f6e903b4f1894b8c9f26cc5badf3e222</sys_id>
@@ -12,7 +12,7 @@
             <sys_ui_form display_value="x_sln_store_suppli_supply_receipt" name="x_sln_store_suppli_supply_receipt" sys_domain="global" view="Default view">25970479075d42928ccbb1ab003d278c</sys_ui_form>
             <sys_ui_section caption="Receipt" display_value="Receipt" name="x_sln_store_suppli_supply_receipt" sys_domain="global" view="Default view">67d640729dfa4130be21fb6296d58566</sys_ui_section>
             <sys_updated_by>derek.hodge@slalom.com</sys_updated_by>
-            <sys_updated_on>2026-08-05 03:49:24</sys_updated_on>
+            <sys_updated_on>2026-08-05 17:35:34</sys_updated_on>
         </sys_ui_form_section>
         <sys_ui_form action="INSERT_OR_UPDATE">
             <name>x_sln_store_suppli_supply_receipt</name>
