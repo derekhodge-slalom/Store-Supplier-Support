@@ -70,12 +70,17 @@ export const storeSupplyWorkspaceListConfig = UxListMenuConfig({
                 },
                 {
                     $id: Now.ID['workspace_store_supply_models'], title: 'Store Supply Models', table: 'x_sln_store_suppli_store_supply_model',
-                    columns: 'name,model_number,manufacturer,cmdb_model_category,store_category,unit_of_measure,active_for_ordering', condition: 'active_for_ordering=true', order: 320,
+                    columns: 'display_name,model_number,manufacturer,cmdb_model_category,store_category,unit_of_measure,active_for_ordering', condition: 'active_for_ordering=true', order: 320,
                     applicabilities: [{ $id: Now.ID['workspace_store_supply_models_app'], applicability: storeSupplyWorkspaceApplicability }],
                 },
                 {
+                    $id: Now.ID['workspace_store_supply_model_categories'], title: 'Store Supply Model Categories', table: 'cmdb_model_category',
+                    columns: 'name,product_model_class,asset_class,allow_in_bundle', condition: 'nameSTARTSWITHStore Supply - ', order: 325,
+                    applicabilities: [{ $id: Now.ID['workspace_store_supply_model_categories_app'], applicability: storeSupplyWorkspaceApplicability }],
+                },
+                {
                     $id: Now.ID['workspace_store_supply_inventory'], title: 'Store Supply Inventory', table: 'alm_consumable',
-                    columns: 'display_name,model,stockroom,quantity,install_status,substatus', condition: 'model.sys_class_name=x_sln_store_suppli_store_supply_model', order: 330,
+                    columns: 'display_name,model,model_category,stockroom,quantity,install_status,substatus', condition: 'model.sys_class_name=x_sln_store_suppli_store_supply_model', order: 330,
                     applicabilities: [{ $id: Now.ID['workspace_store_supply_inventory_app'], applicability: storeSupplyWorkspaceApplicability }],
                 },
             ],
@@ -90,7 +95,7 @@ export const storeSupplyWorkspace = Workspace({
         'x_sln_store_suppli_supply_case', 'x_sln_store_suppli_supply_request', 'x_sln_store_suppli_supply_issue',
         'x_sln_store_suppli_supplier_task', 'x_sln_store_suppli_supply_line', 'x_sln_store_suppli_supply_receipt',
         'x_sln_store_suppli_case_escalation', 'x_sln_store_suppli_store', 'x_sln_store_suppli_store_supplier',
-        'x_sln_store_suppli_supply_supplier', 'x_sln_store_suppli_store_supply_model', 'alm_consumable',
+        'x_sln_store_suppli_supply_supplier', 'x_sln_store_suppli_store_supply_model', 'cmdb_model_category', 'alm_consumable',
         'interaction', 'sysapproval_approver',
     ],
 })

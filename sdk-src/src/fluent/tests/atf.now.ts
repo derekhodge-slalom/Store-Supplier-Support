@@ -105,6 +105,7 @@ describe('Store Supplier Support fulfillment', function () {
             expect(manufacturer.isValidRecord()).toBe(true);
             expect(manufacturer.getValue('sys_class_name')).toBe('core_company');
             expect(manufacturer.getValue('manufacturer')).toBe('1');
+            expect(models.getValue('display_name')).toBe(manufacturer.getValue('name') + ' ' + models.getValue('name'));
             expect(models.getValue('cmdb_model_category')).not.toBe('');
         }
         expect(count).toBe(24);
@@ -114,6 +115,37 @@ describe('Store Supplier Support fulfillment', function () {
         categories.addQuery('product_model_class', 'x_sln_store_suppli_store_supply_model');
         categories.addAggregate('COUNT'); categories.query(); categories.next();
         expect(parseInt(categories.getAggregate('COUNT'), 10)).toBe(6);
+    });
+    it('keeps every demo consumable in the model consumable category', function () {
+        var inventory = new GlideRecord('alm_consumable');
+        inventory.addQuery('display_name', 'STARTSWITH', 'DEMO ');
+        inventory.addQuery('model.sys_class_name', 'x_sln_store_suppli_store_supply_model');
+        inventory.query();
+        var count = 0;
+        while (inventory.next()) {
+            count++;
+            var model = inventory.model.getRefRecord();
+            var categoryId = inventory.getValue('model_category');
+            expect(categoryId).not.toBe('');
+            expect((',' + model.getValue('cmdb_model_category') + ',').indexOf(',' + categoryId + ',')).not.toBe(-1);
+            var category = inventory.model_category.getRefRecord();
+            expect(category.getValue('asset_class')).toBe('alm_consumable');
+        }
+        expect(count).toBe(51);
+    });
+    it('sets the category when new Store Supply consumable inventory is created', function () {
+        var model = new GlideRecord('x_sln_store_suppli_store_supply_model');
+        model.get('model_number', 'DEMO-COFFEE-BEV-FLT'); expect(model.isValidRecord()).toBe(true);
+        var stockroom = new GlideRecord('alm_stockroom');
+        stockroom.get('name', 'DEMO Coffeehouse Midtown Stockroom'); expect(stockroom.isValidRecord()).toBe(true);
+        var inventory = new GlideRecord('alm_consumable'); inventory.initialize();
+        inventory.setValue('display_name', 'ATF Store Supply category normalization');
+        inventory.setValue('model', model.getUniqueValue()); inventory.setValue('stockroom', stockroom.getUniqueValue());
+        inventory.setValue('quantity', 1); inventory.setValue('install_status', '6'); inventory.setValue('substatus', 'available');
+        var inventoryId = inventory.insert(); expect(String(inventoryId)).not.toBe('');
+        inventory.get(inventoryId);
+        expect(inventory.getValue('model_category')).toBe(model.getValue('cmdb_model_category'));
+        inventory.deleteRecord();
     });
     it('enforces a unique receipt source key and Request-only receipt rule', function () {
         var dictionary = new GlideRecord('sys_dictionary');

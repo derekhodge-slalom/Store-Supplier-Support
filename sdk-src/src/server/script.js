@@ -9,6 +9,7 @@ const TASK_LINE_TABLE = 'x_sln_store_suppli_task_line'
 const RECEIPT_TABLE = 'x_sln_store_suppli_supply_receipt'
 const ESCALATION_TABLE = 'x_sln_store_suppli_case_escalation'
 const STORE_TABLE = 'x_sln_store_suppli_store'
+const MODEL_TABLE = 'x_sln_store_suppli_store_supply_model'
 const SUPPLY_SUPPLIER_TABLE = 'x_sln_store_suppli_supply_supplier'
 const SURVEY_LEDGER_TABLE = 'x_sln_store_suppli_survey_ledger'
 
@@ -88,6 +89,20 @@ function findOnHand(stockroomId, modelId) {
     let total = 0
     while (asset.next()) total += intValue(asset, 'quantity')
     return total
+}
+
+function consumableCategoryForModel(modelId) {
+    if (!modelId) return ''
+    const model = new GlideRecord(MODEL_TABLE)
+    if (!model.get(modelId)) return ''
+    const categoryIds = value(model, 'cmdb_model_category').split(',')
+    for (let index = 0; index < categoryIds.length; index += 1) {
+        const categoryId = String(categoryIds[index] || '').trim()
+        if (!categoryId) continue
+        const category = new GlideRecord('cmdb_model_category')
+        if (category.get(categoryId) && value(category, 'asset_class') === 'alm_consumable') return categoryId
+    }
+    return ''
 }
 
 function caseStore(caseId) {
@@ -416,6 +431,11 @@ export function prepareReceipt(current) {
         current.setAbortAction(true)
         return
     }
+    if (!consumableCategoryForModel(value(line, 'supply_model'))) {
+        gs.addErrorMessage('The Store Supply model must have a consumable model category before inventory can be received.')
+        current.setAbortAction(true)
+        return
+    }
     set(current, 'parent_case', parentId)
     set(current, 'store', storeId)
     set(current, 'stockroom', value(store, 'stockroom'))
@@ -430,6 +450,11 @@ export function prepareReceipt(current) {
 export function applyReceiptToInventory(current) {
     if (String(value(current, 'inventory_applied')) === 'true') return
     const quantity = intValue(current, 'quantity')
+    const categoryId = consumableCategoryForModel(value(current, 'supply_model'))
+    if (!categoryId) {
+        gs.error('Store Supplier Support could not apply receipt ' + current.getUniqueValue() + ': the supply model has no consumable model category.')
+        return
+    }
     const consumable = new GlideRecord('alm_consumable')
     consumable.addQuery('stockroom', value(current, 'stockroom'))
     consumable.addQuery('model', value(current, 'supply_model'))
@@ -439,10 +464,12 @@ export function applyReceiptToInventory(current) {
     consumable.query()
     if (consumable.next()) {
         set(consumable, 'quantity', intValue(consumable, 'quantity') + quantity)
+        set(consumable, 'model_category', categoryId)
         consumable.update()
     } else {
         consumable.initialize()
         set(consumable, 'model', value(current, 'supply_model'))
+        set(consumable, 'model_category', categoryId)
         set(consumable, 'stockroom', value(current, 'stockroom'))
         set(consumable, 'quantity', quantity)
         set(consumable, 'install_status', '6')
@@ -466,6 +493,13 @@ export function applyReceiptToInventory(current) {
         receipt.update()
     }
     gs.eventQueue('x_sln_store_suppli.receipt.recorded', current, String(quantity), '')
+}
+
+export function syncStoreSupplyConsumableCategory(current) {
+    const modelId = value(current, 'model')
+    if (!modelId) return
+    const categoryId = consumableCategoryForModel(modelId)
+    if (categoryId) set(current, 'model_category', categoryId)
 }
 
 export function openReceiptForm(current) {

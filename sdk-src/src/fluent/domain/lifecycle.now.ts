@@ -20,6 +20,7 @@ import {
     stampCaseDefaults,
     stampSupplyLine,
     syncDistrictManagerApproval,
+    syncStoreSupplyConsumableCategory,
     validateCaseTransition,
     verifyRequiredCapabilities,
 } from '../../server/script'
@@ -58,6 +59,11 @@ BusinessRule({
 BusinessRule({
     $id: Now.ID['apply_receipt_br'], name: 'Apply Store Supply Receipt to Inventory', table: 'x_sln_store_suppli_supply_receipt',
     when: 'after', action: ['insert'], order: 100, active: true, script: applyReceiptToInventory,
+})
+BusinessRule({
+    $id: Now.ID['sync_consumable_category_br'], name: 'Set Store Supply Consumable Model Category', table: 'alm_consumable',
+    when: 'before', action: ['insert', 'update'], order: 50, active: true,
+    filterCondition: 'model.sys_class_name=x_sln_store_suppli_store_supply_model', script: syncStoreSupplyConsumableCategory,
 })
 BusinessRule({
     $id: Now.ID['approval_sync_br'], name: 'Sync Store Supply District Manager Approval', table: 'sysapproval_approver',

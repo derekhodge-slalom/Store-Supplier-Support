@@ -23,6 +23,9 @@ Each model uses a direct `core_company` record marked as a manufacturer and one
 of six native consumable model categories scoped to the Store Supply child class.
 Portal-facing CSM supplier accounts remain separate `customer_account` records;
 they are used for supplier authorization and routing, not as model manufacturers.
+Demo model display names are materialized from manufacturer plus model name, and
+every `alm_consumable` record carries the same native `model_category` selected
+on its model. Receipt processing validates and preserves that relationship.
 
 The optional demo package contains a fictional Starbucks-inspired coffeehouse
 network: six store formats, three district managers, six store contacts, four

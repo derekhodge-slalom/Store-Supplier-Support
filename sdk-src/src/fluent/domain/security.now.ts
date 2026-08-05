@@ -32,14 +32,14 @@ export const supportManagerRole = Role({
     $id: Now.ID['support_manager_role'],
     name: 'x_sln_store_suppli.support_manager',
     description: 'Store Supplier Support manager access to escalations, approvals, and analytics.',
-    containsRoles: [supportAgentRole, 'sn_customerservice_manager', 'report_admin'],
+    containsRoles: [supportAgentRole, 'sn_customerservice_manager', 'report_admin', 'model_manager'],
 })
 
 export const applicationAdminRole = Role({
     $id: Now.ID['application_admin_role'],
     name: 'x_sln_store_suppli.admin',
     description: 'Application administrator for Store Supplier Support.',
-    containsRoles: [supportManagerRole],
+    containsRoles: [supportManagerRole, 'category_manager'],
     scopedAdmin: true,
 })
 
