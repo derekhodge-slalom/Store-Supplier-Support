@@ -1,13 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element audit="true" db_object_id="9c4a208d876e4b907c2dfdd5dabb3563" label="Store" max_length="40" name="x_sln_store_suppli_store" type="collection">
+        <element label="Market" max_length="80" name="market" type="string"/>
         <element display="true" label="Store Name" mandatory="true" max_length="160" name="name" type="string"/>
         <element label="Demo Data" max_length="40" name="demo_data" type="boolean"/>
         <element label="Primary Contact" max_length="32" name="primary_contact" reference="sys_user" reference_cascade_rule="clear" type="reference"/>
         <element label="Store Number" mandatory="true" max_length="40" name="store_number" type="string"/>
         <element label="Stockroom" mandatory="true" max_length="32" name="stockroom" reference="alm_stockroom" reference_cascade_rule="restrict" type="reference"/>
         <element label="District" max_length="80" name="district" type="string"/>
+        <element choice="3" default="cafe" label="Store Format" mandatory="true" max_length="40" name="store_format" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Pickup Only" sequence="30" value="pickup_only"/>
+                <element inactive_on_update="false" label="Reserve / Flagship" sequence="40" value="reserve"/>
+                <element inactive_on_update="false" label="Drive-Thru" sequence="20" value="drive_thru"/>
+                <element inactive_on_update="false" label="Licensed Kiosk" sequence="50" value="licensed_kiosk"/>
+                <element inactive_on_update="false" label="Neighborhood Café" sequence="10" value="cafe"/>
+            </choice>
+        </element>
         <element label="Location" max_length="32" name="location" reference="cmn_location" reference_cascade_rule="clear" type="reference"/>
         <element default="US" label="Region" max_length="80" name="region" type="string"/>
+        <element choice="3" default="moderate" label="Daily Volume Band" max_length="40" name="volume_band" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Low" sequence="10" value="low"/>
+                <element inactive_on_update="false" label="High" sequence="30" value="high"/>
+                <element inactive_on_update="false" label="Moderate" sequence="20" value="moderate"/>
+                <element inactive_on_update="false" label="Very High" sequence="40" value="very_high"/>
+            </choice>
+        </element>
         <element label="District Manager" max_length="32" name="district_manager" reference="sys_user" reference_cascade_rule="clear" type="reference"/>
         <element default="true" label="Active" max_length="40" name="active" type="boolean"/>
         <index name="index">

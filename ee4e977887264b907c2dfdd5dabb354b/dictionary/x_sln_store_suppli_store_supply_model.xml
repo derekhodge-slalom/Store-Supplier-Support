@@ -5,10 +5,13 @@
         <element default="each" label="Unit of Measure" max_length="40" name="unit_of_measure" type="string"/>
         <element choice="3" default="operations" label="Store Supply Category" mandatory="true" max_length="40" name="store_category" type="choice">
             <choice>
-                <element inactive_on_update="false" label="Safety" sequence="30" value="safety"/>
+                <element inactive_on_update="false" label="Safety" sequence="60" value="safety"/>
+                <element inactive_on_update="false" label="Cleaning and Sanitation" sequence="50" value="cleaning"/>
                 <element inactive_on_update="false" label="Store Operations" sequence="10" value="operations"/>
                 <element inactive_on_update="false" label="Other" sequence="90" value="other"/>
-                <element inactive_on_update="false" label="Fixtures" sequence="40" value="fixtures"/>
+                <element inactive_on_update="false" label="Fixtures" sequence="70" value="fixtures"/>
+                <element inactive_on_update="false" label="Beverage Ingredients" sequence="40" value="ingredients"/>
+                <element inactive_on_update="false" label="Beverage Service" sequence="30" value="beverage_service"/>
                 <element inactive_on_update="false" label="Packaging" sequence="20" value="packaging"/>
             </choice>
         </element>

@@ -26,12 +26,12 @@
             <sequence>10</sequence>
             <synonyms/>
             <sys_created_by>derek.hodge@slalom.com</sys_created_by>
-            <sys_created_on>2026-08-05 13:59:42</sys_created_on>
+            <sys_created_on>2026-08-05 14:39:54</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>derek.hodge@slalom.com</sys_updated_by>
-            <sys_updated_on>2026-08-05 13:59:42</sys_updated_on>
+            <sys_updated_on>2026-08-05 14:39:54</sys_updated_on>
             <value>operations</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
@@ -45,13 +45,70 @@
             <sequence>20</sequence>
             <synonyms/>
             <sys_created_by>derek.hodge@slalom.com</sys_created_by>
-            <sys_created_on>2026-08-05 13:59:42</sys_created_on>
+            <sys_created_on>2026-08-05 14:39:54</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>derek.hodge@slalom.com</sys_updated_by>
-            <sys_updated_on>2026-08-05 13:59:42</sys_updated_on>
+            <sys_updated_on>2026-08-05 14:39:54</sys_updated_on>
             <value>packaging</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>store_category</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Beverage Service</label>
+            <language>en</language>
+            <name>x_sln_store_suppli_store_supply_model</name>
+            <sequence>30</sequence>
+            <synonyms/>
+            <sys_created_by>derek.hodge@slalom.com</sys_created_by>
+            <sys_created_on>2026-08-05 14:39:55</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>derek.hodge@slalom.com</sys_updated_by>
+            <sys_updated_on>2026-08-05 14:39:55</sys_updated_on>
+            <value>beverage_service</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>store_category</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Beverage Ingredients</label>
+            <language>en</language>
+            <name>x_sln_store_suppli_store_supply_model</name>
+            <sequence>40</sequence>
+            <synonyms/>
+            <sys_created_by>derek.hodge@slalom.com</sys_created_by>
+            <sys_created_on>2026-08-05 14:39:55</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>derek.hodge@slalom.com</sys_updated_by>
+            <sys_updated_on>2026-08-05 14:39:55</sys_updated_on>
+            <value>ingredients</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>store_category</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Cleaning and Sanitation</label>
+            <language>en</language>
+            <name>x_sln_store_suppli_store_supply_model</name>
+            <sequence>50</sequence>
+            <synonyms/>
+            <sys_created_by>derek.hodge@slalom.com</sys_created_by>
+            <sys_created_on>2026-08-05 14:39:55</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>derek.hodge@slalom.com</sys_updated_by>
+            <sys_updated_on>2026-08-05 14:39:55</sys_updated_on>
+            <value>cleaning</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value/>
@@ -61,15 +118,15 @@
             <label>Safety</label>
             <language>en</language>
             <name>x_sln_store_suppli_store_supply_model</name>
-            <sequence>30</sequence>
+            <sequence>60</sequence>
             <synonyms/>
             <sys_created_by>derek.hodge@slalom.com</sys_created_by>
-            <sys_created_on>2026-08-05 13:59:42</sys_created_on>
+            <sys_created_on>2026-08-05 14:39:55</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>derek.hodge@slalom.com</sys_updated_by>
-            <sys_updated_on>2026-08-05 13:59:42</sys_updated_on>
+            <sys_updated_on>2026-08-05 14:39:55</sys_updated_on>
             <value>safety</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
@@ -80,15 +137,15 @@
             <label>Fixtures</label>
             <language>en</language>
             <name>x_sln_store_suppli_store_supply_model</name>
-            <sequence>40</sequence>
+            <sequence>70</sequence>
             <synonyms/>
             <sys_created_by>derek.hodge@slalom.com</sys_created_by>
-            <sys_created_on>2026-08-05 13:59:42</sys_created_on>
+            <sys_created_on>2026-08-05 14:39:55</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>derek.hodge@slalom.com</sys_updated_by>
-            <sys_updated_on>2026-08-05 13:59:42</sys_updated_on>
+            <sys_updated_on>2026-08-05 14:39:55</sys_updated_on>
             <value>fixtures</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
@@ -102,12 +159,12 @@
             <sequence>90</sequence>
             <synonyms/>
             <sys_created_by>derek.hodge@slalom.com</sys_created_by>
-            <sys_created_on>2026-08-05 13:59:42</sys_created_on>
+            <sys_created_on>2026-08-05 14:39:55</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>derek.hodge@slalom.com</sys_updated_by>
-            <sys_updated_on>2026-08-05 13:59:42</sys_updated_on>
+            <sys_updated_on>2026-08-05 14:39:55</sys_updated_on>
             <value>other</value>
         </sys_choice>
     </sys_choice>
