@@ -34,11 +34,11 @@
         <order>200</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>derek.hodge@slalom.com</sys_created_by>
-        <sys_created_on>2026-08-05 14:39:32</sys_created_on>
+        <sys_created_on>2026-08-05 16:29:25</sys_created_on>
         <sys_id>bf0e315c166f495b913e1ca675989bf8</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>derek.hodge@slalom.com</sys_updated_by>
-        <sys_updated_on>2026-08-05 14:39:32</sys_updated_on>
+        <sys_updated_on>2026-08-05 16:29:25</sys_updated_on>
         <value>
 describe('Store Supplier Support fulfillment', function () {
     it('contains a coffeehouse demo store authorized for all four supplier families', function () {
@@ -59,6 +59,26 @@ describe('Store Supplier Support fulfillment', function () {
             expect(dictionary.getValue('reference')).toBe('x_sln_store_suppli_store_supply_model');
         });
     });
+    it('uses direct manufacturer companies and native consumable categories', function () {
+        var models = new GlideRecord('x_sln_store_suppli_store_supply_model');
+        models.addQuery('demo_data', true); models.query();
+        var count = 0;
+        while (models.next()) {
+            count++;
+            var manufacturer = models.manufacturer.getRefRecord();
+            expect(manufacturer.isValidRecord()).toBe(true);
+            expect(manufacturer.getValue('sys_class_name')).toBe('core_company');
+            expect(manufacturer.getValue('manufacturer')).toBe('1');
+            expect(models.getValue('cmdb_model_category')).not.toBe('');
+        }
+        expect(count).toBe(24);
+        var categories = new GlideAggregate('cmdb_model_category');
+        categories.addQuery('name', 'STARTSWITH', 'Store Supply - ');
+        categories.addQuery('asset_class', 'alm_consumable');
+        categories.addQuery('product_model_class', 'x_sln_store_suppli_store_supply_model');
+        categories.addAggregate('COUNT'); categories.query(); categories.next();
+        expect(parseInt(categories.getAggregate('COUNT'), 10)).toBe(6);
+    });
     it('enforces a unique receipt source key and Request-only receipt rule', function () {
         var dictionary = new GlideRecord('sys_dictionary');
         dictionary.addQuery('name', 'x_sln_store_suppli_supply_receipt'); dictionary.addQuery('element', 'source_key'); dictionary.query();
@@ -76,11 +96,11 @@ describe('Store Supplier Support fulfillment', function () {
         <order>100</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>derek.hodge@slalom.com</sys_created_by>
-        <sys_created_on>2026-08-05 14:39:32</sys_created_on>
+        <sys_created_on>2026-08-05 16:29:25</sys_created_on>
         <sys_id>cb9479ecc9cd4adea9152cbe1693bca0</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>derek.hodge@slalom.com</sys_updated_by>
-        <sys_updated_on>2026-08-05 14:39:32</sys_updated_on>
+        <sys_updated_on>2026-08-05 16:29:25</sys_updated_on>
         <value>3.1</value>
         <variable display_value="Jasmine version">42f2564b73031300440211d8faf6a777</variable>
     </sys_variable_value>

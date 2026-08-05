@@ -4,13 +4,13 @@
             <element>.begin_split</element>
             <position>0</position>
             <sys_created_by>derek.hodge@slalom.com</sys_created_by>
-            <sys_created_on>2026-08-05 13:59:34</sys_created_on>
+            <sys_created_on>2026-08-05 16:29:40</sys_created_on>
             <sys_id>7b71c1281dcd488d95d42f14bc50fe2d</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Store Supply Model" display_value="Store Supply Model" name="x_sln_store_suppli_store_supply_model" sys_domain="global" view="Default view">e21d22d83dca48d78f80661576182775</sys_ui_section>
             <sys_updated_by>derek.hodge@slalom.com</sys_updated_by>
-            <sys_updated_on>2026-08-05 13:59:34</sys_updated_on>
+            <sys_updated_on>2026-08-05 16:29:40</sys_updated_on>
             <sys_user/>
             <type>.begin_split</type>
         </sys_ui_element>
@@ -18,13 +18,13 @@
             <element>name</element>
             <position>1</position>
             <sys_created_by>derek.hodge@slalom.com</sys_created_by>
-            <sys_created_on>2026-08-05 13:59:35</sys_created_on>
+            <sys_created_on>2026-08-05 16:29:40</sys_created_on>
             <sys_id>de9329c91b83439aaa44d441573fcf15</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Store Supply Model" display_value="Store Supply Model" name="x_sln_store_suppli_store_supply_model" sys_domain="global" view="Default view">e21d22d83dca48d78f80661576182775</sys_ui_section>
             <sys_updated_by>derek.hodge@slalom.com</sys_updated_by>
-            <sys_updated_on>2026-08-05 13:59:35</sys_updated_on>
+            <sys_updated_on>2026-08-05 16:29:40</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -32,13 +32,13 @@
             <element>model_number</element>
             <position>2</position>
             <sys_created_by>derek.hodge@slalom.com</sys_created_by>
-            <sys_created_on>2026-08-05 13:59:35</sys_created_on>
+            <sys_created_on>2026-08-05 16:29:40</sys_created_on>
             <sys_id>1deadae1cfcc4dc4898044595fa38f21</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Store Supply Model" display_value="Store Supply Model" name="x_sln_store_suppli_store_supply_model" sys_domain="global" view="Default view">e21d22d83dca48d78f80661576182775</sys_ui_section>
             <sys_updated_by>derek.hodge@slalom.com</sys_updated_by>
-            <sys_updated_on>2026-08-05 13:59:35</sys_updated_on>
+            <sys_updated_on>2026-08-05 16:29:40</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -46,83 +46,97 @@
             <element>manufacturer</element>
             <position>3</position>
             <sys_created_by>derek.hodge@slalom.com</sys_created_by>
-            <sys_created_on>2026-08-05 13:59:35</sys_created_on>
+            <sys_created_on>2026-08-05 16:29:40</sys_created_on>
             <sys_id>9787dca198b3413e90b6e593a1695a8e</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Store Supply Model" display_value="Store Supply Model" name="x_sln_store_suppli_store_supply_model" sys_domain="global" view="Default view">e21d22d83dca48d78f80661576182775</sys_ui_section>
             <sys_updated_by>derek.hodge@slalom.com</sys_updated_by>
-            <sys_updated_on>2026-08-05 13:59:35</sys_updated_on>
+            <sys_updated_on>2026-08-05 16:29:40</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>cmdb_model_category</element>
+            <position>4</position>
+            <sys_created_by>derek.hodge@slalom.com</sys_created_by>
+            <sys_created_on>2026-08-05 16:29:40</sys_created_on>
+            <sys_id>fc43c220bf274b57a01cae3d4cfbb544</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Store Supply Model" display_value="Store Supply Model" name="x_sln_store_suppli_store_supply_model" sys_domain="global" view="Default view">e21d22d83dca48d78f80661576182775</sys_ui_section>
+            <sys_updated_by>derek.hodge@slalom.com</sys_updated_by>
+            <sys_updated_on>2026-08-05 16:29:40</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>.split</element>
-            <position>4</position>
+            <position>5</position>
             <sys_created_by>derek.hodge@slalom.com</sys_created_by>
-            <sys_created_on>2026-08-05 13:59:35</sys_created_on>
-            <sys_id>ea8a9005d0a64ea09f5617caba150204</sys_id>
+            <sys_created_on>2026-08-05 16:29:40</sys_created_on>
+            <sys_id>b723cf0a68c24e6897ececcef9ec1388</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Store Supply Model" display_value="Store Supply Model" name="x_sln_store_suppli_store_supply_model" sys_domain="global" view="Default view">e21d22d83dca48d78f80661576182775</sys_ui_section>
             <sys_updated_by>derek.hodge@slalom.com</sys_updated_by>
-            <sys_updated_on>2026-08-05 13:59:35</sys_updated_on>
+            <sys_updated_on>2026-08-05 16:29:40</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>store_category</element>
-            <position>5</position>
+            <position>6</position>
             <sys_created_by>derek.hodge@slalom.com</sys_created_by>
-            <sys_created_on>2026-08-05 13:59:35</sys_created_on>
-            <sys_id>6996a218c7134aa8be1af088950e0cee</sys_id>
+            <sys_created_on>2026-08-05 16:29:40</sys_created_on>
+            <sys_id>e36436b1f1694da580e0db51a9575ed8</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Store Supply Model" display_value="Store Supply Model" name="x_sln_store_suppli_store_supply_model" sys_domain="global" view="Default view">e21d22d83dca48d78f80661576182775</sys_ui_section>
             <sys_updated_by>derek.hodge@slalom.com</sys_updated_by>
-            <sys_updated_on>2026-08-05 13:59:35</sys_updated_on>
+            <sys_updated_on>2026-08-05 16:29:40</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>unit_of_measure</element>
-            <position>6</position>
+            <position>7</position>
             <sys_created_by>derek.hodge@slalom.com</sys_created_by>
-            <sys_created_on>2026-08-05 13:59:35</sys_created_on>
-            <sys_id>5c3239afc2c44d069defd59c570aee5e</sys_id>
+            <sys_created_on>2026-08-05 16:29:40</sys_created_on>
+            <sys_id>9426818be43140b884360926b0ca2a66</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Store Supply Model" display_value="Store Supply Model" name="x_sln_store_suppli_store_supply_model" sys_domain="global" view="Default view">e21d22d83dca48d78f80661576182775</sys_ui_section>
             <sys_updated_by>derek.hodge@slalom.com</sys_updated_by>
-            <sys_updated_on>2026-08-05 13:59:35</sys_updated_on>
+            <sys_updated_on>2026-08-05 16:29:40</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>active_for_ordering</element>
-            <position>7</position>
+            <position>8</position>
             <sys_created_by>derek.hodge@slalom.com</sys_created_by>
-            <sys_created_on>2026-08-05 13:59:35</sys_created_on>
-            <sys_id>721d08a8da434a6888565e7c55874f06</sys_id>
+            <sys_created_on>2026-08-05 16:29:40</sys_created_on>
+            <sys_id>e65557410a8d4e1a85e8ecd0e59059d7</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Store Supply Model" display_value="Store Supply Model" name="x_sln_store_suppli_store_supply_model" sys_domain="global" view="Default view">e21d22d83dca48d78f80661576182775</sys_ui_section>
             <sys_updated_by>derek.hodge@slalom.com</sys_updated_by>
-            <sys_updated_on>2026-08-05 13:59:35</sys_updated_on>
+            <sys_updated_on>2026-08-05 16:29:40</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>.end_split</element>
-            <position>8</position>
+            <position>9</position>
             <sys_created_by>derek.hodge@slalom.com</sys_created_by>
-            <sys_created_on>2026-08-05 13:59:35</sys_created_on>
-            <sys_id>3353573f1d094127a6c5444ce3524cb3</sys_id>
+            <sys_created_on>2026-08-05 16:29:40</sys_created_on>
+            <sys_id>65010ed50abc4c018364fdd7089bc8b7</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Store Supply Model" display_value="Store Supply Model" name="x_sln_store_suppli_store_supply_model" sys_domain="global" view="Default view">e21d22d83dca48d78f80661576182775</sys_ui_section>
             <sys_updated_by>derek.hodge@slalom.com</sys_updated_by>
-            <sys_updated_on>2026-08-05 13:59:35</sys_updated_on>
+            <sys_updated_on>2026-08-05 16:29:40</sys_updated_on>
             <sys_user/>
             <type>.end_split</type>
         </sys_ui_element>
