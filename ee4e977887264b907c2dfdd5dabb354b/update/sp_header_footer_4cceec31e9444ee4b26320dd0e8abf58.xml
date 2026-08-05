@@ -8,7 +8,7 @@
 ]]></client_script>
         <controller_as>c</controller_as>
         <css>.sss-footer {
-  background: $brand-primary;
+  background: #000a25;
   color: $btn-primary-color;
   margin-top: 40px;
   padding: 24px 0;
@@ -21,11 +21,10 @@
   gap: 12px;
 }
 
-.sss-footer__wordmark {
-  color: $brand-warning;
-  font-size: 20px;
-  font-weight: 800;
-  letter-spacing: -.04em;
+.sss-footer__logo {
+  display: block;
+  height: 28px;
+  width: 108px;
 }
 
 .sss-footer__tagline { margin-left: auto; }
@@ -68,7 +67,7 @@
         <sys_updated_on>2026-08-05 18:14:27</sys_updated_on>
         <template><![CDATA[<footer class="sss-footer" aria-label="Store Supplier Support footer">
   <div class="container sss-footer__inner">
-    <span class="sss-footer__wordmark">slalom</span>
+    <img class="sss-footer__logo" src="https://s7d9.scene7.com/is/content/slalom/slalom-logo-white-RGB" alt="Slalom" width="108" height="28" />
     <span>Store Supplier Support</span>
     <span class="sss-footer__tagline">Fiercely human support.</span>
   </div>

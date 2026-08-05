@@ -4,13 +4,13 @@
             <element>.begin_split</element>
             <position>0</position>
             <sys_created_by>derek.hodge@slalom.com</sys_created_by>
-            <sys_created_on>2026-08-05 17:35:39</sys_created_on>
+            <sys_created_on>2026-08-05 19:44:09</sys_created_on>
             <sys_id>98ed7ce01e6049539dfe3900379e4132</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Receipt" display_value="Receipt" name="x_sln_store_suppli_supply_receipt" sys_domain="global" view="Default view">67d640729dfa4130be21fb6296d58566</sys_ui_section>
             <sys_updated_by>derek.hodge@slalom.com</sys_updated_by>
-            <sys_updated_on>2026-08-05 17:35:39</sys_updated_on>
+            <sys_updated_on>2026-08-05 19:44:09</sys_updated_on>
             <sys_user/>
             <type>.begin_split</type>
         </sys_ui_element>
@@ -18,13 +18,13 @@
             <element>supply_line</element>
             <position>1</position>
             <sys_created_by>derek.hodge@slalom.com</sys_created_by>
-            <sys_created_on>2026-08-05 17:35:39</sys_created_on>
+            <sys_created_on>2026-08-05 19:44:09</sys_created_on>
             <sys_id>0dcef181fe6448cf84d9b6aa0645727b</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Receipt" display_value="Receipt" name="x_sln_store_suppli_supply_receipt" sys_domain="global" view="Default view">67d640729dfa4130be21fb6296d58566</sys_ui_section>
             <sys_updated_by>derek.hodge@slalom.com</sys_updated_by>
-            <sys_updated_on>2026-08-05 17:35:39</sys_updated_on>
+            <sys_updated_on>2026-08-05 19:44:09</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -32,13 +32,13 @@
             <element>parent_case</element>
             <position>2</position>
             <sys_created_by>derek.hodge@slalom.com</sys_created_by>
-            <sys_created_on>2026-08-05 17:35:39</sys_created_on>
+            <sys_created_on>2026-08-05 19:44:09</sys_created_on>
             <sys_id>92cc1680a4ec477bb40fb813327d2de7</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Receipt" display_value="Receipt" name="x_sln_store_suppli_supply_receipt" sys_domain="global" view="Default view">67d640729dfa4130be21fb6296d58566</sys_ui_section>
             <sys_updated_by>derek.hodge@slalom.com</sys_updated_by>
-            <sys_updated_on>2026-08-05 17:35:39</sys_updated_on>
+            <sys_updated_on>2026-08-05 19:44:09</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -46,13 +46,13 @@
             <element>store</element>
             <position>3</position>
             <sys_created_by>derek.hodge@slalom.com</sys_created_by>
-            <sys_created_on>2026-08-05 17:35:39</sys_created_on>
+            <sys_created_on>2026-08-05 19:44:09</sys_created_on>
             <sys_id>dd899bdb02634506b7e7e7b9a1ca5d16</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Receipt" display_value="Receipt" name="x_sln_store_suppli_supply_receipt" sys_domain="global" view="Default view">67d640729dfa4130be21fb6296d58566</sys_ui_section>
             <sys_updated_by>derek.hodge@slalom.com</sys_updated_by>
-            <sys_updated_on>2026-08-05 17:35:39</sys_updated_on>
+            <sys_updated_on>2026-08-05 19:44:09</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -60,13 +60,13 @@
             <element>stockroom</element>
             <position>4</position>
             <sys_created_by>derek.hodge@slalom.com</sys_created_by>
-            <sys_created_on>2026-08-05 17:35:39</sys_created_on>
+            <sys_created_on>2026-08-05 19:44:09</sys_created_on>
             <sys_id>84e3ce2b8d504b89bc872efbb2d86e3d</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Receipt" display_value="Receipt" name="x_sln_store_suppli_supply_receipt" sys_domain="global" view="Default view">67d640729dfa4130be21fb6296d58566</sys_ui_section>
             <sys_updated_by>derek.hodge@slalom.com</sys_updated_by>
-            <sys_updated_on>2026-08-05 17:35:39</sys_updated_on>
+            <sys_updated_on>2026-08-05 19:44:09</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -74,13 +74,13 @@
             <element>.split</element>
             <position>5</position>
             <sys_created_by>derek.hodge@slalom.com</sys_created_by>
-            <sys_created_on>2026-08-05 17:35:39</sys_created_on>
+            <sys_created_on>2026-08-05 19:44:09</sys_created_on>
             <sys_id>91dd3ed7443b4a77bcc9fb82968bce96</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Receipt" display_value="Receipt" name="x_sln_store_suppli_supply_receipt" sys_domain="global" view="Default view">67d640729dfa4130be21fb6296d58566</sys_ui_section>
             <sys_updated_by>derek.hodge@slalom.com</sys_updated_by>
-            <sys_updated_on>2026-08-05 17:35:39</sys_updated_on>
+            <sys_updated_on>2026-08-05 19:44:09</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
@@ -88,13 +88,13 @@
             <element>supply_model</element>
             <position>6</position>
             <sys_created_by>derek.hodge@slalom.com</sys_created_by>
-            <sys_created_on>2026-08-05 17:35:39</sys_created_on>
+            <sys_created_on>2026-08-05 19:44:09</sys_created_on>
             <sys_id>a97661b29a8643fe951f77d2cc2d31d6</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Receipt" display_value="Receipt" name="x_sln_store_suppli_supply_receipt" sys_domain="global" view="Default view">67d640729dfa4130be21fb6296d58566</sys_ui_section>
             <sys_updated_by>derek.hodge@slalom.com</sys_updated_by>
-            <sys_updated_on>2026-08-05 17:35:39</sys_updated_on>
+            <sys_updated_on>2026-08-05 19:44:09</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -102,13 +102,13 @@
             <element>quantity</element>
             <position>7</position>
             <sys_created_by>derek.hodge@slalom.com</sys_created_by>
-            <sys_created_on>2026-08-05 17:35:39</sys_created_on>
+            <sys_created_on>2026-08-05 19:44:09</sys_created_on>
             <sys_id>e9ff881392554f6aa87cb179ea040911</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Receipt" display_value="Receipt" name="x_sln_store_suppli_supply_receipt" sys_domain="global" view="Default view">67d640729dfa4130be21fb6296d58566</sys_ui_section>
             <sys_updated_by>derek.hodge@slalom.com</sys_updated_by>
-            <sys_updated_on>2026-08-05 17:35:39</sys_updated_on>
+            <sys_updated_on>2026-08-05 19:44:09</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -116,13 +116,13 @@
             <element>received_by</element>
             <position>8</position>
             <sys_created_by>derek.hodge@slalom.com</sys_created_by>
-            <sys_created_on>2026-08-05 17:35:39</sys_created_on>
+            <sys_created_on>2026-08-05 19:44:09</sys_created_on>
             <sys_id>b377ced3208e433995eaa47ac81de29e</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Receipt" display_value="Receipt" name="x_sln_store_suppli_supply_receipt" sys_domain="global" view="Default view">67d640729dfa4130be21fb6296d58566</sys_ui_section>
             <sys_updated_by>derek.hodge@slalom.com</sys_updated_by>
-            <sys_updated_on>2026-08-05 17:35:39</sys_updated_on>
+            <sys_updated_on>2026-08-05 19:44:09</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -130,13 +130,13 @@
             <element>received_on</element>
             <position>9</position>
             <sys_created_by>derek.hodge@slalom.com</sys_created_by>
-            <sys_created_on>2026-08-05 17:35:39</sys_created_on>
+            <sys_created_on>2026-08-05 19:44:09</sys_created_on>
             <sys_id>b0b262e2090948a5a2ed3f0c1df944bc</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Receipt" display_value="Receipt" name="x_sln_store_suppli_supply_receipt" sys_domain="global" view="Default view">67d640729dfa4130be21fb6296d58566</sys_ui_section>
             <sys_updated_by>derek.hodge@slalom.com</sys_updated_by>
-            <sys_updated_on>2026-08-05 17:35:39</sys_updated_on>
+            <sys_updated_on>2026-08-05 19:44:09</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -144,13 +144,13 @@
             <element>inventory_applied</element>
             <position>10</position>
             <sys_created_by>derek.hodge@slalom.com</sys_created_by>
-            <sys_created_on>2026-08-05 17:35:39</sys_created_on>
+            <sys_created_on>2026-08-05 19:44:09</sys_created_on>
             <sys_id>8935bb6c1f6540e6be62de9bbabdc832</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Receipt" display_value="Receipt" name="x_sln_store_suppli_supply_receipt" sys_domain="global" view="Default view">67d640729dfa4130be21fb6296d58566</sys_ui_section>
             <sys_updated_by>derek.hodge@slalom.com</sys_updated_by>
-            <sys_updated_on>2026-08-05 17:35:39</sys_updated_on>
+            <sys_updated_on>2026-08-05 19:44:09</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -158,13 +158,13 @@
             <element>.end_split</element>
             <position>11</position>
             <sys_created_by>derek.hodge@slalom.com</sys_created_by>
-            <sys_created_on>2026-08-05 17:35:39</sys_created_on>
+            <sys_created_on>2026-08-05 19:44:09</sys_created_on>
             <sys_id>2f250d83dec24e1387777897552ca0d4</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Receipt" display_value="Receipt" name="x_sln_store_suppli_supply_receipt" sys_domain="global" view="Default view">67d640729dfa4130be21fb6296d58566</sys_ui_section>
             <sys_updated_by>derek.hodge@slalom.com</sys_updated_by>
-            <sys_updated_on>2026-08-05 17:35:39</sys_updated_on>
+            <sys_updated_on>2026-08-05 19:44:09</sys_updated_on>
             <sys_user/>
             <type>.end_split</type>
         </sys_ui_element>

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_app">
     <sys_ux_app action="INSERT_OR_UPDATE">
-        <active>true</active>
+        <active>false</active>
         <multiple_experiences>true</multiple_experiences>
-        <name>Slalom Store Supplier Support App Shell</name>
+        <name>Deprecated Store Supplier Support App Shell</name>
         <primary_experience/>
         <shell_root display_value="Unified Navigation App Shell">f51912f4c700201072b211d4d8c26010</shell_root>
         <shell_root_config>{"globalNavigationConfig":{"type":"APP_PROPERTY","id":"globalNavigationConfig"}}</shell_root_config>

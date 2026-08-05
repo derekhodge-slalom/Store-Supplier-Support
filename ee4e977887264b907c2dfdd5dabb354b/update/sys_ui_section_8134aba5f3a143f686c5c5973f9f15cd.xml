@@ -4,13 +4,13 @@
             <element>.begin_split</element>
             <position>0</position>
             <sys_created_by>derek.hodge@slalom.com</sys_created_by>
-            <sys_created_on>2026-08-05 17:35:40</sys_created_on>
+            <sys_created_on>2026-08-05 19:44:10</sys_created_on>
             <sys_id>18f8fda6312341cfb83a8a4a15911118</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Supply Line" display_value="Supply Line" name="x_sln_store_suppli_supply_line" sys_domain="global" view="Default view">8134aba5f3a143f686c5c5973f9f15cd</sys_ui_section>
             <sys_updated_by>derek.hodge@slalom.com</sys_updated_by>
-            <sys_updated_on>2026-08-05 17:35:40</sys_updated_on>
+            <sys_updated_on>2026-08-05 19:44:10</sys_updated_on>
             <sys_user/>
             <type>.begin_split</type>
         </sys_ui_element>
@@ -18,13 +18,13 @@
             <element>parent_case</element>
             <position>1</position>
             <sys_created_by>derek.hodge@slalom.com</sys_created_by>
-            <sys_created_on>2026-08-05 17:35:40</sys_created_on>
+            <sys_created_on>2026-08-05 19:44:10</sys_created_on>
             <sys_id>90a5116829fb4b19a9cc2d65cd614999</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Supply Line" display_value="Supply Line" name="x_sln_store_suppli_supply_line" sys_domain="global" view="Default view">8134aba5f3a143f686c5c5973f9f15cd</sys_ui_section>
             <sys_updated_by>derek.hodge@slalom.com</sys_updated_by>
-            <sys_updated_on>2026-08-05 17:35:40</sys_updated_on>
+            <sys_updated_on>2026-08-05 19:44:10</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -32,13 +32,13 @@
             <element>supply_model</element>
             <position>2</position>
             <sys_created_by>derek.hodge@slalom.com</sys_created_by>
-            <sys_created_on>2026-08-05 17:35:40</sys_created_on>
+            <sys_created_on>2026-08-05 19:44:10</sys_created_on>
             <sys_id>e0596868dde34f0cb9f0baf8acd98947</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Supply Line" display_value="Supply Line" name="x_sln_store_suppli_supply_line" sys_domain="global" view="Default view">8134aba5f3a143f686c5c5973f9f15cd</sys_ui_section>
             <sys_updated_by>derek.hodge@slalom.com</sys_updated_by>
-            <sys_updated_on>2026-08-05 17:35:40</sys_updated_on>
+            <sys_updated_on>2026-08-05 19:44:10</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -46,13 +46,13 @@
             <element>supplier_account</element>
             <position>3</position>
             <sys_created_by>derek.hodge@slalom.com</sys_created_by>
-            <sys_created_on>2026-08-05 17:35:40</sys_created_on>
+            <sys_created_on>2026-08-05 19:44:10</sys_created_on>
             <sys_id>e4df177a93514d29b36a9223eb240b5f</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Supply Line" display_value="Supply Line" name="x_sln_store_suppli_supply_line" sys_domain="global" view="Default view">8134aba5f3a143f686c5c5973f9f15cd</sys_ui_section>
             <sys_updated_by>derek.hodge@slalom.com</sys_updated_by>
-            <sys_updated_on>2026-08-05 17:35:40</sys_updated_on>
+            <sys_updated_on>2026-08-05 19:44:10</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -60,13 +60,13 @@
             <element>needed_by</element>
             <position>4</position>
             <sys_created_by>derek.hodge@slalom.com</sys_created_by>
-            <sys_created_on>2026-08-05 17:35:40</sys_created_on>
+            <sys_created_on>2026-08-05 19:44:10</sys_created_on>
             <sys_id>74ab8da691a940c6abb94f0792926e70</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Supply Line" display_value="Supply Line" name="x_sln_store_suppli_supply_line" sys_domain="global" view="Default view">8134aba5f3a143f686c5c5973f9f15cd</sys_ui_section>
             <sys_updated_by>derek.hodge@slalom.com</sys_updated_by>
-            <sys_updated_on>2026-08-05 17:35:40</sys_updated_on>
+            <sys_updated_on>2026-08-05 19:44:10</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -74,13 +74,13 @@
             <element>.split</element>
             <position>5</position>
             <sys_created_by>derek.hodge@slalom.com</sys_created_by>
-            <sys_created_on>2026-08-05 17:35:40</sys_created_on>
+            <sys_created_on>2026-08-05 19:44:10</sys_created_on>
             <sys_id>a8d5b161d15f4b67a9ccac6942beeded</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Supply Line" display_value="Supply Line" name="x_sln_store_suppli_supply_line" sys_domain="global" view="Default view">8134aba5f3a143f686c5c5973f9f15cd</sys_ui_section>
             <sys_updated_by>derek.hodge@slalom.com</sys_updated_by>
-            <sys_updated_on>2026-08-05 17:35:40</sys_updated_on>
+            <sys_updated_on>2026-08-05 19:44:10</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
@@ -88,13 +88,13 @@
             <element>requested_quantity</element>
             <position>6</position>
             <sys_created_by>derek.hodge@slalom.com</sys_created_by>
-            <sys_created_on>2026-08-05 17:35:40</sys_created_on>
+            <sys_created_on>2026-08-05 19:44:10</sys_created_on>
             <sys_id>81457738d74b4921bd808e29f219e97d</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Supply Line" display_value="Supply Line" name="x_sln_store_suppli_supply_line" sys_domain="global" view="Default view">8134aba5f3a143f686c5c5973f9f15cd</sys_ui_section>
             <sys_updated_by>derek.hodge@slalom.com</sys_updated_by>
-            <sys_updated_on>2026-08-05 17:35:40</sys_updated_on>
+            <sys_updated_on>2026-08-05 19:44:10</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -102,13 +102,13 @@
             <element>fulfilled_quantity</element>
             <position>7</position>
             <sys_created_by>derek.hodge@slalom.com</sys_created_by>
-            <sys_created_on>2026-08-05 17:35:40</sys_created_on>
+            <sys_created_on>2026-08-05 19:44:10</sys_created_on>
             <sys_id>14256c36923b41eea012b87ee56695af</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Supply Line" display_value="Supply Line" name="x_sln_store_suppli_supply_line" sys_domain="global" view="Default view">8134aba5f3a143f686c5c5973f9f15cd</sys_ui_section>
             <sys_updated_by>derek.hodge@slalom.com</sys_updated_by>
-            <sys_updated_on>2026-08-05 17:35:40</sys_updated_on>
+            <sys_updated_on>2026-08-05 19:44:10</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -116,13 +116,13 @@
             <element>received_quantity</element>
             <position>8</position>
             <sys_created_by>derek.hodge@slalom.com</sys_created_by>
-            <sys_created_on>2026-08-05 17:35:40</sys_created_on>
+            <sys_created_on>2026-08-05 19:44:10</sys_created_on>
             <sys_id>349dcb72b0ee467ab5e4eec7557363ec</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Supply Line" display_value="Supply Line" name="x_sln_store_suppli_supply_line" sys_domain="global" view="Default view">8134aba5f3a143f686c5c5973f9f15cd</sys_ui_section>
             <sys_updated_by>derek.hodge@slalom.com</sys_updated_by>
-            <sys_updated_on>2026-08-05 17:35:40</sys_updated_on>
+            <sys_updated_on>2026-08-05 19:44:10</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -130,13 +130,13 @@
             <element>on_hand_snapshot</element>
             <position>9</position>
             <sys_created_by>derek.hodge@slalom.com</sys_created_by>
-            <sys_created_on>2026-08-05 17:35:40</sys_created_on>
+            <sys_created_on>2026-08-05 19:44:10</sys_created_on>
             <sys_id>8e9990f0d9324c73830efc7dd2022701</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Supply Line" display_value="Supply Line" name="x_sln_store_suppli_supply_line" sys_domain="global" view="Default view">8134aba5f3a143f686c5c5973f9f15cd</sys_ui_section>
             <sys_updated_by>derek.hodge@slalom.com</sys_updated_by>
-            <sys_updated_on>2026-08-05 17:35:40</sys_updated_on>
+            <sys_updated_on>2026-08-05 19:44:10</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -144,13 +144,13 @@
             <element>line_state</element>
             <position>10</position>
             <sys_created_by>derek.hodge@slalom.com</sys_created_by>
-            <sys_created_on>2026-08-05 17:35:40</sys_created_on>
+            <sys_created_on>2026-08-05 19:44:10</sys_created_on>
             <sys_id>367776571669410ca6c25c016ad6b7e5</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Supply Line" display_value="Supply Line" name="x_sln_store_suppli_supply_line" sys_domain="global" view="Default view">8134aba5f3a143f686c5c5973f9f15cd</sys_ui_section>
             <sys_updated_by>derek.hodge@slalom.com</sys_updated_by>
-            <sys_updated_on>2026-08-05 17:35:40</sys_updated_on>
+            <sys_updated_on>2026-08-05 19:44:10</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -158,13 +158,13 @@
             <element>.end_split</element>
             <position>11</position>
             <sys_created_by>derek.hodge@slalom.com</sys_created_by>
-            <sys_created_on>2026-08-05 17:35:40</sys_created_on>
+            <sys_created_on>2026-08-05 19:44:10</sys_created_on>
             <sys_id>75b5aa315eff413ab3609f7d0a33fe77</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Supply Line" display_value="Supply Line" name="x_sln_store_suppli_supply_line" sys_domain="global" view="Default view">8134aba5f3a143f686c5c5973f9f15cd</sys_ui_section>
             <sys_updated_by>derek.hodge@slalom.com</sys_updated_by>
-            <sys_updated_on>2026-08-05 17:35:40</sys_updated_on>
+            <sys_updated_on>2026-08-05 19:44:10</sys_updated_on>
             <sys_user/>
             <type>.end_split</type>
         </sys_ui_element>
@@ -172,13 +172,13 @@
             <element>notes</element>
             <position>12</position>
             <sys_created_by>derek.hodge@slalom.com</sys_created_by>
-            <sys_created_on>2026-08-05 17:35:40</sys_created_on>
+            <sys_created_on>2026-08-05 19:44:10</sys_created_on>
             <sys_id>8d6fd887d9fd4b71a379d9fa5d160667</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Supply Line" display_value="Supply Line" name="x_sln_store_suppli_supply_line" sys_domain="global" view="Default view">8134aba5f3a143f686c5c5973f9f15cd</sys_ui_section>
             <sys_updated_by>derek.hodge@slalom.com</sys_updated_by>
-            <sys_updated_on>2026-08-05 17:35:40</sys_updated_on>
+            <sys_updated_on>2026-08-05 19:44:10</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>

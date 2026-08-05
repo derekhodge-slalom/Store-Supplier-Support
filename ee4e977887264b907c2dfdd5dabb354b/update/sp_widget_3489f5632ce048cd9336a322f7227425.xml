@@ -16,14 +16,14 @@
 ]]></client_script>
         <controller_as>c</controller_as>
         <css>.sss-shell { color: $text-color; padding: 24px 0 48px; }
-.sss-hero { background: $brand-primary; color: $btn-primary-color; border-radius: $border-radius-large; padding: 32px; box-shadow: 0 8px 24px rgba(0,0,0,.18); }
-.sss-brand { color: $brand-warning; font-weight: 800; letter-spacing: -.04em; font-size: 24px; }
+.sss-hero { background: linear-gradient(125deg, $brand-primary 0%, #002faf 100%); color: $btn-primary-color; border-radius: $border-radius-large; padding: 32px; box-shadow: 0 8px 24px rgba(0,10,37,.2); }
+.sss-brand { color: $brand-warning; font-weight: 800; letter-spacing: .02em; font-size: 16px; text-transform: uppercase; }
 .sss-eyebrow { margin: 10px 0 0; font-weight: 700; }
 .sss-hero h1 { color: $btn-primary-color; margin: 8px 0; font-size: 32px; }
 .sss-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 24px; }
 .sss-primary, .sss-primary:hover, .sss-primary:focus { background: $btn-primary-color; color: $brand-primary; border: 2px solid $btn-primary-color; font-weight: 700; }
 .sss-secondary, .sss-secondary:hover, .sss-secondary:focus { background: transparent; color: $btn-primary-color; border: 2px solid $btn-primary-color; font-weight: 700; }
-.sss-panel { background: $panel-bg; border: 1px solid $gray-lighter; border-top: 5px solid $brand-warning; border-radius: $border-radius-large; padding: 24px; margin-top: 24px; }
+.sss-panel { background: $panel-bg; border: 1px solid $gray-lighter; border-top: 5px solid $brand-primary; border-radius: $border-radius-large; padding: 24px; margin-top: 24px; }
 .sss-panel h2 { color: $brand-primary; margin-top: 0; }
 .sss-list { list-style: none; margin: 0; padding: 0; }
 .sss-list li { display: flex; justify-content: space-between; gap: 16px; padding: 12px 0; border-bottom: 1px solid $gray-lighter; }
@@ -128,7 +128,7 @@
         <sys_updated_on>2026-08-05 01:28:34</sys_updated_on>
         <template><![CDATA[<div class="sss-shell">
   <header class="sss-hero" aria-labelledby="sss-title">
-    <div class="sss-brand">slalom</div>
+    <div class="sss-brand">Fiercely human support</div>
     <p class="sss-eyebrow">Store Supplier Support</p>
     <h1 id="sss-title">Welcome, {{data.userName}}</h1>
     <p>Request supplies, report an issue, and follow every permitted update in one place.</p>

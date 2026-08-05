@@ -15,7 +15,7 @@
         <name/>
         <order>20</order>
         <override_menu_roles>false</override_menu_roles>
-        <query>/now/store-supplier-support/home</query>
+        <query>/x/sln/store-supplier-support/home</query>
         <report/>
         <require_confirmation>false</require_confirmation>
         <roles>[object Object]</roles>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_module">
+    <sys_module action="INSERT_OR_UPDATE">
+        <content><![CDATA[(function applySlalomWorkspaceLogo() {
+    var sourceThemeId = '61cd3467f8d54502b6e5e0eda88be0f8';
+    var targetAssetId = 'b6d1e06c5a1b4a8c91a9e7f0f01ee504';
+
+    var existing = new GlideRecord('sys_attachment');
+    existing.addQuery('table_sys_id', targetAssetId);
+    existing.addQuery('content_type', 'image/svg+xml');
+    existing.setLimit(1);
+    existing.query();
+    if (existing.next()) {
+        return;
+    }
+
+    var source = new GlideRecord('sys_attachment');
+    source.addQuery('table_sys_id', sourceThemeId);
+    source.addQuery('content_type', 'image/svg+xml');
+    source.setLimit(1);
+    source.query();
+    if (!source.next()) {
+        gs.warn('Store Supplier Support: source-controlled Slalom logo attachment was not found.');
+        return;
+    }
+
+    new GlideSysAttachment().copy(source.getValue('table_name'), sourceThemeId, 'sys_ux_theme_asset', targetAssetId);
+})();
+]]></content>
+        <external_source>false</external_source>
+        <path>x_sln_store_suppli/x-sln-store-supplier-support/1.0.0/src/server/branding/apply-slalom-workspace-logo.js</path>
+        <sys_class_name>sys_module</sys_class_name>
+        <sys_created_by>derek.hodge@slalom.com</sys_created_by>
+        <sys_created_on>2026-08-05 19:43:54</sys_created_on>
+        <sys_id>afd275c89674444b8df9a78816423c10</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_sln_store_suppli/x-sln-store-supplier-support/1.0.0/src/server/branding/apply-slalom-workspace-logo.js</sys_name>
+        <sys_package display_value="Store Supplier Support" source="x_sln_store_suppli">ee4e977887264b907c2dfdd5dabb354b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Store Supplier Support">ee4e977887264b907c2dfdd5dabb354b</sys_scope>
+        <sys_update_name>sys_module_afd275c89674444b8df9a78816423c10</sys_update_name>
+        <sys_updated_by>derek.hodge@slalom.com</sys_updated_by>
+        <sys_updated_on>2026-08-05 19:43:54</sys_updated_on>
+    </sys_module>
+</record_update>

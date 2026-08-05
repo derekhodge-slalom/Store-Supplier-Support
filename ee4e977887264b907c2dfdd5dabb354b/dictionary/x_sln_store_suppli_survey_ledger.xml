@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element audit="true" db_object_id="f64a648d876e4b907c2dfdd5dabb35bb" label="Supplier Survey Ledger" max_length="40" name="x_sln_store_suppli_survey_ledger" type="collection">
+        <element label="Demo Data" max_length="40" name="demo_data" type="boolean"/>
         <element label="Calendar Month" mandatory="true" max_length="7" name="calendar_month" type="string"/>
         <element label="Survey Recipient" mandatory="true" max_length="32" name="recipient" reference="sys_user" reference_cascade_rule="restrict" type="reference"/>
         <element label="Sent On" mandatory="true" max_length="40" name="sent_on" type="glide_date_time"/>
