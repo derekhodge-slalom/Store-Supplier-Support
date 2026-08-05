@@ -33,6 +33,7 @@ async function main() {
 
     const tableNames = [
         'x_sln_store_suppli_store',
+        'x_sln_store_suppli_store_supply_model',
         'x_sln_store_suppli_store_member',
         'x_sln_store_suppli_store_supplier',
         'x_sln_store_suppli_supply_supplier',
@@ -60,10 +61,13 @@ async function main() {
     await check('Customer Service plugin active', 'v_plugin', 'id=com.sn_customerservice^active=active', 1)
     await check('Employee Center capability', 'sp_portal', 'url_suffix=esc', 1)
     await check('Email Interaction for CSM active', 'sys_store_app', 'scope=sn_eaai_csm^active=true', 1)
-    await check('Thirteen application tables', 'sys_db_object', `nameIN${tableNames.join(',')}`, 13)
+    await check('Fourteen application tables', 'sys_db_object', `nameIN${tableNames.join(',')}`, 14)
     await check('Six application roles', 'sys_user_role', `nameIN${roleNames.join(',')}`, 6)
-    await check('Application ACLs', 'sys_security_acl', 'nameSTARTSWITHx_sln_store_suppli_', { min: 25 })
+    await check('Application ACLs', 'sys_security_acl', 'nameSTARTSWITHx_sln_store_suppli_', { min: 29 })
+    await check('Store Supply Model child table', 'sys_db_object', 'name=x_sln_store_suppli_store_supply_model^super_class.name=cmdb_consumable_product_model', 1)
+    await check('Store supply reference isolation', 'sys_dictionary', 'nameINx_sln_store_suppli_supply_supplier,x_sln_store_suppli_supply_line,x_sln_store_suppli_supply_receipt^element=supply_model^reference=x_sln_store_suppli_store_supply_model', 3)
     await check('Request and Issue record producers', 'sc_cat_item_producer', `nameIN${producerNames.join(',')}`, 2)
+    await check('Record producer supply picker isolation', 'item_option_new', `cat_item.nameIN${producerNames.join(',')}^name=supplyModel^reference=x_sln_store_suppli_store_supply_model`, 2)
     await check('Response and resolution SLAs', 'contract_sla', 'collection=x_sln_store_suppli_supply_case^active=true', 2)
     await check('Registered application events', 'sysevent_register', 'event_nameSTARTSWITHx_sln_store_suppli.', 10)
     await check('Application email notifications', 'sysevent_email_action', 'nameSTARTSWITHStore Supply^ORnameSTARTSWITHSupplier Task^ORnameSTARTSWITHDistrict Manager', { min: 10 })
@@ -82,8 +86,10 @@ async function main() {
     await check('Demo stockrooms', 'alm_stockroom', 'nameSTARTSWITHDEMO ', 2)
     await check('Demo supplier accounts', 'customer_account', 'nameSTARTSWITHDemo ', 2)
     await check('Demo supplier contacts', 'customer_contact', 'user_nameSTARTSWITHsss.demo.supplier.', 2)
-    await check('Demo consumable models', 'cmdb_consumable_product_model', 'model_numberSTARTSWITHDEMO-', 3)
-    await check('Demo consumable inventory', 'alm_consumable', 'display_nameSTARTSWITHDEMO ', 3)
+    await check('Demo Store Supply Models', 'x_sln_store_suppli_store_supply_model', 'model_numberSTARTSWITHDEMO-STORE-^demo_data=true', 3)
+    await check('Legacy base-table demo models removed', 'cmdb_consumable_product_model', 'sys_idIN824953bc0dd347cd97fb24655814c003,ff445d67da494258bc873d5dcbcd8b49,f3b49069a9764bc69f85b860f60fcc33', 0)
+    await check('Demo store supply inventory', 'alm_consumable', 'display_nameSTARTSWITHDEMO ^model.sys_class_name=x_sln_store_suppli_store_supply_model', 3)
+    await check('Filtered Store Supply application modules', 'sys_app_module', 'titleINStore Supply Models,Store Supply Inventory^nameINx_sln_store_suppli_store_supply_model,alm_consumable', 2)
     await check('Demo store-supplier relationships', 'x_sln_store_suppli_store_supplier', 'demo_data=true', 3)
 
     await check('Old Incident business rule deleted', 'sys_script', 'sys_id=cf361fda6b5c4524864125f1b534b589', 0)

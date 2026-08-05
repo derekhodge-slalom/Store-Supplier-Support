@@ -41,6 +41,14 @@ Form({
     }] }],
 })
 Form({
+    table: 'x_sln_store_suppli_store_supply_model', view: default_view, roles: internalNavigationRoles,
+    sections: [{ caption: 'Store Supply Model', content: [{
+        layout: 'two-column',
+        leftElements: [{ type: 'table_field', field: 'name' }, { type: 'table_field', field: 'model_number' }, { type: 'table_field', field: 'manufacturer' }],
+        rightElements: [{ type: 'table_field', field: 'store_category' }, { type: 'table_field', field: 'unit_of_measure' }, { type: 'table_field', field: 'active_for_ordering' }],
+    }] }],
+})
+Form({
     table: 'x_sln_store_suppli_supplier_task', view: default_view, roles: internalNavigationRoles,
     sections: [{ caption: 'Supplier Task', content: [{
         layout: 'two-column',
@@ -70,5 +78,6 @@ List({ table: 'x_sln_store_suppli_supply_issue', view: default_view, columns: ['
 List({ table: 'x_sln_store_suppli_supplier_task', view: default_view, columns: ['number', 'parent_case', 'supplier_account', 'supplier_contact', 'task_state', 'released', 'released_on', 'completed_on'] })
 List({ table: 'x_sln_store_suppli_supply_line', view: default_view, columns: ['parent_case', 'supply_model', 'supplier_account', 'requested_quantity', 'fulfilled_quantity', 'received_quantity', 'line_state'] })
 List({ table: 'x_sln_store_suppli_store', view: default_view, columns: ['store_number', 'name', 'district', 'district_manager', 'stockroom', 'active'] })
+List({ table: 'x_sln_store_suppli_store_supply_model', view: default_view, columns: ['name', 'model_number', 'store_category', 'unit_of_measure', 'active_for_ordering', 'manufacturer'] })
 List({ table: 'x_sln_store_suppli_supply_receipt', view: default_view, columns: ['parent_case', 'supply_model', 'quantity', 'store', 'stockroom', 'received_by', 'received_on', 'inventory_applied'] })
 List({ table: 'x_sln_store_suppli_case_escalation', view: default_view, columns: ['parent_case', 'reason', 'triggered_on', 'triggered_by', 'notification_sent'] })

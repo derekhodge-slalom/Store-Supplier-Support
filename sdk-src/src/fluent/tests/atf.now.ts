@@ -18,6 +18,14 @@ describe('Store Supplier Support case model', function () {
         expect(request.isValidField('needed_by')).toBe(true);
         expect(issue.isValidField('business_impact')).toBe(true);
     });
+    it('provides a Store Supply Model child of the consumable product model', function () {
+        var table = new GlideRecord('sys_db_object');
+        expect(table.get('name', 'x_sln_store_suppli_store_supply_model')).toBe(true);
+        expect(table.super_class.name.toString()).toBe('cmdb_consumable_product_model');
+        var model = new GlideRecord('x_sln_store_suppli_store_supply_model');
+        expect(model.isValid()).toBe(true);
+        expect(model.isValidField('active_for_ordering')).toBe(true);
+    });
     it('has all supported state choices', function () {
         var choices = new GlideRecord('sys_choice');
         choices.addQuery('name', 'x_sln_store_suppli_supply_case');
@@ -76,6 +84,17 @@ describe('Store Supplier Support fulfillment', function () {
         relationships.addQuery('store', store.getUniqueValue()); relationships.addQuery('active', true); relationships.addAggregate('COUNT'); relationships.query(); relationships.next();
         expect(parseInt(relationships.getAggregate('COUNT'), 10)).toBe(2);
     });
+    it('routes only dedicated Store Supply Models', function () {
+        var models = new GlideAggregate('x_sln_store_suppli_store_supply_model');
+        models.addQuery('demo_data', true); models.addAggregate('COUNT'); models.query(); models.next();
+        expect(parseInt(models.getAggregate('COUNT'), 10)).toBe(3);
+        ['x_sln_store_suppli_supply_supplier','x_sln_store_suppli_supply_line','x_sln_store_suppli_supply_receipt'].forEach(function (tableName) {
+            var dictionary = new GlideRecord('sys_dictionary');
+            dictionary.addQuery('name', tableName); dictionary.addQuery('element', 'supply_model'); dictionary.query();
+            expect(dictionary.next()).toBe(true);
+            expect(dictionary.getValue('reference')).toBe('x_sln_store_suppli_store_supply_model');
+        });
+    });
     it('enforces a unique receipt source key and Request-only receipt rule', function () {
         var dictionary = new GlideRecord('sys_dictionary');
         dictionary.addQuery('name', 'x_sln_store_suppli_supply_receipt'); dictionary.addQuery('element', 'source_key'); dictionary.query();
@@ -124,6 +143,14 @@ describe('Store Supplier Support experience configuration', function () {
         ['Submit Store Supply Request','Report Store Supply Issue'].forEach(function (name) {
             var producer = new GlideRecord('sc_cat_item_producer'); producer.get('name', name); expect(producer.isValidRecord()).toBe(true);
         });
+    });
+    it('limits both producer supply pickers to Store Supply Models', function () {
+        var variables = new GlideRecord('item_option_new');
+        variables.addQuery('cat_item.name', 'IN', 'Submit Store Supply Request,Report Store Supply Issue');
+        variables.addQuery('name', 'supplyModel'); variables.query();
+        var count = 0;
+        while (variables.next()) { count++; expect(variables.getValue('reference')).toBe('x_sln_store_suppli_store_supply_model'); }
+        expect(count).toBe(2);
     });
     it('routes new emails to interactions and replies to cases', function () {
         var actions = new GlideRecord('sys_email_action'); actions.addEncodedQuery('nameSTARTSWITHCreate Store Supply^ORnameSTARTSWITHUpdate Store Supply'); actions.query();

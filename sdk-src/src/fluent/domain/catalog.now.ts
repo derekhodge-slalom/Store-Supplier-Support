@@ -61,8 +61,8 @@ export const supplyRequestProducer = CatalogItemRecordProducer({
             },
         }),
         supplyModel: ReferenceVariable({
-            question: 'Supply item', referenceTable: 'cmdb_consumable_product_model', order: 150, mandatory: true,
-            referenceQualCondition: 'status=In Production^ORstatusISEMPTY',
+            question: 'Supply item', referenceTable: 'x_sln_store_suppli_store_supply_model', order: 150, mandatory: true,
+            referenceQualCondition: 'active_for_ordering=true',
         }),
         quantity: SingleLineTextVariable({ question: 'Quantity', order: 160, mandatory: true, defaultValue: '1', width: 25 }),
         neededBy: DateVariable({ question: 'Needed by', order: 170, mapToField: true, field: 'needed_by', width: 50 }),
@@ -113,7 +113,8 @@ export const supplyIssueProducer = CatalogItemRecordProducer({
             },
         }),
         supplyModel: ReferenceVariable({
-            question: 'Affected supply item', referenceTable: 'cmdb_consumable_product_model', order: 150, mandatory: true,
+            question: 'Affected supply item', referenceTable: 'x_sln_store_suppli_store_supply_model', order: 150, mandatory: true,
+            referenceQualCondition: 'active_for_ordering=true',
         }),
         quantity: SingleLineTextVariable({ question: 'Affected quantity', order: 160, mandatory: true, defaultValue: '1', width: 25 }),
         businessImpact: MultiLineTextVariable({

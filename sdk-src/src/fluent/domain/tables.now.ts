@@ -35,6 +35,32 @@ export const x_sln_store_suppli_store = Table({
     ],
 })
 
+export const x_sln_store_suppli_store_supply_model = Table({
+    name: 'x_sln_store_suppli_store_supply_model',
+    label: 'Store Supply Model',
+    extends: 'cmdb_consumable_product_model',
+    audit: true, allowWebServiceAccess: false, accessibleFrom: 'public', callerAccess: 'tracking',
+    schema: {
+        store_category: ChoiceColumn({
+            label: 'Store Supply Category',
+            mandatory: true,
+            default: 'operations',
+            dropdown: 'dropdown_without_none',
+            choices: {
+                operations: { label: 'Store Operations', sequence: 10 },
+                packaging: { label: 'Packaging', sequence: 20 },
+                safety: { label: 'Safety', sequence: 30 },
+                fixtures: { label: 'Fixtures', sequence: 40 },
+                other: { label: 'Other', sequence: 90 },
+            },
+        }),
+        unit_of_measure: StringColumn({ label: 'Unit of Measure', default: 'each', maxLength: 40 }),
+        active_for_ordering: BooleanColumn({ label: 'Active for Ordering', default: true }),
+        demo_data: BooleanColumn({ label: 'Demo Data', default: false }),
+    },
+    index: [{ name: 'store_supply_ordering_category', unique: false, element: ['active_for_ordering', 'store_category'] }],
+})
+
 export const x_sln_store_suppli_store_member = Table({
     name: 'x_sln_store_suppli_store_member',
     label: 'Store Member',
@@ -78,8 +104,8 @@ export const x_sln_store_suppli_supply_supplier = Table({
     audit: true, allowWebServiceAccess: false, accessibleFrom: 'public', callerAccess: 'tracking',
     schema: {
         supply_model: ReferenceColumn({
-            label: 'Consumable Model',
-            referenceTable: 'cmdb_consumable_product_model',
+            label: 'Store Supply',
+            referenceTable: 'x_sln_store_suppli_store_supply_model',
             mandatory: true,
             cascadeRule: 'restrict',
         }),
@@ -272,7 +298,7 @@ export const x_sln_store_suppli_supply_line = Table({
     audit: true, allowWebServiceAccess: false, accessibleFrom: 'public', callerAccess: 'tracking',
     schema: {
         parent_case: ReferenceColumn({ label: 'Store Supply Case', referenceTable: 'x_sln_store_suppli_supply_case', mandatory: true, cascadeRule: 'delete' }),
-        supply_model: ReferenceColumn({ label: 'Consumable Model', referenceTable: 'cmdb_consumable_product_model', mandatory: true, cascadeRule: 'restrict' }),
+        supply_model: ReferenceColumn({ label: 'Store Supply', referenceTable: 'x_sln_store_suppli_store_supply_model', mandatory: true, cascadeRule: 'restrict' }),
         supplier_account: ReferenceColumn({ label: 'Supplier', referenceTable: 'customer_account', cascadeRule: 'clear' }),
         requested_quantity: IntegerColumn({ label: 'Requested / Affected Quantity', mandatory: true, default: 1, min: 1 }),
         fulfilled_quantity: IntegerColumn({ label: 'Fulfilled Quantity', default: 0, min: 0 }),
@@ -357,7 +383,7 @@ export const x_sln_store_suppli_supply_receipt = Table({
         supply_line: ReferenceColumn({ label: 'Supply Line', referenceTable: 'x_sln_store_suppli_supply_line', mandatory: true, cascadeRule: 'restrict' }),
         store: ReferenceColumn({ label: 'Store', referenceTable: 'x_sln_store_suppli_store', mandatory: true, cascadeRule: 'restrict' }),
         stockroom: ReferenceColumn({ label: 'Stockroom', referenceTable: 'alm_stockroom', mandatory: true, cascadeRule: 'restrict' }),
-        supply_model: ReferenceColumn({ label: 'Consumable Model', referenceTable: 'cmdb_consumable_product_model', mandatory: true, cascadeRule: 'restrict' }),
+        supply_model: ReferenceColumn({ label: 'Store Supply', referenceTable: 'x_sln_store_suppli_store_supply_model', mandatory: true, cascadeRule: 'restrict' }),
         quantity: IntegerColumn({ label: 'Quantity Received', mandatory: true, min: 1 }),
         received_by: ReferenceColumn({ label: 'Received By', referenceTable: 'sys_user', mandatory: true, cascadeRule: 'restrict' }),
         received_on: DateTimeColumn({ label: 'Received On', mandatory: true }),

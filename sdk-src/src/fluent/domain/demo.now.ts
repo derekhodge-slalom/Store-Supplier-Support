@@ -57,16 +57,16 @@ export const demoStore205 = Record({
 })
 
 export const demoPaperModel = Record({
-    $id: Now.ID['demo_paper_model'], table: 'cmdb_consumable_product_model', $meta: demo,
-    data: { name: 'DEMO Receipt Paper Roll', model_number: 'DEMO-PAPER-80' },
+    $id: Now.ID['demo_store_paper_model'], table: 'x_sln_store_suppli_store_supply_model', $meta: demo,
+    data: { name: 'DEMO Receipt Paper Roll', model_number: 'DEMO-STORE-PAPER-80', store_category: 'operations', unit_of_measure: 'roll', active_for_ordering: true, demo_data: true } as any,
 })
 export const demoBagModel = Record({
-    $id: Now.ID['demo_bag_model'], table: 'cmdb_consumable_product_model', $meta: demo,
-    data: { name: 'DEMO Reusable Store Bag', model_number: 'DEMO-BAG-01' },
+    $id: Now.ID['demo_store_bag_model'], table: 'x_sln_store_suppli_store_supply_model', $meta: demo,
+    data: { name: 'DEMO Reusable Store Bag', model_number: 'DEMO-STORE-BAG-01', store_category: 'packaging', unit_of_measure: 'each', active_for_ordering: true, demo_data: true } as any,
 })
 export const demoGloveModel = Record({
-    $id: Now.ID['demo_glove_model'], table: 'cmdb_consumable_product_model', $meta: demo,
-    data: { name: 'DEMO Safety Gloves', model_number: 'DEMO-SAFE-GLV' },
+    $id: Now.ID['demo_store_glove_model'], table: 'x_sln_store_suppli_store_supply_model', $meta: demo,
+    data: { name: 'DEMO Safety Gloves', model_number: 'DEMO-STORE-SAFE-GLV', store_category: 'safety', unit_of_measure: 'pair', active_for_ordering: true, demo_data: true } as any,
 })
 
 Record({

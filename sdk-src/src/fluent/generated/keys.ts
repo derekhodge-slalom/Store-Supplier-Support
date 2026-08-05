@@ -278,6 +278,7 @@ declare global {
                     demo_bag_model: {
                         table: 'cmdb_consumable_product_model'
                         id: 'ff445d67da494258bc873d5dcbcd8b49'
+                        deleted: true
                     }
                     demo_district_manager: {
                         table: 'sys_user'
@@ -294,6 +295,7 @@ declare global {
                     demo_glove_model: {
                         table: 'cmdb_consumable_product_model'
                         id: 'f3b49069a9764bc69f85b860f60fcc33'
+                        deleted: true
                     }
                     demo_group_agent: {
                         table: 'sys_user_grmember'
@@ -318,6 +320,7 @@ declare global {
                     demo_paper_model: {
                         table: 'cmdb_consumable_product_model'
                         id: '824953bc0dd347cd97fb24655814c003'
+                        deleted: true
                     }
                     demo_role_associate: {
                         table: 'sys_user_has_role'
@@ -363,6 +366,14 @@ declare global {
                         table: 'sys_user'
                         id: 'a94a17421bd14c3d8af7d3396ea2577e'
                     }
+                    demo_store_bag_model: {
+                        table: 'x_sln_store_suppli_store_supply_model'
+                        id: '866fa48e56cf488ebf1ee21390b25b27'
+                    }
+                    demo_store_glove_model: {
+                        table: 'x_sln_store_suppli_store_supply_model'
+                        id: '2144054bb99142459c6de53f7d1ad14c'
+                    }
                     demo_store_member_101: {
                         table: 'x_sln_store_suppli_store_member'
                         id: 'c1796f57a6844ceab676c2c0d895f407'
@@ -370,6 +381,10 @@ declare global {
                     demo_store_member_205: {
                         table: 'x_sln_store_suppli_store_member'
                         id: '9568e32136e849f680e20a8f659b14c4'
+                    }
+                    demo_store_paper_model: {
+                        table: 'x_sln_store_suppli_store_supply_model'
+                        id: 'afebfb5aae42489b84d5111484b5b837'
                     }
                     demo_store_supplier_101_a: {
                         table: 'x_sln_store_suppli_store_supplier'
@@ -478,6 +493,10 @@ declare global {
                     module_store_suppliers: {
                         table: 'sys_app_module'
                         id: '29c96d5306a84f23b38e9a6ac951064d'
+                    }
+                    module_store_supply_models: {
+                        table: 'sys_app_module'
+                        id: 'c715bd8f7d944030a74760b9e03ac031'
                     }
                     module_stores: {
                         table: 'sys_app_module'
@@ -622,6 +641,22 @@ declare global {
                     store_supply_email_reply: {
                         table: 'sysevent_in_email_action'
                         id: '7f05bba37aad4c2faed8fa64ba930740'
+                    }
+                    store_supply_model_create_acl: {
+                        table: 'sys_security_acl'
+                        id: '0d9e0f11547e455fadcd00d2d3ac01e1'
+                    }
+                    store_supply_model_delete_acl: {
+                        table: 'sys_security_acl'
+                        id: '45756a5af3c544eaa701b6f03f1396a9'
+                    }
+                    store_supply_model_read_acl: {
+                        table: 'sys_security_acl'
+                        id: 'f1f743077587434da489dc5ef94d853a'
+                    }
+                    store_supply_model_write_acl: {
+                        table: 'sys_security_acl'
+                        id: '11c0858d55174525b191acdd95dcdbd7'
                     }
                     store_supply_resolution_sla: {
                         table: 'contract_sla'
@@ -947,6 +982,22 @@ declare global {
                         table: 'sys_ux_applicability_m2m_list'
                         id: '67b202d88829404abf9ae3372046de66'
                     }
+                    workspace_store_supply_inventory: {
+                        table: 'sys_ux_list'
+                        id: '847c350436e743319ceab8dee7077461'
+                    }
+                    workspace_store_supply_inventory_app: {
+                        table: 'sys_ux_applicability_m2m_list'
+                        id: '976959d5b33746a8b2831acc84d37f78'
+                    }
+                    workspace_store_supply_models: {
+                        table: 'sys_ux_list'
+                        id: '69bbe7aa87024218a04048ec48b1ad1a'
+                    }
+                    workspace_store_supply_models_app: {
+                        table: 'sys_ux_applicability_m2m_list'
+                        id: '643063f0b60e4e41a2a095f6f9b91129'
+                    }
                     workspace_stores: {
                         table: 'sys_ux_list'
                         id: '5b4f68ac5b1a462597909bc36b6c1482'
@@ -1019,6 +1070,17 @@ declare global {
                                     name: 'x_sln_store_suppli.admin'
                                 }
                             }
+                        }
+                    },
+                    {
+                        table: 'sys_choice'
+                        id: '023e384c7d2843c5ba93048f58be5684'
+                        key: {
+                            name: 'x_sln_store_suppli_store_supply_model'
+                            element: 'store_category'
+                            value: 'safety'
+                            language: 'en'
+                            dependent_value: 'NULL'
                         }
                     },
                     {
@@ -1444,6 +1506,15 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_documentation'
+                        id: '0a1314e7280a4328a7175ddfcb2ae63a'
+                        key: {
+                            name: 'x_sln_store_suppli_store_supply_model'
+                            element: 'store_category'
+                            language: 'en'
+                        }
+                    },
+                    {
                         table: 'sys_choice'
                         id: '0a958521889240d1a62da274094c66f3'
                         key: {
@@ -1578,6 +1649,14 @@ declare global {
                                 }
                             }
                             value: 'quality'
+                        }
+                    },
+                    {
+                        table: 'sys_dictionary'
+                        id: '0bf2fa7548bb4c878dd5f22f777a6074'
+                        key: {
+                            name: 'x_sln_store_suppli_store_supply_model'
+                            element: 'unit_of_measure'
                         }
                     },
                     {
@@ -2318,11 +2397,42 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_documentation'
+                        id: '1c8a51686e6248889972bc407c7d2bc6'
+                        key: {
+                            name: 'x_sln_store_suppli_store_supply_model'
+                            element: 'active_for_ordering'
+                            language: 'en'
+                        }
+                    },
+                    {
                         table: 'sys_dictionary'
                         id: '1d8e9e94c0714af2aaafd6ea50c4bde6'
                         key: {
                             name: 'x_sln_store_suppli_store'
                             element: 'store_number'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '1deadae1cfcc4dc4898044595fa38f21'
+                        key: {
+                            sys_ui_section: {
+                                id: 'e21d22d83dca48d78f80661576182775'
+                                key: {
+                                    name: 'x_sln_store_suppli_store_supply_model'
+                                    caption: 'Store Supply Model'
+                                    view: {
+                                        id: 'Default view'
+                                        key: {
+                                            name: 'NULL'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'model_number'
+                            position: '2'
                         }
                     },
                     {
@@ -2730,6 +2840,29 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_list_element'
+                        id: '2782368038c04746ba872c56938f4262'
+                        key: {
+                            list_id: {
+                                id: 'feb47636dff747f29b60aee0e5d00505'
+                                key: {
+                                    name: 'x_sln_store_suppli_store_supply_model'
+                                    view: {
+                                        id: 'Default view'
+                                        key: {
+                                            name: 'NULL'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                    element: 'NULL'
+                                    relationship: 'NULL'
+                                    parent: 'NULL'
+                                }
+                            }
+                            element: 'model_number'
+                        }
+                    },
+                    {
                         table: 'sys_choice'
                         id: '285119caf758458093f79fad5a0fc353'
                         key: {
@@ -2904,6 +3037,15 @@ declare global {
                         key: {
                             logical_table_name: 'x_sln_store_suppli_store'
                             col_name_string: 'district_manager,active'
+                        }
+                    },
+                    {
+                        table: 'sys_documentation'
+                        id: '2f0ae5c922c74cf797f1c5e9702d7e35'
+                        key: {
+                            name: 'x_sln_store_suppli_store_supply_model'
+                            element: 'NULL'
+                            language: 'en'
                         }
                     },
                     {
@@ -3092,6 +3234,20 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_form'
+                        id: '32ff9f6ddff24483817628561a3402be'
+                        key: {
+                            name: 'x_sln_store_suppli_store_supply_model'
+                            view: {
+                                id: 'Default view'
+                                key: {
+                                    name: 'NULL'
+                                }
+                            }
+                            sys_domain: 'global'
+                        }
+                    },
+                    {
                         table: 'sys_choice'
                         id: '3340c9be817e47338d44748286c5c0ac'
                         key: {
@@ -3100,6 +3256,28 @@ declare global {
                             value: 'unresolved_five_days'
                             language: 'en'
                             dependent_value: 'NULL'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '3353573f1d094127a6c5444ce3524cb3'
+                        key: {
+                            sys_ui_section: {
+                                id: 'e21d22d83dca48d78f80661576182775'
+                                key: {
+                                    name: 'x_sln_store_suppli_store_supply_model'
+                                    caption: 'Store Supply Model'
+                                    view: {
+                                        id: 'Default view'
+                                        key: {
+                                            name: 'NULL'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: '.end_split'
+                            position: '8'
                         }
                     },
                     {
@@ -3410,6 +3588,19 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_security_acl_role'
+                        id: '394e8be2d8854b7284b07f74cfb54cac'
+                        key: {
+                            sys_security_acl: '11c0858d55174525b191acdd95dcdbd7'
+                            sys_user_role: {
+                                id: '214122d7b9e9496aa0acae2f4b2e8251'
+                                key: {
+                                    name: 'x_sln_store_suppli.support_agent'
+                                }
+                            }
+                        }
+                    },
+                    {
                         table: 'sys_documentation'
                         id: '39c5f4fdf3174aa28498a76246712dae'
                         key: {
@@ -3442,10 +3633,52 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_form_section'
+                        id: '3a23157d814543e48e002a9cccc872a7'
+                        key: {
+                            sys_ui_form: {
+                                id: '32ff9f6ddff24483817628561a3402be'
+                                key: {
+                                    name: 'x_sln_store_suppli_store_supply_model'
+                                    view: {
+                                        id: 'Default view'
+                                        key: {
+                                            name: 'NULL'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            sys_ui_section: {
+                                id: 'e21d22d83dca48d78f80661576182775'
+                                key: {
+                                    name: 'x_sln_store_suppli_store_supply_model'
+                                    caption: 'Store Supply Model'
+                                    view: {
+                                        id: 'Default view'
+                                        key: {
+                                            name: 'NULL'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                        }
+                    },
+                    {
                         table: 'sp_page'
                         id: '3a55c5516b9344e784ea659073c41cc7'
                         key: {
                             id: 'store-supply-supplier'
+                        }
+                    },
+                    {
+                        table: 'sys_documentation'
+                        id: '3ab38215505f48c2a71364beaefd9e70'
+                        key: {
+                            name: 'x_sln_store_suppli_store_supply_model'
+                            element: 'demo_data'
+                            language: 'en'
                         }
                     },
                     {
@@ -3470,6 +3703,17 @@ declare global {
                                 }
                             }
                             value: 'out_of_stock'
+                        }
+                    },
+                    {
+                        table: 'sys_choice'
+                        id: '3b8bdef5e9224738a49a6a5994422c37'
+                        key: {
+                            name: 'x_sln_store_suppli_store_supply_model'
+                            element: 'store_category'
+                            value: 'operations'
+                            language: 'en'
+                            dependent_value: 'NULL'
                         }
                     },
                     {
@@ -3778,6 +4022,17 @@ declare global {
                                     name: 'x_sln_store_suppli.admin'
                                 }
                             }
+                        }
+                    },
+                    {
+                        table: 'sys_choice'
+                        id: '42479dc62c38482c88090ec2cd4c066f'
+                        key: {
+                            name: 'x_sln_store_suppli_store_supply_model'
+                            element: 'store_category'
+                            value: 'other'
+                            language: 'en'
+                            dependent_value: 'NULL'
                         }
                     },
                     {
@@ -4384,6 +4639,19 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_security_acl_role'
+                        id: '50204b5df0fc48d6881dd15b1c7fed86'
+                        key: {
+                            sys_security_acl: 'f1f743077587434da489dc5ef94d853a'
+                            sys_user_role: {
+                                id: 'e132f63dbefa4c6186bf051e3b37d0eb'
+                                key: {
+                                    name: 'x_sln_store_suppli.admin'
+                                }
+                            }
+                        }
+                    },
+                    {
                         table: 'sys_ui_element'
                         id: '50f8e9bf84934f79a9173fc4374af5e5'
                         key: {
@@ -4587,6 +4855,15 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_documentation'
+                        id: '5374fb1b9c564b0c970a2a826d712dc9'
+                        key: {
+                            name: 'x_sln_store_suppli_store_supply_model'
+                            element: 'unit_of_measure'
+                            language: 'en'
+                        }
+                    },
+                    {
                         table: 'sys_security_acl_role'
                         id: '53a58cda87c640518f0ab8a01179e4ca'
                         key: {
@@ -4650,6 +4927,14 @@ declare global {
                                     name: 'x_sln_store_suppli.support_manager'
                                 }
                             }
+                        }
+                    },
+                    {
+                        table: 'sys_dictionary'
+                        id: '55401375cc224d5e82e383dcf21d4160'
+                        key: {
+                            name: 'x_sln_store_suppli_store_supply_model'
+                            element: 'store_category'
                         }
                     },
                     {
@@ -4840,6 +5125,28 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_element'
+                        id: '5c3239afc2c44d069defd59c570aee5e'
+                        key: {
+                            sys_ui_section: {
+                                id: 'e21d22d83dca48d78f80661576182775'
+                                key: {
+                                    name: 'x_sln_store_suppli_store_supply_model'
+                                    caption: 'Store Supply Model'
+                                    view: {
+                                        id: 'Default view'
+                                        key: {
+                                            name: 'NULL'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'unit_of_measure'
+                            position: '6'
+                        }
+                    },
+                    {
                         table: 'sys_dictionary'
                         id: '5c4781b28c014f139763d43dfaeab59d'
                         key: {
@@ -4969,6 +5276,19 @@ declare global {
                                 }
                             }
                             value: '1'
+                        }
+                    },
+                    {
+                        table: 'sys_security_acl_role'
+                        id: '5f160c3e44c142ecb572c92f2196c4e0'
+                        key: {
+                            sys_security_acl: '0d9e0f11547e455fadcd00d2d3ac01e1'
+                            sys_user_role: {
+                                id: '214122d7b9e9496aa0acae2f4b2e8251'
+                                key: {
+                                    name: 'x_sln_store_suppli.support_agent'
+                                }
+                            }
                         }
                     },
                     {
@@ -5177,6 +5497,19 @@ declare global {
                     },
                     {
                         table: 'sys_security_acl_role'
+                        id: '640477639c4f40639dd1a7a5adf051f4'
+                        key: {
+                            sys_security_acl: '45756a5af3c544eaa701b6f03f1396a9'
+                            sys_user_role: {
+                                id: 'e132f63dbefa4c6186bf051e3b37d0eb'
+                                key: {
+                                    name: 'x_sln_store_suppli.admin'
+                                }
+                            }
+                        }
+                    },
+                    {
+                        table: 'sys_security_acl_role'
                         id: '64162ae147be42e8a9acd9bb3cedf045'
                         key: {
                             sys_security_acl: 'e94eda5342bc4b5bb9617a83ef2afabe'
@@ -5186,6 +5519,13 @@ declare global {
                                     name: 'x_sln_store_suppli.supplier_agent'
                                 }
                             }
+                        }
+                    },
+                    {
+                        table: 'ua_table_licensing_config'
+                        id: '645ae3f41f4f4b6ca606951298ef64db'
+                        key: {
+                            name: 'x_sln_store_suppli_store_supply_model'
                         }
                     },
                     {
@@ -5210,6 +5550,14 @@ declare global {
                         id: '6540dd69a8f54a84bd1d253c32a24463'
                         key: {
                             name: 'x_sln_store_suppli_supplier_task'
+                        }
+                    },
+                    {
+                        table: 'sys_choice_set'
+                        id: '65ca8cb5d19147daabeccbf5ef8058fe'
+                        key: {
+                            name: 'x_sln_store_suppli_store_supply_model'
+                            element: 'store_category'
                         }
                     },
                     {
@@ -5311,6 +5659,28 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_element'
+                        id: '6996a218c7134aa8be1af088950e0cee'
+                        key: {
+                            sys_ui_section: {
+                                id: 'e21d22d83dca48d78f80661576182775'
+                                key: {
+                                    name: 'x_sln_store_suppli_store_supply_model'
+                                    caption: 'Store Supply Model'
+                                    view: {
+                                        id: 'Default view'
+                                        key: {
+                                            name: 'NULL'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'store_category'
+                            position: '5'
+                        }
+                    },
+                    {
                         table: 'sys_security_acl_role'
                         id: '699f58c669ea493397700e6120283f08'
                         key: {
@@ -5319,6 +5689,19 @@ declare global {
                                 id: 'e132f63dbefa4c6186bf051e3b37d0eb'
                                 key: {
                                     name: 'x_sln_store_suppli.admin'
+                                }
+                            }
+                        }
+                    },
+                    {
+                        table: 'sys_security_acl_role'
+                        id: '69d47782996e48099b00a5781b36c3d9'
+                        key: {
+                            sys_security_acl: 'f1f743077587434da489dc5ef94d853a'
+                            sys_user_role: {
+                                id: '7e3d0b9948354951aa64920303bd7e65'
+                                key: {
+                                    name: 'x_sln_store_suppli.support_manager'
                                 }
                             }
                         }
@@ -5725,12 +6108,54 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_security_acl_role'
+                        id: '71937580893f4529bf23a2d101401ea1'
+                        key: {
+                            sys_security_acl: '11c0858d55174525b191acdd95dcdbd7'
+                            sys_user_role: {
+                                id: 'e132f63dbefa4c6186bf051e3b37d0eb'
+                                key: {
+                                    name: 'x_sln_store_suppli.admin'
+                                }
+                            }
+                        }
+                    },
+                    {
                         table: 'sys_documentation'
                         id: '71eecf516c484037a4d4094536fcce67'
                         key: {
                             name: 'x_sln_store_suppli_store'
                             element: 'name'
                             language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_db_object'
+                        id: '71f2c8fac7834677ba4b343aea5adf25'
+                        key: {
+                            name: 'x_sln_store_suppli_store_supply_model'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '721d08a8da434a6888565e7c55874f06'
+                        key: {
+                            sys_ui_section: {
+                                id: 'e21d22d83dca48d78f80661576182775'
+                                key: {
+                                    name: 'x_sln_store_suppli_store_supply_model'
+                                    caption: 'Store Supply Model'
+                                    view: {
+                                        id: 'Default view'
+                                        key: {
+                                            name: 'NULL'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'active_for_ordering'
+                            position: '7'
                         }
                     },
                     {
@@ -5985,6 +6410,19 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_security_acl_role'
+                        id: '7684cea18e2647f887a59c1688a8dd67'
+                        key: {
+                            sys_security_acl: 'f1f743077587434da489dc5ef94d853a'
+                            sys_user_role: {
+                                id: 'c5273ad1234147e99414a42385449f23'
+                                key: {
+                                    name: 'x_sln_store_suppli.store_associate'
+                                }
+                            }
+                        }
+                    },
+                    {
                         table: 'sys_documentation'
                         id: '7696ebdf4cfe41fa8f769fd760ae65a6'
                         key: {
@@ -6144,6 +6582,17 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_choice'
+                        id: '7a5b57607d2c495788f53d84a60c5b9e'
+                        key: {
+                            name: 'x_sln_store_suppli_store_supply_model'
+                            element: 'store_category'
+                            value: 'fixtures'
+                            language: 'en'
+                            dependent_value: 'NULL'
+                        }
+                    },
+                    {
                         table: 'sys_documentation'
                         id: '7a9511233fc84bcf917dd8b12eff06d7'
                         key: {
@@ -6172,6 +6621,28 @@ declare global {
                             }
                             element: 'supply_state'
                             position: '9'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '7b71c1281dcd488d95d42f14bc50fe2d'
+                        key: {
+                            sys_ui_section: {
+                                id: 'e21d22d83dca48d78f80661576182775'
+                                key: {
+                                    name: 'x_sln_store_suppli_store_supply_model'
+                                    caption: 'Store Supply Model'
+                                    view: {
+                                        id: 'Default view'
+                                        key: {
+                                            name: 'NULL'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: '.begin_split'
+                            position: '0'
                         }
                     },
                     {
@@ -6280,6 +6751,19 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_security_acl_role'
+                        id: '7da1c7cd6fb743c09c2181e56c4e89ae'
+                        key: {
+                            sys_security_acl: '11c0858d55174525b191acdd95dcdbd7'
+                            sys_user_role: {
+                                id: '7e3d0b9948354951aa64920303bd7e65'
+                                key: {
+                                    name: 'x_sln_store_suppli.support_manager'
+                                }
+                            }
+                        }
+                    },
+                    {
                         table: 'sys_dictionary'
                         id: '7e152417e2d74eb1b47e0402dbc25405'
                         key: {
@@ -6366,6 +6850,32 @@ declare global {
                             name: 'x_sln_store_suppli_task_line'
                             element: 'fulfilled_quantity'
                             language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_security_acl_role'
+                        id: '7ee4011814d546bd88754306f56579b7'
+                        key: {
+                            sys_security_acl: '0d9e0f11547e455fadcd00d2d3ac01e1'
+                            sys_user_role: {
+                                id: '7e3d0b9948354951aa64920303bd7e65'
+                                key: {
+                                    name: 'x_sln_store_suppli.support_manager'
+                                }
+                            }
+                        }
+                    },
+                    {
+                        table: 'sys_security_acl_role'
+                        id: '7fa0d50dbf164d55838355b672113875'
+                        key: {
+                            sys_security_acl: '0d9e0f11547e455fadcd00d2d3ac01e1'
+                            sys_user_role: {
+                                id: 'e132f63dbefa4c6186bf051e3b37d0eb'
+                                key: {
+                                    name: 'x_sln_store_suppli.admin'
+                                }
+                            }
                         }
                     },
                     {
@@ -6681,6 +7191,19 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_security_acl_role'
+                        id: '86a2e5a26f0d4f62b7ed50800379ac43'
+                        key: {
+                            sys_security_acl: 'f1f743077587434da489dc5ef94d853a'
+                            sys_user_role: {
+                                id: '2a78462bb07243f9ab230def5dc5a52d'
+                                key: {
+                                    name: 'x_sln_store_suppli.district_manager'
+                                }
+                            }
+                        }
+                    },
+                    {
                         table: 'sys_ui_element'
                         id: '86c7302bd49b455bb8bf54af9ee44696'
                         key: {
@@ -6940,6 +7463,29 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_list_element'
+                        id: '8a590984651246388532ee57b9f21d55'
+                        key: {
+                            list_id: {
+                                id: 'feb47636dff747f29b60aee0e5d00505'
+                                key: {
+                                    name: 'x_sln_store_suppli_store_supply_model'
+                                    view: {
+                                        id: 'Default view'
+                                        key: {
+                                            name: 'NULL'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                    element: 'NULL'
+                                    relationship: 'NULL'
+                                    parent: 'NULL'
+                                }
+                            }
+                            element: 'active_for_ordering'
+                        }
+                    },
+                    {
                         table: 'sys_choice'
                         id: '8aa26fe2dc1846db9a2752f1fad47aae'
                         key: {
@@ -7071,6 +7617,29 @@ declare global {
                                 }
                             }
                             element: 'number'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_list_element'
+                        id: '8da5096b34c24dbe8c050bb86d80dde9'
+                        key: {
+                            list_id: {
+                                id: 'feb47636dff747f29b60aee0e5d00505'
+                                key: {
+                                    name: 'x_sln_store_suppli_store_supply_model'
+                                    view: {
+                                        id: 'Default view'
+                                        key: {
+                                            name: 'NULL'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                    element: 'NULL'
+                                    relationship: 'NULL'
+                                    parent: 'NULL'
+                                }
+                            }
+                            element: 'unit_of_measure'
                         }
                     },
                     {
@@ -7274,6 +7843,14 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_dictionary'
+                        id: '912cd8ef269b469c8e22643d94a63f7f'
+                        key: {
+                            name: 'x_sln_store_suppli_store_supply_model'
+                            element: 'NULL'
+                        }
+                    },
+                    {
                         table: 'sys_ui_action_role'
                         id: '9172400d1e6544beb4cc06e92eba28c5'
                         key: {
@@ -7444,6 +8021,14 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_index'
+                        id: '95057cb27df94d4a8be21070a6d7a6ef'
+                        key: {
+                            logical_table_name: 'x_sln_store_suppli_store_supply_model'
+                            col_name_string: 'active_for_ordering,store_category'
+                        }
+                    },
+                    {
                         table: 'sys_security_acl_role'
                         id: '954394a16f424226809463e0fdaa2d6a'
                         key: {
@@ -7560,6 +8145,28 @@ declare global {
                                 }
                             }
                             element: 'stockroom'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '9787dca198b3413e90b6e593a1695a8e'
+                        key: {
+                            sys_ui_section: {
+                                id: 'e21d22d83dca48d78f80661576182775'
+                                key: {
+                                    name: 'x_sln_store_suppli_store_supply_model'
+                                    caption: 'Store Supply Model'
+                                    view: {
+                                        id: 'Default view'
+                                        key: {
+                                            name: 'NULL'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'manufacturer'
+                            position: '3'
                         }
                     },
                     {
@@ -7879,6 +8486,19 @@ declare global {
                                 }
                             }
                             element: 'line_state'
+                        }
+                    },
+                    {
+                        table: 'sys_security_acl_role'
+                        id: '9e548a4674154ec795d5cd386cb314db'
+                        key: {
+                            sys_security_acl: 'f1f743077587434da489dc5ef94d853a'
+                            sys_user_role: {
+                                id: '077ec3f4b63440d5adf45aa331e5f38c'
+                                key: {
+                                    name: 'x_sln_store_suppli.supplier_agent'
+                                }
+                            }
                         }
                     },
                     {
@@ -8763,6 +9383,29 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_list_element'
+                        id: 'aea9c371f1c54880b38a7ce81c7d4829'
+                        key: {
+                            list_id: {
+                                id: 'feb47636dff747f29b60aee0e5d00505'
+                                key: {
+                                    name: 'x_sln_store_suppli_store_supply_model'
+                                    view: {
+                                        id: 'Default view'
+                                        key: {
+                                            name: 'NULL'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                    element: 'NULL'
+                                    relationship: 'NULL'
+                                    parent: 'NULL'
+                                }
+                            }
+                            element: 'manufacturer'
+                        }
+                    },
+                    {
                         table: 'sys_security_acl_role'
                         id: 'af45676b67bc4d799bf087d33b5f7d23'
                         key: {
@@ -9356,6 +9999,14 @@ declare global {
                                     name: 'x_sln_store_suppli.support_manager'
                                 }
                             }
+                        }
+                    },
+                    {
+                        table: 'sys_dictionary'
+                        id: 'bc971079f6e942ab8474e5cf94e60fdd'
+                        key: {
+                            name: 'x_sln_store_suppli_store_supply_model'
+                            element: 'demo_data'
                         }
                     },
                     {
@@ -10711,6 +11362,29 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_list_element'
+                        id: 'd8dbef20c32443b7b6689eedf4d60bec'
+                        key: {
+                            list_id: {
+                                id: 'feb47636dff747f29b60aee0e5d00505'
+                                key: {
+                                    name: 'x_sln_store_suppli_store_supply_model'
+                                    view: {
+                                        id: 'Default view'
+                                        key: {
+                                            name: 'NULL'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                    element: 'NULL'
+                                    relationship: 'NULL'
+                                    parent: 'NULL'
+                                }
+                            }
+                            element: 'name'
+                        }
+                    },
+                    {
                         table: 'sys_documentation'
                         id: 'd98e1dea73b14681b15939b6437f5296'
                         key: {
@@ -10973,6 +11647,28 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_element'
+                        id: 'de9329c91b83439aaa44d441573fcf15'
+                        key: {
+                            sys_ui_section: {
+                                id: 'e21d22d83dca48d78f80661576182775'
+                                key: {
+                                    name: 'x_sln_store_suppli_store_supply_model'
+                                    caption: 'Store Supply Model'
+                                    view: {
+                                        id: 'Default view'
+                                        key: {
+                                            name: 'NULL'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'name'
+                            position: '1'
+                        }
+                    },
+                    {
                         table: 'sys_documentation'
                         id: 'dec20dc040cf47d2b64d98f799dd879d'
                         key: {
@@ -10995,6 +11691,14 @@ declare global {
                         key: {
                             name: 'x_sln_store_suppli_case_escalation'
                             element: 'details'
+                        }
+                    },
+                    {
+                        table: 'sys_dictionary'
+                        id: 'e009f92df4df4be9ba867dbf354580e5'
+                        key: {
+                            name: 'x_sln_store_suppli_store_supply_model'
+                            element: 'active_for_ordering'
                         }
                     },
                     {
@@ -11081,6 +11785,21 @@ declare global {
                     },
                     {
                         table: 'sys_ui_section'
+                        id: 'e21d22d83dca48d78f80661576182775'
+                        key: {
+                            name: 'x_sln_store_suppli_store_supply_model'
+                            caption: 'Store Supply Model'
+                            view: {
+                                id: 'Default view'
+                                key: {
+                                    name: 'NULL'
+                                }
+                            }
+                            sys_domain: 'global'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_section'
                         id: 'e2f39fc3bdde41c2a6ef73c494a369b7'
                         key: {
                             name: 'x_sln_store_suppli_supply_request'
@@ -11123,6 +11842,19 @@ declare global {
                                 }
                             }
                             element: 'sys_updated_on'
+                        }
+                    },
+                    {
+                        table: 'sys_security_acl_role'
+                        id: 'e3f1282bcca048c5a76fc93728ab331e'
+                        key: {
+                            sys_security_acl: 'f1f743077587434da489dc5ef94d853a'
+                            sys_user_role: {
+                                id: '214122d7b9e9496aa0acae2f4b2e8251'
+                                key: {
+                                    name: 'x_sln_store_suppli.support_agent'
+                                }
+                            }
                         }
                     },
                     {
@@ -11424,6 +12156,28 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_element'
+                        id: 'ea8a9005d0a64ea09f5617caba150204'
+                        key: {
+                            sys_ui_section: {
+                                id: 'e21d22d83dca48d78f80661576182775'
+                                key: {
+                                    name: 'x_sln_store_suppli_store_supply_model'
+                                    caption: 'Store Supply Model'
+                                    view: {
+                                        id: 'Default view'
+                                        key: {
+                                            name: 'NULL'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: '.split'
+                            position: '4'
+                        }
+                    },
+                    {
                         table: 'sys_choice'
                         id: 'eae40cf5ca4149af8892879f78a30b48'
                         key: {
@@ -11469,6 +12223,17 @@ declare global {
                                     name: 'x_sln_store_suppli.admin'
                                 }
                             }
+                        }
+                    },
+                    {
+                        table: 'sys_choice'
+                        id: 'ef2836781df843e3a16e9d68edc9953b'
+                        key: {
+                            name: 'x_sln_store_suppli_store_supply_model'
+                            element: 'store_category'
+                            value: 'packaging'
+                            language: 'en'
+                            dependent_value: 'NULL'
                         }
                     },
                     {
@@ -11764,6 +12529,29 @@ declare global {
                             value: 'manual'
                             language: 'en'
                             dependent_value: 'NULL'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_list_element'
+                        id: 'f6190682b4c8450fb853bb5cfdfacdda'
+                        key: {
+                            list_id: {
+                                id: 'feb47636dff747f29b60aee0e5d00505'
+                                key: {
+                                    name: 'x_sln_store_suppli_store_supply_model'
+                                    view: {
+                                        id: 'Default view'
+                                        key: {
+                                            name: 'NULL'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                    element: 'NULL'
+                                    relationship: 'NULL'
+                                    parent: 'NULL'
+                                }
+                            }
+                            element: 'store_category'
                         }
                     },
                     {
@@ -12156,6 +12944,23 @@ declare global {
                                     name: 'x_sln_store_suppli.supplier_agent'
                                 }
                             }
+                        }
+                    },
+                    {
+                        table: 'sys_ui_list'
+                        id: 'feb47636dff747f29b60aee0e5d00505'
+                        key: {
+                            name: 'x_sln_store_suppli_store_supply_model'
+                            view: {
+                                id: 'Default view'
+                                key: {
+                                    name: 'NULL'
+                                }
+                            }
+                            sys_domain: 'global'
+                            element: 'NULL'
+                            relationship: 'NULL'
+                            parent: 'NULL'
                         }
                     },
                     {

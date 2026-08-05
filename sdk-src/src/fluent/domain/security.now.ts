@@ -217,6 +217,23 @@ Acl({
 })
 
 Acl({
+    $id: Now.ID['store_supply_model_read_acl'], type: 'record', table: 'x_sln_store_suppli_store_supply_model', operation: 'read',
+    roles: allApplicationRoles, adminOverrides: true, decisionType: 'allow',
+})
+Acl({
+    $id: Now.ID['store_supply_model_create_acl'], type: 'record', table: 'x_sln_store_suppli_store_supply_model', operation: 'create',
+    roles: supportRoles, adminOverrides: true, decisionType: 'allow',
+})
+Acl({
+    $id: Now.ID['store_supply_model_write_acl'], type: 'record', table: 'x_sln_store_suppli_store_supply_model', operation: 'write',
+    roles: supportRoles, adminOverrides: true, decisionType: 'allow',
+})
+Acl({
+    $id: Now.ID['store_supply_model_delete_acl'], type: 'record', table: 'x_sln_store_suppli_store_supply_model', operation: 'delete',
+    roles: [applicationAdminRole], adminOverrides: true, decisionType: 'allow',
+})
+
+Acl({
     $id: Now.ID['supply_line_read_acl'], type: 'record', table: 'x_sln_store_suppli_supply_line', operation: 'read',
     roles: allApplicationRoles, script: childReadScript, adminOverrides: true, decisionType: 'allow',
 })
