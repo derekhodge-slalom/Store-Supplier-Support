@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="Resolution" section_id="38a2834cbe744e2988fedff5e57fbad3" sys_domain="global" table="x_sln_store_suppli_supply_issue" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.begin_split</element>
+            <position>0</position>
+            <sys_created_by>derek.hodge@slalom.com</sys_created_by>
+            <sys_created_on>2026-08-05 03:49:27</sys_created_on>
+            <sys_id>168829ddd932485b9bf4476a9d741031</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Resolution" display_value="Resolution" name="x_sln_store_suppli_supply_issue" sys_domain="global" view="Default view">38a2834cbe744e2988fedff5e57fbad3</sys_ui_section>
+            <sys_updated_by>derek.hodge@slalom.com</sys_updated_by>
+            <sys_updated_on>2026-08-05 03:49:27</sys_updated_on>
+            <sys_user/>
+            <type>.begin_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>resolution_code</element>
+            <position>1</position>
+            <sys_created_by>derek.hodge@slalom.com</sys_created_by>
+            <sys_created_on>2026-08-05 03:49:27</sys_created_on>
+            <sys_id>83f6a7c9b4bc46ab942098d2e4ffa942</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Resolution" display_value="Resolution" name="x_sln_store_suppli_supply_issue" sys_domain="global" view="Default view">38a2834cbe744e2988fedff5e57fbad3</sys_ui_section>
+            <sys_updated_by>derek.hodge@slalom.com</sys_updated_by>
+            <sys_updated_on>2026-08-05 03:49:27</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>resolution_notes</element>
+            <position>2</position>
+            <sys_created_by>derek.hodge@slalom.com</sys_created_by>
+            <sys_created_on>2026-08-05 03:49:27</sys_created_on>
+            <sys_id>a492f65d50c94f6c9041e5d1b328291b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Resolution" display_value="Resolution" name="x_sln_store_suppli_supply_issue" sys_domain="global" view="Default view">38a2834cbe744e2988fedff5e57fbad3</sys_ui_section>
+            <sys_updated_by>derek.hodge@slalom.com</sys_updated_by>
+            <sys_updated_on>2026-08-05 03:49:27</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>knowledge_recommended</element>
+            <position>3</position>
+            <sys_created_by>derek.hodge@slalom.com</sys_created_by>
+            <sys_created_on>2026-08-05 03:49:27</sys_created_on>
+            <sys_id>25686442678346c5a29fda7330aa8b7b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Resolution" display_value="Resolution" name="x_sln_store_suppli_supply_issue" sys_domain="global" view="Default view">38a2834cbe744e2988fedff5e57fbad3</sys_ui_section>
+            <sys_updated_by>derek.hodge@slalom.com</sys_updated_by>
+            <sys_updated_on>2026-08-05 03:49:27</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>service_rating</element>
+            <position>4</position>
+            <sys_created_by>derek.hodge@slalom.com</sys_created_by>
+            <sys_created_on>2026-08-05 03:49:27</sys_created_on>
+            <sys_id>8e2737d4d6d049c4b5e74175e4f4bc71</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Resolution" display_value="Resolution" name="x_sln_store_suppli_supply_issue" sys_domain="global" view="Default view">38a2834cbe744e2988fedff5e57fbad3</sys_ui_section>
+            <sys_updated_by>derek.hodge@slalom.com</sys_updated_by>
+            <sys_updated_on>2026-08-05 03:49:27</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>service_feedback</element>
+            <position>5</position>
+            <sys_created_by>derek.hodge@slalom.com</sys_created_by>
+            <sys_created_on>2026-08-05 03:49:27</sys_created_on>
+            <sys_id>b7c70716da82421da38d8ff9d4594b72</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Resolution" display_value="Resolution" name="x_sln_store_suppli_supply_issue" sys_domain="global" view="Default view">38a2834cbe744e2988fedff5e57fbad3</sys_ui_section>
+            <sys_updated_by>derek.hodge@slalom.com</sys_updated_by>
+            <sys_updated_on>2026-08-05 03:49:27</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>6</position>
+            <sys_created_by>derek.hodge@slalom.com</sys_created_by>
+            <sys_created_on>2026-08-05 03:49:27</sys_created_on>
+            <sys_id>d6d87b1829dd412dbf523c65f8ff9851</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Resolution" display_value="Resolution" name="x_sln_store_suppli_supply_issue" sys_domain="global" view="Default view">38a2834cbe744e2988fedff5e57fbad3</sys_ui_section>
+            <sys_updated_by>derek.hodge@slalom.com</sys_updated_by>
+            <sys_updated_on>2026-08-05 03:49:27</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>escalation_reasons</element>
+            <position>7</position>
+            <sys_created_by>derek.hodge@slalom.com</sys_created_by>
+            <sys_created_on>2026-08-05 03:49:27</sys_created_on>
+            <sys_id>a2c8fa65a25b40faa2c40c04c9e478fe</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Resolution" display_value="Resolution" name="x_sln_store_suppli_supply_issue" sys_domain="global" view="Default view">38a2834cbe744e2988fedff5e57fbad3</sys_ui_section>
+            <sys_updated_by>derek.hodge@slalom.com</sys_updated_by>
+            <sys_updated_on>2026-08-05 03:49:27</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>first_response_at</element>
+            <position>8</position>
+            <sys_created_by>derek.hodge@slalom.com</sys_created_by>
+            <sys_created_on>2026-08-05 03:49:28</sys_created_on>
+            <sys_id>50f8e9bf84934f79a9173fc4374af5e5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Resolution" display_value="Resolution" name="x_sln_store_suppli_supply_issue" sys_domain="global" view="Default view">38a2834cbe744e2988fedff5e57fbad3</sys_ui_section>
+            <sys_updated_by>derek.hodge@slalom.com</sys_updated_by>
+            <sys_updated_on>2026-08-05 03:49:28</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>last_customer_update</element>
+            <position>9</position>
+            <sys_created_by>derek.hodge@slalom.com</sys_created_by>
+            <sys_created_on>2026-08-05 03:49:28</sys_created_on>
+            <sys_id>1ecb1f130cb645fc890ac0dbd2f2eeb0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Resolution" display_value="Resolution" name="x_sln_store_suppli_supply_issue" sys_domain="global" view="Default view">38a2834cbe744e2988fedff5e57fbad3</sys_ui_section>
+            <sys_updated_by>derek.hodge@slalom.com</sys_updated_by>
+            <sys_updated_on>2026-08-05 03:49:28</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>reopen_count</element>
+            <position>10</position>
+            <sys_created_by>derek.hodge@slalom.com</sys_created_by>
+            <sys_created_on>2026-08-05 03:49:28</sys_created_on>
+            <sys_id>95b73a0c78e04e6fbb03166f6eb25166</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Resolution" display_value="Resolution" name="x_sln_store_suppli_supply_issue" sys_domain="global" view="Default view">38a2834cbe744e2988fedff5e57fbad3</sys_ui_section>
+            <sys_updated_by>derek.hodge@slalom.com</sys_updated_by>
+            <sys_updated_on>2026-08-05 03:49:28</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.end_split</element>
+            <position>11</position>
+            <sys_created_by>derek.hodge@slalom.com</sys_created_by>
+            <sys_created_on>2026-08-05 03:49:28</sys_created_on>
+            <sys_id>4bfafc41b4c34d938125fb1f86004f1f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Resolution" display_value="Resolution" name="x_sln_store_suppli_supply_issue" sys_domain="global" view="Default view">38a2834cbe744e2988fedff5e57fbad3</sys_ui_section>
+            <sys_updated_by>derek.hodge@slalom.com</sys_updated_by>
+            <sys_updated_on>2026-08-05 03:49:28</sys_updated_on>
+            <sys_user/>
+            <type>.end_split</type>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption>Resolution</caption>
+            <header>false</header>
+            <name>x_sln_store_suppli_supply_issue</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>derek.hodge@slalom.com</sys_created_by>
+            <sys_created_on>2026-08-05 01:28:52</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>38a2834cbe744e2988fedff5e57fbad3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_sln_store_suppli_supply_issue</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Store Supplier Support" source="x_sln_store_suppli">ee4e977887264b907c2dfdd5dabb354b</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Store Supplier Support">ee4e977887264b907c2dfdd5dabb354b</sys_scope>
+            <sys_update_name>sys_ui_section_38a2834cbe744e2988fedff5e57fbad3</sys_update_name>
+            <sys_updated_by>derek.hodge@slalom.com</sys_updated_by>
+            <sys_updated_on>2026-08-05 01:28:52</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" db_object_id="9c4a208d876e4b907c2dfdd5dabb3563" label="Store" max_length="40" name="x_sln_store_suppli_store" type="collection">
+        <element display="true" label="Store Name" mandatory="true" max_length="160" name="name" type="string"/>
+        <element label="Demo Data" max_length="40" name="demo_data" type="boolean"/>
+        <element label="Primary Contact" max_length="32" name="primary_contact" reference="sys_user" reference_cascade_rule="clear" type="reference"/>
+        <element label="Store Number" mandatory="true" max_length="40" name="store_number" type="string"/>
+        <element label="Stockroom" mandatory="true" max_length="32" name="stockroom" reference="alm_stockroom" reference_cascade_rule="restrict" type="reference"/>
+        <element label="District" max_length="80" name="district" type="string"/>
+        <element label="Location" max_length="32" name="location" reference="cmn_location" reference_cascade_rule="clear" type="reference"/>
+        <element default="US" label="Region" max_length="80" name="region" type="string"/>
+        <element label="District Manager" max_length="32" name="district_manager" reference="sys_user" reference_cascade_rule="clear" type="reference"/>
+        <element default="true" label="Active" max_length="40" name="active" type="boolean"/>
+        <index name="index">
+            <element name="district_manager"/>
+            <element name="active"/>
+        </index>
+        <index name="index2">
+            <element name="location"/>
+        </index>
+        <index name="index3">
+            <element name="primary_contact"/>
+        </index>
+        <index name="index4">
+            <element name="stockroom"/>
+        </index>
+        <index name="index5" unique="true">
+            <element name="store_number"/>
+        </index>
+    </element>
+</database>

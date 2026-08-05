@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_atf_step">
+    <sys_atf_step action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <callable_outputs/>
+        <copied_from/>
+        <description/>
+        <display_name>Run Server Side Script</display_name>
+        <inputs/>
+        <mugshots_cache_json/>
+        <notes/>
+        <order>1</order>
+        <step_config display_value="Run Server Side Script">41de4a935332120028bc29cac2dc349a</step_config>
+        <sys_class_name>sys_atf_step</sys_class_name>
+        <sys_created_by>derek.hodge@slalom.com</sys_created_by>
+        <sys_created_on>2026-08-05 01:28:35</sys_created_on>
+        <sys_id>49b73264d0344e57864412eccdb68188</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Run Server Side Script</sys_name>
+        <sys_package display_value="Store Supplier Support" source="x_sln_store_suppli">ee4e977887264b907c2dfdd5dabb354b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Store Supplier Support">ee4e977887264b907c2dfdd5dabb354b</sys_scope>
+        <sys_update_name>sys_atf_step_49b73264d0344e57864412eccdb68188</sys_update_name>
+        <sys_updated_by>derek.hodge@slalom.com</sys_updated_by>
+        <sys_updated_on>2026-08-05 01:28:35</sys_updated_on>
+        <table/>
+        <test display_value="SSS - Case Types, Taxonomy, and State Model">85d5c7acdc414130b1bf4246e66d0ba1</test>
+        <timeout/>
+        <warning_message/>
+    </sys_atf_step>
+    <sys_variable_value action="delete_multiple" query="document_key=49b73264d0344e57864412eccdb68188"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_atf_step</document>
+        <document_key>49b73264d0344e57864412eccdb68188</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>derek.hodge@slalom.com</sys_created_by>
+        <sys_created_on>2026-08-05 03:49:16</sys_created_on>
+        <sys_id>3358d68e1b024cc5ae321b6f495ac0ab</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>derek.hodge@slalom.com</sys_updated_by>
+        <sys_updated_on>2026-08-05 03:49:16</sys_updated_on>
+        <value>3.1</value>
+        <variable display_value="Jasmine version">42f2564b73031300440211d8faf6a777</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_atf_step</document>
+        <document_key>49b73264d0344e57864412eccdb68188</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>derek.hodge@slalom.com</sys_created_by>
+        <sys_created_on>2026-08-05 03:49:16</sys_created_on>
+        <sys_id>a372acfcefa747b99fa6fe3ec1f82bf3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>derek.hodge@slalom.com</sys_updated_by>
+        <sys_updated_on>2026-08-05 03:49:16</sys_updated_on>
+        <value>
+describe('Store Supplier Support case model', function () {
+    it('provides both case types extending the shared CSM parent', function () {
+        var request = new GlideRecord('x_sln_store_suppli_supply_request');
+        var issue = new GlideRecord('x_sln_store_suppli_supply_issue');
+        expect(request.isValid()).toBe(true);
+        expect(issue.isValid()).toBe(true);
+        expect(request.isValidField('store')).toBe(true);
+        expect(request.isValidField('needed_by')).toBe(true);
+        expect(issue.isValidField('business_impact')).toBe(true);
+    });
+    it('has all supported state choices', function () {
+        var choices = new GlideRecord('sys_choice');
+        choices.addQuery('name', 'x_sln_store_suppli_supply_case');
+        choices.addQuery('element', 'supply_state');
+        choices.addQuery('value', 'IN', 'new,open,work_in_progress,hold,closed,cancelled');
+        choices.query();
+        var found = {};
+        while (choices.next()) found[choices.getValue('value')] = true;
+        ['new','open','work_in_progress','hold','closed','cancelled'].forEach(function (state) { expect(found[state]).toBe(true); });
+    });
+});</value>
+        <variable display_value="Test script">989d9e235324220002c6435723dc3484</variable>
+    </sys_variable_value>
+</record_update>

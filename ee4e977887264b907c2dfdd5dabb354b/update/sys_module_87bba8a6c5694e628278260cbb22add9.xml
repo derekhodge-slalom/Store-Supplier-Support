@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_module">
+    <sys_module action="INSERT_OR_UPDATE">
+        <content><![CDATA[(function () {
+    data.audience = options.audience || (gs.hasRole('x_sln_store_suppli.supplier_agent') ? 'supplier' : 'internal');
+    data.userName = gs.getUserDisplayName();
+    data.cases = [];
+    data.tasks = [];
+    data.knowledge = [];
+
+    function producer(name) {
+        var item = new GlideRecord('sc_cat_item_producer');
+        item.addQuery('name', name);
+        item.addQuery('active', true);
+        item.setLimit(1);
+        item.query();
+        return item.next() ? item.getUniqueValue() : '';
+    }
+
+    data.requestProducer = producer('Submit Store Supply Request');
+    data.issueProducer = producer('Report Store Supply Issue');
+
+    var cases = new GlideRecord('x_sln_store_suppli_supply_case');
+    cases.addQuery('supply_state', 'NOT IN', 'closed,cancelled');
+    cases.orderByDesc('sys_updated_on');
+    cases.setLimit(20);
+    cases.query();
+    while (cases.next()) {
+        if (!cases.canRead()) continue;
+        data.cases.push({
+            sys_id: cases.getUniqueValue(),
+            number: cases.getDisplayValue('number'),
+            short_description: cases.getDisplayValue('short_description'),
+            store: cases.getDisplayValue('store'),
+            state: cases.getDisplayValue('supply_state'),
+            priority: cases.getDisplayValue('priority'),
+            updated: cases.getDisplayValue('sys_updated_on'),
+        });
+    }
+
+    if (data.audience === 'supplier') {
+        var tasks = new GlideRecord('x_sln_store_suppli_supplier_task');
+        tasks.addQuery('released', true);
+        tasks.addQuery('task_state', 'NOT IN', 'complete,cancelled');
+        tasks.orderByDesc('sys_updated_on');
+        tasks.setLimit(20);
+        tasks.query();
+        while (tasks.next()) {
+            if (!tasks.canRead()) continue;
+            data.tasks.push({
+                sys_id: tasks.getUniqueValue(),
+                number: tasks.getDisplayValue('number'),
+                short_description: tasks.getDisplayValue('short_description'),
+                state: tasks.getDisplayValue('task_state'),
+                released: tasks.getDisplayValue('released_on'),
+            });
+        }
+    }
+
+    var knowledge = new GlideRecord('kb_knowledge');
+    knowledge.addQuery('workflow_state', 'published');
+    knowledge.addQuery('short_description', 'LIKE', 'supply');
+    knowledge.orderByDesc('sys_view_count');
+    knowledge.setLimit(5);
+    knowledge.query();
+    while (knowledge.next()) {
+        if (!knowledge.canRead()) continue;
+        data.knowledge.push({ sys_id: knowledge.getUniqueValue(), number: knowledge.getDisplayValue('number'), title: knowledge.getDisplayValue('short_description') });
+    }
+})();
+]]></content>
+        <external_source>false</external_source>
+        <path>x_sln_store_suppli/x-sln-store-supplier-support/1.0.0/src/server/portal/store-supply-dashboard.server.js</path>
+        <sys_class_name>sys_module</sys_class_name>
+        <sys_created_by>derek.hodge@slalom.com</sys_created_by>
+        <sys_created_on>2026-08-05 01:28:36</sys_created_on>
+        <sys_id>87bba8a6c5694e628278260cbb22add9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_sln_store_suppli/x-sln-store-supplier-support/1.0.0/src/server/portal/store-supply-dashboard.server.js</sys_name>
+        <sys_package display_value="Store Supplier Support" source="x_sln_store_suppli">ee4e977887264b907c2dfdd5dabb354b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Store Supplier Support">ee4e977887264b907c2dfdd5dabb354b</sys_scope>
+        <sys_update_name>sys_module_87bba8a6c5694e628278260cbb22add9</sys_update_name>
+        <sys_updated_by>derek.hodge@slalom.com</sys_updated_by>
+        <sys_updated_on>2026-08-05 01:28:36</sys_updated_on>
+    </sys_module>
+</record_update>

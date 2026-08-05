@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="question_choice">
+    <question_choice action="INSERT_OR_UPDATE">
+        <inactive>false</inactive>
+        <order>0</order>
+        <published_ref/>
+        <question display_value="Priority">c281b3f815594fc5b6d104fcd6f6021e</question>
+        <sys_class_name>question_choice</sys_class_name>
+        <sys_created_by>derek.hodge@slalom.com</sys_created_by>
+        <sys_created_on>2026-08-05 01:28:31</sys_created_on>
+        <sys_id>5eb2f3c18647453a9a63bc0851966cf0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Critical</sys_name>
+        <sys_package display_value="Store Supplier Support" source="x_sln_store_suppli">ee4e977887264b907c2dfdd5dabb354b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Store Supplier Support">ee4e977887264b907c2dfdd5dabb354b</sys_scope>
+        <sys_update_name>question_choice_5eb2f3c18647453a9a63bc0851966cf0</sys_update_name>
+        <sys_updated_by>derek.hodge@slalom.com</sys_updated_by>
+        <sys_updated_on>2026-08-05 01:28:31</sys_updated_on>
+        <text>Critical</text>
+        <value>1</value>
+    </question_choice>
+    <fx_price action="delete_multiple" query="id=5eb2f3c18647453a9a63bc0851966cf0"/>
+</record_update>

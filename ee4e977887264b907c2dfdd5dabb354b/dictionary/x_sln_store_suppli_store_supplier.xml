@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" db_object_id="214aa08d876e4b907c2dfdd5dabb3598" label="Store Supplier" max_length="40" name="x_sln_store_suppli_store_supplier" type="collection">
+        <element label="Primary Supplier Contact" max_length="32" name="primary_contact" reference="customer_contact" reference_cascade_rule="clear" type="reference"/>
+        <element default="true" label="Active" max_length="40" name="active" type="boolean"/>
+        <element label="Store" mandatory="true" max_length="32" name="store" reference="x_sln_store_suppli_store" reference_cascade_rule="delete" type="reference"/>
+        <element label="Demo Data" max_length="40" name="demo_data" type="boolean"/>
+        <element label="Supplier Account" mandatory="true" max_length="32" name="supplier_account" reference="customer_account" reference_cascade_rule="restrict" type="reference"/>
+        <index name="index">
+            <element name="primary_contact"/>
+        </index>
+        <index name="index2">
+            <element name="store"/>
+        </index>
+        <index name="index3" unique="true">
+            <element name="store"/>
+            <element name="supplier_account"/>
+        </index>
+        <index name="index4">
+            <element name="supplier_account"/>
+        </index>
+    </element>
+</database>

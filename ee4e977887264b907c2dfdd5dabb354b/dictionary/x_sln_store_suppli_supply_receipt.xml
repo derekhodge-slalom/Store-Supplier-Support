@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" db_object_id="9a4a248d876e4b907c2dfdd5dabb35de" label="Supply Receipt" max_length="40" name="x_sln_store_suppli_supply_receipt" type="collection">
+        <element label="Received On" mandatory="true" max_length="40" name="received_on" type="glide_date_time"/>
+        <element label="Supply Line" mandatory="true" max_length="32" name="supply_line" reference="x_sln_store_suppli_supply_line" reference_cascade_rule="restrict" type="reference"/>
+        <element label="Stockroom" mandatory="true" max_length="32" name="stockroom" reference="alm_stockroom" reference_cascade_rule="restrict" type="reference"/>
+        <element label="Quantity Received" mandatory="true" max_length="40" name="quantity" type="integer"/>
+        <element label="Demo Data" max_length="40" name="demo_data" type="boolean"/>
+        <element label="Store Supply Case" mandatory="true" max_length="32" name="parent_case" reference="x_sln_store_suppli_supply_case" reference_cascade_rule="restrict" type="reference"/>
+        <element label="Received By" mandatory="true" max_length="32" name="received_by" reference="sys_user" reference_cascade_rule="restrict" type="reference"/>
+        <element label="Idempotency Key" mandatory="true" max_length="80" name="source_key" read_only="true" read_only_option="instance_configured" type="string" unique="true"/>
+        <element label="Supplier Task" max_length="32" name="supplier_task" reference="x_sln_store_suppli_supplier_task" reference_cascade_rule="clear" type="reference"/>
+        <element label="Store" mandatory="true" max_length="32" name="store" reference="x_sln_store_suppli_store" reference_cascade_rule="restrict" type="reference"/>
+        <element label="Consumable Model" mandatory="true" max_length="32" name="supply_model" reference="cmdb_consumable_product_model" reference_cascade_rule="restrict" type="reference"/>
+        <element label="Inventory Applied" max_length="40" name="inventory_applied" read_only="true" read_only_option="instance_configured" type="boolean"/>
+        <index name="index">
+            <element name="parent_case"/>
+        </index>
+        <index name="index2">
+            <element name="received_by"/>
+        </index>
+        <index name="index3" unique="true">
+            <element name="source_key"/>
+        </index>
+        <index name="index4">
+            <element name="stockroom"/>
+        </index>
+        <index name="index5">
+            <element name="store"/>
+        </index>
+        <index name="index6">
+            <element name="supplier_task"/>
+        </index>
+        <index name="index7">
+            <element name="supply_line"/>
+        </index>
+        <index name="index8">
+            <element name="supply_model"/>
+        </index>
+    </element>
+</database>

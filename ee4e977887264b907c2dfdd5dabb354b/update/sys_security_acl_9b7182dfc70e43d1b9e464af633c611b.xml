@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl">
+    <sys_security_acl action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <admin_overrides>true</admin_overrides>
+        <advanced>true</advanced>
+        <applies_to/>
+        <condition/>
+        <controlled_by_refs/>
+        <decision_type>allow</decision_type>
+        <description/>
+        <local_or_existing/>
+        <name>x_sln_store_suppli_supply_line</name>
+        <operation display_value="read">read</operation>
+        <script><![CDATA[
+answer = (function () {
+    if (gs.hasRole('x_sln_store_suppli.support_agent')) return true;
+    var caseId = current.getValue('parent_case');
+    if (!caseId && current.isValidField('supply_line')) {
+        var line = new GlideRecord('x_sln_store_suppli_supply_line');
+        if (line.get(current.getValue('supply_line'))) caseId = line.getValue('parent_case');
+    }
+    if (!caseId) return false;
+    var parent = new GlideRecord('x_sln_store_suppli_supply_case');
+    if (!parent.get(caseId)) return false;
+    var userId = gs.getUserID();
+    if (gs.hasRole('x_sln_store_suppli.store_associate')) {
+        var member = new GlideRecord('x_sln_store_suppli_store_member');
+        member.addQuery('store', parent.getValue('store'));
+        member.addQuery('user', userId);
+        member.addQuery('active', true);
+        member.setLimit(1);
+        member.query();
+        return member.hasNext() || parent.store.district_manager.toString() === userId;
+    }
+    if (gs.hasRole('x_sln_store_suppli.supplier_agent')) {
+        var account = '';
+        var contact = new GlideRecord('customer_contact');
+        if (contact.get(userId)) account = contact.getValue('account');
+        if (!account) return false;
+        return parent.getValue('originating_supplier') === account;
+    }
+    return false;
+})();]]></script>
+        <security_attribute/>
+        <sys_class_name>sys_security_acl</sys_class_name>
+        <sys_created_by>derek.hodge@slalom.com</sys_created_by>
+        <sys_created_on>2026-08-05 01:28:38</sys_created_on>
+        <sys_id>9b7182dfc70e43d1b9e464af633c611b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_sln_store_suppli_supply_line</sys_name>
+        <sys_package display_value="Store Supplier Support" source="x_sln_store_suppli">ee4e977887264b907c2dfdd5dabb354b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Store Supplier Support">ee4e977887264b907c2dfdd5dabb354b</sys_scope>
+        <sys_update_name>sys_security_acl_9b7182dfc70e43d1b9e464af633c611b</sys_update_name>
+        <sys_updated_by>derek.hodge@slalom.com</sys_updated_by>
+        <sys_updated_on>2026-08-05 01:28:38</sys_updated_on>
+        <type display_value="record">record</type>
+    </sys_security_acl>
+</record_update>

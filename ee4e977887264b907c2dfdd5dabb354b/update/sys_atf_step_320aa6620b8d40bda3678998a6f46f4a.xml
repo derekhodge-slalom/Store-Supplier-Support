@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_atf_step">
+    <sys_atf_step action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <callable_outputs/>
+        <copied_from/>
+        <description/>
+        <display_name>Run Server Side Script</display_name>
+        <inputs/>
+        <mugshots_cache_json/>
+        <notes/>
+        <order>1</order>
+        <step_config display_value="Run Server Side Script">41de4a935332120028bc29cac2dc349a</step_config>
+        <sys_class_name>sys_atf_step</sys_class_name>
+        <sys_created_by>derek.hodge@slalom.com</sys_created_by>
+        <sys_created_on>2026-08-05 01:28:35</sys_created_on>
+        <sys_id>320aa6620b8d40bda3678998a6f46f4a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Run Server Side Script</sys_name>
+        <sys_package display_value="Store Supplier Support" source="x_sln_store_suppli">ee4e977887264b907c2dfdd5dabb354b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Store Supplier Support">ee4e977887264b907c2dfdd5dabb354b</sys_scope>
+        <sys_update_name>sys_atf_step_320aa6620b8d40bda3678998a6f46f4a</sys_update_name>
+        <sys_updated_by>derek.hodge@slalom.com</sys_updated_by>
+        <sys_updated_on>2026-08-05 01:28:35</sys_updated_on>
+        <table/>
+        <test display_value="SSS - Christmas Spike 1,000 Case Dashboard Load">4afa0f76f04f40f29bc61d165918a350</test>
+        <timeout/>
+        <warning_message/>
+    </sys_atf_step>
+    <sys_variable_value action="delete_multiple" query="document_key=320aa6620b8d40bda3678998a6f46f4a"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_atf_step</document>
+        <document_key>320aa6620b8d40bda3678998a6f46f4a</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>derek.hodge@slalom.com</sys_created_by>
+        <sys_created_on>2026-08-05 03:49:16</sys_created_on>
+        <sys_id>99ae67ffc7f74c308cb80775caecc305</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>derek.hodge@slalom.com</sys_updated_by>
+        <sys_updated_on>2026-08-05 03:49:16</sys_updated_on>
+        <value>
+describe('Store Supplier Support Christmas performance load', function () {
+    it('supports at least 1,000 cases per month', function () {
+        var store = new GlideRecord('x_sln_store_suppli_store'); store.get('store_number', 'DEMO-101'); expect(store.isValidRecord()).toBe(true);
+        var marker = 'ATF-CHRISTMAS-' + gs.generateGUID();
+        for (var i = 0; i &lt; 1000; i++) {
+            var c = new GlideRecord(i % 2 ? 'x_sln_store_suppli_supply_request' : 'x_sln_store_suppli_supply_issue');
+            c.initialize(); c.setWorkflow(false); c.setValue('store', store.getUniqueValue()); c.setValue('short_description', marker + ' ' + i);
+            c.setValue('description', 'Representative Christmas spike record'); c.setValue('category', i % 2 ? 'planned_demand' : 'delivery');
+            c.setValue('subtype', i % 2 ? 'seasonal' : 'late'); c.setValue('priority', String((i % 4) + 1)); c.setValue('supply_state', i % 5 === 0 ? 'work_in_progress' : 'open'); c.setValue('demo_data', true); c.insert();
+        }
+        var aggregate = new GlideAggregate('x_sln_store_suppli_supply_case'); aggregate.addQuery('short_description', 'STARTSWITH', marker); aggregate.addAggregate('COUNT'); aggregate.query(); aggregate.next();
+        expect(parseInt(aggregate.getAggregate('COUNT'), 10)).toBe(1000);
+        var cleanup = new GlideRecord('x_sln_store_suppli_supply_case'); cleanup.addQuery('short_description', 'STARTSWITH', marker); cleanup.query(); while (cleanup.next()) { cleanup.setWorkflow(false); cleanup.deleteRecord(); }
+    });
+});</value>
+        <variable display_value="Test script">989d9e235324220002c6435723dc3484</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_atf_step</document>
+        <document_key>320aa6620b8d40bda3678998a6f46f4a</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>derek.hodge@slalom.com</sys_created_by>
+        <sys_created_on>2026-08-05 03:49:16</sys_created_on>
+        <sys_id>b936d65230324395a831909fde3cd4ab</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>derek.hodge@slalom.com</sys_updated_by>
+        <sys_updated_on>2026-08-05 03:49:16</sys_updated_on>
+        <value>3.1</value>
+        <variable display_value="Jasmine version">42f2564b73031300440211d8faf6a777</variable>
+    </sys_variable_value>
+</record_update>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" db_object_id="1a4a248d876e4b907c2dfdd5dabb3555" extends="x_sln_store_suppli_supply_case" label="Store Supply Issue" max_length="40" name="x_sln_store_suppli_supply_issue" type="collection">
+        <element label="Detected At" max_length="40" name="detected_at" type="glide_date_time"/>
+        <element choice="3" label="Subtype" mandatory="true" max_length="40" name="subtype" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Backordered" sequence="20" value="backordered"/>
+                <element inactive_on_update="false" label="Damaged" sequence="90" value="damaged"/>
+                <element inactive_on_update="false" label="Late Delivery" sequence="40" value="late"/>
+                <element inactive_on_update="false" label="Missing Delivery" sequence="50" value="missing"/>
+                <element inactive_on_update="false" label="Partial Delivery" sequence="60" value="partial"/>
+                <element inactive_on_update="false" label="Expired / Unsafe" sequence="110" value="expired_unsafe"/>
+                <element inactive_on_update="false" label="Out of Stock" sequence="10" value="out_of_stock"/>
+                <element inactive_on_update="false" label="Defective" sequence="100" value="defective"/>
+                <element inactive_on_update="false" label="Wrong Quantity" sequence="80" value="wrong_quantity"/>
+                <element inactive_on_update="false" label="Wrong Item" sequence="70" value="wrong_item"/>
+                <element inactive_on_update="false" label="Discontinued" sequence="30" value="discontinued"/>
+                <element inactive_on_update="false" label="General" sequence="120" value="general"/>
+            </choice>
+        </element>
+        <element label="Business Impact" max_length="4000" name="business_impact" type="multi_two_lines"/>
+    </element>
+</database>

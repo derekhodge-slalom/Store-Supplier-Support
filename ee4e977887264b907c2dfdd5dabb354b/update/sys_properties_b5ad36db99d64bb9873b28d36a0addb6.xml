@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties">
+    <sys_properties action="INSERT_OR_UPDATE">
+        <choices/>
+        <description>Five business days at nine hours per configured business day before unresolved escalation.</description>
+        <ignore_cache>false</ignore_cache>
+        <is_private>false</is_private>
+        <name>x_sln_store_suppli.unresolved_business_hours</name>
+        <read_roles>x_sln_store_suppli.support_manager,x_sln_store_suppli.admin</read_roles>
+        <suffix>unresolved_business_hours</suffix>
+        <sys_class_name>sys_properties</sys_class_name>
+        <sys_created_by>derek.hodge@slalom.com</sys_created_by>
+        <sys_created_on>2026-08-05 01:28:36</sys_created_on>
+        <sys_id>b5ad36db99d64bb9873b28d36a0addb6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_sln_store_suppli.unresolved_business_hours</sys_name>
+        <sys_package display_value="Store Supplier Support" source="x_sln_store_suppli">ee4e977887264b907c2dfdd5dabb354b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Store Supplier Support">ee4e977887264b907c2dfdd5dabb354b</sys_scope>
+        <sys_update_name>sys_properties_b5ad36db99d64bb9873b28d36a0addb6</sys_update_name>
+        <sys_updated_by>derek.hodge@slalom.com</sys_updated_by>
+        <sys_updated_on>2026-08-05 01:28:36</sys_updated_on>
+        <type>integer</type>
+        <value>45</value>
+        <write_roles>x_sln_store_suppli.admin</write_roles>
+    </sys_properties>
+    <sys_translated_text action="delete_multiple" query="documentkey=b5ad36db99d64bb9873b28d36a0addb6"/>
+</record_update>

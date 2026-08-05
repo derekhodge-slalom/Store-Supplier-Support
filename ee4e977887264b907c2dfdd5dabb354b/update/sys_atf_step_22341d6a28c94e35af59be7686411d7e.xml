@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_atf_step">
+    <sys_atf_step action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <callable_outputs/>
+        <copied_from/>
+        <description/>
+        <display_name>Run Server Side Script</display_name>
+        <inputs/>
+        <mugshots_cache_json/>
+        <notes/>
+        <order>1</order>
+        <step_config display_value="Run Server Side Script">41de4a935332120028bc29cac2dc349a</step_config>
+        <sys_class_name>sys_atf_step</sys_class_name>
+        <sys_created_by>derek.hodge@slalom.com</sys_created_by>
+        <sys_created_on>2026-08-05 01:28:35</sys_created_on>
+        <sys_id>22341d6a28c94e35af59be7686411d7e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Run Server Side Script</sys_name>
+        <sys_package display_value="Store Supplier Support" source="x_sln_store_suppli">ee4e977887264b907c2dfdd5dabb354b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Store Supplier Support">ee4e977887264b907c2dfdd5dabb354b</sys_scope>
+        <sys_update_name>sys_atf_step_22341d6a28c94e35af59be7686411d7e</sys_update_name>
+        <sys_updated_by>derek.hodge@slalom.com</sys_updated_by>
+        <sys_updated_on>2026-08-05 01:28:35</sys_updated_on>
+        <table/>
+        <test display_value="SSS - SLA, Approval, Reopen, and Escalation Configuration">a54d2577482148a3a02b71608904ded6</test>
+        <timeout/>
+        <warning_message/>
+    </sys_atf_step>
+    <sys_variable_value action="delete_multiple" query="document_key=22341d6a28c94e35af59be7686411d7e"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_atf_step</document>
+        <document_key>22341d6a28c94e35af59be7686411d7e</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>derek.hodge@slalom.com</sys_created_by>
+        <sys_created_on>2026-08-05 03:49:16</sys_created_on>
+        <sys_id>73cefcf35020462294f0bbced6e145f9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>derek.hodge@slalom.com</sys_updated_by>
+        <sys_updated_on>2026-08-05 03:49:16</sys_updated_on>
+        <value>3.1</value>
+        <variable display_value="Jasmine version">42f2564b73031300440211d8faf6a777</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_atf_step</document>
+        <document_key>22341d6a28c94e35af59be7686411d7e</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>derek.hodge@slalom.com</sys_created_by>
+        <sys_created_on>2026-08-05 03:49:16</sys_created_on>
+        <sys_id>dedc2ca37ce2416ca1868a11345c03ac</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>derek.hodge@slalom.com</sys_updated_by>
+        <sys_updated_on>2026-08-05 03:49:16</sys_updated_on>
+        <value>
+describe('Store Supplier Support service controls', function () {
+    it('has response and resolution SLAs using the Eastern business schedule', function () {
+        var sla = new GlideRecord('contract_sla');
+        sla.addQuery('collection', 'x_sln_store_suppli_supply_case'); sla.addQuery('active', true); sla.query();
+        var names = []; while (sla.next()) { names.push(sla.getValue('name')); expect(sla.getValue('pause_condition')).toContain('supply_state=hold'); expect(sla.getValue('schedule')).not.toBe(''); }
+        expect(names.join('|')).toContain('First Response'); expect(names.join('|')).toContain('Resolution');
+    });
+    it('deduplicates each escalation reason per case', function () {
+        var dbIndex = new GlideRecord('sys_db_index');
+        dbIndex.addQuery('table', 'x_sln_store_suppli_case_escalation'); dbIndex.addQuery('unique', true); dbIndex.query();
+        expect(dbIndex.hasNext()).toBe(true);
+    });
+    it('has a seven-day default reopen window', function () { expect(gs.getProperty('x_sln_store_suppli.reopen_window_days')).toBe('7'); });
+});</value>
+        <variable display_value="Test script">989d9e235324220002c6435723dc3484</variable>
+    </sys_variable_value>
+</record_update>

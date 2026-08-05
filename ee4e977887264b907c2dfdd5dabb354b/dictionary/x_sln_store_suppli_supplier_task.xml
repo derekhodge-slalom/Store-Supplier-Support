@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" db_object_id="074aa48d876e4b907c2dfdd5dabb352e" extends="sn_customerservice_task" label="Supplier Fulfillment Task" max_length="40" name="x_sln_store_suppli_supplier_task" type="collection">
+        <element label="Supplier Account" mandatory="true" max_length="32" name="supplier_account" reference="customer_account" reference_cascade_rule="restrict" type="reference"/>
+        <element label="Demo Data" max_length="40" name="demo_data" type="boolean"/>
+        <element label="Released On" max_length="40" name="released_on" read_only="true" read_only_option="instance_configured" type="glide_date_time"/>
+        <element label="Released to Supplier" max_length="40" name="released" type="boolean"/>
+        <element label="Completion Summary" max_length="4000" name="completion_summary" type="multi_two_lines"/>
+        <element label="Supplier Notes" max_length="4000" name="supplier_notes" type="journal_input"/>
+        <element choice="3" default="draft" label="Task State" max_length="40" name="task_state" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Hold" sequence="40" value="hold"/>
+                <element inactive_on_update="false" label="Open" sequence="20" value="open"/>
+                <element inactive_on_update="false" label="Cancelled" sequence="60" value="cancelled"/>
+                <element inactive_on_update="false" label="Draft" sequence="10" value="draft"/>
+                <element inactive_on_update="false" label="Work in Progress" sequence="30" value="work_in_progress"/>
+                <element inactive_on_update="false" label="Complete" sequence="50" value="complete"/>
+            </choice>
+        </element>
+        <element label="Completed On" max_length="40" name="completed_on" read_only="true" read_only_option="instance_configured" type="glide_date_time"/>
+        <element label="Supplier Contact" max_length="32" name="supplier_contact" reference="customer_contact" reference_cascade_rule="clear" type="reference"/>
+        <index name="index">
+            <element name="supplier_account"/>
+        </index>
+        <index name="index2">
+            <element name="supplier_account"/>
+            <element name="task_state"/>
+        </index>
+        <index name="index3">
+            <element name="supplier_contact"/>
+        </index>
+    </element>
+</database>

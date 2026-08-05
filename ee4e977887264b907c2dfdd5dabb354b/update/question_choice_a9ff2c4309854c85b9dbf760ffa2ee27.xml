@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="question_choice">
+    <question_choice action="INSERT_OR_UPDATE">
+        <inactive>false</inactive>
+        <order>0</order>
+        <published_ref/>
+        <question display_value="Subtype">a0bf9cac45484db0b40fe203e2c3bc00</question>
+        <sys_class_name>question_choice</sys_class_name>
+        <sys_created_by>derek.hodge@slalom.com</sys_created_by>
+        <sys_created_on>2026-08-05 01:28:31</sys_created_on>
+        <sys_id>a9ff2c4309854c85b9dbf760ffa2ee27</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>New Store / Remodel</sys_name>
+        <sys_package display_value="Store Supplier Support" source="x_sln_store_suppli">ee4e977887264b907c2dfdd5dabb354b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Store Supplier Support">ee4e977887264b907c2dfdd5dabb354b</sys_scope>
+        <sys_update_name>question_choice_a9ff2c4309854c85b9dbf760ffa2ee27</sys_update_name>
+        <sys_updated_by>derek.hodge@slalom.com</sys_updated_by>
+        <sys_updated_on>2026-08-05 01:28:31</sys_updated_on>
+        <text>New Store / Remodel</text>
+        <value>new_store_remodel</value>
+    </question_choice>
+    <fx_price action="delete_multiple" query="id=a9ff2c4309854c85b9dbf760ffa2ee27"/>
+</record_update>

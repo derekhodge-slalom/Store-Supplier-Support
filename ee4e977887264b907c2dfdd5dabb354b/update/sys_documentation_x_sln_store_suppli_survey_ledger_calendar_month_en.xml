@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="calendar_month" label="Calendar Month" language="en" table="x_sln_store_suppli_survey_ledger">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>calendar_month</element>
+            <help/>
+            <hint/>
+            <label>Calendar Month</label>
+            <language>en</language>
+            <name>x_sln_store_suppli_survey_ledger</name>
+            <plural>Calendar Months</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>derek.hodge@slalom.com</sys_created_by>
+            <sys_created_on>2026-08-05 01:27:58</sys_created_on>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Calendar Month</sys_name>
+            <sys_package display_value="Store Supplier Support" source="x_sln_store_suppli">ee4e977887264b907c2dfdd5dabb354b</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Store Supplier Support">ee4e977887264b907c2dfdd5dabb354b</sys_scope>
+            <sys_update_name>sys_documentation_x_sln_store_suppli_survey_ledger_calendar_month_en</sys_update_name>
+            <sys_updated_by>derek.hodge@slalom.com</sys_updated_by>
+            <sys_updated_on>2026-08-05 01:27:58</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

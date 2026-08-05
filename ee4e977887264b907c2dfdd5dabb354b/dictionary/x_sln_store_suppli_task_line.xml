@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" db_object_id="894a608d876e4b907c2dfdd5dabb35ea" label="Supplier Task Line" max_length="40" name="x_sln_store_suppli_task_line" type="collection">
+        <element default="0" label="Fulfilled Quantity" max_length="40" name="fulfilled_quantity" type="integer"/>
+        <element label="Supply Line" mandatory="true" max_length="32" name="supply_line" reference="x_sln_store_suppli_supply_line" reference_cascade_rule="delete" type="reference"/>
+        <element default="1" label="Assigned Quantity" mandatory="true" max_length="40" name="assigned_quantity" type="integer"/>
+        <element label="Demo Data" max_length="40" name="demo_data" type="boolean"/>
+        <element label="Supplier Task" mandatory="true" max_length="32" name="supplier_task" reference="x_sln_store_suppli_supplier_task" reference_cascade_rule="delete" type="reference"/>
+        <index name="index">
+            <element name="supplier_task"/>
+        </index>
+        <index name="index2" unique="true">
+            <element name="supplier_task"/>
+            <element name="supply_line"/>
+        </index>
+        <index name="index3">
+            <element name="supply_line"/>
+        </index>
+    </element>
+</database>

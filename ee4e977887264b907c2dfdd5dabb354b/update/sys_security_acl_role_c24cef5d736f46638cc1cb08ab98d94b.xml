@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>derek.hodge@slalom.com</sys_created_by>
+        <sys_created_on>2026-08-05 01:28:45</sys_created_on>
+        <sys_id>c24cef5d736f46638cc1cb08ab98d94b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_sln_store_suppli_supply_case.comments.</sys_name>
+        <sys_package display_value="Store Supplier Support" source="x_sln_store_suppli">ee4e977887264b907c2dfdd5dabb354b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Store Supplier Support">ee4e977887264b907c2dfdd5dabb354b</sys_scope>
+        <sys_security_acl display_value="x_sln_store_suppli_supply_case.comments">a6b323f0f69a42c1b83dded6e78ae8c8</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_c24cef5d736f46638cc1cb08ab98d94b</sys_update_name>
+        <sys_updated_by>derek.hodge@slalom.com</sys_updated_by>
+        <sys_updated_on>2026-08-05 01:28:45</sys_updated_on>
+        <sys_user_role display_value="x_sln_store_suppli.admin" name="x_sln_store_suppli.admin">e132f63dbefa4c6186bf051e3b37d0eb</sys_user_role>
+    </sys_security_acl_role>
+</record_update>

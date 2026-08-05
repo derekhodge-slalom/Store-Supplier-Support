@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl">
+    <sys_security_acl action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <admin_overrides>true</admin_overrides>
+        <advanced>true</advanced>
+        <applies_to/>
+        <condition/>
+        <controlled_by_refs/>
+        <decision_type>allow</decision_type>
+        <description/>
+        <local_or_existing/>
+        <name>x_sln_store_suppli_supply_case</name>
+        <operation display_value="read">read</operation>
+        <script><![CDATA[
+answer = (function () {
+    if (gs.hasRole('x_sln_store_suppli.support_agent')) return true;
+    var userId = gs.getUserID();
+    var storeId = current.getValue('store');
+    if (gs.hasRole('x_sln_store_suppli.store_associate')) {
+        var member = new GlideRecord('x_sln_store_suppli_store_member');
+        member.addQuery('store', storeId);
+        member.addQuery('user', userId);
+        member.addQuery('active', true);
+        member.setLimit(1);
+        member.query();
+        if (member.hasNext()) return true;
+        var store = new GlideRecord('x_sln_store_suppli_store');
+        if (store.get(storeId) && store.getValue('district_manager') === userId) return true;
+    }
+    if (gs.hasRole('x_sln_store_suppli.supplier_agent')) {
+        var account = '';
+        var contact = new GlideRecord('customer_contact');
+        if (contact.get(userId) && contact.isValidField('account')) account = contact.getValue('account');
+        if (!account) {
+            var user = new GlideRecord('sys_user');
+            if (user.get(userId)) account = user.getValue('company');
+        }
+        if (!account) return false;
+        var relationship = new GlideRecord('x_sln_store_suppli_store_supplier');
+        relationship.addQuery('store', storeId);
+        relationship.addQuery('supplier_account', account);
+        relationship.addQuery('active', true);
+        relationship.setLimit(1);
+        relationship.query();
+        return relationship.hasNext() && current.getValue('originating_supplier') === account;
+    }
+    return false;
+})();]]></script>
+        <security_attribute/>
+        <sys_class_name>sys_security_acl</sys_class_name>
+        <sys_created_by>derek.hodge@slalom.com</sys_created_by>
+        <sys_created_on>2026-08-05 01:28:38</sys_created_on>
+        <sys_id>e94eda5342bc4b5bb9617a83ef2afabe</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_sln_store_suppli_supply_case</sys_name>
+        <sys_package display_value="Store Supplier Support" source="x_sln_store_suppli">ee4e977887264b907c2dfdd5dabb354b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Store Supplier Support">ee4e977887264b907c2dfdd5dabb354b</sys_scope>
+        <sys_update_name>sys_security_acl_e94eda5342bc4b5bb9617a83ef2afabe</sys_update_name>
+        <sys_updated_by>derek.hodge@slalom.com</sys_updated_by>
+        <sys_updated_on>2026-08-05 01:28:38</sys_updated_on>
+        <type display_value="record">record</type>
+    </sys_security_acl>
+</record_update>

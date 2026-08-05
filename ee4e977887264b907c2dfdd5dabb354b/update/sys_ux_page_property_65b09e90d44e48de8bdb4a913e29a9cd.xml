@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_page_property">
+    <sys_ux_page_property action="INSERT_OR_UPDATE">
+        <choices/>
+        <description/>
+        <name>chrome_tab</name>
+        <page display_value="Store Supplier Support">f1cb3bb464254d179a0c2c3060ace9df</page>
+        <required_translations/>
+        <route/>
+        <suffix>chrome_tab</suffix>
+        <sys_class_name>sys_ux_page_property</sys_class_name>
+        <sys_created_by>derek.hodge@slalom.com</sys_created_by>
+        <sys_created_on>2026-08-05 01:29:01</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>65b09e90d44e48de8bdb4a913e29a9cd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>chrome_tab</sys_name>
+        <sys_package display_value="Store Supplier Support" source="x_sln_store_suppli">ee4e977887264b907c2dfdd5dabb354b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Store Supplier Support">ee4e977887264b907c2dfdd5dabb354b</sys_scope>
+        <sys_update_name>sys_ux_page_property_65b09e90d44e48de8bdb4a913e29a9cd</sys_update_name>
+        <sys_updated_by>derek.hodge@slalom.com</sys_updated_by>
+        <sys_updated_on>2026-08-05 01:29:01</sys_updated_on>
+        <type>json</type>
+        <unique_name/>
+        <value>{"contextual":["record"],"newTabMenu":[{"label":{"translatable":true,"message":"New x_sln_store_suppli_supply_case"},"routeInfo":{"route":"record","fields":{"table":"x_sln_store_suppli_supply_case","sysId":"-1"},"multiInstField":"sysId"},"condition":{"tableDescription":{"table":"x_sln_store_suppli_supply_case","canCreate":true}}},{"label":{"translatable":true,"message":"New x_sln_store_suppli_supply_request"},"routeInfo":{"route":"record","fields":{"table":"x_sln_store_suppli_supply_request","sysId":"-1"},"multiInstField":"sysId"},"condition":{"tableDescription":{"table":"x_sln_store_suppli_supply_request","canCreate":true}}},{"label":{"translatable":true,"message":"New x_sln_store_suppli_supply_issue"},"routeInfo":{"route":"record","fields":{"table":"x_sln_store_suppli_supply_issue","sysId":"-1"},"multiInstField":"sysId"},"condition":{"tableDescription":{"table":"x_sln_store_suppli_supply_issue","canCreate":true}}},{"label":{"translatable":true,"message":"New x_sln_store_suppli_supplier_task"},"routeInfo":{"route":"record","fields":{"table":"x_sln_store_suppli_supplier_task","sysId":"-1"},"multiInstField":"sysId"},"condition":{"tableDescription":{"table":"x_sln_store_suppli_supplier_task","canCreate":true}}},{"label":{"translatable":true,"message":"New x_sln_store_suppli_supply_line"},"routeInfo":{"route":"record","fields":{"table":"x_sln_store_suppli_supply_line","sysId":"-1"},"multiInstField":"sysId"},"condition":{"tableDescription":{"table":"x_sln_store_suppli_supply_line","canCreate":true}}},{"label":{"translatable":true,"message":"New x_sln_store_suppli_supply_receipt"},"routeInfo":{"route":"record","fields":{"table":"x_sln_store_suppli_supply_receipt","sysId":"-1"},"multiInstField":"sysId"},"condition":{"tableDescription":{"table":"x_sln_store_suppli_supply_receipt","canCreate":true}}},{"label":{"translatable":true,"message":"New x_sln_store_suppli_case_escalation"},"routeInfo":{"route":"record","fields":{"table":"x_sln_store_suppli_case_escalation","sysId":"-1"},"multiInstField":"sysId"},"condition":{"tableDescription":{"table":"x_sln_store_suppli_case_escalation","canCreate":true}}},{"label":{"translatable":true,"message":"New x_sln_store_suppli_store"},"routeInfo":{"route":"record","fields":{"table":"x_sln_store_suppli_store","sysId":"-1"},"multiInstField":"sysId"},"condition":{"tableDescription":{"table":"x_sln_store_suppli_store","canCreate":true}}},{"label":{"translatable":true,"message":"New x_sln_store_suppli_store_supplier"},"routeInfo":{"route":"record","fields":{"table":"x_sln_store_suppli_store_supplier","sysId":"-1"},"multiInstField":"sysId"},"condition":{"tableDescription":{"table":"x_sln_store_suppli_store_supplier","canCreate":true}}},{"label":{"translatable":true,"message":"New x_sln_store_suppli_supply_supplier"},"routeInfo":{"route":"record","fields":{"table":"x_sln_store_suppli_supply_supplier","sysId":"-1"},"multiInstField":"sysId"},"condition":{"tableDescription":{"table":"x_sln_store_suppli_supply_supplier","canCreate":true}}},{"label":{"translatable":true,"message":"New interaction"},"routeInfo":{"route":"record","fields":{"table":"interaction","sysId":"-1"},"multiInstField":"sysId"},"condition":{"tableDescription":{"table":"interaction","canCreate":true}}},{"label":{"translatable":true,"message":"New sysapproval_approver"},"routeInfo":{"route":"record","fields":{"table":"sysapproval_approver","sysId":"-1"},"multiInstField":"sysId"},"condition":{"tableDescription":{"table":"sysapproval_approver","canCreate":true}}}],"maxMainTabLimit":10,"maxTotalSubTabLimit":30}</value>
+    </sys_ux_page_property>
+    <sys_translated_text action="delete_multiple" query="documentkey=65b09e90d44e48de8bdb4a913e29a9cd"/>
+</record_update>

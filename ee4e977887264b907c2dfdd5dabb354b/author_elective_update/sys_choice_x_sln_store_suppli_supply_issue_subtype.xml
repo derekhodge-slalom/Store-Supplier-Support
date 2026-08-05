@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="subtype" table="x_sln_store_suppli_supply_issue" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>subtype</element>
+            <name>x_sln_store_suppli_supply_issue</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>derek.hodge@slalom.com</sys_created_by>
+            <sys_created_on>2026-08-05 01:27:56</sys_created_on>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>subtype</sys_name>
+            <sys_package display_value="Store Supplier Support" source="x_sln_store_suppli">ee4e977887264b907c2dfdd5dabb354b</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Store Supplier Support">ee4e977887264b907c2dfdd5dabb354b</sys_scope>
+            <sys_update_name>sys_choice_x_sln_store_suppli_supply_issue_subtype</sys_update_name>
+            <sys_updated_by>derek.hodge@slalom.com</sys_updated_by>
+            <sys_updated_on>2026-08-05 01:27:56</sys_updated_on>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>subtype</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Out of Stock</label>
+            <language>en</language>
+            <name>x_sln_store_suppli_supply_issue</name>
+            <sequence>10</sequence>
+            <synonyms/>
+            <sys_created_by>derek.hodge@slalom.com</sys_created_by>
+            <sys_created_on>2026-08-05 03:49:48</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>derek.hodge@slalom.com</sys_updated_by>
+            <sys_updated_on>2026-08-05 03:49:48</sys_updated_on>
+            <value>out_of_stock</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>subtype</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Backordered</label>
+            <language>en</language>
+            <name>x_sln_store_suppli_supply_issue</name>
+            <sequence>20</sequence>
+            <synonyms/>
+            <sys_created_by>derek.hodge@slalom.com</sys_created_by>
+            <sys_created_on>2026-08-05 03:49:48</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>derek.hodge@slalom.com</sys_updated_by>
+            <sys_updated_on>2026-08-05 03:49:48</sys_updated_on>
+            <value>backordered</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>subtype</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Discontinued</label>
+            <language>en</language>
+            <name>x_sln_store_suppli_supply_issue</name>
+            <sequence>30</sequence>
+            <synonyms/>
+            <sys_created_by>derek.hodge@slalom.com</sys_created_by>
+            <sys_created_on>2026-08-05 03:49:48</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>derek.hodge@slalom.com</sys_updated_by>
+            <sys_updated_on>2026-08-05 03:49:48</sys_updated_on>
+            <value>discontinued</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>subtype</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Late Delivery</label>
+            <language>en</language>
+            <name>x_sln_store_suppli_supply_issue</name>
+            <sequence>40</sequence>
+            <synonyms/>
+            <sys_created_by>derek.hodge@slalom.com</sys_created_by>
+            <sys_created_on>2026-08-05 03:49:48</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>derek.hodge@slalom.com</sys_updated_by>
+            <sys_updated_on>2026-08-05 03:49:48</sys_updated_on>
+            <value>late</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>subtype</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Missing Delivery</label>
+            <language>en</language>
+            <name>x_sln_store_suppli_supply_issue</name>
+            <sequence>50</sequence>
+            <synonyms/>
+            <sys_created_by>derek.hodge@slalom.com</sys_created_by>
+            <sys_created_on>2026-08-05 03:49:48</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>derek.hodge@slalom.com</sys_updated_by>
+            <sys_updated_on>2026-08-05 03:49:48</sys_updated_on>
+            <value>missing</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>subtype</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Partial Delivery</label>
+            <language>en</language>
+            <name>x_sln_store_suppli_supply_issue</name>
+            <sequence>60</sequence>
+            <synonyms/>
+            <sys_created_by>derek.hodge@slalom.com</sys_created_by>
+            <sys_created_on>2026-08-05 03:49:48</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>derek.hodge@slalom.com</sys_updated_by>
+            <sys_updated_on>2026-08-05 03:49:48</sys_updated_on>
+            <value>partial</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>subtype</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Wrong Item</label>
+            <language>en</language>
+            <name>x_sln_store_suppli_supply_issue</name>
+            <sequence>70</sequence>
+            <synonyms/>
+            <sys_created_by>derek.hodge@slalom.com</sys_created_by>
+            <sys_created_on>2026-08-05 03:49:48</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>derek.hodge@slalom.com</sys_updated_by>
+            <sys_updated_on>2026-08-05 03:49:48</sys_updated_on>
+            <value>wrong_item</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>subtype</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Wrong Quantity</label>
+            <language>en</language>
+            <name>x_sln_store_suppli_supply_issue</name>
+            <sequence>80</sequence>
+            <synonyms/>
+            <sys_created_by>derek.hodge@slalom.com</sys_created_by>
+            <sys_created_on>2026-08-05 03:49:49</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>derek.hodge@slalom.com</sys_updated_by>
+            <sys_updated_on>2026-08-05 03:49:49</sys_updated_on>
+            <value>wrong_quantity</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>subtype</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Damaged</label>
+            <language>en</language>
+            <name>x_sln_store_suppli_supply_issue</name>
+            <sequence>90</sequence>
+            <synonyms/>
+            <sys_created_by>derek.hodge@slalom.com</sys_created_by>
+            <sys_created_on>2026-08-05 03:49:49</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>derek.hodge@slalom.com</sys_updated_by>
+            <sys_updated_on>2026-08-05 03:49:49</sys_updated_on>
+            <value>damaged</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>subtype</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Defective</label>
+            <language>en</language>
+            <name>x_sln_store_suppli_supply_issue</name>
+            <sequence>100</sequence>
+            <synonyms/>
+            <sys_created_by>derek.hodge@slalom.com</sys_created_by>
+            <sys_created_on>2026-08-05 03:49:49</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>derek.hodge@slalom.com</sys_updated_by>
+            <sys_updated_on>2026-08-05 03:49:49</sys_updated_on>
+            <value>defective</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>subtype</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Expired / Unsafe</label>
+            <language>en</language>
+            <name>x_sln_store_suppli_supply_issue</name>
+            <sequence>110</sequence>
+            <synonyms/>
+            <sys_created_by>derek.hodge@slalom.com</sys_created_by>
+            <sys_created_on>2026-08-05 03:49:49</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>derek.hodge@slalom.com</sys_updated_by>
+            <sys_updated_on>2026-08-05 03:49:49</sys_updated_on>
+            <value>expired_unsafe</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>subtype</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>General</label>
+            <language>en</language>
+            <name>x_sln_store_suppli_supply_issue</name>
+            <sequence>120</sequence>
+            <synonyms/>
+            <sys_created_by>derek.hodge@slalom.com</sys_created_by>
+            <sys_created_on>2026-08-05 03:49:49</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>derek.hodge@slalom.com</sys_updated_by>
+            <sys_updated_on>2026-08-05 03:49:49</sys_updated_on>
+            <value>general</value>
+        </sys_choice>
+    </sys_choice>
+</record_update>

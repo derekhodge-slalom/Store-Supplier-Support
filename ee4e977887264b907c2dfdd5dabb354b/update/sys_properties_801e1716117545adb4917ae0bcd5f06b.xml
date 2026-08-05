@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties">
+    <sys_properties action="INSERT_OR_UPDATE">
+        <choices/>
+        <description>Business schedule used by response, resolution, stale-update, and unresolved-case timers.</description>
+        <ignore_cache>false</ignore_cache>
+        <is_private>false</is_private>
+        <name>x_sln_store_suppli.sla_schedule</name>
+        <read_roles>x_sln_store_suppli.support_manager,x_sln_store_suppli.admin</read_roles>
+        <suffix>sla_schedule</suffix>
+        <sys_class_name>sys_properties</sys_class_name>
+        <sys_created_by>derek.hodge@slalom.com</sys_created_by>
+        <sys_created_on>2026-08-05 01:28:36</sys_created_on>
+        <sys_id>801e1716117545adb4917ae0bcd5f06b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_sln_store_suppli.sla_schedule</sys_name>
+        <sys_package display_value="Store Supplier Support" source="x_sln_store_suppli">ee4e977887264b907c2dfdd5dabb354b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Store Supplier Support">ee4e977887264b907c2dfdd5dabb354b</sys_scope>
+        <sys_update_name>sys_properties_801e1716117545adb4917ae0bcd5f06b</sys_update_name>
+        <sys_updated_by>derek.hodge@slalom.com</sys_updated_by>
+        <sys_updated_on>2026-08-05 01:28:36</sys_updated_on>
+        <type>string</type>
+        <value>a1000000000000000000000000000002</value>
+        <write_roles>x_sln_store_suppli.admin</write_roles>
+    </sys_properties>
+    <sys_translated_text action="delete_multiple" query="documentkey=801e1716117545adb4917ae0bcd5f06b"/>
+</record_update>

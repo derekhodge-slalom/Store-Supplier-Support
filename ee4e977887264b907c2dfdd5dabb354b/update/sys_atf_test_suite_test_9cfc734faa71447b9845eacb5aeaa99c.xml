@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_atf_test_suite_test">
+    <sys_atf_test_suite_test action="INSERT_OR_UPDATE">
+        <abort_on_failure>false</abort_on_failure>
+        <order>100</order>
+        <sys_class_name>sys_atf_test_suite_test</sys_class_name>
+        <sys_created_by>derek.hodge@slalom.com</sys_created_by>
+        <sys_created_on>2026-08-05 03:13:58</sys_created_on>
+        <sys_id>9cfc734faa71447b9845eacb5aeaa99c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>85d5c7acdc414130b1bf4246e66d0ba1</sys_name>
+        <sys_package display_value="Store Supplier Support" source="x_sln_store_suppli">ee4e977887264b907c2dfdd5dabb354b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Store Supplier Support">ee4e977887264b907c2dfdd5dabb354b</sys_scope>
+        <sys_update_name>sys_atf_test_suite_test_9cfc734faa71447b9845eacb5aeaa99c</sys_update_name>
+        <sys_updated_by>derek.hodge@slalom.com</sys_updated_by>
+        <sys_updated_on>2026-08-05 03:13:58</sys_updated_on>
+        <test display_value="SSS - Case Types, Taxonomy, and State Model">85d5c7acdc414130b1bf4246e66d0ba1</test>
+        <test_suite display_value="SSS - Full Regression Suite">498f5848951041c9b2b5a5c578e30be8</test_suite>
+    </sys_atf_test_suite_test>
+</record_update>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="cmn_schedule">
+    <cmn_schedule action="INSERT_OR_UPDATE">
+        <cal_type/>
+        <calendar_name>Store Supplier Support Calendar</calendar_name>
+        <description>Monday-Friday 08:00-17:00 America/New_York. Configure US holiday exclusions as child schedules.</description>
+        <document/>
+        <document_key/>
+        <is_legacy_schedule>false</is_legacy_schedule>
+        <label>Store Supplier Support Schedule</label>
+        <name>Store Supplier Support 8-5 Eastern</name>
+        <parent/>
+        <plural_label>Store Supplier Support Schedules</plural_label>
+        <read_only>false</read_only>
+        <sys_class_name>cmn_schedule</sys_class_name>
+        <sys_created_by>derek.hodge@slalom.com</sys_created_by>
+        <sys_created_on>2026-08-05 01:28:25</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>a1000000000000000000000000000002</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Store Supplier Support 8-5 Eastern</sys_name>
+        <sys_package display_value="Store Supplier Support" source="x_sln_store_suppli">ee4e977887264b907c2dfdd5dabb354b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Store Supplier Support">ee4e977887264b907c2dfdd5dabb354b</sys_scope>
+        <sys_update_name>cmn_schedule_a1000000000000000000000000000002</sys_update_name>
+        <sys_updated_by>derek.hodge@slalom.com</sys_updated_by>
+        <sys_updated_on>2026-08-05 01:28:25</sys_updated_on>
+        <time_zone>America/New_York</time_zone>
+        <type/>
+    </cmn_schedule>
+</record_update>

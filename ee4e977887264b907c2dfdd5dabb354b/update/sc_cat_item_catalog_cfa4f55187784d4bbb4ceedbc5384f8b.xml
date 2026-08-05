@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_catalog">
+    <sc_cat_item_catalog action="INSERT_OR_UPDATE">
+        <sc_cat_item display_value="Report Store Supply Issue">f7a5ffe7fd564a9e897dc65ee96deab7</sc_cat_item>
+        <sc_catalog display_value="Store Supplier Support">9c541830c1e842c3a8c176469696e147</sc_catalog>
+        <sys_class_name>sc_cat_item_catalog</sys_class_name>
+        <sys_created_by>derek.hodge@slalom.com</sys_created_by>
+        <sys_created_on>2026-08-05 01:28:32</sys_created_on>
+        <sys_id>cfa4f55187784d4bbb4ceedbc5384f8b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Store Supplier Support" source="x_sln_store_suppli">ee4e977887264b907c2dfdd5dabb354b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Store Supplier Support">ee4e977887264b907c2dfdd5dabb354b</sys_scope>
+        <sys_update_name>sc_cat_item_catalog_cfa4f55187784d4bbb4ceedbc5384f8b</sys_update_name>
+        <sys_updated_by>derek.hodge@slalom.com</sys_updated_by>
+        <sys_updated_on>2026-08-05 01:28:32</sys_updated_on>
+    </sc_cat_item_catalog>
+</record_update>

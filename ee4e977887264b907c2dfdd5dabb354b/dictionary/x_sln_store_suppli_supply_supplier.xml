@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" db_object_id="f14ae08d876e4b907c2dfdd5dabb350f" label="Supply Supplier" max_length="40" name="x_sln_store_suppli_supply_supplier" type="collection">
+        <element label="Preferred Supplier" max_length="40" name="preferred" type="boolean"/>
+        <element default="true" label="Active" max_length="40" name="active" type="boolean"/>
+        <element label="Consumable Model" mandatory="true" max_length="32" name="supply_model" reference="cmdb_consumable_product_model" reference_cascade_rule="restrict" type="reference"/>
+        <element label="Supplier Account" mandatory="true" max_length="32" name="supplier_account" reference="customer_account" reference_cascade_rule="restrict" type="reference"/>
+        <element default="3" label="Lead Time (Business Days)" max_length="40" name="lead_time_days" type="integer"/>
+        <element label="Demo Data" max_length="40" name="demo_data" type="boolean"/>
+        <index name="index">
+            <element name="supplier_account"/>
+        </index>
+        <index name="index2">
+            <element name="supply_model"/>
+        </index>
+        <index name="index3" unique="true">
+            <element name="supply_model"/>
+            <element name="supplier_account"/>
+        </index>
+    </element>
+</database>

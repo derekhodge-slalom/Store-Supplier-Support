@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sysevent_register">
+    <sysevent_register action="INSERT_OR_UPDATE">
+        <caller_access>1</caller_access>
+        <derived_priority/>
+        <description>DM approval requested</description>
+        <event_name>x_sln_store_suppli.approval.requested</event_name>
+        <fired_by>Request approval UI action</fired_by>
+        <priority>100</priority>
+        <queue/>
+        <suffix>approval.requested</suffix>
+        <sys_class_name>sysevent_register</sys_class_name>
+        <sys_created_by>derek.hodge@slalom.com</sys_created_by>
+        <sys_created_on>2026-08-05 01:29:03</sys_created_on>
+        <sys_id>1641aebb8c10405cbc74c22ecb9ee70d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_sln_store_suppli.approval.requested</sys_name>
+        <sys_package display_value="Store Supplier Support" source="x_sln_store_suppli">ee4e977887264b907c2dfdd5dabb354b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Store Supplier Support">ee4e977887264b907c2dfdd5dabb354b</sys_scope>
+        <sys_update_name>sysevent_register_1641aebb8c10405cbc74c22ecb9ee70d</sys_update_name>
+        <sys_updated_by>derek.hodge@slalom.com</sys_updated_by>
+        <sys_updated_on>2026-08-05 01:29:03</sys_updated_on>
+        <table>x_sln_store_suppli_supply_request</table>
+    </sysevent_register>
+</record_update>

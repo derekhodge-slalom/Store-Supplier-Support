@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_module">
+    <sys_module action="INSERT_OR_UPDATE">
+        <content><![CDATA[{
+  "name": "x-sln-store-supplier-support",
+  "version": "1.0.0",
+  "description": "CSM case management for store supply requests, issues, supplier fulfillment, and stockroom receipts",
+  "license": "UNLICENSED",
+  "scripts": {
+    "build": "now-sdk build",
+    "build:ci": "now-sdk build --frozenKeys",
+    "deploy": "now-sdk install --auth demo5",
+    "deploy:no-demo": "now-sdk install --auth demo5 --demoData=false",
+    "types": "now-sdk dependencies --auth demo5"
+  },
+  "devDependencies": {
+    "@servicenow/sdk": "4.9.2",
+    "@servicenow/glide": "27.0.5"
+  }
+}]]></content>
+        <external_source>false</external_source>
+        <path>x_sln_store_suppli/x-sln-store-supplier-support/1.0.0/package.json</path>
+        <sys_class_name>sys_module</sys_class_name>
+        <sys_created_by>derek.hodge@slalom.com</sys_created_by>
+        <sys_created_on>2026-08-05 02:26:00</sys_created_on>
+        <sys_id>9ae5080d77e944b780a586510547d5c2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_sln_store_suppli/x-sln-store-supplier-support/1.0.0/package.json</sys_name>
+        <sys_package display_value="Store Supplier Support" source="x_sln_store_suppli">ee4e977887264b907c2dfdd5dabb354b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Store Supplier Support">ee4e977887264b907c2dfdd5dabb354b</sys_scope>
+        <sys_update_name>sys_module_9ae5080d77e944b780a586510547d5c2</sys_update_name>
+        <sys_updated_by>derek.hodge@slalom.com</sys_updated_by>
+        <sys_updated_on>2026-08-05 02:26:00</sys_updated_on>
+    </sys_module>
+</record_update>

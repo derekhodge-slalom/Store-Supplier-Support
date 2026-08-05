@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" db_object_id="224a648d876e4b907c2dfdd5dabb3567" extends="x_sln_store_suppli_supply_case" label="Store Supply Request" max_length="40" name="x_sln_store_suppli_supply_request" type="collection">
+        <element label="Needed By" max_length="40" name="needed_by" type="glide_date"/>
+        <element choice="3" label="Subtype" mandatory="true" max_length="40" name="subtype" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Promotion / Event" sequence="50" value="promotion_event"/>
+                <element inactive_on_update="false" label="General" sequence="100" value="general"/>
+                <element inactive_on_update="false" label="New Store / Remodel" sequence="60" value="new_store_remodel"/>
+                <element inactive_on_update="false" label="Replacement" sequence="80" value="replacement"/>
+                <element inactive_on_update="false" label="One-time" sequence="90" value="one_time"/>
+                <element inactive_on_update="false" label="Low Stock" sequence="30" value="low_stock"/>
+                <element inactive_on_update="false" label="Seasonal" sequence="40" value="seasonal"/>
+                <element inactive_on_update="false" label="New Item" sequence="70" value="new_item"/>
+                <element inactive_on_update="false" label="Standard" sequence="10" value="standard"/>
+                <element inactive_on_update="false" label="Urgent" sequence="20" value="urgent"/>
+            </choice>
+        </element>
+        <element label="Business Justification" max_length="4000" name="business_justification" type="multi_two_lines"/>
+    </element>
+</database>

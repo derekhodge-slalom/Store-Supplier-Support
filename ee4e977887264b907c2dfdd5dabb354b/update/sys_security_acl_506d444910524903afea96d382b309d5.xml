@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl">
+    <sys_security_acl action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <admin_overrides>true</admin_overrides>
+        <advanced>true</advanced>
+        <applies_to/>
+        <condition/>
+        <controlled_by_refs/>
+        <decision_type>allow</decision_type>
+        <description/>
+        <local_or_existing/>
+        <name>x_sln_store_suppli_supplier_task.supplier_notes</name>
+        <operation display_value="read">read</operation>
+        <script><![CDATA[
+answer = (function () {
+    if (gs.hasRole('x_sln_store_suppli.support_agent')) return true;
+    if (!gs.hasRole('x_sln_store_suppli.supplier_agent') || current.getValue('released') !== '1') return false;
+    var userId = gs.getUserID();
+    var account = '';
+    var contact = new GlideRecord('customer_contact');
+    if (contact.get(userId)) account = contact.getValue('account');
+    if (!account) {
+        var user = new GlideRecord('sys_user');
+        if (user.get(userId)) account = user.getValue('company');
+    }
+    return !!account && current.getValue('supplier_account') === account;
+})();]]></script>
+        <security_attribute/>
+        <sys_class_name>sys_security_acl</sys_class_name>
+        <sys_created_by>derek.hodge@slalom.com</sys_created_by>
+        <sys_created_on>2026-08-05 01:28:37</sys_created_on>
+        <sys_id>506d444910524903afea96d382b309d5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_sln_store_suppli_supplier_task.supplier_notes</sys_name>
+        <sys_package display_value="Store Supplier Support" source="x_sln_store_suppli">ee4e977887264b907c2dfdd5dabb354b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Store Supplier Support">ee4e977887264b907c2dfdd5dabb354b</sys_scope>
+        <sys_update_name>sys_security_acl_506d444910524903afea96d382b309d5</sys_update_name>
+        <sys_updated_by>derek.hodge@slalom.com</sys_updated_by>
+        <sys_updated_on>2026-08-05 01:28:37</sys_updated_on>
+        <type display_value="record">record</type>
+    </sys_security_acl>
+</record_update>
