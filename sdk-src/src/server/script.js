@@ -1,0 +1,751 @@
+import { GlideDateTime, GlideRecord, gs } from '@servicenow/glide'
+
+const CASE_TABLE = 'x_sln_store_suppli_supply_case'
+const REQUEST_TABLE = 'x_sln_store_suppli_supply_request'
+const ISSUE_TABLE = 'x_sln_store_suppli_supply_issue'
+const LINE_TABLE = 'x_sln_store_suppli_supply_line'
+const TASK_TABLE = 'x_sln_store_suppli_supplier_task'
+const TASK_LINE_TABLE = 'x_sln_store_suppli_task_line'
+const RECEIPT_TABLE = 'x_sln_store_suppli_supply_receipt'
+const ESCALATION_TABLE = 'x_sln_store_suppli_case_escalation'
+const STORE_TABLE = 'x_sln_store_suppli_store'
+const SUPPLY_SUPPLIER_TABLE = 'x_sln_store_suppli_supply_supplier'
+const SURVEY_LEDGER_TABLE = 'x_sln_store_suppli_survey_ledger'
+
+function value(record, field) {
+    return record && record.isValidField(field) ? String(record.getValue(field) || '') : ''
+}
+
+function set(record, field, fieldValue) {
+    if (record && record.isValidField(field) && fieldValue !== undefined && fieldValue !== null) {
+        record.setValue(field, fieldValue)
+    }
+}
+
+function intValue(record, field) {
+    return parseInt(value(record, field) || '0', 10) || 0
+}
+
+function nowValue() {
+    return new GlideDateTime().getValue()
+}
+
+function getSupportGroup() {
+    return gs.getProperty('x_sln_store_suppli.support_group', '')
+}
+
+function redirectTo(record) {
+    if (typeof action !== 'undefined') {
+        action.setRedirectURL(record)
+    }
+}
+
+function currentUserSupplierAccount() {
+    const userId = gs.getUserID()
+    const contact = new GlideRecord('customer_contact')
+    if (contact.get(userId) && contact.isValidField('account')) {
+        return value(contact, 'account')
+    }
+    const user = new GlideRecord('sys_user')
+    if (user.get(userId) && user.isValidField('company')) {
+        return value(user, 'company')
+    }
+    return ''
+}
+
+function isSupplierAuthorized(storeId, supplierId) {
+    if (!storeId || !supplierId) return false
+    const relationship = new GlideRecord('x_sln_store_suppli_store_supplier')
+    relationship.addQuery('store', storeId)
+    relationship.addQuery('supplier_account', supplierId)
+    relationship.addQuery('active', true)
+    relationship.setLimit(1)
+    relationship.query()
+    return relationship.hasNext()
+}
+
+function preferredSupplierFor(modelId, storeId) {
+    const mapping = new GlideRecord(SUPPLY_SUPPLIER_TABLE)
+    mapping.addQuery('supply_model', modelId)
+    mapping.addQuery('active', true)
+    mapping.orderByDesc('preferred')
+    mapping.query()
+    while (mapping.next()) {
+        const account = value(mapping, 'supplier_account')
+        if (isSupplierAuthorized(storeId, account)) return account
+    }
+    return ''
+}
+
+function findOnHand(stockroomId, modelId) {
+    if (!stockroomId || !modelId) return 0
+    const asset = new GlideRecord('alm_consumable')
+    asset.addQuery('stockroom', stockroomId)
+    asset.addQuery('model', modelId)
+    if (asset.isValidField('install_status')) asset.addQuery('install_status', '6')
+    if (asset.isValidField('substatus')) asset.addQuery('substatus', 'available')
+    asset.query()
+    let total = 0
+    while (asset.next()) total += intValue(asset, 'quantity')
+    return total
+}
+
+function caseStore(caseId) {
+    const caseRecord = new GlideRecord(CASE_TABLE)
+    return caseRecord.get(caseId) ? value(caseRecord, 'store') : ''
+}
+
+function caseIsRequest(caseId) {
+    const caseRecord = new GlideRecord(CASE_TABLE)
+    return caseRecord.get(caseId) && caseRecord.getRecordClassName() === REQUEST_TABLE
+}
+
+function allSupplierTasksClosed(caseId) {
+    const task = new GlideRecord(TASK_TABLE)
+    task.addQuery('parent_case', caseId)
+    task.addQuery('task_state', 'NOT IN', 'complete,cancelled')
+    task.setLimit(1)
+    task.query()
+    return !task.hasNext()
+}
+
+function allRequestLinesReceived(caseId) {
+    if (!caseIsRequest(caseId)) return true
+    const line = new GlideRecord(LINE_TABLE)
+    line.addQuery('parent_case', caseId)
+    line.query()
+    let found = false
+    while (line.next()) {
+        found = true
+        if (intValue(line, 'received_quantity') < intValue(line, 'requested_quantity')) return false
+    }
+    return found
+}
+
+function createEscalation(caseRecord, reason, details) {
+    const existing = new GlideRecord(ESCALATION_TABLE)
+    existing.addQuery('parent_case', caseRecord.getUniqueValue())
+    existing.addQuery('reason', reason)
+    existing.setLimit(1)
+    existing.query()
+    if (existing.hasNext()) return false
+
+    const escalation = new GlideRecord(ESCALATION_TABLE)
+    escalation.initialize()
+    set(escalation, 'parent_case', caseRecord.getUniqueValue())
+    set(escalation, 'reason', reason)
+    set(escalation, 'triggered_on', nowValue())
+    set(escalation, 'triggered_by', gs.getUserID())
+    set(escalation, 'details', details)
+    escalation.insert()
+
+    set(caseRecord, 'escalated', true)
+    const prior = value(caseRecord, 'escalation_reasons')
+    set(caseRecord, 'escalation_reasons', prior ? prior + ', ' + reason : reason)
+    caseRecord.update()
+    const recipients = []
+    const store = new GlideRecord(STORE_TABLE)
+    if (store.get(value(caseRecord, 'store')) && value(store, 'district_manager')) recipients.push(value(store, 'district_manager'))
+    const manager = new GlideRecord('sys_user_has_role')
+    manager.addQuery('role.name', 'x_sln_store_suppli.support_manager')
+    manager.addQuery('user.active', true)
+    manager.query()
+    while (manager.next()) recipients.push(value(manager, 'user'))
+    gs.eventQueue('x_sln_store_suppli.case.escalated', caseRecord, reason, recipients.join(','))
+    return true
+}
+
+function elapsedBusinessMs(startValue) {
+    if (!startValue) return 0
+    const start = new GlideDateTime(startValue)
+    const end = new GlideDateTime()
+    const scheduleId = gs.getProperty('x_sln_store_suppli.sla_schedule', '')
+    if (scheduleId && typeof GlideSchedule !== 'undefined') {
+        return new GlideSchedule(scheduleId, 'America/New_York').duration(start, end).getNumericValue()
+    }
+    return end.getNumericValue() - start.getNumericValue()
+}
+
+export function stampCaseDefaults(current) {
+    if (!value(current, 'requested_by')) set(current, 'requested_by', gs.getUserID())
+    if (!value(current, 'contact')) set(current, 'contact', gs.getUserID())
+    if (!value(current, 'opened_by')) set(current, 'opened_by', gs.getUserID())
+    if (!value(current, 'assignment_group')) set(current, 'assignment_group', getSupportGroup())
+    if (!value(current, 'supply_state')) set(current, 'supply_state', 'new')
+    if (!value(current, 'intake_channel')) set(current, 'intake_channel', 'agent')
+    if (!value(current, 'last_customer_update')) set(current, 'last_customer_update', nowValue())
+
+    const supplier = currentUserSupplierAccount()
+    if (supplier && !value(current, 'originating_supplier')) {
+        if (!isSupplierAuthorized(value(current, 'store'), supplier)) {
+            gs.addErrorMessage('The selected store is not authorized for your supplier account.')
+            current.setAbortAction(true)
+            return
+        }
+        set(current, 'originating_supplier', supplier)
+        if (current.isValidField('account')) set(current, 'account', supplier)
+    }
+}
+
+export function validateCaseTransition(current, previous) {
+    if (!previous) return
+    const oldState = value(previous, 'supply_state')
+    const newState = value(current, 'supply_state')
+    if (oldState === newState) return
+
+    const allowed = {
+        new: ['open', 'work_in_progress', 'hold', 'cancelled'],
+        open: ['work_in_progress', 'hold', 'closed', 'cancelled'],
+        work_in_progress: ['open', 'hold', 'closed', 'cancelled'],
+        hold: ['open', 'work_in_progress', 'closed', 'cancelled'],
+        closed: ['open'],
+        cancelled: ['open'],
+    }
+    if (!allowed[oldState] || allowed[oldState].indexOf(newState) < 0) {
+        gs.addErrorMessage('State transition from ' + oldState + ' to ' + newState + ' is not allowed.')
+        current.setAbortAction(true)
+        return
+    }
+
+    if ((newState === 'closed' || newState === 'cancelled') && !gs.hasRole('x_sln_store_suppli.support_agent')) {
+        gs.addErrorMessage('Only Store Supplier Support can close or cancel a case.')
+        current.setAbortAction(true)
+        return
+    }
+
+    if (newState === 'closed') {
+        if (!value(current, 'resolution_code') || !value(current, 'resolution_notes')) {
+            gs.addErrorMessage('Resolution code and resolution notes are required to close a case.')
+            current.setAbortAction(true)
+            return
+        }
+        if (!allSupplierTasksClosed(current.getUniqueValue()) || !allRequestLinesReceived(current.getUniqueValue())) {
+            gs.addErrorMessage('Complete all supplier tasks and receive all Request quantities before closing the case.')
+            current.setAbortAction(true)
+            return
+        }
+        set(current, 'active', false)
+    }
+    if (newState === 'cancelled') set(current, 'active', false)
+}
+
+export function stampSupplyLine(current) {
+    const parentId = value(current, 'parent_case')
+    const storeId = caseStore(parentId)
+    const store = new GlideRecord(STORE_TABLE)
+    const stockroom = storeId && store.get(storeId) ? value(store, 'stockroom') : ''
+    if (!value(current, 'supplier_account')) {
+        set(current, 'supplier_account', preferredSupplierFor(value(current, 'supply_model'), storeId))
+    }
+    set(current, 'on_hand_snapshot', findOnHand(stockroom, value(current, 'supply_model')))
+}
+
+export function routeSupplyLines(current) {
+    if (value(current, 'approval_status') === 'requested') {
+        gs.addErrorMessage('Supplier tasks cannot be generated or released while DM approval is pending.')
+        redirectTo(current)
+        return
+    }
+
+    const caseId = current.getUniqueValue()
+    const line = new GlideRecord(LINE_TABLE)
+    line.addQuery('parent_case', caseId)
+    line.addNotNullQuery('supplier_account')
+    line.addQuery('line_state', 'draft')
+    line.query()
+    const tasks = {}
+    let created = 0
+    while (line.next()) {
+        const supplier = value(line, 'supplier_account')
+        if (!isSupplierAuthorized(value(current, 'store'), supplier)) continue
+        if (!tasks[supplier]) {
+            const existing = new GlideRecord(TASK_TABLE)
+            existing.addQuery('parent_case', caseId)
+            existing.addQuery('supplier_account', supplier)
+            existing.addQuery('task_state', 'draft')
+            existing.setLimit(1)
+            existing.query()
+            if (existing.next()) {
+                tasks[supplier] = existing.getUniqueValue()
+            } else {
+                const task = new GlideRecord(TASK_TABLE)
+                task.initialize()
+                set(task, 'parent_case', caseId)
+                set(task, 'supplier_account', supplier)
+                const relationship = new GlideRecord('x_sln_store_suppli_store_supplier')
+                relationship.addQuery('store', value(current, 'store'))
+                relationship.addQuery('supplier_account', supplier)
+                relationship.addQuery('active', true)
+                relationship.setLimit(1)
+                relationship.query()
+                if (relationship.next()) set(task, 'supplier_contact', value(relationship, 'primary_contact'))
+                set(task, 'task_state', 'draft')
+                set(task, 'short_description', 'Supplier fulfillment for ' + value(current, 'number'))
+                set(task, 'assignment_group', getSupportGroup())
+                tasks[supplier] = task.insert()
+                created += 1
+            }
+        }
+        const link = new GlideRecord(TASK_LINE_TABLE)
+        link.initialize()
+        set(link, 'supplier_task', tasks[supplier])
+        set(link, 'supply_line', line.getUniqueValue())
+        set(link, 'assigned_quantity', value(line, 'requested_quantity'))
+        try { link.insert() } catch (e) { gs.debug('Store Supplier Support: line already routed') }
+        set(line, 'line_state', 'routed')
+        line.update()
+    }
+    gs.addInfoMessage(created + ' draft supplier task(s) created for support review.')
+    redirectTo(current)
+}
+
+export function releaseSupplierTask(current) {
+    const parent = new GlideRecord(CASE_TABLE)
+    if (!parent.get(value(current, 'parent_case'))) {
+        gs.addErrorMessage('Parent case was not found.')
+        return
+    }
+    if (value(parent, 'approval_status') === 'requested') {
+        gs.addErrorMessage('This task cannot be released while DM approval is pending.')
+        redirectTo(current)
+        return
+    }
+    if (!isSupplierAuthorized(value(parent, 'store'), value(current, 'supplier_account'))) {
+        gs.addErrorMessage('The supplier is not authorized for the case store.')
+        redirectTo(current)
+        return
+    }
+    set(current, 'released', true)
+    set(current, 'released_on', nowValue())
+    set(current, 'task_state', 'open')
+    current.update()
+    gs.eventQueue('x_sln_store_suppli.supplier.released', current, '', '')
+    gs.addInfoMessage('Supplier task released.')
+    redirectTo(current)
+}
+
+export function completeSupplierTask(current) {
+    if (!value(current, 'completion_summary')) {
+        gs.addErrorMessage('Completion summary is required.')
+        redirectTo(current)
+        return
+    }
+    set(current, 'task_state', 'complete')
+    set(current, 'completed_on', nowValue())
+    set(current, 'active', false)
+    current.update()
+    gs.eventQueue('x_sln_store_suppli.supplier.completed', current, '', '')
+    redirectTo(current)
+}
+
+export function requestDistrictManagerApproval(current) {
+    if (current.getRecordClassName() !== REQUEST_TABLE) {
+        gs.addErrorMessage('District Manager approval applies only to Store Supply Requests.')
+        return
+    }
+    const store = new GlideRecord(STORE_TABLE)
+    if (!store.get(value(current, 'store')) || !value(store, 'district_manager')) {
+        gs.addErrorMessage('The selected store does not have a District Manager configured.')
+        return
+    }
+    set(current, 'prior_active_state', value(current, 'supply_state') || 'open')
+    set(current, 'supply_state', 'hold')
+    set(current, 'hold_reason', 'awaiting_dm_approval')
+    set(current, 'approval_status', 'requested')
+    current.update()
+
+    const approval = new GlideRecord('sysapproval_approver')
+    approval.initialize()
+    set(approval, 'sysapproval', current.getUniqueValue())
+    set(approval, 'source_table', current.getTableName())
+    set(approval, 'approver', value(store, 'district_manager'))
+    set(approval, 'state', 'requested')
+    approval.insert()
+    gs.eventQueue('x_sln_store_suppli.approval.requested', current, value(store, 'district_manager'), '')
+    gs.addInfoMessage('District Manager approval requested; SLAs are paused.')
+    redirectTo(current)
+}
+
+export function syncDistrictManagerApproval(current, previous) {
+    if (!previous || value(current, 'state') === value(previous, 'state')) return
+    const sourceTable = value(current, 'source_table')
+    if (sourceTable !== REQUEST_TABLE) return
+    const caseRecord = new GlideRecord(CASE_TABLE)
+    if (!caseRecord.get(value(current, 'sysapproval'))) return
+    if (value(caseRecord, 'approval_status') !== 'requested') return
+
+    if (value(current, 'state') === 'approved') {
+        set(caseRecord, 'approval_status', 'approved')
+        set(caseRecord, 'hold_reason', '')
+        set(caseRecord, 'supply_state', value(caseRecord, 'prior_active_state') || 'open')
+        gs.eventQueue('x_sln_store_suppli.approval.completed', caseRecord, 'approved', '')
+    } else if (value(current, 'state') === 'rejected') {
+        set(caseRecord, 'approval_status', 'rejected')
+        set(caseRecord, 'hold_reason', '')
+        set(caseRecord, 'supply_state', 'open')
+        gs.eventQueue('x_sln_store_suppli.approval.completed', caseRecord, 'rejected', '')
+    } else {
+        return
+    }
+    caseRecord.update()
+}
+
+export function prepareReceipt(current) {
+    const line = new GlideRecord(LINE_TABLE)
+    if (!line.get(value(current, 'supply_line'))) {
+        gs.addErrorMessage('Supply line is required.')
+        current.setAbortAction(true)
+        return
+    }
+    const parentId = value(line, 'parent_case')
+    if (!caseIsRequest(parentId)) {
+        gs.addErrorMessage('Inventory receipts are permitted only for Store Supply Requests.')
+        current.setAbortAction(true)
+        return
+    }
+    const storeId = caseStore(parentId)
+    const store = new GlideRecord(STORE_TABLE)
+    if (!store.get(storeId) || !value(store, 'stockroom')) {
+        gs.addErrorMessage('The case store must have a stockroom before a receipt can be recorded.')
+        current.setAbortAction(true)
+        return
+    }
+    const remaining = intValue(line, 'requested_quantity') - intValue(line, 'received_quantity')
+    if (intValue(current, 'quantity') > remaining) {
+        gs.addErrorMessage('Receipt quantity exceeds the remaining requested quantity of ' + remaining + '.')
+        current.setAbortAction(true)
+        return
+    }
+    set(current, 'parent_case', parentId)
+    set(current, 'store', storeId)
+    set(current, 'stockroom', value(store, 'stockroom'))
+    set(current, 'supply_model', value(line, 'supply_model'))
+    set(current, 'received_by', gs.getUserID())
+    set(current, 'received_on', nowValue())
+    if (!value(current, 'source_key')) {
+        set(current, 'source_key', gs.generateGUID())
+    }
+}
+
+export function applyReceiptToInventory(current) {
+    if (String(value(current, 'inventory_applied')) === 'true') return
+    const quantity = intValue(current, 'quantity')
+    const consumable = new GlideRecord('alm_consumable')
+    consumable.addQuery('stockroom', value(current, 'stockroom'))
+    consumable.addQuery('model', value(current, 'supply_model'))
+    if (consumable.isValidField('install_status')) consumable.addQuery('install_status', '6')
+    if (consumable.isValidField('substatus')) consumable.addQuery('substatus', 'available')
+    consumable.setLimit(1)
+    consumable.query()
+    if (consumable.next()) {
+        set(consumable, 'quantity', intValue(consumable, 'quantity') + quantity)
+        consumable.update()
+    } else {
+        consumable.initialize()
+        set(consumable, 'model', value(current, 'supply_model'))
+        set(consumable, 'stockroom', value(current, 'stockroom'))
+        set(consumable, 'quantity', quantity)
+        set(consumable, 'install_status', '6')
+        set(consumable, 'substatus', 'available')
+        set(consumable, 'display_name', 'Store Supply receipt ' + value(current, 'source_key'))
+        consumable.insert()
+    }
+
+    const line = new GlideRecord(LINE_TABLE)
+    if (line.get(value(current, 'supply_line'))) {
+        const received = intValue(line, 'received_quantity') + quantity
+        set(line, 'received_quantity', received)
+        set(line, 'line_state', received >= intValue(line, 'requested_quantity') ? 'received' : 'partially_received')
+        line.update()
+    }
+
+    const receipt = new GlideRecord(RECEIPT_TABLE)
+    if (receipt.get(current.getUniqueValue())) {
+        set(receipt, 'inventory_applied', true)
+        receipt.setWorkflow(false)
+        receipt.update()
+    }
+    gs.eventQueue('x_sln_store_suppli.receipt.recorded', current, String(quantity), '')
+}
+
+export function openReceiptForm(current) {
+    const line = new GlideRecord(LINE_TABLE)
+    line.addQuery('parent_case', current.getUniqueValue())
+    line.addQuery('received_quantity', '<', 'requested_quantity')
+    line.orderBy('sys_created_on')
+    line.setLimit(1)
+    line.query()
+    if (!line.next()) {
+        gs.addErrorMessage('No open Request line is available to receive.')
+        redirectTo(current)
+        return
+    }
+    if (typeof action !== 'undefined') {
+        action.setRedirectURL(RECEIPT_TABLE + '.do?sys_id=-1&sysparm_query=supply_line=' + line.getUniqueValue())
+    }
+}
+
+export function reopenCase(current) {
+    const windowDays = parseInt(gs.getProperty('x_sln_store_suppli.reopen_window_days', '7'), 10) || 7
+    const closedAt = value(current, 'closed_at') || value(current, 'sys_updated_on')
+    const boundary = new GlideDateTime(closedAt)
+    boundary.addDaysUTC(windowDays)
+    if (new GlideDateTime().after(boundary)) {
+        gs.addErrorMessage('The ' + windowDays + '-calendar-day reopen window has expired.')
+        redirectTo(current)
+        return
+    }
+    set(current, 'supply_state', 'open')
+    set(current, 'active', true)
+    set(current, 'reopen_count', intValue(current, 'reopen_count') + 1)
+    set(current, 'reopened_at', nowValue())
+    set(current, 'first_response_at', '')
+    set(current, 'last_customer_update', nowValue())
+    current.update()
+    gs.eventQueue('x_sln_store_suppli.case.reopened', current, '', '')
+    gs.addInfoMessage('Case reopened; a new response and resolution SLA cycle has started.')
+    redirectTo(current)
+}
+
+export function closeCase(current) {
+    if (!value(current, 'resolution_code') || !value(current, 'resolution_notes')) {
+        gs.addErrorMessage('Resolution code and resolution notes are required.')
+        redirectTo(current)
+        return
+    }
+    set(current, 'supply_state', 'closed')
+    set(current, 'active', false)
+    current.update()
+    redirectTo(current)
+}
+
+export function cancelCase(current) {
+    if (!value(current, 'resolution_notes')) {
+        gs.addErrorMessage('Resolution notes are required to cancel a case.')
+        redirectTo(current)
+        return
+    }
+    set(current, 'resolution_code', 'cancelled')
+    set(current, 'supply_state', 'cancelled')
+    set(current, 'active', false)
+    current.update()
+    redirectTo(current)
+}
+
+export function markCustomerVisibleUpdate(current, previous) {
+    if (!previous) return
+    const commentsChanged = current.isValidField('comments') && current.comments.changes()
+    if (!commentsChanged) return
+    const update = new GlideRecord(CASE_TABLE)
+    if (!update.get(current.getUniqueValue())) return
+    if (!value(update, 'first_response_at') && gs.hasRole('x_sln_store_suppli.support_agent')) {
+        set(update, 'first_response_at', nowValue())
+    }
+    set(update, 'last_customer_update', nowValue())
+    update.setWorkflow(false)
+    update.update()
+    gs.eventQueue('x_sln_store_suppli.case.update', update, '', '')
+}
+
+export function escalateCurrentCase(current) {
+    createEscalation(current, 'manual', 'Manually escalated by ' + gs.getUserDisplayName())
+    redirectTo(current)
+}
+
+export function runCaseEscalationMonitor() {
+    const staleHours = parseInt(gs.getProperty('x_sln_store_suppli.stale_business_hours', '27'), 10) || 27
+    const unresolvedHours = parseInt(gs.getProperty('x_sln_store_suppli.unresolved_business_hours', '45'), 10) || 45
+    const activeCase = new GlideRecord(CASE_TABLE)
+    activeCase.addQuery('supply_state', 'NOT IN', 'closed,cancelled')
+    activeCase.query()
+    while (activeCase.next()) {
+        if (value(activeCase, 'supply_state') === 'hold') continue
+        if (elapsedBusinessMs(value(activeCase, 'last_customer_update') || value(activeCase, 'sys_created_on')) >= staleHours * 3600000) {
+            createEscalation(activeCase, 'stale_update', 'No customer-visible support update within the configured business-time threshold.')
+        }
+        if (elapsedBusinessMs(value(activeCase, 'sys_created_on')) >= unresolvedHours * 3600000) {
+            createEscalation(activeCase, 'unresolved_five_days', 'Case remains unresolved beyond the configured business-time threshold.')
+        }
+    }
+
+    const breached = new GlideRecord('task_sla')
+    breached.addQuery('task.sys_class_name', 'INSTANCEOF', CASE_TABLE)
+    breached.addQuery('has_breached', true)
+    breached.addQuery('sla.target', 'resolution')
+    breached.query()
+    while (breached.next()) {
+        const caseRecord = new GlideRecord(CASE_TABLE)
+        if (caseRecord.get(value(breached, 'task'))) {
+            createEscalation(caseRecord, 'resolution_sla', 'Resolution SLA breached.')
+        }
+    }
+}
+
+export function sendWeeklyDigest() {
+    const managerIds = []
+    const members = new GlideRecord('sys_user_has_role')
+    members.addQuery('role.name', 'x_sln_store_suppli.support_manager')
+    members.addQuery('user.active', true)
+    members.query()
+    while (members.next()) managerIds.push(value(members, 'user'))
+    const count = new GlideRecord(CASE_TABLE)
+    count.addQuery('supply_state', 'NOT IN', 'closed,cancelled')
+    count.query()
+    let total = 0
+    while (count.next()) total += 1
+    for (let i = 0; i < managerIds.length; i += 1) {
+        gs.eventQueue('x_sln_store_suppli.weekly_digest', count, managerIds[i], String(total))
+    }
+}
+
+export function inviteMonthlySupplierSurvey(current) {
+    if (!value(current, 'requested_by')) return
+    let supplier = value(current, 'originating_supplier')
+    if (!supplier) {
+        const task = new GlideRecord(TASK_TABLE)
+        task.addQuery('parent_case', current.getUniqueValue())
+        task.addNotNullQuery('supplier_account')
+        task.setLimit(1)
+        task.query()
+        if (task.next()) supplier = value(task, 'supplier_account')
+    }
+    if (!supplier) {
+        const line = new GlideRecord(LINE_TABLE)
+        line.addQuery('parent_case', current.getUniqueValue())
+        line.addNotNullQuery('supplier_account')
+        line.setLimit(1)
+        line.query()
+        if (line.next()) supplier = value(line, 'supplier_account')
+    }
+    if (!supplier) return
+    const month = new GlideDateTime().getDate().getValue().substring(0, 7)
+    const prior = new GlideRecord(SURVEY_LEDGER_TABLE)
+    prior.addQuery('supplier_account', supplier)
+    prior.addQuery('calendar_month', month)
+    prior.setLimit(1)
+    prior.query()
+    if (prior.hasNext()) return
+    const ledger = new GlideRecord(SURVEY_LEDGER_TABLE)
+    ledger.initialize()
+    set(ledger, 'supplier_account', supplier)
+    set(ledger, 'calendar_month', month)
+    set(ledger, 'parent_case', current.getUniqueValue())
+    set(ledger, 'recipient', value(current, 'requested_by'))
+    set(ledger, 'sent_on', nowValue())
+    ledger.insert()
+    gs.eventQueue('x_sln_store_suppli.survey.invite', current, value(current, 'requested_by'), '')
+}
+
+export function createEmailInteraction(current, event, email) {
+    set(current, 'short_description', email.subject || 'Store supply email')
+    set(current, 'description', email.body_text || email.body_html || '')
+    set(current, 'type', 'email')
+    set(current, 'state', 'new')
+    set(current, 'assignment_group', getSupportGroup())
+}
+
+export function applyInboundCaseReply(current, event, email) {
+    if (current.isValidField('comments')) {
+        current.setValue('comments', 'Reply received by email from ' + (email.origemail || email.from || 'customer') + ':\n' + (email.body_text || ''))
+    }
+    set(current, 'last_customer_update', nowValue())
+}
+
+export function prepareRequestProducer(producer, current) {
+    set(current, 'store', String(producer.store || ''))
+    set(current, 'short_description', String(producer.shortDescription || producer.short_description || 'Store supply submission'))
+    set(current, 'description', String(producer.description || ''))
+    set(current, 'priority', String(producer.priority || '3'))
+    set(current, 'requested_by', gs.getUserID())
+    set(current, 'contact', gs.getUserID())
+    set(current, 'intake_channel', 'portal')
+    set(current, 'supply_state', 'new')
+    set(current, 'assignment_group', getSupportGroup())
+    set(current, 'originating_supplier', currentUserSupplierAccount())
+    set(current, 'last_customer_update', nowValue())
+}
+
+export function prepareIssueProducer(producer, current) {
+    prepareRequestProducer(producer, current)
+}
+
+export function createProducerSupplyLine(producer, current) {
+    const modelId = producer && (producer.supplyModel || producer.supply_model)
+    const quantity = producer && (producer.quantity || producer.requested_quantity)
+    if (!modelId || !quantity) return
+    const line = new GlideRecord(LINE_TABLE)
+    line.initialize()
+    set(line, 'parent_case', current.getUniqueValue())
+    set(line, 'supply_model', String(modelId))
+    set(line, 'requested_quantity', String(quantity))
+    if (producer.neededBy || producer.needed_by) set(line, 'needed_by', String(producer.neededBy || producer.needed_by))
+    set(line, 'notes', producer.lineNotes || producer.line_notes || '')
+    line.insert()
+}
+
+export function recommendKnowledge(current) {
+    set(current, 'knowledge_recommended', true)
+    current.update()
+    gs.addInfoMessage('Knowledge recommendation recorded. Create or link a draft article from the Knowledge contextual search panel; publishing remains a separate approval step.')
+    redirectTo(current)
+}
+
+export function verifyRequiredCapabilities() {
+    const requiredPlugins = [
+        { name: 'Customer Service', id: 'com.sn_customerservice' },
+        { name: 'Asset Management', id: 'com.snc.asset_management' },
+        { name: 'Service Level Management', id: 'com.snc.sla' },
+        { name: 'Knowledge Management', id: 'com.glideapp.knowledge' },
+        { name: 'Assessments', id: 'com.snc.assessment_core' },
+    ]
+    const requiredStoreApps = [
+        { name: 'Customer Service Case Types', scope: 'sn_csm_case_types' },
+        { name: 'Email Interaction for CSM', scope: 'sn_eaai_csm' },
+    ]
+    const missing = []
+    for (let i = 0; i < requiredPlugins.length; i += 1) {
+        const plugin = new GlideRecord('v_plugin')
+        plugin.addQuery('id', requiredPlugins[i].id)
+        plugin.addQuery('active', 'active')
+        plugin.setLimit(1)
+        plugin.query()
+        if (!plugin.hasNext()) missing.push(requiredPlugins[i].name)
+    }
+    for (let j = 0; j < requiredStoreApps.length; j += 1) {
+        const storeApp = new GlideRecord('sys_store_app')
+        storeApp.addQuery('scope', requiredStoreApps[j].scope)
+        storeApp.addQuery('active', true)
+        storeApp.setLimit(1)
+        storeApp.query()
+        if (!storeApp.hasNext()) missing.push(requiredStoreApps[j].name)
+    }
+    const requiredTables = [
+        { name: 'CSM Case', table: 'sn_customerservice_case' },
+        { name: 'CSM Case Task', table: 'sn_customerservice_task' },
+        { name: 'CSM Customer Account', table: 'customer_account' },
+        { name: 'CSM Customer Contact', table: 'customer_contact' },
+        { name: 'CSM Case Types 4+', table: 'sn_case_type' },
+        { name: 'Email Interaction', table: 'interaction' },
+        { name: 'Consumable Asset', table: 'alm_consumable' },
+        { name: 'Stockroom', table: 'alm_stockroom' },
+    ]
+    for (let k = 0; k < requiredTables.length; k += 1) {
+        const tableDefinition = new GlideRecord('sys_db_object')
+        tableDefinition.addQuery('name', requiredTables[k].table)
+        tableDefinition.setLimit(1)
+        tableDefinition.query()
+        if (!tableDefinition.hasNext()) missing.push(requiredTables[k].name)
+    }
+    const employeeCenter = new GlideRecord('sp_portal')
+    employeeCenter.addQuery('url_suffix', 'esc')
+    employeeCenter.setLimit(1)
+    employeeCenter.query()
+    if (!employeeCenter.hasNext()) {
+        missing.push('Employee Center')
+    }
+    if (missing.length) {
+        gs.error('Store Supplier Support blocked: required capabilities are inactive: ' + missing.join(', '))
+    } else {
+        gs.info('Store Supplier Support capability check passed.')
+    }
+}

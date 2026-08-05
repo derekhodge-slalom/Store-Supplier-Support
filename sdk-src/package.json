@@ -1,0 +1,20 @@
+{
+  "name": "x-sln-store-supplier-support",
+  "version": "1.0.0",
+  "description": "CSM case management for store supply requests, issues, supplier fulfillment, and stockroom receipts",
+  "license": "UNLICENSED",
+  "scripts": {
+    "build": "now-sdk build",
+    "build:ci": "now-sdk build --frozenKeys",
+    "deploy": "now-sdk install --auth demo5",
+    "deploy:no-demo": "now-sdk install --auth demo5 --demoData=false",
+    "types": "now-sdk dependencies --auth demo5",
+    "validate:demo5": "node scripts/validate-demo5.cjs",
+    "test:atf:demo5": "node scripts/run-atf-demo5.cjs",
+    "source:commit:demo5": "node scripts/commit-source-demo5.cjs"
+  },
+  "devDependencies": {
+    "@servicenow/sdk": "4.9.2",
+    "@servicenow/glide": "27.0.5"
+  }
+}
