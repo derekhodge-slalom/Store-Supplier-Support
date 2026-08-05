@@ -79,14 +79,17 @@ async function main() {
     await check('Supplier Service Portal', 'sp_portal', 'url_suffix=store_suppliers^theme.name=Slalom Store Supplier Support', 1)
     await check('Internal and supplier portal pages', 'sp_page', 'idINstore-supply-internal,store-supply-supplier', 2)
     await check('Slalom portal header and footer', 'sp_header_footer', 'nameINSlalom Store Supplier Support Header,Slalom Store Supplier Support Footer', 2)
-    await check('Configurable Workspace', 'sys_ux_page_registry', 'sys_id=f1cb3bb464254d179a0c2c3060ace9df^path=store-supplier-support^titleLIKEslalom', 1)
-    await check('Scoped Slalom Workspace theme', 'sys_ux_app', 'sys_id=b6d1e06c5a1b4a8c91a9e7f0f01ee502^theme=b6d1e06c5a1b4a8c91a9e7f0f01ee501', 1)
+    await check('Configurable Workspace route in Unified Navigation', 'sys_ux_page_registry', 'sys_id=f1cb3bb464254d179a0c2c3060ace9df^path=store-supplier-support^parent_app=c86a62e2c7022010099a308dc7c26022^titleLIKEslalom', 1)
+    await check('Workspace home route', 'sys_ux_app_route', 'app_config=3f8cebee4f134dc0951c77b67b418e63^route_type=home', 1)
+    await check('Scoped Slalom Workspace theme', 'm2m_app_config_theme', 'ux_app_configuration=3f8cebee4f134dc0951c77b67b418e63^theme=b6d1e06c5a1b4a8c91a9e7f0f01ee501', 1)
+    await check('Slalom Workspace logo placement', 'sys_ux_theme_m2m_asset', 'theme=b6d1e06c5a1b4a8c91a9e7f0f01ee501^asset=b6d1e06c5a1b4a8c91a9e7f0f01ee504^propertiesLIKEheader_logo', 1)
+    await check('Official Slalom Workspace logo attachment', 'sys_attachment', 'table_sys_id=b6d1e06c5a1b4a8c91a9e7f0f01ee504^content_type=image/svg+xml', 1)
     await check('Workspace Request and Issue forms', 'sys_ui_form', 'nameINx_sln_store_suppli_supply_request,x_sln_store_suppli_supply_issue^view=99b090d987620f907c2dfdd5dabb358a', 2)
     await check('Store Supplier Support application menu', 'sys_app_application', 'title=Store Supplier Support^active=true', 1)
     const launcherRecords = await check('Workspace and portal launchers in application menu', 'sys_app_module', 'application=9adffcf938f44e9ea20887a6ff1a08c4^link_type=DIRECT^orderIN20,30,40', 3, 'sys_id,query')
     results.push({
         label: 'Workspace and portal launcher targets',
-        ok: launcherRecords.length === 3 && launcherRecords.every((record) => Boolean(record.query)),
+        ok: launcherRecords.length === 3 && launcherRecords.every((record) => Boolean(record.query)) && launcherRecords.some((record) => record.query === '/x/sln/store-supplier-support/home'),
         actual: launcherRecords.filter((record) => Boolean(record.query)).length,
         expected: 3,
     })
@@ -113,12 +116,23 @@ async function main() {
     await check('Store Supply model management role inheritance', 'sys_user_role_contains', 'role.nameINx_sln_store_suppli.support_manager,x_sln_store_suppli.admin^contains.nameINmodel_manager,category_manager', 2)
     await check('Filtered Store Supply application modules', 'sys_app_module', 'titleINStore Supply Models,Store Supply Model Categories,Store Supply Inventory^nameINx_sln_store_suppli_store_supply_model,cmdb_model_category,alm_consumable', 3)
     await check('Demo store-supplier relationships', 'x_sln_store_suppli_store_supplier', 'demo_data=true', 24)
+    await check('Demo store memberships', 'x_sln_store_suppli_store_member', 'demo_data=true', 12)
     await check('Demo supply-supplier mappings', 'x_sln_store_suppli_supply_supplier', 'demo_data=true^active=true', 24)
     await check('Demo Store Supply Requests', 'x_sln_store_suppli_supply_request', 'demo_data=true', 6)
+    await check('Numbered demo Store Supply Requests', 'x_sln_store_suppli_supply_request', 'demo_data=true^numberSTARTSWITHSSR9', 6)
     await check('Demo Store Supply Issues', 'x_sln_store_suppli_supply_issue', 'demo_data=true', 6)
+    await check('Numbered demo Store Supply Issues', 'x_sln_store_suppli_supply_issue', 'demo_data=true^numberSTARTSWITHSSI9', 6)
     await check('Demo case supply lines', 'x_sln_store_suppli_supply_line', 'demo_data=true^parent_case.demo_data=true', 12)
+    await check('Demo supplier tasks', 'x_sln_store_suppli_supplier_task', 'demo_data=true^numberSTARTSWITHSST9', 4)
+    await check('Draft demo supplier task', 'x_sln_store_suppli_supplier_task', 'demo_data=true^task_state=draft^released=false^active=true', 1)
+    await check('Active released demo supplier tasks', 'x_sln_store_suppli_supplier_task', 'demo_data=true^task_stateINopen,work_in_progress^released=true^active=true', 2)
+    await check('Completed demo supplier task', 'x_sln_store_suppli_supplier_task', 'demo_data=true^task_state=complete^released=true^active=false', 1)
+    await check('Demo supplier task lines', 'x_sln_store_suppli_task_line', 'demo_data=true', 4)
+    await check('Demo supply receipts', 'x_sln_store_suppli_supply_receipt', 'demo_data=true', 2)
+    await check('Applied demo supply receipts', 'x_sln_store_suppli_supply_receipt', 'demo_data=true^inventory_applied=true', 2)
     await check('Demo case escalations', 'x_sln_store_suppli_case_escalation', 'demo_data=true', 4)
     await check('All demo escalation reasons', 'x_sln_store_suppli_case_escalation', 'demo_data=true^reasonINmanual,stale_update,resolution_sla,unresolved_five_days', 4)
+    await check('Demo survey invitation ledger', 'x_sln_store_suppli_survey_ledger', 'demo_data=true', 2)
 
     await check('Old Incident business rule deleted', 'sys_script', 'sys_id=cf361fda6b5c4524864125f1b534b589', 0)
     await check('Old Incident client script deleted', 'sys_script_client', 'sys_id=29c6decf27be437f8c3656f235ac84e9', 0)

@@ -44,6 +44,7 @@ export const applicationAdminRole = Role({
 })
 
 export const internalNavigationRoles = [supportAgentRole, supportManagerRole, applicationAdminRole]
+export const workspaceRouteRoles = [supportAgentRole, supportManagerRole, applicationAdminRole, 'admin']
 export const allApplicationRoles = [storeAssociateRole, districtManagerRole, supplierAgentRole, supportAgentRole, supportManagerRole, applicationAdminRole]
 const supportRoles = [supportAgentRole, supportManagerRole, applicationAdminRole]
 

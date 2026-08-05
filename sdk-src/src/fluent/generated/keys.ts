@@ -135,6 +135,27 @@ declare global {
                         table: 'sys_ux_app_property'
                         id: 'b6d1e06c5a1b4a8c91a9e7f0f01ee503'
                     }
+                    b6d1e06c5a1b4a8c91a9e7f0f01ee504: {
+                        table: 'sys_ux_theme_asset'
+                        id: 'b6d1e06c5a1b4a8c91a9e7f0f01ee504'
+                    }
+                    b6d1e06c5a1b4a8c91a9e7f0f01ee505: {
+                        table: 'sys_ux_theme_m2m_asset'
+                        id: 'b6d1e06c5a1b4a8c91a9e7f0f01ee505'
+                    }
+                    b6d1e06c5a1b4a8c91a9e7f0f01ee506: {
+                        table: 'm2m_app_config_theme'
+                        id: 'b6d1e06c5a1b4a8c91a9e7f0f01ee506'
+                    }
+                    b6d1e06c5a1b4a8c91a9e7f0f01ee507: {
+                        table: 'sys_script_fix'
+                        id: 'b6d1e06c5a1b4a8c91a9e7f0f01ee507'
+                    }
+                    b6d1e06c5a1b4a8c91a9e7f0f01ee508: {
+                        table: 'sys_attachment_doc'
+                        id: 'b6d1e06c5a1b4a8c91a9e7f0f01ee508'
+                        deleted: true
+                    }
                     bom_json: {
                         table: 'sys_module'
                         id: '56d0c2384d184db889427bf1b7206ddb'
@@ -714,6 +735,14 @@ declare global {
                         id: '824953bc0dd347cd97fb24655814c003'
                         deleted: true
                     }
+                    demo_receipt_final_receipt_paper: {
+                        table: 'x_sln_store_suppli_supply_receipt'
+                        id: '2d59afabf5b641f1a2724b44db180dcc'
+                    }
+                    demo_receipt_partial_reserve_espresso: {
+                        table: 'x_sln_store_suppli_supply_receipt'
+                        id: '6a4b2f876bc34fdcbd2f9adbfb9b5b26'
+                    }
                     demo_request_carrier_cancelled: {
                         table: 'x_sln_store_suppli_supply_request'
                         id: '48a5c08ab2774d69b6b72f2ef6ab5e76'
@@ -1050,6 +1079,22 @@ declare global {
                         table: 'customer_account'
                         id: 'adf250d72f2544f39b43532391ced1bd'
                     }
+                    demo_supplier_task_active_urgent_cups: {
+                        table: 'x_sln_store_suppli_supplier_task'
+                        id: '364650c5f2c348ab827f778192f931aa'
+                    }
+                    demo_supplier_task_complete_receipt_paper: {
+                        table: 'x_sln_store_suppli_supplier_task'
+                        id: 'd8e45362d1d64f6ea492d4043d98766d'
+                    }
+                    demo_supplier_task_draft_promotion_cups: {
+                        table: 'x_sln_store_suppli_supplier_task'
+                        id: 'a068205f5cfa4965adf90920e7b5bae0'
+                    }
+                    demo_supplier_task_wip_reserve_espresso: {
+                        table: 'x_sln_store_suppli_supplier_task'
+                        id: '68ba2b6ae0b94d5897d7491241a5a250'
+                    }
                     demo_supply_supplier_bag: {
                         table: 'x_sln_store_suppli_supply_supplier'
                         id: '6903afec55d045c39e82d78076b80872'
@@ -1153,6 +1198,30 @@ declare global {
                     demo_support_manager: {
                         table: 'sys_user'
                         id: '5ce499d102b04731a5ce408a8f520047'
+                    }
+                    demo_survey_ledger_operations_august: {
+                        table: 'x_sln_store_suppli_survey_ledger'
+                        id: '6fb790521318458fa7764d200c461060'
+                    }
+                    demo_survey_ledger_packaging_august: {
+                        table: 'x_sln_store_suppli_survey_ledger'
+                        id: '651b38e9b22147d99d41cddc6c6764ab'
+                    }
+                    demo_task_line_active_urgent_cups: {
+                        table: 'x_sln_store_suppli_task_line'
+                        id: '52777d00ae754a749ee6b9f865db4928'
+                    }
+                    demo_task_line_complete_receipt_paper: {
+                        table: 'x_sln_store_suppli_task_line'
+                        id: '0c64f934e24d429eb995092a477eb682'
+                    }
+                    demo_task_line_draft_promotion_cups: {
+                        table: 'x_sln_store_suppli_task_line'
+                        id: 'bbb4544bbbb7402ab819995693ed361b'
+                    }
+                    demo_task_line_wip_reserve_espresso: {
+                        table: 'x_sln_store_suppli_task_line'
+                        id: 'c956b34b0ee44369b7452af4ad115313'
                     }
                     demo_towel_model: {
                         table: 'x_sln_store_suppli_store_supply_model'
@@ -1349,6 +1418,10 @@ declare global {
                     slalom_store_supply_portal_theme: {
                         table: 'sp_theme'
                         id: '61cd3467f8d54502b6e5e0eda88be0f8'
+                    }
+                    'src_server_branding_apply-slalom-workspace-logo_js': {
+                        table: 'sys_module'
+                        id: 'afd275c89674444b8df9a78816423c10'
                     }
                     'src_server_portal_store-supply-dashboard_client_js': {
                         table: 'sys_module'
@@ -4412,6 +4485,15 @@ declare global {
                                     sys_domain: 'global'
                                 }
                             }
+                        }
+                    },
+                    {
+                        table: 'sys_documentation'
+                        id: '248bd1ea6f54498385ed624d0c17f4dc'
+                        key: {
+                            name: 'x_sln_store_suppli_survey_ledger'
+                            element: 'demo_data'
+                            language: 'en'
                         }
                     },
                     {
@@ -14375,6 +14457,19 @@ declare global {
                     },
                     {
                         table: 'sys_security_acl_role'
+                        id: 'af30b0cb7f2a42cdb9eeb305f41c4927'
+                        key: {
+                            sys_security_acl: '878c0afed4644e4980be509e84c39a77'
+                            sys_user_role: {
+                                id: 'f9fde3683baa421e81591871b7c13c92'
+                                key: {
+                                    name: 'admin'
+                                }
+                            }
+                        }
+                    },
+                    {
+                        table: 'sys_security_acl_role'
                         id: 'af45676b67bc4d799bf087d33b5f7d23'
                         key: {
                             sys_security_acl: 'e94eda5342bc4b5bb9617a83ef2afabe'
@@ -16742,6 +16837,14 @@ declare global {
                                     name: 'x_sln_store_suppli.support_manager'
                                 }
                             }
+                        }
+                    },
+                    {
+                        table: 'sys_dictionary'
+                        id: 'd3a2f6de04314dcc928358ebca79beec'
+                        key: {
+                            name: 'x_sln_store_suppli_survey_ledger'
+                            element: 'demo_data'
                         }
                     },
                     {

@@ -1,5 +1,5 @@
 .sss-footer {
-  background: $brand-primary;
+  background: #000a25;
   color: $btn-primary-color;
   margin-top: 40px;
   padding: 24px 0;
@@ -12,11 +12,10 @@
   gap: 12px;
 }
 
-.sss-footer__wordmark {
-  color: $brand-warning;
-  font-size: 20px;
-  font-weight: 800;
-  letter-spacing: -.04em;
+.sss-footer__logo {
+  display: block;
+  height: 28px;
+  width: 108px;
 }
 
 .sss-footer__tagline { margin-left: auto; }

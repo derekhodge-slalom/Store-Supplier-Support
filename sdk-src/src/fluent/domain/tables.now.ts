@@ -460,6 +460,7 @@ export const x_sln_store_suppli_survey_ledger = Table({
         recipient: ReferenceColumn({ label: 'Survey Recipient', referenceTable: 'sys_user', mandatory: true, cascadeRule: 'restrict' }),
         assessment_instance: ReferenceColumn({ label: 'Assessment Instance', referenceTable: 'asmt_assessment_instance', cascadeRule: 'clear' }),
         sent_on: DateTimeColumn({ label: 'Sent On', mandatory: true }),
+        demo_data: BooleanColumn({ label: 'Demo Data', default: false }),
     },
     index: [{ name: 'supplier_survey_month_unique', unique: true, element: ['supplier_account', 'calendar_month'] }],
 })

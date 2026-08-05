@@ -24,6 +24,8 @@ export const slalomStoreSupplyPortalTheme = SPTheme({
     $id: Now.ID['slalom_store_supply_portal_theme'], name: 'Slalom Store Supplier Support',
     customCss: Now.include('../../server/portal/slalom-theme.scss'),
     header: slalomPortalHeader, footer: slalomPortalFooter,
+    logo: Now.attach('../../server/branding/slalom-logo-white.svg'),
+    logoAltText: 'Slalom',
     fixedHeader: false, fixedFooter: false,
     matchingNextExperienceTheme: slalomWorkspaceTheme,
 })

@@ -1,5 +1,5 @@
 .sss-navbar {
-  background: $brand-primary;
+  background: #000a25;
   border-bottom: 4px solid $brand-warning;
   color: $btn-primary-color;
   min-height: 72px;
@@ -28,11 +28,10 @@
   outline-offset: 4px;
 }
 
-.sss-navbar__wordmark {
-  font-size: 26px;
-  font-weight: 800;
-  letter-spacing: -.04em;
-  line-height: 1;
+.sss-navbar__logo {
+  display: block;
+  height: 36px;
+  width: 139px;
 }
 
 .sss-navbar__divider {

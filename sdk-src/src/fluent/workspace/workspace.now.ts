@@ -1,6 +1,6 @@
 import '@servicenow/sdk/global'
 import { Acl, Applicability, Dashboard, UxListMenuConfig, Workspace } from '@servicenow/sdk/core'
-import { internalNavigationRoles } from '../domain/security.now'
+import { internalNavigationRoles, workspaceRouteRoles } from '../domain/security.now'
 
 export const storeSupplyWorkspaceApplicability = Applicability({
     $id: Now.ID['store_supply_workspace_applicability'], name: 'Store Supplier Support Workspace Users',
@@ -96,7 +96,7 @@ export const storeSupplyWorkspace = Workspace({
             admin_panel: '3f8cebee4f134dc0951c77b67b418e63',
             admin_panel_table: 'sys_ux_app_config',
             root_macroponent: 'c276387cc331101080d6d3658940ddd2',
-            parent_app: 'b6d1e06c5a1b4a8c91a9e7f0f01ee502',
+            parent_app: 'c86a62e2c7022010099a308dc7c26022',
             title: 'slalom | Store Supplier Support',
             path: 'store-supplier-support',
             active: true,
@@ -115,7 +115,7 @@ export const storeSupplyWorkspace = Workspace({
 
 Acl({
     $id: Now.ID['store_supply_workspace_route_acl'], localOrExisting: 'Existing', type: 'ux_route', operation: 'read',
-    name: 'store-supplier-support.*', roles: internalNavigationRoles, adminOverrides: true, decisionType: 'allow',
+    name: 'x/sln/store-supplier-support.*', roles: workspaceRouteRoles, adminOverrides: true, decisionType: 'allow',
 })
 
 export const storeSupplyWorkspaceDashboard = Dashboard({
