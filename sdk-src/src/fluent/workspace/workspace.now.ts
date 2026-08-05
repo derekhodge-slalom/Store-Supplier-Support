@@ -70,7 +70,7 @@ export const storeSupplyWorkspaceListConfig = UxListMenuConfig({
                 },
                 {
                     $id: Now.ID['workspace_store_supply_models'], title: 'Store Supply Models', table: 'x_sln_store_suppli_store_supply_model',
-                    columns: 'name,model_number,store_category,unit_of_measure,active_for_ordering,manufacturer', condition: 'active_for_ordering=true', order: 320,
+                    columns: 'name,model_number,manufacturer,cmdb_model_category,store_category,unit_of_measure,active_for_ordering', condition: 'active_for_ordering=true', order: 320,
                     applicabilities: [{ $id: Now.ID['workspace_store_supply_models_app'], applicability: storeSupplyWorkspaceApplicability }],
                 },
                 {

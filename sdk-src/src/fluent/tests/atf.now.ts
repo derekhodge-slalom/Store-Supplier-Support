@@ -95,6 +95,26 @@ describe('Store Supplier Support fulfillment', function () {
             expect(dictionary.getValue('reference')).toBe('x_sln_store_suppli_store_supply_model');
         });
     });
+    it('uses direct manufacturer companies and native consumable categories', function () {
+        var models = new GlideRecord('x_sln_store_suppli_store_supply_model');
+        models.addQuery('demo_data', true); models.query();
+        var count = 0;
+        while (models.next()) {
+            count++;
+            var manufacturer = models.manufacturer.getRefRecord();
+            expect(manufacturer.isValidRecord()).toBe(true);
+            expect(manufacturer.getValue('sys_class_name')).toBe('core_company');
+            expect(manufacturer.getValue('manufacturer')).toBe('1');
+            expect(models.getValue('cmdb_model_category')).not.toBe('');
+        }
+        expect(count).toBe(24);
+        var categories = new GlideAggregate('cmdb_model_category');
+        categories.addQuery('name', 'STARTSWITH', 'Store Supply - ');
+        categories.addQuery('asset_class', 'alm_consumable');
+        categories.addQuery('product_model_class', 'x_sln_store_suppli_store_supply_model');
+        categories.addAggregate('COUNT'); categories.query(); categories.next();
+        expect(parseInt(categories.getAggregate('COUNT'), 10)).toBe(6);
+    });
     it('enforces a unique receipt source key and Request-only receipt rule', function () {
         var dictionary = new GlideRecord('sys_dictionary');
         dictionary.addQuery('name', 'x_sln_store_suppli_supply_receipt'); dictionary.addQuery('element', 'source_key'); dictionary.query();

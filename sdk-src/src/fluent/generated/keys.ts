@@ -381,6 +381,10 @@ declare global {
                         table: 'x_sln_store_suppli_store_supply_model'
                         id: 'ff35c0bc5fd14ab591f6aa8b07c40536'
                     }
+                    demo_ingredients_manufacturer: {
+                        table: 'core_company'
+                        id: '9c1e73d4655e407ebf050ee0186eadfc'
+                    }
                     demo_inventory_bag_101: {
                         table: 'alm_consumable'
                         id: '62709c54e8564bd5b0ed27238332ff3f'
@@ -597,6 +601,14 @@ declare global {
                         table: 'x_sln_store_suppli_store_supply_model'
                         id: 'ad53db6aa2d74173927079bd00baeb75'
                     }
+                    demo_operations_manufacturer: {
+                        table: 'core_company'
+                        id: '75d1a0798f774e6683166792dc9d2158'
+                    }
+                    demo_packaging_manufacturer: {
+                        table: 'core_company'
+                        id: 'ae03fa416eab4290b7ca9856486979a0'
+                    }
                     demo_paper_model: {
                         table: 'cmdb_consumable_product_model'
                         id: '824953bc0dd347cd97fb24655814c003'
@@ -661,6 +673,10 @@ declare global {
                     demo_role_support_manager: {
                         table: 'sys_user_has_role'
                         id: '73303d684dd84140baf4b8f9865c6025'
+                    }
+                    demo_sanitation_manufacturer: {
+                        table: 'core_company'
+                        id: '7a68b05b4a24470f8135a0e8d4d32140'
                     }
                     demo_sanitizer_model: {
                         table: 'x_sln_store_suppli_store_supply_model'
@@ -1210,6 +1226,10 @@ declare global {
                         table: 'sys_app_application'
                         id: '9adffcf938f44e9ea20887a6ff1a08c4'
                     }
+                    store_supply_beverage_service_model_category: {
+                        table: 'cmdb_model_category'
+                        id: 'afde9a484a2b43dd839c8bb563c32f41'
+                    }
                     store_supply_catalog: {
                         table: 'sc_catalog'
                         id: '9c541830c1e842c3a8c176469696e147'
@@ -1217,6 +1237,10 @@ declare global {
                     store_supply_catalog_category: {
                         table: 'sc_category'
                         id: '832e4e5a4ea1441795e6581cdfda3781'
+                    }
+                    store_supply_cleaning_model_category: {
+                        table: 'cmdb_model_category'
+                        id: 'a7bef4b287644759b623dd2245f6e503'
                     }
                     store_supply_dashboard_overview_tab: {
                         table: 'par_dashboard_tab'
@@ -1229,6 +1253,10 @@ declare global {
                     store_supply_email_reply: {
                         table: 'sysevent_in_email_action'
                         id: '7f05bba37aad4c2faed8fa64ba930740'
+                    }
+                    store_supply_ingredients_model_category: {
+                        table: 'cmdb_model_category'
+                        id: '0255b40734544251bb3c19984846d388'
                     }
                     store_supply_model_create_acl: {
                         table: 'sys_security_acl'
@@ -1246,6 +1274,14 @@ declare global {
                         table: 'sys_security_acl'
                         id: '11c0858d55174525b191acdd95dcdbd7'
                     }
+                    store_supply_operations_model_category: {
+                        table: 'cmdb_model_category'
+                        id: '2f2dae6ab28d4a4e9e17102e4fbbc659'
+                    }
+                    store_supply_packaging_model_category: {
+                        table: 'cmdb_model_category'
+                        id: 'faebf65ca4974af282c50471ff52e917'
+                    }
                     store_supply_resolution_sla: {
                         table: 'contract_sla'
                         id: '1a5e9871a2ac4ad6acf73a50ce981306'
@@ -1253,6 +1289,10 @@ declare global {
                     store_supply_response_sla: {
                         table: 'contract_sla'
                         id: 'f5c436866f764ad8a79d2be32296c5c0'
+                    }
+                    store_supply_safety_model_category: {
+                        table: 'cmdb_model_category'
+                        id: '21c94fc52fc34a71b8644fb5495894ef'
                     }
                     store_supply_workspace: {
                         table: 'sys_ux_page_registry'
@@ -3948,6 +3988,7 @@ declare global {
                     {
                         table: 'sys_ui_element'
                         id: '3353573f1d094127a6c5444ce3524cb3'
+                        deleted: true
                         key: {
                             sys_ui_section: {
                                 id: 'e21d22d83dca48d78f80661576182775'
@@ -5957,6 +5998,7 @@ declare global {
                     {
                         table: 'sys_ui_element'
                         id: '5c3239afc2c44d069defd59c570aee5e'
+                        deleted: true
                         key: {
                             sys_ui_section: {
                                 id: 'e21d22d83dca48d78f80661576182775'
@@ -6377,6 +6419,28 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_element'
+                        id: '65010ed50abc4c018364fdd7089bc8b7'
+                        key: {
+                            sys_ui_section: {
+                                id: 'e21d22d83dca48d78f80661576182775'
+                                key: {
+                                    name: 'x_sln_store_suppli_store_supply_model'
+                                    caption: 'Store Supply Model'
+                                    view: {
+                                        id: 'Default view'
+                                        key: {
+                                            name: 'NULL'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: '.end_split'
+                            position: '9'
+                        }
+                    },
+                    {
                         table: 'sys_dictionary'
                         id: '65068234a5c24816b48cb32cdb342f62'
                         key: {
@@ -6511,6 +6575,7 @@ declare global {
                     {
                         table: 'sys_ui_element'
                         id: '6996a218c7134aa8be1af088950e0cee'
+                        deleted: true
                         key: {
                             sys_ui_section: {
                                 id: 'e21d22d83dca48d78f80661576182775'
@@ -6989,6 +7054,7 @@ declare global {
                     {
                         table: 'sys_ui_element'
                         id: '721d08a8da434a6888565e7c55874f06'
+                        deleted: true
                         key: {
                             sys_ui_section: {
                                 id: 'e21d22d83dca48d78f80661576182775'
@@ -8957,6 +9023,28 @@ declare global {
                     },
                     {
                         table: 'sys_ui_element'
+                        id: '9426818be43140b884360926b0ca2a66'
+                        key: {
+                            sys_ui_section: {
+                                id: 'e21d22d83dca48d78f80661576182775'
+                                key: {
+                                    name: 'x_sln_store_suppli_store_supply_model'
+                                    caption: 'Store Supply Model'
+                                    view: {
+                                        id: 'Default view'
+                                        key: {
+                                            name: 'NULL'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'unit_of_measure'
+                            position: '7'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
                         id: '9452c0d3425242cab6662f7d57ca75e1'
                         key: {
                             sys_ui_section: {
@@ -10765,6 +10853,28 @@ declare global {
                             value: 'delivery'
                             language: 'en'
                             dependent_value: 'NULL'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: 'b723cf0a68c24e6897ececcef9ec1388'
+                        key: {
+                            sys_ui_section: {
+                                id: 'e21d22d83dca48d78f80661576182775'
+                                key: {
+                                    name: 'x_sln_store_suppli_store_supply_model'
+                                    caption: 'Store Supply Model'
+                                    view: {
+                                        id: 'Default view'
+                                        key: {
+                                            name: 'NULL'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: '.split'
+                            position: '5'
                         }
                     },
                     {
@@ -12765,6 +12875,29 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_list_element'
+                        id: 'dfef185afb6e495b9c5571a50b1fe675'
+                        key: {
+                            list_id: {
+                                id: 'feb47636dff747f29b60aee0e5d00505'
+                                key: {
+                                    name: 'x_sln_store_suppli_store_supply_model'
+                                    view: {
+                                        id: 'Default view'
+                                        key: {
+                                            name: 'NULL'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                    element: 'NULL'
+                                    relationship: 'NULL'
+                                    parent: 'NULL'
+                                }
+                            }
+                            element: 'cmdb_model_category'
+                        }
+                    },
+                    {
                         table: 'sys_dictionary'
                         id: 'e009f92df4df4be9ba867dbf354580e5'
                         key: {
@@ -12925,6 +13058,28 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_element'
+                        id: 'e36436b1f1694da580e0db51a9575ed8'
+                        key: {
+                            sys_ui_section: {
+                                id: 'e21d22d83dca48d78f80661576182775'
+                                key: {
+                                    name: 'x_sln_store_suppli_store_supply_model'
+                                    caption: 'Store Supply Model'
+                                    view: {
+                                        id: 'Default view'
+                                        key: {
+                                            name: 'NULL'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'store_category'
+                            position: '6'
+                        }
+                    },
+                    {
                         table: 'sys_ui_list_element'
                         id: 'e38fbaa4eccc4d67914b7ee22c186245'
                         key: {
@@ -13071,6 +13226,28 @@ declare global {
                                 }
                             }
                             value: 'one_time'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: 'e65557410a8d4e1a85e8ecd0e59059d7'
+                        key: {
+                            sys_ui_section: {
+                                id: 'e21d22d83dca48d78f80661576182775'
+                                key: {
+                                    name: 'x_sln_store_suppli_store_supply_model'
+                                    caption: 'Store Supply Model'
+                                    view: {
+                                        id: 'Default view'
+                                        key: {
+                                            name: 'NULL'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'active_for_ordering'
+                            position: '8'
                         }
                     },
                     {
@@ -13261,6 +13438,7 @@ declare global {
                     {
                         table: 'sys_ui_element'
                         id: 'ea8a9005d0a64ea09f5617caba150204'
+                        deleted: true
                         key: {
                             sys_ui_section: {
                                 id: 'e21d22d83dca48d78f80661576182775'
@@ -13976,6 +14154,28 @@ declare global {
                             name: 'x_sln_store_suppli_store_supplier'
                             element: 'supplier_account'
                             language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: 'fc43c220bf274b57a01cae3d4cfbb544'
+                        key: {
+                            sys_ui_section: {
+                                id: 'e21d22d83dca48d78f80661576182775'
+                                key: {
+                                    name: 'x_sln_store_suppli_store_supply_model'
+                                    caption: 'Store Supply Model'
+                                    view: {
+                                        id: 'Default view'
+                                        key: {
+                                            name: 'NULL'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'cmdb_model_category'
+                            position: '4'
                         }
                     },
                     {
