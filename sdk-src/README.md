@@ -19,3 +19,9 @@ Assessments/Surveys, Service Portal/Employee Center, and Email Interaction suppo
 Store supplies are modeled in `x_sln_store_suppli_store_supply_model`, a child of
 `cmdb_consumable_product_model`. All application pickers and inventory lists use
 that child class so general IT consumable models are not exposed in this app.
+
+The optional demo package contains a fictional Starbucks-inspired coffeehouse
+network: six store formats, three district managers, six store contacts, four
+supplier families, 24 supply models, and 51 stockroom inventory positions with
+intentional low- and zero-stock examples. It does not represent actual Starbucks
+stores, suppliers, or operating data.

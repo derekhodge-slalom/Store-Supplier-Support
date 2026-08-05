@@ -280,9 +280,45 @@ declare global {
                         id: 'ff445d67da494258bc873d5dcbcd8b49'
                         deleted: true
                     }
+                    demo_caramel_model: {
+                        table: 'x_sln_store_suppli_store_supply_model'
+                        id: 'b686a206069a44bda0fbeea59e014223'
+                    }
+                    demo_carrier_model: {
+                        table: 'x_sln_store_suppli_store_supply_model'
+                        id: 'd62b222a5f884e4f977a12a468142197'
+                    }
+                    demo_cleaning_tablet_model: {
+                        table: 'x_sln_store_suppli_store_supply_model'
+                        id: 'f99d43e663234548abe4da7ef43194cb'
+                    }
+                    demo_cold_cup_16_model: {
+                        table: 'x_sln_store_suppli_store_supply_model'
+                        id: '32a31ac346914b29a95b226a83dd557c'
+                    }
+                    demo_cold_cup_24_model: {
+                        table: 'x_sln_store_suppli_store_supply_model'
+                        id: '38cdc481ba2844ef8281e0eaa7a685d7'
+                    }
+                    demo_cold_lid_model: {
+                        table: 'x_sln_store_suppli_store_supply_model'
+                        id: 'b8ee021226c14bcc8dc2a3aade3aa3be'
+                    }
+                    demo_decaf_model: {
+                        table: 'x_sln_store_suppli_store_supply_model'
+                        id: '6596a98035cb4cef9d85d4a07984ae81'
+                    }
                     demo_district_manager: {
                         table: 'sys_user'
                         id: '5960060a11b94cb79b12cdb5c58ef7aa'
+                    }
+                    demo_district_manager_central: {
+                        table: 'sys_user'
+                        id: '773e0f62f7b944908a899d9f1cd04bd3'
+                    }
+                    demo_district_manager_west: {
+                        table: 'sys_user'
+                        id: '1d855cfbaed84f07b262d7d8169e730a'
                     }
                     demo_dm_member_101: {
                         table: 'x_sln_store_suppli_store_member'
@@ -291,6 +327,30 @@ declare global {
                     demo_dm_member_205: {
                         table: 'x_sln_store_suppli_store_member'
                         id: '3c9076c363c74e4f971e1d8c630b3e41'
+                    }
+                    demo_dm_member_310: {
+                        table: 'x_sln_store_suppli_store_member'
+                        id: '5b3caa6446cf4a539d73214cf489671d'
+                    }
+                    demo_dm_member_415: {
+                        table: 'x_sln_store_suppli_store_member'
+                        id: 'e3d439e390724b788cd476912c65a62c'
+                    }
+                    demo_dm_member_520: {
+                        table: 'x_sln_store_suppli_store_member'
+                        id: '63bcd897ecd049a2a573edb9e11550d5'
+                    }
+                    demo_dm_member_625: {
+                        table: 'x_sln_store_suppli_store_member'
+                        id: 'e293489829cd40438680691b2b4e1c07'
+                    }
+                    demo_espresso_model: {
+                        table: 'x_sln_store_suppli_store_supply_model'
+                        id: '35713523b5e24566ba7daa3a2f5d1454'
+                    }
+                    demo_filter_model: {
+                        table: 'x_sln_store_suppli_store_supply_model'
+                        id: 'a34a2e7b682449dba351cd6daee86df0'
                     }
                     demo_glove_model: {
                         table: 'cmdb_consumable_product_model'
@@ -305,17 +365,237 @@ declare global {
                         table: 'sys_user_grmember'
                         id: '472bc5f25abc44d3bcec7b36a8fdb64a'
                     }
+                    demo_hot_cup_12_model: {
+                        table: 'x_sln_store_suppli_store_supply_model'
+                        id: '71dd953f0b9340728ab40bff4a428f3c'
+                    }
+                    demo_hot_cup_16_model: {
+                        table: 'x_sln_store_suppli_store_supply_model'
+                        id: '2505828f7df6480e9abc4f6751f9142b'
+                    }
+                    demo_hot_cup_20_model: {
+                        table: 'x_sln_store_suppli_store_supply_model'
+                        id: '9edf1978a5734921b3f7978906a5d8be'
+                    }
+                    demo_hot_lid_model: {
+                        table: 'x_sln_store_suppli_store_supply_model'
+                        id: 'ff35c0bc5fd14ab591f6aa8b07c40536'
+                    }
                     demo_inventory_bag_101: {
                         table: 'alm_consumable'
                         id: '62709c54e8564bd5b0ed27238332ff3f'
+                    }
+                    demo_inventory_cold24_101: {
+                        table: 'alm_consumable'
+                        id: '43c5e6fed68c4809b4cae4635648387e'
+                    }
+                    demo_inventory_cold24_205: {
+                        table: 'alm_consumable'
+                        id: '980c546544f44942b1e0e3aa25e6e47f'
+                    }
+                    demo_inventory_cold24_310: {
+                        table: 'alm_consumable'
+                        id: '1434d89e0de7417d880689ed8f2aad7e'
+                    }
+                    demo_inventory_cold24_415: {
+                        table: 'alm_consumable'
+                        id: '4abed0854d034153a1c1b19eb91b9d35'
+                    }
+                    demo_inventory_cold24_520: {
+                        table: 'alm_consumable'
+                        id: '6b38c75e431b4705964f885f792fd99c'
+                    }
+                    demo_inventory_cold24_625: {
+                        table: 'alm_consumable'
+                        id: 'd3e30110de754b60bd5f1facbe384fb1'
+                    }
+                    demo_inventory_espresso_101: {
+                        table: 'alm_consumable'
+                        id: 'daab345f7e6845eb8fb96c90899481e7'
+                    }
+                    demo_inventory_espresso_205: {
+                        table: 'alm_consumable'
+                        id: 'e81da3eb2c5c48d1967d77e7ca22fa6d'
+                    }
+                    demo_inventory_espresso_310: {
+                        table: 'alm_consumable'
+                        id: 'afa76228ff9c44678ea3a1a27329eeb6'
+                    }
+                    demo_inventory_espresso_415: {
+                        table: 'alm_consumable'
+                        id: 'f79a8408493544eebb8694ccf27498c6'
+                    }
+                    demo_inventory_espresso_520: {
+                        table: 'alm_consumable'
+                        id: '6906fb3bf62e4a1497ad8eeedacb424d'
+                    }
+                    demo_inventory_espresso_625: {
+                        table: 'alm_consumable'
+                        id: '2985cec362604e24879c3c251086fc9f'
                     }
                     demo_inventory_gloves_205: {
                         table: 'alm_consumable'
                         id: '5264db7a37974acf885354354275a0f4'
                     }
+                    demo_inventory_hot12_101: {
+                        table: 'alm_consumable'
+                        id: '2d33e32f99c742f9b26aecb9c3eacb09'
+                    }
+                    demo_inventory_hot12_205: {
+                        table: 'alm_consumable'
+                        id: '769203d14d024169b4e9f5450db4830e'
+                    }
+                    demo_inventory_hot12_310: {
+                        table: 'alm_consumable'
+                        id: 'fd5d4c329ded4673a842948fdd1f5842'
+                    }
+                    demo_inventory_hot12_415: {
+                        table: 'alm_consumable'
+                        id: '4c151c13f8a541939acc036a50b82966'
+                    }
+                    demo_inventory_hot12_520: {
+                        table: 'alm_consumable'
+                        id: 'a5a8e55713e34c26849d765db06820f9'
+                    }
+                    demo_inventory_hot12_625: {
+                        table: 'alm_consumable'
+                        id: '3ba0e5311792422998ebe524d243b7da'
+                    }
+                    demo_inventory_hot16_101: {
+                        table: 'alm_consumable'
+                        id: '4c23abf2a2cf4629b3d04732c82c45c2'
+                    }
+                    demo_inventory_hot16_205: {
+                        table: 'alm_consumable'
+                        id: 'b3eca6f55a4a410183cf95a2bd953ed9'
+                    }
+                    demo_inventory_hot16_310: {
+                        table: 'alm_consumable'
+                        id: 'e32258c619454c8a9a283b2844fb8a8d'
+                    }
+                    demo_inventory_hot16_415: {
+                        table: 'alm_consumable'
+                        id: 'ee86df8c1bbd4125a990071c4b17a292'
+                    }
+                    demo_inventory_hot16_520: {
+                        table: 'alm_consumable'
+                        id: '426bb64793af4f8f96b62fcd7a0aad59'
+                    }
+                    demo_inventory_hot16_625: {
+                        table: 'alm_consumable'
+                        id: '10822b9ddbe34db585b7eccc93af64f4'
+                    }
+                    demo_inventory_hotlid_101: {
+                        table: 'alm_consumable'
+                        id: 'ca19806af5804479907299e28f315c2e'
+                    }
+                    demo_inventory_hotlid_205: {
+                        table: 'alm_consumable'
+                        id: '381b55267c094643a42f22ca72f74346'
+                    }
+                    demo_inventory_hotlid_310: {
+                        table: 'alm_consumable'
+                        id: '84e7f2dc5aa84c0180986b081d2c5999'
+                    }
+                    demo_inventory_hotlid_415: {
+                        table: 'alm_consumable'
+                        id: 'a431033a228643dda7a2c4403aed6651'
+                    }
+                    demo_inventory_hotlid_520: {
+                        table: 'alm_consumable'
+                        id: '5314b3f0c3474ac8bd7880643fb1d902'
+                    }
+                    demo_inventory_hotlid_625: {
+                        table: 'alm_consumable'
+                        id: 'c15a1efae2a84c4bb6df29c70a5ea122'
+                    }
+                    demo_inventory_label_101: {
+                        table: 'alm_consumable'
+                        id: '57aaab621b6c4b7b8bf77fa9f0379573'
+                    }
+                    demo_inventory_label_205: {
+                        table: 'alm_consumable'
+                        id: 'bc374d5d6c8144dc80f50eb03f40177f'
+                    }
+                    demo_inventory_label_310: {
+                        table: 'alm_consumable'
+                        id: '9f1e89558ac1403ea771234d6279cd62'
+                    }
+                    demo_inventory_label_415: {
+                        table: 'alm_consumable'
+                        id: '87472726b1ce4932be93e49aeffed419'
+                    }
+                    demo_inventory_label_520: {
+                        table: 'alm_consumable'
+                        id: 'f70a4ff9ee9f410e870f3040757136e3'
+                    }
+                    demo_inventory_label_625: {
+                        table: 'alm_consumable'
+                        id: 'd50e571a63154d2895e6ea1f9e29e6da'
+                    }
+                    demo_inventory_oat_101: {
+                        table: 'alm_consumable'
+                        id: '2bcbc0d6d1204cf29138aa10f0f98526'
+                    }
+                    demo_inventory_oat_205: {
+                        table: 'alm_consumable'
+                        id: '5e53cbed7e69437eb2195cb829cab9e7'
+                    }
+                    demo_inventory_oat_310: {
+                        table: 'alm_consumable'
+                        id: '32090cdd11cd4957ab7d4ce966bdde92'
+                    }
+                    demo_inventory_oat_415: {
+                        table: 'alm_consumable'
+                        id: '12da6c15c3654cb9be4946da8ac70d3e'
+                    }
+                    demo_inventory_oat_520: {
+                        table: 'alm_consumable'
+                        id: '4a2bbdfd5c7741ce939259aadd901b7b'
+                    }
+                    demo_inventory_oat_625: {
+                        table: 'alm_consumable'
+                        id: '9388df54b93249d3b7eede5d23ea6a19'
+                    }
                     demo_inventory_paper_101: {
                         table: 'alm_consumable'
                         id: 'f6483bfd5b544894ba93e762f3ede63e'
+                    }
+                    demo_inventory_sanitizer_101: {
+                        table: 'alm_consumable'
+                        id: '6297c959b99343ad9bd6cbfa54f008a9'
+                    }
+                    demo_inventory_sanitizer_205: {
+                        table: 'alm_consumable'
+                        id: '52c885d199dd46f3b62cd7a0fa73d1ba'
+                    }
+                    demo_inventory_sanitizer_310: {
+                        table: 'alm_consumable'
+                        id: 'ef68790eb20d4bae9824edb0f4a25226'
+                    }
+                    demo_inventory_sanitizer_415: {
+                        table: 'alm_consumable'
+                        id: '4d79f50b3e974372ae0fe43727ce64ef'
+                    }
+                    demo_inventory_sanitizer_520: {
+                        table: 'alm_consumable'
+                        id: 'd84c0a077b0d4a119b83fb9b7699015f'
+                    }
+                    demo_inventory_sanitizer_625: {
+                        table: 'alm_consumable'
+                        id: 'fdd55f726e984d5e92b45135267ccfb0'
+                    }
+                    demo_label_model: {
+                        table: 'x_sln_store_suppli_store_supply_model'
+                        id: '5b7d9c032c524312aa20fe0e6fb1f7de'
+                    }
+                    demo_napkin_model: {
+                        table: 'x_sln_store_suppli_store_supply_model'
+                        id: '55c923a5417e4d309109f29efc8b1094'
+                    }
+                    demo_oat_model: {
+                        table: 'x_sln_store_suppli_store_supply_model'
+                        id: 'ad53db6aa2d74173927079bd00baeb75'
                     }
                     demo_paper_model: {
                         table: 'cmdb_consumable_product_model'
@@ -326,9 +606,37 @@ declare global {
                         table: 'sys_user_has_role'
                         id: '43610127bb91494f8706acb9b4b175f9'
                     }
+                    demo_role_associate_205: {
+                        table: 'sys_user_has_role'
+                        id: '8f046c90d7294ecb95cf6b09e3d6251e'
+                    }
+                    demo_role_associate_310: {
+                        table: 'sys_user_has_role'
+                        id: '17bb794a130e44c9908e390af1736a54'
+                    }
+                    demo_role_associate_415: {
+                        table: 'sys_user_has_role'
+                        id: '5d86d0a9a6e0496d9d42ab747f5ef1f4'
+                    }
+                    demo_role_associate_520: {
+                        table: 'sys_user_has_role'
+                        id: '55202b7881704871acd0521ab3d76045'
+                    }
+                    demo_role_associate_625: {
+                        table: 'sys_user_has_role'
+                        id: '73b1fc75f6494f0e853c94953da06da5'
+                    }
                     demo_role_dm: {
                         table: 'sys_user_has_role'
                         id: '51498cf3ba4540fba18378ccd24dc364'
+                    }
+                    demo_role_dm_central: {
+                        table: 'sys_user_has_role'
+                        id: 'a4798e7c56154a56bfcaa91209bd7336'
+                    }
+                    demo_role_dm_west: {
+                        table: 'sys_user_has_role'
+                        id: '04e4e4ae7faa45a9b4a2d45b474afa97'
                     }
                     demo_role_supplier_a: {
                         table: 'sys_user_has_role'
@@ -338,6 +646,14 @@ declare global {
                         table: 'sys_user_has_role'
                         id: 'f453199d7bf9497995913b7a9d975f88'
                     }
+                    demo_role_supplier_c: {
+                        table: 'sys_user_has_role'
+                        id: '17f30ecb1bdc4e71b51e79126d4ed53d'
+                    }
+                    demo_role_supplier_d: {
+                        table: 'sys_user_has_role'
+                        id: '2e146037202c4c168d19d4aab1cbf138'
+                    }
                     demo_role_support_agent: {
                         table: 'sys_user_has_role'
                         id: '8250c066ab1c44c694cc8033764c65fb'
@@ -345,6 +661,14 @@ declare global {
                     demo_role_support_manager: {
                         table: 'sys_user_has_role'
                         id: '73303d684dd84140baf4b8f9865c6025'
+                    }
+                    demo_sanitizer_model: {
+                        table: 'x_sln_store_suppli_store_supply_model'
+                        id: '07b7756b5e394ee39e35d0ea4c71e9c6'
+                    }
+                    demo_sleeve_model: {
+                        table: 'x_sln_store_suppli_store_supply_model'
+                        id: 'c0d7faa1d171425db0d9d617f919c9ac'
                     }
                     demo_stockroom_101: {
                         table: 'alm_stockroom'
@@ -354,6 +678,22 @@ declare global {
                         table: 'alm_stockroom'
                         id: 'fc2d1bec645e45a8ab982f458a1a255a'
                     }
+                    demo_stockroom_310: {
+                        table: 'alm_stockroom'
+                        id: 'eec0a15a182447f696cafb9101c75fa3'
+                    }
+                    demo_stockroom_415: {
+                        table: 'alm_stockroom'
+                        id: '2f888b1b2f87442e974ba7169ce9e182'
+                    }
+                    demo_stockroom_520: {
+                        table: 'alm_stockroom'
+                        id: '0189ecc1b3b241f78c394f1154c214bd'
+                    }
+                    demo_stockroom_625: {
+                        table: 'alm_stockroom'
+                        id: 'fcf42e4b36c7466db7f5f410fcb2f8a1'
+                    }
                     demo_store_101: {
                         table: 'x_sln_store_suppli_store'
                         id: '28ba6dc06d504cf09f58734840c342e2'
@@ -362,9 +702,45 @@ declare global {
                         table: 'x_sln_store_suppli_store'
                         id: 'c85e5ac7855c4ace831041ae20ccf84a'
                     }
+                    demo_store_310: {
+                        table: 'x_sln_store_suppli_store'
+                        id: '3811dfbc866a446f9af137216b01f96c'
+                    }
+                    demo_store_415: {
+                        table: 'x_sln_store_suppli_store'
+                        id: 'a7d8184848464dc692be9db0abc27492'
+                    }
+                    demo_store_520: {
+                        table: 'x_sln_store_suppli_store'
+                        id: '51a9cd3af5a24a20844dd8f6bdafa504'
+                    }
+                    demo_store_625: {
+                        table: 'x_sln_store_suppli_store'
+                        id: '1c3a6b115a39417eb638b80f5697f627'
+                    }
                     demo_store_associate: {
                         table: 'sys_user'
                         id: 'a94a17421bd14c3d8af7d3396ea2577e'
+                    }
+                    demo_store_associate_205: {
+                        table: 'sys_user'
+                        id: '772c31e0eb7943098db26cb9597f08d3'
+                    }
+                    demo_store_associate_310: {
+                        table: 'sys_user'
+                        id: '80e4566dce784d2aaf5a11675e9c64ec'
+                    }
+                    demo_store_associate_415: {
+                        table: 'sys_user'
+                        id: '4e742301f0674285af11411b120a0f28'
+                    }
+                    demo_store_associate_520: {
+                        table: 'sys_user'
+                        id: 'e9c179da85984705b3f6c1af0d5d9c51'
+                    }
+                    demo_store_associate_625: {
+                        table: 'sys_user'
+                        id: '0af5cd8484264f369019ad5982238313'
                     }
                     demo_store_bag_model: {
                         table: 'x_sln_store_suppli_store_supply_model'
@@ -382,6 +758,22 @@ declare global {
                         table: 'x_sln_store_suppli_store_member'
                         id: '9568e32136e849f680e20a8f659b14c4'
                     }
+                    demo_store_member_310: {
+                        table: 'x_sln_store_suppli_store_member'
+                        id: '6e5057f7570643e89199319d81024c42'
+                    }
+                    demo_store_member_415: {
+                        table: 'x_sln_store_suppli_store_member'
+                        id: 'fbf7daec5327465a9562ee7c599fcd24'
+                    }
+                    demo_store_member_520: {
+                        table: 'x_sln_store_suppli_store_member'
+                        id: '3841d805bd314c76a9c4dfab2ffdc2c1'
+                    }
+                    demo_store_member_625: {
+                        table: 'x_sln_store_suppli_store_member'
+                        id: '56c1e022142b415cacc747f42f238345'
+                    }
                     demo_store_paper_model: {
                         table: 'x_sln_store_suppli_store_supply_model'
                         id: 'afebfb5aae42489b84d5111484b5b837'
@@ -394,9 +786,97 @@ declare global {
                         table: 'x_sln_store_suppli_store_supplier'
                         id: '01349703eac34b83be7d7cdcbf619db6'
                     }
+                    demo_store_supplier_101_c: {
+                        table: 'x_sln_store_suppli_store_supplier'
+                        id: '28bdc3f8d60e45f0b0490b9d480beb88'
+                    }
+                    demo_store_supplier_101_d: {
+                        table: 'x_sln_store_suppli_store_supplier'
+                        id: '4a6bd7fc018444d78fc803b014ed8720'
+                    }
                     demo_store_supplier_205_a: {
                         table: 'x_sln_store_suppli_store_supplier'
                         id: 'd5aec83c9552435da7d44fa984e29b16'
+                    }
+                    demo_store_supplier_205_b: {
+                        table: 'x_sln_store_suppli_store_supplier'
+                        id: '0458841240034452831b9687298cd09b'
+                    }
+                    demo_store_supplier_205_c: {
+                        table: 'x_sln_store_suppli_store_supplier'
+                        id: '9f97de261ab04370b7852d61e5c63dc6'
+                    }
+                    demo_store_supplier_205_d: {
+                        table: 'x_sln_store_suppli_store_supplier'
+                        id: '272cf2bfa6484791a3b3e0efdab4b701'
+                    }
+                    demo_store_supplier_310_a: {
+                        table: 'x_sln_store_suppli_store_supplier'
+                        id: 'dd01cc029d364eb8a8cf4c47fb92926b'
+                    }
+                    demo_store_supplier_310_b: {
+                        table: 'x_sln_store_suppli_store_supplier'
+                        id: 'f46d90bac07144a6807e9e547ba1f7f2'
+                    }
+                    demo_store_supplier_310_c: {
+                        table: 'x_sln_store_suppli_store_supplier'
+                        id: '07a60c8c5a0f40de87d49691b7776b32'
+                    }
+                    demo_store_supplier_310_d: {
+                        table: 'x_sln_store_suppli_store_supplier'
+                        id: '9a9076e5ec4c474abb32ec14103018f5'
+                    }
+                    demo_store_supplier_415_a: {
+                        table: 'x_sln_store_suppli_store_supplier'
+                        id: '2403cc7990894e36b822677d8451a46f'
+                    }
+                    demo_store_supplier_415_b: {
+                        table: 'x_sln_store_suppli_store_supplier'
+                        id: 'ada5ebd73fee4a948c8b38bce1c2e38a'
+                    }
+                    demo_store_supplier_415_c: {
+                        table: 'x_sln_store_suppli_store_supplier'
+                        id: '5cab99972247486d8e08918d5cb6426e'
+                    }
+                    demo_store_supplier_415_d: {
+                        table: 'x_sln_store_suppli_store_supplier'
+                        id: '17ec0056206b47e88a3b486f68f2d014'
+                    }
+                    demo_store_supplier_520_a: {
+                        table: 'x_sln_store_suppli_store_supplier'
+                        id: '1c6c8457a1704b68b1152a296c3d743f'
+                    }
+                    demo_store_supplier_520_b: {
+                        table: 'x_sln_store_suppli_store_supplier'
+                        id: '5d71be2fe61d4a5c9143b52ef38dd21e'
+                    }
+                    demo_store_supplier_520_c: {
+                        table: 'x_sln_store_suppli_store_supplier'
+                        id: 'f5f75bcb4e9c42f3b3e9ffc3941723f0'
+                    }
+                    demo_store_supplier_520_d: {
+                        table: 'x_sln_store_suppli_store_supplier'
+                        id: '1c01bf33db3f4ae2a4ac55189b5128bd'
+                    }
+                    demo_store_supplier_625_a: {
+                        table: 'x_sln_store_suppli_store_supplier'
+                        id: 'c676239581ff42ec8ea85e41e0f31d0c'
+                    }
+                    demo_store_supplier_625_b: {
+                        table: 'x_sln_store_suppli_store_supplier'
+                        id: 'd53041523bbb4c32909bbd2cdcde212b'
+                    }
+                    demo_store_supplier_625_c: {
+                        table: 'x_sln_store_suppli_store_supplier'
+                        id: '79565460269c4413a693ec4740ba24a3'
+                    }
+                    demo_store_supplier_625_d: {
+                        table: 'x_sln_store_suppli_store_supplier'
+                        id: 'f05225f2258f43c4b24d5f32a0ac1ef6'
+                    }
+                    demo_straw_model: {
+                        table: 'x_sln_store_suppli_store_supply_model'
+                        id: 'ff6f88eadff54f4bb9e84dd9377cd19e'
                     }
                     demo_supplier_a: {
                         table: 'customer_account'
@@ -406,6 +886,10 @@ declare global {
                         table: 'customer_account'
                         id: '2b5e84439248484db68f932d79e8d33c'
                     }
+                    demo_supplier_c: {
+                        table: 'customer_account'
+                        id: 'bf71f2d3e3024aec856a81cd0d51a9fe'
+                    }
                     demo_supplier_contact_a: {
                         table: 'customer_contact'
                         id: 'c3a8ac9788104dcb8e80708e0b9f02d9'
@@ -414,17 +898,113 @@ declare global {
                         table: 'customer_contact'
                         id: '5ea003668dc74e9c817ddaa8121a8176'
                     }
+                    demo_supplier_contact_c: {
+                        table: 'customer_contact'
+                        id: '09b19488b23948b9914355bd35f2f6ea'
+                    }
+                    demo_supplier_contact_d: {
+                        table: 'customer_contact'
+                        id: 'fa2bb36445074dfabb8aadb2fa0c7ac0'
+                    }
+                    demo_supplier_d: {
+                        table: 'customer_account'
+                        id: 'adf250d72f2544f39b43532391ced1bd'
+                    }
                     demo_supply_supplier_bag: {
                         table: 'x_sln_store_suppli_supply_supplier'
                         id: '6903afec55d045c39e82d78076b80872'
+                    }
+                    demo_supply_supplier_caramel: {
+                        table: 'x_sln_store_suppli_supply_supplier'
+                        id: '7cb0c4c5b64842909b19690eb4e6aa85'
+                    }
+                    demo_supply_supplier_carrier: {
+                        table: 'x_sln_store_suppli_supply_supplier'
+                        id: 'f87728d5608d4e89bdb1921ef86c0b8f'
+                    }
+                    demo_supply_supplier_cleaning_tablet: {
+                        table: 'x_sln_store_suppli_supply_supplier'
+                        id: 'badde36d875143ca9767ae2c7a8c83ad'
+                    }
+                    demo_supply_supplier_cold16: {
+                        table: 'x_sln_store_suppli_supply_supplier'
+                        id: '45dcea6a816842538d4e52c52fa0eb28'
+                    }
+                    demo_supply_supplier_cold24: {
+                        table: 'x_sln_store_suppli_supply_supplier'
+                        id: '7a4700b7bc1b4e29be039220df5c283e'
+                    }
+                    demo_supply_supplier_coldlid: {
+                        table: 'x_sln_store_suppli_supply_supplier'
+                        id: '0a8438f7784548eca0c1511e5fafdd38'
+                    }
+                    demo_supply_supplier_decaf: {
+                        table: 'x_sln_store_suppli_supply_supplier'
+                        id: '63ec83399d6e46afb9f8e30720540061'
+                    }
+                    demo_supply_supplier_espresso: {
+                        table: 'x_sln_store_suppli_supply_supplier'
+                        id: 'ea0e8f9e0acc493bb27234f8993d9832'
+                    }
+                    demo_supply_supplier_filter: {
+                        table: 'x_sln_store_suppli_supply_supplier'
+                        id: '75db095a301741769daec061f5fdbf8c'
                     }
                     demo_supply_supplier_glove: {
                         table: 'x_sln_store_suppli_supply_supplier'
                         id: 'c341ae7c2f6e4a34beb9a482ec9304c1'
                     }
+                    demo_supply_supplier_hot12: {
+                        table: 'x_sln_store_suppli_supply_supplier'
+                        id: '116f70b9b76a443c92f29e8237d31f78'
+                    }
+                    demo_supply_supplier_hot16: {
+                        table: 'x_sln_store_suppli_supply_supplier'
+                        id: '7e0e343c035945bdbca8310ef699fa2d'
+                    }
+                    demo_supply_supplier_hot20: {
+                        table: 'x_sln_store_suppli_supply_supplier'
+                        id: '362e058fcfc64c6e9760a9cce0acaa68'
+                    }
+                    demo_supply_supplier_hotlid: {
+                        table: 'x_sln_store_suppli_supply_supplier'
+                        id: '24282f39b0e245a6bf347ea249ac1cd3'
+                    }
+                    demo_supply_supplier_label: {
+                        table: 'x_sln_store_suppli_supply_supplier'
+                        id: 'a86a894a412d445eb5f370b15157f077'
+                    }
+                    demo_supply_supplier_napkin: {
+                        table: 'x_sln_store_suppli_supply_supplier'
+                        id: '543b8f648a9540638df028cb71e5dc95'
+                    }
+                    demo_supply_supplier_oat: {
+                        table: 'x_sln_store_suppli_supply_supplier'
+                        id: '4b01511c187a49f38b3e734b7d2a03bf'
+                    }
                     demo_supply_supplier_paper: {
                         table: 'x_sln_store_suppli_supply_supplier'
                         id: 'd3dcf75e3f7e48c0993b98116e343d51'
+                    }
+                    demo_supply_supplier_sanitizer: {
+                        table: 'x_sln_store_suppli_supply_supplier'
+                        id: '999f3bf2e7054b9c8d35be6dc88f24a1'
+                    }
+                    demo_supply_supplier_sleeve: {
+                        table: 'x_sln_store_suppli_supply_supplier'
+                        id: 'a07f4fb089cf40beb02aa4288b21b9d7'
+                    }
+                    demo_supply_supplier_straw: {
+                        table: 'x_sln_store_suppli_supply_supplier'
+                        id: '94ee7228bd7d4cb08f8608756535e8d2'
+                    }
+                    demo_supply_supplier_towel: {
+                        table: 'x_sln_store_suppli_supply_supplier'
+                        id: '7badb6d7cc7e449f96d40a84928b216c'
+                    }
+                    demo_supply_supplier_vanilla: {
+                        table: 'x_sln_store_suppli_supply_supplier'
+                        id: '6cdd05305249422f8f52f295f18258bb'
                     }
                     demo_support_agent: {
                         table: 'sys_user'
@@ -433,6 +1013,14 @@ declare global {
                     demo_support_manager: {
                         table: 'sys_user'
                         id: '5ce499d102b04731a5ce408a8f520047'
+                    }
+                    demo_towel_model: {
+                        table: 'x_sln_store_suppli_store_supply_model'
+                        id: 'f8a8c7b67fff4e4c9a83aac8ef07f885'
+                    }
+                    demo_vanilla_model: {
+                        table: 'x_sln_store_suppli_store_supply_model'
+                        id: '573aa41722db4fe19434dd456800d814'
                     }
                     employee_center_store_supply_column: {
                         table: 'sp_column'
@@ -1285,6 +1873,29 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_list_element'
+                        id: '05c660d2e9d24a12872254bb0647ff3e'
+                        key: {
+                            list_id: {
+                                id: 'a201bf794e704a598b8c49d310eaa704'
+                                key: {
+                                    name: 'x_sln_store_suppli_store'
+                                    view: {
+                                        id: 'Default view'
+                                        key: {
+                                            name: 'NULL'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                    element: 'NULL'
+                                    relationship: 'NULL'
+                                    parent: 'NULL'
+                                }
+                            }
+                            element: 'volume_band'
+                        }
+                    },
+                    {
                         table: 'item_option_new'
                         id: '0694d1151ef94ebd9c32433013b9e2cf'
                         key: {
@@ -1471,6 +2082,7 @@ declare global {
                     {
                         table: 'sys_ui_element'
                         id: '0939562e8bfd49389e5dec27b3e049b2'
+                        deleted: true
                         key: {
                             sys_ui_section: {
                                 id: '81f6bdb5aa5c41d38b562c2d163401e0'
@@ -1800,6 +2412,7 @@ declare global {
                     {
                         table: 'sys_ui_element'
                         id: '1040cde7daf14fdbac48a49f6fdd44c3'
+                        deleted: true
                         key: {
                             sys_ui_section: {
                                 id: '81f6bdb5aa5c41d38b562c2d163401e0'
@@ -2273,6 +2886,14 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_choice_set'
+                        id: '19ea522f29c14fb480cc920cd677a01e'
+                        key: {
+                            name: 'x_sln_store_suppli_store'
+                            element: 'store_format'
+                        }
+                    },
+                    {
                         table: 'sys_ui_element'
                         id: '1a5fe1778b314e91a0e2f3239b50a20f'
                         key: {
@@ -2324,6 +2945,39 @@ declare global {
                                 }
                             }
                             element: 'fulfilled_quantity'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '1ab5f2e5645841119a38a6ebd9a10c22'
+                        key: {
+                            sys_ui_section: {
+                                id: '81f6bdb5aa5c41d38b562c2d163401e0'
+                                key: {
+                                    name: 'x_sln_store_suppli_store'
+                                    caption: 'Store'
+                                    view: {
+                                        id: 'Default view'
+                                        key: {
+                                            name: 'NULL'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'stockroom'
+                            position: '6'
+                        }
+                    },
+                    {
+                        table: 'sys_choice'
+                        id: '1ab98c81d03f4ecfb07d8db465122ff1'
+                        key: {
+                            name: 'x_sln_store_suppli_store'
+                            element: 'store_format'
+                            value: 'pickup_only'
+                            language: 'en'
+                            dependent_value: 'NULL'
                         }
                     },
                     {
@@ -2535,6 +3189,17 @@ declare global {
                             name: 'x_sln_store_suppli_supply_request'
                             element: 'category'
                             value: 'other'
+                            language: 'en'
+                            dependent_value: 'NULL'
+                        }
+                    },
+                    {
+                        table: 'sys_choice'
+                        id: '206c50207e7a444988e9c4277e36bab2'
+                        key: {
+                            name: 'x_sln_store_suppli_store'
+                            element: 'volume_band'
+                            value: 'low'
                             language: 'en'
                             dependent_value: 'NULL'
                         }
@@ -3000,6 +3665,28 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_element'
+                        id: '2e0be7b7dc3e47d7912a7f0e245f4301'
+                        key: {
+                            sys_ui_section: {
+                                id: '81f6bdb5aa5c41d38b562c2d163401e0'
+                                key: {
+                                    name: 'x_sln_store_suppli_store'
+                                    caption: 'Store'
+                                    view: {
+                                        id: 'Default view'
+                                        key: {
+                                            name: 'NULL'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'active'
+                            position: '13'
+                        }
+                    },
+                    {
                         table: 'sys_ui_list_element'
                         id: '2e95904af7e54b79982cde142e8e7edb'
                         key: {
@@ -3297,6 +3984,17 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_choice'
+                        id: '33aa678871974c30a8dc0b408f7661ba'
+                        key: {
+                            name: 'x_sln_store_suppli_store_supply_model'
+                            element: 'store_category'
+                            value: 'cleaning'
+                            language: 'en'
+                            dependent_value: 'NULL'
+                        }
+                    },
+                    {
                         table: 'par_dashboard_permission'
                         id: '33ea5e333bba42a6b1fd25aab7727209'
                         key: {
@@ -3445,6 +4143,17 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_choice'
+                        id: '36494d020ab94c15a0cfdc444b2e1321'
+                        key: {
+                            name: 'x_sln_store_suppli_store'
+                            element: 'store_format'
+                            value: 'reserve'
+                            language: 'en'
+                            dependent_value: 'NULL'
+                        }
+                    },
+                    {
                         table: 'sys_ui_element'
                         id: '367776571669410ca6c25c016ad6b7e5'
                         key: {
@@ -3573,6 +4282,14 @@ declare global {
                     },
                     {
                         table: 'sys_dictionary'
+                        id: '38ae00d0419b4be984b53de08dd6e750'
+                        key: {
+                            name: 'x_sln_store_suppli_store'
+                            element: 'market'
+                        }
+                    },
+                    {
+                        table: 'sys_dictionary'
                         id: '38d43df93a1d4888baae73966d2f31fe'
                         key: {
                             name: 'x_sln_store_suppli_supplier_task'
@@ -3688,6 +4405,29 @@ declare global {
                             name: 'x_sln_store_suppli_store_supplier'
                             element: 'NULL'
                             language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_list_element'
+                        id: '3b127ef73f434bca983102e78aa41438'
+                        key: {
+                            list_id: {
+                                id: 'a201bf794e704a598b8c49d310eaa704'
+                                key: {
+                                    name: 'x_sln_store_suppli_store'
+                                    view: {
+                                        id: 'Default view'
+                                        key: {
+                                            name: 'NULL'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                    element: 'NULL'
+                                    relationship: 'NULL'
+                                    parent: 'NULL'
+                                }
+                            }
+                            element: 'market'
                         }
                     },
                     {
@@ -3927,6 +4667,7 @@ declare global {
                     {
                         table: 'sys_ui_element'
                         id: '407a79db661c48f4817c4bf4be5e196c'
+                        deleted: true
                         key: {
                             sys_ui_section: {
                                 id: '81f6bdb5aa5c41d38b562c2d163401e0'
@@ -4042,6 +4783,28 @@ declare global {
                             name: 'x_sln_store_suppli_supply_line'
                             element: 'supply_model'
                             language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '425b06969dee4e1e904b991293917d48'
+                        key: {
+                            sys_ui_section: {
+                                id: '81f6bdb5aa5c41d38b562c2d163401e0'
+                                key: {
+                                    name: 'x_sln_store_suppli_store'
+                                    caption: 'Store'
+                                    view: {
+                                        id: 'Default view'
+                                        key: {
+                                            name: 'NULL'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: '.split'
+                            position: '7'
                         }
                     },
                     {
@@ -4611,6 +5374,7 @@ declare global {
                     {
                         table: 'sys_ui_element'
                         id: '4efc8ca76018442888e92be7ea912bb7'
+                        deleted: true
                         key: {
                             sys_ui_section: {
                                 id: '81f6bdb5aa5c41d38b562c2d163401e0'
@@ -4960,6 +5724,28 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_element'
+                        id: '56615e5cb9ea47cea832d06e1e65232f'
+                        key: {
+                            sys_ui_section: {
+                                id: '81f6bdb5aa5c41d38b562c2d163401e0'
+                                key: {
+                                    name: 'x_sln_store_suppli_store'
+                                    caption: 'Store'
+                                    view: {
+                                        id: 'Default view'
+                                        key: {
+                                            name: 'NULL'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'district_manager'
+                            position: '8'
+                        }
+                    },
+                    {
                         table: 'sys_choice'
                         id: '56f3f0608dc34fbb8015cd00bed87872'
                         key: {
@@ -4968,6 +5754,28 @@ declare global {
                             value: 'draft'
                             language: 'en'
                             dependent_value: 'NULL'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '57076c909b814c4fb8091e9f5e137e32'
+                        key: {
+                            sys_ui_section: {
+                                id: '81f6bdb5aa5c41d38b562c2d163401e0'
+                                key: {
+                                    name: 'x_sln_store_suppli_store'
+                                    caption: 'Store'
+                                    view: {
+                                        id: 'Default view'
+                                        key: {
+                                            name: 'NULL'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'volume_band'
+                            position: '12'
                         }
                     },
                     {
@@ -5060,6 +5868,28 @@ declare global {
                             cat_item: 'f7a5ffe7fd564a9e897dc65ee96deab7'
                             variable_set: 'NULL'
                             name: 'lineNotes'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '5887483f054248efa09c540a79828279'
+                        key: {
+                            sys_ui_section: {
+                                id: '81f6bdb5aa5c41d38b562c2d163401e0'
+                                key: {
+                                    name: 'x_sln_store_suppli_store'
+                                    caption: 'Store'
+                                    view: {
+                                        id: 'Default view'
+                                        key: {
+                                            name: 'NULL'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'store_format'
+                            position: '3'
                         }
                     },
                     {
@@ -5260,6 +6090,15 @@ declare global {
                         key: {
                             name: 'x_sln_store_suppli_supply_case'
                             element: 'resolution_notes'
+                            language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_documentation'
+                        id: '5e691fd668434deab3aa16f9ddbea395'
+                        key: {
+                            name: 'x_sln_store_suppli_store'
+                            element: 'volume_band'
                             language: 'en'
                         }
                     },
@@ -5567,6 +6406,17 @@ declare global {
                             name: 'x_sln_store_suppli_supply_request'
                             element: 'subtype'
                             language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_choice'
+                        id: '6728a4f91b0f4af1856af9e3a0d24d6e'
+                        key: {
+                            name: 'x_sln_store_suppli_store'
+                            element: 'store_format'
+                            value: 'drive_thru'
+                            language: 'en'
+                            dependent_value: 'NULL'
                         }
                     },
                     {
@@ -6188,6 +7038,28 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_element'
+                        id: '734c96ca42194cd8bcf1cebca1ea91bd'
+                        key: {
+                            sys_ui_section: {
+                                id: '81f6bdb5aa5c41d38b562c2d163401e0'
+                                key: {
+                                    name: 'x_sln_store_suppli_store'
+                                    caption: 'Store'
+                                    view: {
+                                        id: 'Default view'
+                                        key: {
+                                            name: 'NULL'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: '.end_split'
+                            position: '14'
+                        }
+                    },
+                    {
                         table: 'sys_security_acl_role'
                         id: '73799b610d5348568a846d41000baf93'
                         key: {
@@ -6407,6 +7279,28 @@ declare global {
                             cat_item: 'c9a7076278194d71a494e4325fbec4bf'
                             variable_set: 'NULL'
                             name: 'attachments'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '7667c5f377f14a9bbe9ad03378948cf9'
+                        key: {
+                            sys_ui_section: {
+                                id: '81f6bdb5aa5c41d38b562c2d163401e0'
+                                key: {
+                                    name: 'x_sln_store_suppli_store'
+                                    caption: 'Store'
+                                    view: {
+                                        id: 'Default view'
+                                        key: {
+                                            name: 'NULL'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'market'
+                            position: '4'
                         }
                     },
                     {
@@ -6905,6 +7799,28 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_element'
+                        id: '80695ce11dff4fcb8eb133264531f007'
+                        key: {
+                            sys_ui_section: {
+                                id: '81f6bdb5aa5c41d38b562c2d163401e0'
+                                key: {
+                                    name: 'x_sln_store_suppli_store'
+                                    caption: 'Store'
+                                    view: {
+                                        id: 'Default view'
+                                        key: {
+                                            name: 'NULL'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'district'
+                            position: '10'
+                        }
+                    },
+                    {
                         table: 'sys_security_acl_role'
                         id: '806fff51a9cc416f8640c4520e34fd40'
                         key: {
@@ -7012,6 +7928,17 @@ declare global {
                     },
                     {
                         table: 'sys_choice'
+                        id: '8221f8a0cb2c4b14b2c4f36cca21ef9c'
+                        key: {
+                            name: 'x_sln_store_suppli_store'
+                            element: 'volume_band'
+                            value: 'high'
+                            language: 'en'
+                            dependent_value: 'NULL'
+                        }
+                    },
+                    {
+                        table: 'sys_choice'
                         id: '82b2d33e697d487ebaffcb2fa9c6ca8c'
                         key: {
                             name: 'x_sln_store_suppli_supply_request'
@@ -7056,6 +7983,7 @@ declare global {
                     {
                         table: 'sys_ui_element'
                         id: '8345b7e1f3cc411ca15e5f62b87715ed'
+                        deleted: true
                         key: {
                             sys_ui_section: {
                                 id: '81f6bdb5aa5c41d38b562c2d163401e0'
@@ -7584,6 +8512,17 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_choice'
+                        id: '8d827da928ff49debcb8a21d71c594a0'
+                        key: {
+                            name: 'x_sln_store_suppli_store'
+                            element: 'volume_band'
+                            value: 'moderate'
+                            language: 'en'
+                            dependent_value: 'NULL'
+                        }
+                    },
+                    {
                         table: 'sys_security_acl_role'
                         id: '8d9dc5d494ee431fad249860cf8afc2c'
                         key: {
@@ -8006,6 +8945,39 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_choice'
+                        id: '93d3e36ec0c94c78a21ca3b7693ff192'
+                        key: {
+                            name: 'x_sln_store_suppli_store'
+                            element: 'store_format'
+                            value: 'licensed_kiosk'
+                            language: 'en'
+                            dependent_value: 'NULL'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '9452c0d3425242cab6662f7d57ca75e1'
+                        key: {
+                            sys_ui_section: {
+                                id: '81f6bdb5aa5c41d38b562c2d163401e0'
+                                key: {
+                                    name: 'x_sln_store_suppli_store'
+                                    caption: 'Store'
+                                    view: {
+                                        id: 'Default view'
+                                        key: {
+                                            name: 'NULL'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'region'
+                            position: '11'
+                        }
+                    },
+                    {
                         table: 'question_choice'
                         id: '94b98cbab35a4cf6ad37bc121a150a5c'
                         key: {
@@ -8389,6 +9361,28 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_element'
+                        id: '9cd72b1235ae4a36979e3059a0e7d5f4'
+                        key: {
+                            sys_ui_section: {
+                                id: '81f6bdb5aa5c41d38b562c2d163401e0'
+                                key: {
+                                    name: 'x_sln_store_suppli_store'
+                                    caption: 'Store'
+                                    view: {
+                                        id: 'Default view'
+                                        key: {
+                                            name: 'NULL'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'primary_contact'
+                            position: '9'
+                        }
+                    },
+                    {
                         table: 'sys_ui_form'
                         id: '9cff54fe00c544df8b5c7a77dffe29f6'
                         key: {
@@ -8502,6 +9496,17 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_choice'
+                        id: '9e5ce48fa16341a8b870527d513d4bf1'
+                        key: {
+                            name: 'x_sln_store_suppli_store'
+                            element: 'store_format'
+                            value: 'cafe'
+                            language: 'en'
+                            dependent_value: 'NULL'
+                        }
+                    },
+                    {
                         table: 'sys_ui_list_element'
                         id: 'a06111f0fa35402b9504219132452caf'
                         key: {
@@ -8571,6 +9576,7 @@ declare global {
                     {
                         table: 'sys_ui_element'
                         id: 'a0f8d0eb8a8441bcb6783876474bdbfe'
+                        deleted: true
                         key: {
                             sys_ui_section: {
                                 id: '81f6bdb5aa5c41d38b562c2d163401e0'
@@ -9002,6 +10008,17 @@ declare global {
                             }
                             element: '.begin_split'
                             position: '0'
+                        }
+                    },
+                    {
+                        table: 'sys_choice'
+                        id: 'a890ab664db44283a5adc3e4042056fc'
+                        key: {
+                            name: 'x_sln_store_suppli_store_supply_model'
+                            element: 'store_category'
+                            value: 'ingredients'
+                            language: 'en'
+                            dependent_value: 'NULL'
                         }
                     },
                     {
@@ -9518,6 +10535,17 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_choice'
+                        id: 'b19e407301584f35ab9f06afc878252c'
+                        key: {
+                            name: 'x_sln_store_suppli_store'
+                            element: 'volume_band'
+                            value: 'very_high'
+                            language: 'en'
+                            dependent_value: 'NULL'
+                        }
+                    },
+                    {
                         table: 'sys_security_acl_role'
                         id: 'b1cc620f216a43e6aa5833d4b7392726'
                         key: {
@@ -9545,6 +10573,28 @@ declare global {
                             element: 'NULL'
                             relationship: 'NULL'
                             parent: 'NULL'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: 'b2dbb3307f1841f68a05fbf5865b419b'
+                        key: {
+                            sys_ui_section: {
+                                id: '81f6bdb5aa5c41d38b562c2d163401e0'
+                                key: {
+                                    name: 'x_sln_store_suppli_store'
+                                    caption: 'Store'
+                                    view: {
+                                        id: 'Default view'
+                                        key: {
+                                            name: 'NULL'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'location'
+                            position: '5'
                         }
                     },
                     {
@@ -9798,6 +10848,14 @@ declare global {
                             }
                             element: 'activity.xml'
                             position: '19'
+                        }
+                    },
+                    {
+                        table: 'sys_choice_set'
+                        id: 'b8f796d9d4854451bd9b9185c6d12c4b'
+                        key: {
+                            name: 'x_sln_store_suppli_store'
+                            element: 'volume_band'
                         }
                     },
                     {
@@ -10179,6 +11237,17 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_choice'
+                        id: 'bfbdb517954f422ea157d53aa78a8cdb'
+                        key: {
+                            name: 'x_sln_store_suppli_store_supply_model'
+                            element: 'store_category'
+                            value: 'beverage_service'
+                            language: 'en'
+                            dependent_value: 'NULL'
+                        }
+                    },
+                    {
                         table: 'sys_documentation'
                         id: 'c019400162a749b793e7ab1710b81cdb'
                         key: {
@@ -10275,6 +11344,7 @@ declare global {
                     {
                         table: 'sys_ui_element'
                         id: 'c271cb0d165a4a4488b0f024673dbd24'
+                        deleted: true
                         key: {
                             sys_ui_section: {
                                 id: '81f6bdb5aa5c41d38b562c2d163401e0'
@@ -10541,6 +11611,7 @@ declare global {
                     {
                         table: 'sys_ui_element'
                         id: 'c6ee2c9fb38f4b41a68c244b337d34f2'
+                        deleted: true
                         key: {
                             sys_ui_section: {
                                 id: '81f6bdb5aa5c41d38b562c2d163401e0'
@@ -11702,6 +12773,15 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_documentation'
+                        id: 'e01448b104624446b6c453babe085298'
+                        key: {
+                            name: 'x_sln_store_suppli_store'
+                            element: 'market'
+                            language: 'en'
+                        }
+                    },
+                    {
                         table: 'sys_ui_element'
                         id: 'e0596868dde34f0cb9f0baf8acd98947'
                         key: {
@@ -11796,6 +12876,29 @@ declare global {
                                 }
                             }
                             sys_domain: 'global'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_list_element'
+                        id: 'e26785f0cfea4bbbacad32f1db2cf645'
+                        key: {
+                            list_id: {
+                                id: 'a201bf794e704a598b8c49d310eaa704'
+                                key: {
+                                    name: 'x_sln_store_suppli_store'
+                                    view: {
+                                        id: 'Default view'
+                                        key: {
+                                            name: 'NULL'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                    element: 'NULL'
+                                    relationship: 'NULL'
+                                    parent: 'NULL'
+                                }
+                            }
+                            element: 'store_format'
                         }
                     },
                     {
@@ -12226,6 +13329,14 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_dictionary'
+                        id: 'ed9fb343eeb4436583e8111e5d443021'
+                        key: {
+                            name: 'x_sln_store_suppli_store'
+                            element: 'store_format'
+                        }
+                    },
+                    {
                         table: 'sys_choice'
                         id: 'ef2836781df843e3a16e9d68edc9953b'
                         key: {
@@ -12395,6 +13506,7 @@ declare global {
                     {
                         table: 'sys_ui_element'
                         id: 'f2aa21b8b89d4e9eac33df3b1aafaba2'
+                        deleted: true
                         key: {
                             sys_ui_section: {
                                 id: '81f6bdb5aa5c41d38b562c2d163401e0'
@@ -12532,6 +13644,14 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_dictionary'
+                        id: 'f5fd20268a3c41e6ad2ce9c9a9a7f667'
+                        key: {
+                            name: 'x_sln_store_suppli_store'
+                            element: 'volume_band'
+                        }
+                    },
+                    {
                         table: 'sys_ui_list_element'
                         id: 'f6190682b4c8450fb853bb5cfdfacdda'
                         key: {
@@ -12661,6 +13781,15 @@ declare global {
                         key: {
                             name: 'x_sln_store_suppli_supply_line'
                             element: 'received_quantity'
+                            language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_documentation'
+                        id: 'f8fad92d987e44de8f4a88036afb333e'
+                        key: {
+                            name: 'x_sln_store_suppli_store'
+                            element: 'store_format'
                             language: 'en'
                         }
                     },

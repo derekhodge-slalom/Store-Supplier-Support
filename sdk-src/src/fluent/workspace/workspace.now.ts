@@ -60,7 +60,7 @@ export const storeSupplyWorkspaceListConfig = UxListMenuConfig({
             lists: [
                 {
                     $id: Now.ID['workspace_stores'], title: 'Stores', table: 'x_sln_store_suppli_store',
-                    columns: 'store_number,name,district,district_manager,stockroom,active', condition: '', order: 300,
+                    columns: 'store_number,name,store_format,market,volume_band,district,district_manager,stockroom,active', condition: '', order: 300,
                     applicabilities: [{ $id: Now.ID['workspace_stores_app'], applicability: storeSupplyWorkspaceApplicability }],
                 },
                 {

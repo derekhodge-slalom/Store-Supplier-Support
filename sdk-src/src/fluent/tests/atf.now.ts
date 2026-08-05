@@ -77,17 +77,17 @@ export const routingAndReceiptsTest = Test({
         $id: Now.ID['atf_routing_and_receipts_script'], jasmineVersion: '3.1',
         script: `
 describe('Store Supplier Support fulfillment', function () {
-    it('contains a demo store authorized for two suppliers', function () {
+    it('contains a coffeehouse demo store authorized for all four supplier families', function () {
         var store = new GlideRecord('x_sln_store_suppli_store'); store.get('store_number', 'DEMO-101');
         expect(store.isValidRecord()).toBe(true);
         var relationships = new GlideAggregate('x_sln_store_suppli_store_supplier');
         relationships.addQuery('store', store.getUniqueValue()); relationships.addQuery('active', true); relationships.addAggregate('COUNT'); relationships.query(); relationships.next();
-        expect(parseInt(relationships.getAggregate('COUNT'), 10)).toBe(2);
+        expect(parseInt(relationships.getAggregate('COUNT'), 10)).toBe(4);
     });
     it('routes only dedicated Store Supply Models', function () {
         var models = new GlideAggregate('x_sln_store_suppli_store_supply_model');
         models.addQuery('demo_data', true); models.addAggregate('COUNT'); models.query(); models.next();
-        expect(parseInt(models.getAggregate('COUNT'), 10)).toBe(3);
+        expect(parseInt(models.getAggregate('COUNT'), 10)).toBe(24);
         ['x_sln_store_suppli_supply_supplier','x_sln_store_suppli_supply_line','x_sln_store_suppli_supply_receipt'].forEach(function (tableName) {
             var dictionary = new GlideRecord('sys_dictionary');
             dictionary.addQuery('name', tableName); dictionary.addQuery('element', 'supply_model'); dictionary.query();
